@@ -1,0 +1,23 @@
+version: 2
+
+# D10 — dimensoes (resolver aqui a normalizacao de nomes de time)
+# D11 — fatos
+# D16 — mart de features anti-vazamento
+models:
+  - name: dim_team
+    description: "Times, com nomes historicos normalizados para uma unica identidade."
+  - name: dim_player
+  - name: dim_map
+  - name: dim_event
+    description: "Eventos, com tier — usado como feature e no ajuste do rating."
+  - name: dim_patch
+  - name: fct_match
+  - name: fct_map
+  - name: fct_round
+  - name: fct_player_map
+  - name: fct_composition
+    description: "Uma linha por time-mapa, com os 5 agentes."
+  - name: mart_match_features
+    description: >
+      Features computaveis ESTRITAMENTE antes do match_datetime.
+      Coberto pelo teste anti-vazamento em tests/assert_no_future_leakage.sql (D16).

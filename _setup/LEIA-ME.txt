@@ -1,0 +1,14 @@
+# Arquivos bloqueados pela politica de escrita remota
+
+A ponte com este computador nao permite gravar Makefile, .pre-commit-config.yaml
+nem nada dentro de .github/workflows/. Os tres estao aqui com extensao .txt.
+Mova/renomeie manualmente na raiz do repo:
+
+  _setup\\Makefile.txt                  ->  Makefile
+  _setup\\pre-commit-config.yaml.txt    ->  .pre-commit-config.yaml
+  _setup\\build.workflow.yml.txt        ->  .github\\workflows\\build.yml
+
+ATENCAO: o Makefile usa TAB na indentacao das receitas. Se o editor converter
+para espacos, o make quebra. Confira depois de mover.
+
+Depois disso pode apagar a pasta _setup.

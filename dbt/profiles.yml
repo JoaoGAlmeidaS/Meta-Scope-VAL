@@ -1,0 +1,18 @@
+# DuckDB como engine, nao como banco: o arquivo e descartavel e some no `make clean`.
+metascope_val:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "metascope.duckdb"
+      threads: 4
+      extensions:
+        - httpfs
+        - parquet
+    ci:
+      type: duckdb
+      path: "metascope.duckdb"
+      threads: 4
+      extensions:
+        - httpfs
+        - parquet

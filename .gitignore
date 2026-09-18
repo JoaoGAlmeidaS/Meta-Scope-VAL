@@ -1,0 +1,33 @@
+# python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# uv
+uv.lock.bak
+
+# dados e artefatos de build
+data/
+*.duckdb
+*.duckdb.wal
+.cache/
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+dist/
+!dist/.gitkeep
+
+# dagster
+.dagster/
+tmp*/
+
+# notebooks: outputs SAO commitados (decisao de projeto), checkpoints nao
+.ipynb_checkpoints/
+
+# ambiente
+.env
+.DS_Store

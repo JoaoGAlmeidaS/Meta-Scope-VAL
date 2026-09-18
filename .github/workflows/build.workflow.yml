@@ -1,0 +1,67 @@
+name: build
+
+on:
+  workflow_dispatch:
+  # D29: ligar o schedule semanal quando o pipeline estabilizar.
+  # schedule:
+  #   - cron: "0 6 * * 1"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Ambiente
+        run: uv sync --frozen
+
+      - name: Lint e testes
+        run: |
+          uv run ruff check .
+          uv run pytest
+
+      # Carga incremental apenas. O backfill historico roda local:
+      # os IPs do Actions sao tratados com mais rigor pelo Cloudflare.
+      - name: Carga incremental
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: uv run python -m ingestion.collectors --incremental
+        continue-on-error: true
+
+      - name: Warehouse
+        run: |
+          cd dbt
+          uv run dbt build
+          uv run dbt docs generate
+
+      - name: Gerar o site
+        run: uv run python -m pipeline.build_site
+
+      - name: Upload do artefato
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

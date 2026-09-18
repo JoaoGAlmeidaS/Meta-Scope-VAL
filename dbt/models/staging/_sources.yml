@@ -1,0 +1,24 @@
+version: 2
+
+# Os sources apontam direto para os Parquet do lake — sem etapa de carga.
+# `lake_path` vem de uma var do dbt_project/CLI: local no dev, remoto no CI.
+sources:
+  - name: lake
+    description: "Parquet gerado por ingestion/, particionado por split."
+    meta:
+      external_location: "read_parquet('{{ var('lake_path', '../data/lake') }}/{name}/**/*.parquet', hive_partitioning=true)"
+    tables:
+      - name: matches
+        description: "Uma linha por partida (série)."
+      - name: maps
+        description: "Uma linha por mapa jogado."
+      - name: rounds
+        description: "Uma linha por round."
+      - name: player_map_stats
+        description: "Uma linha por jogador-mapa, com o agente."
+      - name: vetoes
+        description: "Ordem do veto: ban/pick/decider."
+      - name: teams
+      - name: players
+      - name: events
+      - name: patches

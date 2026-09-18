@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_matches
+    description: "Partidas com tipagem e nomenclatura padronizadas."
+    columns:
+      - name: match_id
+        tests: [unique, not_null]
+      - name: match_datetime
+        tests: [not_null]

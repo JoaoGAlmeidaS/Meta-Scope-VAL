@@ -1,0 +1,42 @@
+:root {
+  /* D23 — design system: tokens extraidos do CSS existente.
+     Densidade: site de dados de esports pede tabela compacta, nao cartao espacado. */
+
+  /* paleta (placeholder — substituir no D23) */
+  --bg: #0e0f13;
+  --surface: #16181f;
+  --border: #262a35;
+  --text: #e6e8ee;
+  --text-muted: #9aa1b1;
+  --accent: #ff4655;
+
+  /* tipografia */
+  --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", monospace;
+  --step--1: 0.8125rem;
+  --step-0: 0.9375rem;
+  --step-1: 1.25rem;
+  --step-2: 1.75rem;
+  --step-3: 2.5rem;
+
+  /* espacamento */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  /* densidade de tabela */
+  --row-height: 2rem;
+  --radius: 4px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: var(--step-0)/1.5 var(--font-sans);
+}
