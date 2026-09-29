@@ -1,0 +1,2741 @@
+{
+  "status": "OK",
+  "data": {
+    "id": "130691",
+    "url": "https://www.vlr.gg/130691",
+    "event": {
+      "id": "1015",
+      "url": "https://www.vlr.gg/event/1015/valorant-champions-2022/playoffs",
+      "name": "Valorant Champions 2022",
+      "series": "Playoffs: Lower Final",
+      "img": "https://owcdn.net/img/63067806d167d.png"
+    },
+    "status": "final",
+    "in": null,
+    "format": "Bo5",
+    "date": "September 17, 2022",
+    "time": "10:00 AM EDT",
+    "timestamp": 1663423200,
+    "utcDate": "Sat, 17 Sep 2022 14:00:00 GMT",
+    "teams": [
+      {
+        "id": "8127",
+        "url": "https://www.vlr.gg/team/8127/optic-gaming",
+        "name": "OpTic Gaming",
+        "img": "https://owcdn.net/img/62058299eef09.png",
+        "score": 3
+      },
+      {
+        "id": "8185",
+        "url": "https://www.vlr.gg/team/8185/kiwoom-drx",
+        "name": "KIWOOM DRX",
+        "img": "https://owcdn.net/img/6a353ee73ab25.png",
+        "score": 2
+      }
+    ],
+    "streams": [
+      {
+        "name": "Valorant",
+        "link": "https://www.twitch.tv/valorant"
+      },
+      {
+        "name": "Valorant TR",
+        "link": "https://www.twitch.tv/valorant_tur"
+      },
+      {
+        "name": "Valorant League DACH",
+        "link": "https://www.twitch.tv/valorantleague_dach"
+      },
+      {
+        "name": "Valorant Russia",
+        "link": "https://www.twitch.tv/ru_valorant"
+      },
+      {
+        "name": "Valorant Japan",
+        "link": "https://www.twitch.tv/valorant_jpn"
+      },
+      {
+        "name": "Valorant Brazil",
+        "link": "https://www.twitch.tv/valorant_br"
+      },
+      {
+        "name": "Valorant LATAM",
+        "link": "https://www.twitch.tv/valorant_la"
+      },
+      {
+        "name": "Valorant Korea",
+        "link": "https://www.twitch.tv/valorant_kr"
+      },
+      {
+        "name": "Valorant League FR",
+        "link": "https://www.twitch.tv/valleague_fr"
+      },
+      {
+        "name": "Leet Esport",
+        "link": "https://www.twitch.tv/leetesport"
+      },
+      {
+        "name": "Polsatgames",
+        "link": "https://www.twitch.tv/polsatgames"
+      },
+      {
+        "name": "LVP2",
+        "link": "https://www.twitch.tv/lvpes2"
+      },
+      {
+        "name": "... More Streams (3)",
+        "link": null
+      },
+      {
+        "name": "Agent's Range IT",
+        "link": "https://www.twitch.tv/agentsrange_it"
+      },
+      {
+        "name": "Pelaajatcom",
+        "link": "https://www.twitch.tv/pelaajatcom"
+      }
+    ],
+    "vods": [],
+    "picksBans": {
+      "note": "OPTC ban Icebox; KRX ban Pearl; OPTC pick Bind; KRX pick Breeze; OPTC pick Fracture; KRX pick Ascent; Haven remains",
+      "list": [
+        {
+          "team": "OPTC",
+          "action": "ban",
+          "map": "Icebox"
+        },
+        {
+          "team": "KRX",
+          "action": "ban",
+          "map": "Pearl"
+        },
+        {
+          "team": "OPTC",
+          "action": "pick",
+          "map": "Bind"
+        },
+        {
+          "team": "KRX",
+          "action": "pick",
+          "map": "Breeze"
+        },
+        {
+          "team": "OPTC",
+          "action": "pick",
+          "map": "Fracture"
+        },
+        {
+          "team": "KRX",
+          "action": "pick",
+          "map": "Ascent"
+        },
+        {
+          "team": null,
+          "action": "remains",
+          "map": "Haven"
+        }
+      ]
+    },
+    "maps": [
+      {
+        "id": "95151",
+        "name": "Bind",
+        "status": "played",
+        "pickedBy": "OpTic Gaming",
+        "duration": "1:04:58",
+        "teams": [
+          {
+            "name": "OpTic Gaming",
+            "score": 13,
+            "roundsCt": 6,
+            "roundsT": 7
+          },
+          {
+            "name": "KIWOOM DRX",
+            "score": 8,
+            "roundsCt": 5,
+            "roundsT": 3
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 3,
+            "score": "1-2",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "2-2",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 5,
+            "score": "3-2",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "4-2",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 7,
+            "score": "5-2",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 8,
+            "score": "6-2",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "7-2",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "7-3",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "7-4",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 12,
+            "score": "7-5",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "7-6",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "7-7",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "8-7",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "8-8",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 17,
+            "score": "9-8",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "10-8",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 19,
+            "score": "11-8",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 20,
+            "score": "12-8",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "time",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/time.webp"
+          },
+          {
+            "number": 21,
+            "score": "13-8",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "261",
+            "url": "https://www.vlr.gg/player/261/victor",
+            "name": "Victor",
+            "teamTag": "OPTC",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Raze",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.22,
+              "acs": 275,
+              "kills": 20,
+              "deaths": 13,
+              "assists": 4,
+              "kast": 86,
+              "adr": 172,
+              "hs": 21,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "817",
+            "url": "https://www.vlr.gg/player/817/finesse",
+            "name": "FiNESSE",
+            "teamTag": "OPTC",
+            "country": "Canada",
+            "flag": "ca",
+            "agents": [
+              {
+                "name": "Viper",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.18,
+              "acs": 246,
+              "kills": 17,
+              "deaths": 14,
+              "assists": 7,
+              "kast": 81,
+              "adr": 171,
+              "hs": 31,
+              "firstBloods": 1,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "881",
+            "url": "https://www.vlr.gg/player/881/yay",
+            "name": "yay",
+            "teamTag": "OPTC",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Chamber",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.13,
+              "acs": 220,
+              "kills": 16,
+              "deaths": 14,
+              "assists": 3,
+              "kast": 71,
+              "adr": 155,
+              "hs": 30,
+              "firstBloods": 4,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "4",
+            "url": "https://www.vlr.gg/player/4/crashies",
+            "name": "crashies",
+            "teamTag": "OPTC",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Skye",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.86,
+              "acs": 124,
+              "kills": 10,
+              "deaths": 11,
+              "assists": 2,
+              "kast": 57,
+              "adr": 91,
+              "hs": 21,
+              "firstBloods": 1,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "263",
+            "url": "https://www.vlr.gg/player/263/marved",
+            "name": "Marved",
+            "teamTag": "OPTC",
+            "country": "Canada",
+            "flag": "ca",
+            "agents": [
+              {
+                "name": "Brimstone",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.75,
+              "acs": 130,
+              "kills": 10,
+              "deaths": 13,
+              "assists": 6,
+              "kast": 71,
+              "adr": 90,
+              "hs": 29,
+              "firstBloods": 1,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "4462",
+            "url": "https://www.vlr.gg/player/4462/mako",
+            "name": "MaKo",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Viper",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.18,
+              "acs": 214,
+              "kills": 16,
+              "deaths": 13,
+              "assists": 7,
+              "kast": 76,
+              "adr": 127,
+              "hs": 20,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "804",
+            "url": "https://www.vlr.gg/player/804/buzz",
+            "name": "BuZz",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Raze",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.05,
+              "acs": 224,
+              "kills": 14,
+              "deaths": 17,
+              "assists": 9,
+              "kast": 86,
+              "adr": 151,
+              "hs": 21,
+              "firstBloods": 4,
+              "firstDeaths": 4
+            }
+          },
+          {
+            "id": "485",
+            "url": "https://www.vlr.gg/player/485/stax",
+            "name": "stax",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Skye",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.96,
+              "acs": 155,
+              "kills": 13,
+              "deaths": 13,
+              "assists": 4,
+              "kast": 71,
+              "adr": 99,
+              "hs": 30,
+              "firstBloods": 1,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "488",
+            "url": "https://www.vlr.gg/player/488/rb",
+            "name": "Rb",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Astra",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.91,
+              "acs": 150,
+              "kills": 11,
+              "deaths": 13,
+              "assists": 4,
+              "kast": 57,
+              "adr": 98,
+              "hs": 18,
+              "firstBloods": 0,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "772",
+            "url": "https://www.vlr.gg/player/772/zest",
+            "name": "Zest",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.74,
+              "acs": 151,
+              "kills": 11,
+              "deaths": 17,
+              "assists": 6,
+              "kast": 86,
+              "adr": 101,
+              "hs": 28,
+              "firstBloods": 3,
+              "firstDeaths": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "95152",
+        "name": "Breeze",
+        "status": "played",
+        "pickedBy": "KIWOOM DRX",
+        "duration": "41:09",
+        "teams": [
+          {
+            "name": "OpTic Gaming",
+            "score": 13,
+            "roundsCt": 8,
+            "roundsT": 5
+          },
+          {
+            "name": "KIWOOM DRX",
+            "score": 5,
+            "roundsCt": 1,
+            "roundsT": 4
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "1-0",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "2-0",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 3,
+            "score": "3-0",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "4-0",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 5,
+            "score": "4-1",
+            "winner": "KRX",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 6,
+            "score": "4-2",
+            "winner": "KRX",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 7,
+            "score": "4-3",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 8,
+            "score": "5-3",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "6-3",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "7-3",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "8-3",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 12,
+            "score": "8-4",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "9-4",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "10-4",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 15,
+            "score": "11-4",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "12-4",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 17,
+            "score": "12-5",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 18,
+            "score": "13-5",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "881",
+            "url": "https://www.vlr.gg/player/881/yay",
+            "name": "yay",
+            "teamTag": "OPTC",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Chamber",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.71,
+              "acs": 282,
+              "kills": 19,
+              "deaths": 5,
+              "assists": 0,
+              "kast": 94,
+              "adr": 171,
+              "hs": 21,
+              "firstBloods": 5,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "4",
+            "url": "https://www.vlr.gg/player/4/crashies",
+            "name": "crashies",
+            "teamTag": "OPTC",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.58,
+              "acs": 267,
+              "kills": 19,
+              "deaths": 7,
+              "assists": 7,
+              "kast": 83,
+              "adr": 169,
+              "hs": 35,
+              "firstBloods": 2,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "261",
+            "url": "https://www.vlr.gg/player/261/victor",
+            "name": "Victor",
+            "teamTag": "OPTC",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.3,
+              "acs": 190,
+              "kills": 12,
+              "deaths": 6,
+              "assists": 3,
+              "kast": 78,
+              "adr": 112,
+              "hs": 30,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "817",
+            "url": "https://www.vlr.gg/player/817/finesse",
+            "name": "FiNESSE",
+            "teamTag": "OPTC",
+            "country": "Canada",
+            "flag": "ca",
+            "agents": [
+              {
+                "name": "Viper",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.29,
+              "acs": 197,
+              "kills": 11,
+              "deaths": 7,
+              "assists": 12,
+              "kast": 83,
+              "adr": 128,
+              "hs": 22,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "263",
+            "url": "https://www.vlr.gg/player/263/marved",
+            "name": "Marved",
+            "teamTag": "OPTC",
+            "country": "Canada",
+            "flag": "ca",
+            "agents": [
+              {
+                "name": "Kayo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.05,
+              "acs": 176,
+              "kills": 10,
+              "deaths": 8,
+              "assists": 12,
+              "kast": 72,
+              "adr": 113,
+              "hs": 26,
+              "firstBloods": 2,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "804",
+            "url": "https://www.vlr.gg/player/804/buzz",
+            "name": "BuZz",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.82,
+              "acs": 204,
+              "kills": 12,
+              "deaths": 15,
+              "assists": 0,
+              "kast": 61,
+              "adr": 136,
+              "hs": 36,
+              "firstBloods": 3,
+              "firstDeaths": 5
+            }
+          },
+          {
+            "id": "4462",
+            "url": "https://www.vlr.gg/player/4462/mako",
+            "name": "MaKo",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Viper",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.74,
+              "acs": 137,
+              "kills": 6,
+              "deaths": 15,
+              "assists": 7,
+              "kast": 67,
+              "adr": 95,
+              "hs": 25,
+              "firstBloods": 2,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "772",
+            "url": "https://www.vlr.gg/player/772/zest",
+            "name": "Zest",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.6,
+              "acs": 106,
+              "kills": 6,
+              "deaths": 14,
+              "assists": 3,
+              "kast": 56,
+              "adr": 62,
+              "hs": 8,
+              "firstBloods": 0,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "488",
+            "url": "https://www.vlr.gg/player/488/rb",
+            "name": "Rb",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Chamber",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.53,
+              "acs": 115,
+              "kills": 7,
+              "deaths": 14,
+              "assists": 0,
+              "kast": 39,
+              "adr": 78,
+              "hs": 39,
+              "firstBloods": 0,
+              "firstDeaths": 4
+            }
+          },
+          {
+            "id": "485",
+            "url": "https://www.vlr.gg/player/485/stax",
+            "name": "stax",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Skye",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.26,
+              "acs": 49,
+              "kills": 2,
+              "deaths": 13,
+              "assists": 3,
+              "kast": 28,
+              "adr": 35,
+              "hs": 20,
+              "firstBloods": 0,
+              "firstDeaths": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "95153",
+        "name": "Fracture",
+        "status": "played",
+        "pickedBy": "OpTic Gaming",
+        "duration": "48:14",
+        "teams": [
+          {
+            "name": "OpTic Gaming",
+            "score": 8,
+            "roundsCt": 5,
+            "roundsT": 3
+          },
+          {
+            "name": "KIWOOM DRX",
+            "score": 13,
+            "roundsCt": 6,
+            "roundsT": 7
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "KRX",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 2,
+            "score": "1-1",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 3,
+            "score": "2-1",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "2-2",
+            "winner": "KRX",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 5,
+            "score": "3-2",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 6,
+            "score": "4-2",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 7,
+            "score": "4-3",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 8,
+            "score": "4-4",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "4-5",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "4-6",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "4-7",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "5-7",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 13,
+            "score": "6-7",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "7-7",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "7-8",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "7-9",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "time",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/time.webp"
+          },
+          {
+            "number": 17,
+            "score": "7-10",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "7-11",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 19,
+            "score": "7-12",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 20,
+            "score": "8-12",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 21,
+            "score": "8-13",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "4",
+            "url": "https://www.vlr.gg/player/4/crashies",
+            "name": "crashies",
+            "teamTag": "OPTC",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Kayo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.14,
+              "acs": 258,
+              "kills": 18,
+              "deaths": 17,
+              "assists": 9,
+              "kast": 81,
+              "adr": 163,
+              "hs": 24,
+              "firstBloods": 5,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "817",
+            "url": "https://www.vlr.gg/player/817/finesse",
+            "name": "FiNESSE",
+            "teamTag": "OPTC",
+            "country": "Canada",
+            "flag": "ca",
+            "agents": [
+              {
+                "name": "Breach",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.97,
+              "acs": 190,
+              "kills": 15,
+              "deaths": 17,
+              "assists": 10,
+              "kast": 71,
+              "adr": 130,
+              "hs": 25,
+              "firstBloods": 0,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "263",
+            "url": "https://www.vlr.gg/player/263/marved",
+            "name": "Marved",
+            "teamTag": "OPTC",
+            "country": "Canada",
+            "flag": "ca",
+            "agents": [
+              {
+                "name": "Brimstone",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.95,
+              "acs": 190,
+              "kills": 14,
+              "deaths": 15,
+              "assists": 10,
+              "kast": 76,
+              "adr": 117,
+              "hs": 20,
+              "firstBloods": 2,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "881",
+            "url": "https://www.vlr.gg/player/881/yay",
+            "name": "yay",
+            "teamTag": "OPTC",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Chamber",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.88,
+              "acs": 220,
+              "kills": 17,
+              "deaths": 15,
+              "assists": 1,
+              "kast": 62,
+              "adr": 137,
+              "hs": 26,
+              "firstBloods": 2,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "261",
+            "url": "https://www.vlr.gg/player/261/victor",
+            "name": "Victor",
+            "teamTag": "OPTC",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.51,
+              "acs": 111,
+              "kills": 7,
+              "deaths": 17,
+              "assists": 5,
+              "kast": 76,
+              "adr": 74,
+              "hs": 23,
+              "firstBloods": 2,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "4462",
+            "url": "https://www.vlr.gg/player/4462/mako",
+            "name": "MaKo",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Brimstone",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.86,
+              "acs": 373,
+              "kills": 27,
+              "deaths": 13,
+              "assists": 9,
+              "kast": 90,
+              "adr": 246,
+              "hs": 33,
+              "firstBloods": 1,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "804",
+            "url": "https://www.vlr.gg/player/804/buzz",
+            "name": "BuZz",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Chamber",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.02,
+              "acs": 212,
+              "kills": 14,
+              "deaths": 14,
+              "assists": 4,
+              "kast": 57,
+              "adr": 147,
+              "hs": 28,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "772",
+            "url": "https://www.vlr.gg/player/772/zest",
+            "name": "Zest",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.02,
+              "acs": 176,
+              "kills": 13,
+              "deaths": 13,
+              "assists": 6,
+              "kast": 81,
+              "adr": 119,
+              "hs": 31,
+              "firstBloods": 2,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "485",
+            "url": "https://www.vlr.gg/player/485/stax",
+            "name": "stax",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Breach",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.82,
+              "acs": 134,
+              "kills": 12,
+              "deaths": 15,
+              "assists": 4,
+              "kast": 62,
+              "adr": 110,
+              "hs": 34,
+              "firstBloods": 0,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "488",
+            "url": "https://www.vlr.gg/player/488/rb",
+            "name": "Rb",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.71,
+              "acs": 199,
+              "kills": 15,
+              "deaths": 16,
+              "assists": 3,
+              "kast": 67,
+              "adr": 129,
+              "hs": 16,
+              "firstBloods": 4,
+              "firstDeaths": 7
+            }
+          }
+        ]
+      },
+      {
+        "id": "95154",
+        "name": "Ascent",
+        "status": "played",
+        "pickedBy": "KIWOOM DRX",
+        "duration": "50:22",
+        "teams": [
+          {
+            "name": "OpTic Gaming",
+            "score": 6,
+            "roundsCt": 3,
+            "roundsT": 3
+          },
+          {
+            "name": "KIWOOM DRX",
+            "score": 13,
+            "roundsCt": 4,
+            "roundsT": 9
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "0-3",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "0-4",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 5,
+            "score": "1-4",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "time",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/time.webp"
+          },
+          {
+            "number": 6,
+            "score": "1-5",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 7,
+            "score": "2-5",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 8,
+            "score": "2-6",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "2-7",
+            "winner": "KRX",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 10,
+            "score": "2-8",
+            "winner": "KRX",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 11,
+            "score": "3-8",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "3-9",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "3-10",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "4-10",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 15,
+            "score": "5-10",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 16,
+            "score": "5-11",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 17,
+            "score": "6-11",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "6-12",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 19,
+            "score": "6-13",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "881",
+            "url": "https://www.vlr.gg/player/881/yay",
+            "name": "yay",
+            "teamTag": "OPTC",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.09,
+              "acs": 245,
+              "kills": 16,
+              "deaths": 14,
+              "assists": 1,
+              "kast": 58,
+              "adr": 148,
+              "hs": 41,
+              "firstBloods": 6,
+              "firstDeaths": 5
+            }
+          },
+          {
+            "id": "261",
+            "url": "https://www.vlr.gg/player/261/victor",
+            "name": "Victor",
+            "teamTag": "OPTC",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Kayo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.02,
+              "acs": 211,
+              "kills": 11,
+              "deaths": 13,
+              "assists": 11,
+              "kast": 74,
+              "adr": 145,
+              "hs": 29,
+              "firstBloods": 0,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "263",
+            "url": "https://www.vlr.gg/player/263/marved",
+            "name": "Marved",
+            "teamTag": "OPTC",
+            "country": "Canada",
+            "flag": "ca",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.95,
+              "acs": 192,
+              "kills": 13,
+              "deaths": 17,
+              "assists": 6,
+              "kast": 79,
+              "adr": 121,
+              "hs": 29,
+              "firstBloods": 2,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "4",
+            "url": "https://www.vlr.gg/player/4/crashies",
+            "name": "crashies",
+            "teamTag": "OPTC",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.56,
+              "acs": 108,
+              "kills": 6,
+              "deaths": 14,
+              "assists": 4,
+              "kast": 58,
+              "adr": 83,
+              "hs": 19,
+              "firstBloods": 0,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "817",
+            "url": "https://www.vlr.gg/player/817/finesse",
+            "name": "FiNESSE",
+            "teamTag": "OPTC",
+            "country": "Canada",
+            "flag": "ca",
+            "agents": [
+              {
+                "name": "Killjoy",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.36,
+              "acs": 105,
+              "kills": 6,
+              "deaths": 16,
+              "assists": 3,
+              "kast": 53,
+              "adr": 87,
+              "hs": 19,
+              "firstBloods": 0,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "804",
+            "url": "https://www.vlr.gg/player/804/buzz",
+            "name": "BuZz",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.78,
+              "acs": 386,
+              "kills": 26,
+              "deaths": 12,
+              "assists": 4,
+              "kast": 79,
+              "adr": 247,
+              "hs": 32,
+              "firstBloods": 7,
+              "firstDeaths": 4
+            }
+          },
+          {
+            "id": "4462",
+            "url": "https://www.vlr.gg/player/4462/mako",
+            "name": "MaKo",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Astra",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.32,
+              "acs": 188,
+              "kills": 13,
+              "deaths": 8,
+              "assists": 13,
+              "kast": 95,
+              "adr": 139,
+              "hs": 29,
+              "firstBloods": 0,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "485",
+            "url": "https://www.vlr.gg/player/485/stax",
+            "name": "stax",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.3,
+              "acs": 186,
+              "kills": 13,
+              "deaths": 9,
+              "assists": 6,
+              "kast": 95,
+              "adr": 114,
+              "hs": 32,
+              "firstBloods": 1,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "772",
+            "url": "https://www.vlr.gg/player/772/zest",
+            "name": "Zest",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.24,
+              "acs": 201,
+              "kills": 13,
+              "deaths": 8,
+              "assists": 5,
+              "kast": 74,
+              "adr": 142,
+              "hs": 37,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "488",
+            "url": "https://www.vlr.gg/player/488/rb",
+            "name": "Rb",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Kayo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.62,
+              "acs": 137,
+              "kills": 9,
+              "deaths": 15,
+              "assists": 10,
+              "kast": 79,
+              "adr": 89,
+              "hs": 25,
+              "firstBloods": 2,
+              "firstDeaths": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": "95155",
+        "name": "Haven",
+        "status": "played",
+        "pickedBy": null,
+        "duration": "51:53",
+        "teams": [
+          {
+            "name": "OpTic Gaming",
+            "score": 13,
+            "roundsCt": 8,
+            "roundsT": 5
+          },
+          {
+            "name": "KIWOOM DRX",
+            "score": 10,
+            "roundsCt": 6,
+            "roundsT": 4
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "1-0",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "2-0",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "3-0",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "3-1",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 5,
+            "score": "3-2",
+            "winner": "KRX",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "3-3",
+            "winner": "KRX",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 7,
+            "score": "3-4",
+            "winner": "KRX",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 8,
+            "score": "4-4",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "5-4",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "6-4",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "7-4",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "8-4",
+            "winner": "OPTC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "8-5",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 14,
+            "score": "9-5",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "10-5",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "10-6",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 17,
+            "score": "10-7",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "11-7",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 19,
+            "score": "11-8",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 20,
+            "score": "11-9",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 21,
+            "score": "11-10",
+            "winner": "KRX",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 22,
+            "score": "12-10",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 23,
+            "score": "13-10",
+            "winner": "OPTC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "263",
+            "url": "https://www.vlr.gg/player/263/marved",
+            "name": "Marved",
+            "teamTag": "OPTC",
+            "country": "Canada",
+            "flag": "ca",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.57,
+              "acs": 249,
+              "kills": 22,
+              "deaths": 13,
+              "assists": 10,
+              "kast": 87,
+              "adr": 157,
+              "hs": 44,
+              "firstBloods": 1,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "881",
+            "url": "https://www.vlr.gg/player/881/yay",
+            "name": "yay",
+            "teamTag": "OPTC",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Chamber",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.38,
+              "acs": 258,
+              "kills": 23,
+              "deaths": 12,
+              "assists": 2,
+              "kast": 70,
+              "adr": 171,
+              "hs": 24,
+              "firstBloods": 4,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "261",
+            "url": "https://www.vlr.gg/player/261/victor",
+            "name": "Victor",
+            "teamTag": "OPTC",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Phoenix",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.34,
+              "acs": 265,
+              "kills": 20,
+              "deaths": 14,
+              "assists": 6,
+              "kast": 87,
+              "adr": 182,
+              "hs": 30,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "817",
+            "url": "https://www.vlr.gg/player/817/finesse",
+            "name": "FiNESSE",
+            "teamTag": "OPTC",
+            "country": "Canada",
+            "flag": "ca",
+            "agents": [
+              {
+                "name": "Killjoy",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.15,
+              "acs": 208,
+              "kills": 15,
+              "deaths": 12,
+              "assists": 7,
+              "kast": 74,
+              "adr": 129,
+              "hs": 22,
+              "firstBloods": 1,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "4",
+            "url": "https://www.vlr.gg/player/4/crashies",
+            "name": "crashies",
+            "teamTag": "OPTC",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.56,
+              "acs": 127,
+              "kills": 9,
+              "deaths": 17,
+              "assists": 13,
+              "kast": 87,
+              "adr": 73,
+              "hs": 18,
+              "firstBloods": 3,
+              "firstDeaths": 7
+            }
+          },
+          {
+            "id": "488",
+            "url": "https://www.vlr.gg/player/488/rb",
+            "name": "Rb",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Killjoy",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.15,
+              "acs": 216,
+              "kills": 16,
+              "deaths": 16,
+              "assists": 3,
+              "kast": 57,
+              "adr": 154,
+              "hs": 26,
+              "firstBloods": 0,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "485",
+            "url": "https://www.vlr.gg/player/485/stax",
+            "name": "stax",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Breach",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.8,
+              "acs": 152,
+              "kills": 13,
+              "deaths": 17,
+              "assists": 4,
+              "kast": 65,
+              "adr": 116,
+              "hs": 43,
+              "firstBloods": 1,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "4462",
+            "url": "https://www.vlr.gg/player/4462/mako",
+            "name": "MaKo",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.8,
+              "acs": 148,
+              "kills": 12,
+              "deaths": 17,
+              "assists": 7,
+              "kast": 65,
+              "adr": 106,
+              "hs": 26,
+              "firstBloods": 2,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "804",
+            "url": "https://www.vlr.gg/player/804/buzz",
+            "name": "BuZz",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.65,
+              "acs": 159,
+              "kills": 12,
+              "deaths": 19,
+              "assists": 1,
+              "kast": 52,
+              "adr": 100,
+              "hs": 26,
+              "firstBloods": 7,
+              "firstDeaths": 5
+            }
+          },
+          {
+            "id": "772",
+            "url": "https://www.vlr.gg/player/772/zest",
+            "name": "Zest",
+            "teamTag": "KRX",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.63,
+              "acs": 191,
+              "kills": 15,
+              "deaths": 20,
+              "assists": 3,
+              "kast": 70,
+              "adr": 128,
+              "hs": 36,
+              "firstBloods": 1,
+              "firstDeaths": 4
+            }
+          }
+        ]
+      }
+    ],
+    "players": [
+      {
+        "id": "881",
+        "url": "https://www.vlr.gg/player/881/yay",
+        "name": "yay",
+        "teamTag": "OPTC",
+        "country": "United States",
+        "flag": "us",
+        "agents": [
+          {
+            "name": "Chamber",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+          },
+          {
+            "name": "Jett",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.23,
+          "acs": 244,
+          "kills": 91,
+          "deaths": 60,
+          "assists": 7,
+          "kast": 71,
+          "adr": 157,
+          "hs": 28,
+          "firstBloods": 21,
+          "firstDeaths": 10
+        }
+      },
+      {
+        "id": "261",
+        "url": "https://www.vlr.gg/player/261/victor",
+        "name": "Victor",
+        "teamTag": "OPTC",
+        "country": "United States",
+        "flag": "us",
+        "agents": [
+          {
+            "name": "Raze",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+          },
+          {
+            "name": "Jett",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+          },
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          },
+          {
+            "name": "Kayo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+          },
+          {
+            "name": "Phoenix",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.08,
+          "acs": 212,
+          "kills": 70,
+          "deaths": 63,
+          "assists": 29,
+          "kast": 80,
+          "adr": 138,
+          "hs": 26,
+          "firstBloods": 11,
+          "firstDeaths": 8
+        }
+      },
+      {
+        "id": "263",
+        "url": "https://www.vlr.gg/player/263/marved",
+        "name": "Marved",
+        "teamTag": "OPTC",
+        "country": "Canada",
+        "flag": "ca",
+        "agents": [
+          {
+            "name": "Brimstone",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png"
+          },
+          {
+            "name": "Kayo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+          },
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.07,
+          "acs": 189,
+          "kills": 69,
+          "deaths": 66,
+          "assists": 44,
+          "kast": 77,
+          "adr": 121,
+          "hs": 30,
+          "firstBloods": 8,
+          "firstDeaths": 5
+        }
+      },
+      {
+        "id": "817",
+        "url": "https://www.vlr.gg/player/817/finesse",
+        "name": "FiNESSE",
+        "teamTag": "OPTC",
+        "country": "Canada",
+        "flag": "ca",
+        "agents": [
+          {
+            "name": "Viper",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+          },
+          {
+            "name": "Breach",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+          },
+          {
+            "name": "Killjoy",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+          }
+        ],
+        "stats": {
+          "rating": 1,
+          "acs": 191,
+          "kills": 64,
+          "deaths": 66,
+          "assists": 39,
+          "kast": 73,
+          "adr": 130,
+          "hs": 24,
+          "firstBloods": 3,
+          "firstDeaths": 11
+        }
+      },
+      {
+        "id": "4",
+        "url": "https://www.vlr.gg/player/4/crashies",
+        "name": "crashies",
+        "teamTag": "OPTC",
+        "country": "United States",
+        "flag": "us",
+        "agents": [
+          {
+            "name": "Skye",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png"
+          },
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          },
+          {
+            "name": "Kayo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+          },
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.92,
+          "acs": 175,
+          "kills": 62,
+          "deaths": 66,
+          "assists": 35,
+          "kast": 74,
+          "adr": 114,
+          "hs": 24,
+          "firstBloods": 11,
+          "firstDeaths": 14
+        }
+      },
+      {
+        "id": "4462",
+        "url": "https://www.vlr.gg/player/4462/mako",
+        "name": "MaKo",
+        "teamTag": "KRX",
+        "country": "South Korea",
+        "flag": "kr",
+        "agents": [
+          {
+            "name": "Viper",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+          },
+          {
+            "name": "Brimstone",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png"
+          },
+          {
+            "name": "Astra",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+          },
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.18,
+          "acs": 213,
+          "kills": 74,
+          "deaths": 66,
+          "assists": 43,
+          "kast": 78,
+          "adr": 143,
+          "hs": 28,
+          "firstBloods": 8,
+          "firstDeaths": 5
+        }
+      },
+      {
+        "id": "804",
+        "url": "https://www.vlr.gg/player/804/buzz",
+        "name": "BuZz",
+        "teamTag": "KRX",
+        "country": "South Korea",
+        "flag": "kr",
+        "agents": [
+          {
+            "name": "Raze",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+          },
+          {
+            "name": "Jett",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+          },
+          {
+            "name": "Chamber",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.05,
+          "acs": 234,
+          "kills": 78,
+          "deaths": 77,
+          "assists": 18,
+          "kast": 67,
+          "adr": 154,
+          "hs": 29,
+          "firstBloods": 24,
+          "firstDeaths": 19
+        }
+      },
+      {
+        "id": "772",
+        "url": "https://www.vlr.gg/player/772/zest",
+        "name": "Zest",
+        "teamTag": "KRX",
+        "country": "South Korea",
+        "flag": "kr",
+        "agents": [
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          },
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.84,
+          "acs": 167,
+          "kills": 58,
+          "deaths": 72,
+          "assists": 23,
+          "kast": 74,
+          "adr": 112,
+          "hs": 29,
+          "firstBloods": 7,
+          "firstDeaths": 9
+        }
+      },
+      {
+        "id": "485",
+        "url": "https://www.vlr.gg/player/485/stax",
+        "name": "stax",
+        "teamTag": "KRX",
+        "country": "South Korea",
+        "flag": "kr",
+        "agents": [
+          {
+            "name": "Skye",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png"
+          },
+          {
+            "name": "Breach",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+          },
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.83,
+          "acs": 137,
+          "kills": 53,
+          "deaths": 67,
+          "assists": 21,
+          "kast": 65,
+          "adr": 97,
+          "hs": 34,
+          "firstBloods": 3,
+          "firstDeaths": 5
+        }
+      },
+      {
+        "id": "488",
+        "url": "https://www.vlr.gg/player/488/rb",
+        "name": "Rb",
+        "teamTag": "KRX",
+        "country": "South Korea",
+        "flag": "kr",
+        "agents": [
+          {
+            "name": "Astra",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+          },
+          {
+            "name": "Chamber",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+          },
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          },
+          {
+            "name": "Kayo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+          },
+          {
+            "name": "Killjoy",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.8,
+          "acs": 166,
+          "kills": 58,
+          "deaths": 74,
+          "assists": 20,
+          "kast": 60,
+          "adr": 112,
+          "hs": 22,
+          "firstBloods": 6,
+          "firstDeaths": 16
+        }
+      }
+    ]
+  }
+}

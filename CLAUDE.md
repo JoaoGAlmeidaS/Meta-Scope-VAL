@@ -11,7 +11,7 @@ Projeto de portfólio. Prioridades: **engenharia de dados → produto → análi
 ```bash
 make build      # pipeline completo → dist/
 make serve      # python -m http.server -d dist
-make test       # pytest + dbt test
+make test       # pytest (dbt test fica em make dbt-test)
 make lint       # ruff + black
 uv sync         # dependências
 uv run dbt deps --project-dir dbt
@@ -28,7 +28,7 @@ JSONs pré-computados → site estático. Dagster define os assets, GitHub Actio
 
 ## Regras invioláveis
 
-Decisões fechadas e documentadas em `docs/projeto.md`. Não sugira reabrir sem motivo novo.
+Decisões fechadas e documentadas em `docs/projeto-valorant-data.md`. Não sugira reabrir sem motivo novo.
 
 - **Janela de análise: 12 meses.** Todo mart de análise filtra pela variável dbt
   `analysis_window_months`. Nunca hardcode a janela. Exceções: aquecimento do Elo e o mart de drift.
@@ -57,8 +57,11 @@ Decisões fechadas e documentadas em `docs/projeto.md`. Não sugira reabrir sem 
 ## Particularidades da API (detalhes em `docs/fontes.md`)
 
 - `rounds[].side` é o lado de **quem venceu** o round.
-- Time aparece como id, nome e tag. A ponte tag → id é posicional (`economy.teams[i]` ↔ `teams[i]`)
-  e precisa de teste. A chave é sempre o `id`.
+- `roundsCt` e `roundsT` contam só os rounds 1–24; `score` inclui o overtime.
+- Time aparece como id, nome e tag. A ponte tag → id é por placar (`ingestion/bridge.py`): funciona
+  sem abas, que é o caso do histórico. A posicional (`economy.teams[i]` ↔ `teams[i]`) só existe com
+  `tabs` e concorda com ela (testado). A chave é sempre o `id`.
+- Veto pode vir vazio (partida VCL 707490), e o mapa decisivo não jogado some de `maps[]`.
 - Multikills e clutches por mapa podem vir zerados; não use sem verificar.
 - Pistol (rounds 1 e 13) vem classificado como `eco` — exclua das análises de economia.
 - Kill matrix e `performance` identificam jogador por nome, sem id.
@@ -68,8 +71,10 @@ Decisões fechadas e documentadas em `docs/projeto.md`. Não sugira reabrir sem 
 ## Convenções
 
 - Python 3.12, `uv`, ruff + black via pre-commit. Ambiente em WSL Ubuntu.
-- dbt: `stg_*`, `dim_*` / `fct_*`, `mart_*`. Todo model novo com teste em `schema.yml`.
+- dbt: `stg_*`, `dim_*` / `fct_*`, `mart_*`. Todo model novo com teste no `_*_models.yml` da
+  pasta (`_stg_models.yml`, `_marts_models.yml`).
 - Nunca chame a API fora de `ingestion/client.py`, que concentra retry, rate limit, cache e User-Agent.
+- Toda resposta da API é validada por `ingestion/schemas.py` (contrato Pydantic) antes de gravar.
 - Mudança no formato da API deve quebrar um teste de fixture, nunca uma análise.
 - Commits prefixados com o dia: `D6: achata detalhe de partida em tabelas raw`.
 
@@ -87,6 +92,7 @@ Três linhas no `DEVLOG.md`: o que fiz / o que quebrou / decisão tomada.
 
 ## Contexto adicional
 
-- `docs/projeto.md` — decisões com justificativa e cronograma dos 30 dias. Leia antes de propor
-  mudança estrutural.
+- `docs/projeto-valorant-data.md` — decisões com justificativa e cronograma dos 30 dias. Leia antes
+  de propor mudança estrutural.
+- `docs/openAPI-doc.json` — especificação OpenAPI da vlresports, só como referência.
 - `docs/fontes.md` — auditoria da API, pegadinhas e casos testados. Leia antes de mexer em `ingestion/`.

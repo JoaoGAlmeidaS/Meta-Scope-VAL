@@ -1,10 +1,10 @@
 # MetaScope VAL
 
 Plataforma de análise estatística do cenário competitivo de VALORANT: pipeline de
-dados próprio (scraping do vlr.gg), warehouse com dbt, análises estatísticas e uma
+dados próprio (API vlresports, com dados do vlr.gg), warehouse com dbt, análises estatísticas e uma
 camada preditiva calibrada. Site estático, sem backend, publicado no GitHub Pages.
 
-> Status: **D1 — esqueleto**. Documento mestre do projeto: `docs/decisoes.md`.
+> Status: **D1 — esqueleto**. Documento mestre do projeto: `docs/projeto-valorant-data.md`.
 
 ---
 
@@ -34,22 +34,23 @@ seção no site.
 ## Arquitetura
 
 ```
-vlr.gg ──> ingestion/ ──> Parquet (lake) ──> dbt + DuckDB ──> marts
-                                                  │
-                                                  ├──> pipeline/features.py ──> train.py
-                                                  └──> pipeline/build_site.py ──> dist/
-                                                                                   │
-                                                              GitHub Actions ──> GitHub Pages
+API vlresports ──> ingestion/ ──> Parquet (lake) ──> dbt + DuckDB ──> marts
+                                                          │
+                                                          ├──> pipeline/features.py ──> train.py
+                                                          └──> pipeline/build_site.py ──> dist/
+                                                                                           │
+                                                                      GitHub Actions ──> GitHub Pages
 ```
 
-Decisões de arquitetura e trade-offs: **`docs/decisoes.md`**.
+Decisões de arquitetura e trade-offs: **`docs/projeto-valorant-data.md`**. Auditoria da API:
+**`docs/fontes.md`**.
 
 ## Stack
 
 | Camada | Escolha |
 |---|---|
 | Ambiente | Python 3.12 + `uv` + `make` |
-| Coleta | `httpx` + `tenacity` + parsers vendorizados |
+| Coleta | `httpx` + `tenacity` consumindo a API vlresports, contrato em Pydantic |
 | Lake | Parquet no Hugging Face Datasets (ou Cloudflare R2) |
 | Engine | DuckDB (arquivo efêmero) |
 | Transformação | dbt-core + `dbt-duckdb` |
@@ -76,20 +77,21 @@ Alvos disponíveis: `make help`.
 ## Estrutura
 
 ```
-ingestion/     coleta e parsing (vendor/ = código de terceiro, creditado)
+ingestion/     cliente da API, contrato Pydantic, coletores e testes sobre fixtures reais
 dbt/           staging + marts, o núcleo avaliável do projeto
 pipeline/      features, treino, geração do site
 dagster_defs/  assets particionados por split, checks
 notebooks/     análises em matplotlib, outputs commitados
 web/           templates Jinja2, CSS, JS
 dist/          gerado; é o que vai ao ar
-docs/          decisões de arquitetura
+docs/          decisões, auditoria da API e especificação OpenAPI
 ```
 
 ## Créditos
 
-Os parsers em `ingestion/vendor/` são de terceiros — autor, licença e escopo das
-modificações em `ingestion/vendor/README.md`.
+Dados do [vlr.gg](https://www.vlr.gg), obtidos pela API open source
+[vlresports](https://github.com/Orloxx23/vlresports), de Orloxx23, pela instância pública
+`https://vlr.orlandomm.net/api/v1`.
 
 ## Aviso
 

@@ -1,0 +1,1383 @@
+{
+  "status": "OK",
+  "size": 9,
+  "data": [
+    {
+      "map": "All",
+      "played": 150,
+      "atkWinRate": 51,
+      "defWinRate": 49,
+      "agents": [
+        {
+          "name": "omen",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png",
+          "pickRate": 73
+        },
+        {
+          "name": "neon",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png",
+          "pickRate": 72
+        },
+        {
+          "name": "sova",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png",
+          "pickRate": 60
+        },
+        {
+          "name": "phoenix",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png",
+          "pickRate": 42
+        },
+        {
+          "name": "viper",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png",
+          "pickRate": 38
+        },
+        {
+          "name": "cypher",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png",
+          "pickRate": 37
+        },
+        {
+          "name": "fade",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png",
+          "pickRate": 31
+        },
+        {
+          "name": "chamber",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png",
+          "pickRate": 31
+        },
+        {
+          "name": "harbor",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png",
+          "pickRate": 19
+        },
+        {
+          "name": "jett",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png",
+          "pickRate": 15
+        },
+        {
+          "name": "vyse",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png",
+          "pickRate": 12
+        },
+        {
+          "name": "kayo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png",
+          "pickRate": 12
+        },
+        {
+          "name": "raze",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png",
+          "pickRate": 11
+        },
+        {
+          "name": "astra",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png",
+          "pickRate": 11
+        },
+        {
+          "name": "skye",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png",
+          "pickRate": 9
+        },
+        {
+          "name": "waylay",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png",
+          "pickRate": 9
+        },
+        {
+          "name": "sage",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sage.png",
+          "pickRate": 8
+        },
+        {
+          "name": "yoru",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png",
+          "pickRate": 7
+        },
+        {
+          "name": "deadlock",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/deadlock.png",
+          "pickRate": 1
+        },
+        {
+          "name": "brimstone",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png",
+          "pickRate": 1
+        },
+        {
+          "name": "breach",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png",
+          "pickRate": 1
+        },
+        {
+          "name": "killjoy",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png",
+          "pickRate": 1
+        },
+        {
+          "name": "veto",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/veto.png",
+          "pickRate": 1
+        },
+        {
+          "name": "tejo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png",
+          "pickRate": 0
+        },
+        {
+          "name": "reyna",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/reyna.png",
+          "pickRate": 0
+        },
+        {
+          "name": "iso",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/iso.png",
+          "pickRate": 0
+        },
+        {
+          "name": "gekko",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png",
+          "pickRate": 0
+        },
+        {
+          "name": "clove",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/clove.png",
+          "pickRate": 0
+        },
+        {
+          "name": "miks",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/miks.png",
+          "pickRate": 0
+        }
+      ]
+    },
+    {
+      "map": "Sunset",
+      "played": 28,
+      "atkWinRate": 49,
+      "defWinRate": 51,
+      "agents": [
+        {
+          "name": "omen",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png",
+          "pickRate": 100
+        },
+        {
+          "name": "neon",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png",
+          "pickRate": 91
+        },
+        {
+          "name": "sova",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png",
+          "pickRate": 57
+        },
+        {
+          "name": "phoenix",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png",
+          "pickRate": 39
+        },
+        {
+          "name": "viper",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png",
+          "pickRate": 9
+        },
+        {
+          "name": "cypher",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png",
+          "pickRate": 54
+        },
+        {
+          "name": "fade",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png",
+          "pickRate": 34
+        },
+        {
+          "name": "chamber",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png",
+          "pickRate": 46
+        },
+        {
+          "name": "harbor",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png",
+          "pickRate": 0
+        },
+        {
+          "name": "jett",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png",
+          "pickRate": 0
+        },
+        {
+          "name": "vyse",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png",
+          "pickRate": 0
+        },
+        {
+          "name": "kayo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png",
+          "pickRate": 14
+        },
+        {
+          "name": "raze",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png",
+          "pickRate": 5
+        },
+        {
+          "name": "astra",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png",
+          "pickRate": 0
+        },
+        {
+          "name": "skye",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png",
+          "pickRate": 9
+        },
+        {
+          "name": "waylay",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png",
+          "pickRate": 5
+        },
+        {
+          "name": "sage",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sage.png",
+          "pickRate": 27
+        },
+        {
+          "name": "yoru",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png",
+          "pickRate": 4
+        },
+        {
+          "name": "deadlock",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/deadlock.png",
+          "pickRate": 5
+        },
+        {
+          "name": "brimstone",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png",
+          "pickRate": 0
+        },
+        {
+          "name": "breach",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png",
+          "pickRate": 0
+        },
+        {
+          "name": "killjoy",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png",
+          "pickRate": 0
+        },
+        {
+          "name": "veto",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/veto.png",
+          "pickRate": 0
+        },
+        {
+          "name": "tejo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png",
+          "pickRate": 0
+        },
+        {
+          "name": "reyna",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/reyna.png",
+          "pickRate": 0
+        },
+        {
+          "name": "iso",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/iso.png",
+          "pickRate": 0
+        },
+        {
+          "name": "gekko",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png",
+          "pickRate": 0
+        },
+        {
+          "name": "clove",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/clove.png",
+          "pickRate": 0
+        },
+        {
+          "name": "miks",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/miks.png",
+          "pickRate": 0
+        }
+      ]
+    },
+    {
+      "map": "Breeze",
+      "played": 26,
+      "atkWinRate": 56,
+      "defWinRate": 44,
+      "agents": [
+        {
+          "name": "omen",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png",
+          "pickRate": 12
+        },
+        {
+          "name": "neon",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png",
+          "pickRate": 67
+        },
+        {
+          "name": "sova",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png",
+          "pickRate": 100
+        },
+        {
+          "name": "phoenix",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png",
+          "pickRate": 40
+        },
+        {
+          "name": "viper",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png",
+          "pickRate": 63
+        },
+        {
+          "name": "cypher",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png",
+          "pickRate": 40
+        },
+        {
+          "name": "fade",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png",
+          "pickRate": 0
+        },
+        {
+          "name": "chamber",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png",
+          "pickRate": 17
+        },
+        {
+          "name": "harbor",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png",
+          "pickRate": 73
+        },
+        {
+          "name": "jett",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png",
+          "pickRate": 37
+        },
+        {
+          "name": "vyse",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png",
+          "pickRate": 2
+        },
+        {
+          "name": "kayo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png",
+          "pickRate": 23
+        },
+        {
+          "name": "raze",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png",
+          "pickRate": 0
+        },
+        {
+          "name": "astra",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png",
+          "pickRate": 19
+        },
+        {
+          "name": "skye",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png",
+          "pickRate": 0
+        },
+        {
+          "name": "waylay",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png",
+          "pickRate": 4
+        },
+        {
+          "name": "sage",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sage.png",
+          "pickRate": 0
+        },
+        {
+          "name": "yoru",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png",
+          "pickRate": 2
+        },
+        {
+          "name": "deadlock",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/deadlock.png",
+          "pickRate": 0
+        },
+        {
+          "name": "brimstone",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png",
+          "pickRate": 0
+        },
+        {
+          "name": "breach",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png",
+          "pickRate": 0
+        },
+        {
+          "name": "killjoy",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png",
+          "pickRate": 0
+        },
+        {
+          "name": "veto",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/veto.png",
+          "pickRate": 0
+        },
+        {
+          "name": "tejo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png",
+          "pickRate": 0
+        },
+        {
+          "name": "reyna",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/reyna.png",
+          "pickRate": 0
+        },
+        {
+          "name": "iso",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/iso.png",
+          "pickRate": 0
+        },
+        {
+          "name": "gekko",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png",
+          "pickRate": 0
+        },
+        {
+          "name": "clove",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/clove.png",
+          "pickRate": 0
+        },
+        {
+          "name": "miks",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/miks.png",
+          "pickRate": 0
+        }
+      ]
+    },
+    {
+      "map": "Haven",
+      "played": 23,
+      "atkWinRate": 56,
+      "defWinRate": 44,
+      "agents": [
+        {
+          "name": "omen",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png",
+          "pickRate": 74
+        },
+        {
+          "name": "neon",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png",
+          "pickRate": 89
+        },
+        {
+          "name": "sova",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png",
+          "pickRate": 91
+        },
+        {
+          "name": "phoenix",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png",
+          "pickRate": 78
+        },
+        {
+          "name": "viper",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png",
+          "pickRate": 7
+        },
+        {
+          "name": "cypher",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png",
+          "pickRate": 50
+        },
+        {
+          "name": "fade",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png",
+          "pickRate": 9
+        },
+        {
+          "name": "chamber",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png",
+          "pickRate": 43
+        },
+        {
+          "name": "harbor",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png",
+          "pickRate": 0
+        },
+        {
+          "name": "jett",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png",
+          "pickRate": 7
+        },
+        {
+          "name": "vyse",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png",
+          "pickRate": 4
+        },
+        {
+          "name": "kayo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png",
+          "pickRate": 0
+        },
+        {
+          "name": "raze",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png",
+          "pickRate": 0
+        },
+        {
+          "name": "astra",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png",
+          "pickRate": 26
+        },
+        {
+          "name": "skye",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png",
+          "pickRate": 0
+        },
+        {
+          "name": "waylay",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png",
+          "pickRate": 4
+        },
+        {
+          "name": "sage",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sage.png",
+          "pickRate": 2
+        },
+        {
+          "name": "yoru",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png",
+          "pickRate": 9
+        },
+        {
+          "name": "deadlock",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/deadlock.png",
+          "pickRate": 0
+        },
+        {
+          "name": "brimstone",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png",
+          "pickRate": 0
+        },
+        {
+          "name": "breach",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png",
+          "pickRate": 4
+        },
+        {
+          "name": "killjoy",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png",
+          "pickRate": 2
+        },
+        {
+          "name": "veto",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/veto.png",
+          "pickRate": 0
+        },
+        {
+          "name": "tejo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png",
+          "pickRate": 0
+        },
+        {
+          "name": "reyna",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/reyna.png",
+          "pickRate": 0
+        },
+        {
+          "name": "iso",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/iso.png",
+          "pickRate": 0
+        },
+        {
+          "name": "gekko",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png",
+          "pickRate": 0
+        },
+        {
+          "name": "clove",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/clove.png",
+          "pickRate": 0
+        },
+        {
+          "name": "miks",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/miks.png",
+          "pickRate": 0
+        }
+      ]
+    },
+    {
+      "map": "Summit",
+      "played": 18,
+      "atkWinRate": 49,
+      "defWinRate": 51,
+      "agents": [
+        {
+          "name": "omen",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png",
+          "pickRate": 67
+        },
+        {
+          "name": "neon",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png",
+          "pickRate": 81
+        },
+        {
+          "name": "sova",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png",
+          "pickRate": 25
+        },
+        {
+          "name": "phoenix",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png",
+          "pickRate": 17
+        },
+        {
+          "name": "viper",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png",
+          "pickRate": 25
+        },
+        {
+          "name": "cypher",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png",
+          "pickRate": 36
+        },
+        {
+          "name": "fade",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png",
+          "pickRate": 69
+        },
+        {
+          "name": "chamber",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png",
+          "pickRate": 39
+        },
+        {
+          "name": "harbor",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png",
+          "pickRate": 28
+        },
+        {
+          "name": "jett",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png",
+          "pickRate": 3
+        },
+        {
+          "name": "vyse",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png",
+          "pickRate": 14
+        },
+        {
+          "name": "kayo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png",
+          "pickRate": 28
+        },
+        {
+          "name": "raze",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png",
+          "pickRate": 3
+        },
+        {
+          "name": "astra",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png",
+          "pickRate": 3
+        },
+        {
+          "name": "skye",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png",
+          "pickRate": 3
+        },
+        {
+          "name": "waylay",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png",
+          "pickRate": 17
+        },
+        {
+          "name": "sage",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sage.png",
+          "pickRate": 25
+        },
+        {
+          "name": "yoru",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png",
+          "pickRate": 6
+        },
+        {
+          "name": "deadlock",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/deadlock.png",
+          "pickRate": 0
+        },
+        {
+          "name": "brimstone",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png",
+          "pickRate": 11
+        },
+        {
+          "name": "breach",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png",
+          "pickRate": 0
+        },
+        {
+          "name": "killjoy",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png",
+          "pickRate": 0
+        },
+        {
+          "name": "veto",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/veto.png",
+          "pickRate": 0
+        },
+        {
+          "name": "tejo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png",
+          "pickRate": 3
+        },
+        {
+          "name": "reyna",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/reyna.png",
+          "pickRate": 0
+        },
+        {
+          "name": "iso",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/iso.png",
+          "pickRate": 0
+        },
+        {
+          "name": "gekko",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png",
+          "pickRate": 0
+        },
+        {
+          "name": "clove",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/clove.png",
+          "pickRate": 0
+        },
+        {
+          "name": "miks",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/miks.png",
+          "pickRate": 0
+        }
+      ]
+    },
+    {
+      "map": "Lotus",
+      "played": 17,
+      "atkWinRate": 49,
+      "defWinRate": 51,
+      "agents": [
+        {
+          "name": "omen",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png",
+          "pickRate": 100
+        },
+        {
+          "name": "neon",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png",
+          "pickRate": 41
+        },
+        {
+          "name": "sova",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png",
+          "pickRate": 0
+        },
+        {
+          "name": "phoenix",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png",
+          "pickRate": 0
+        },
+        {
+          "name": "viper",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png",
+          "pickRate": 85
+        },
+        {
+          "name": "cypher",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png",
+          "pickRate": 12
+        },
+        {
+          "name": "fade",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png",
+          "pickRate": 79
+        },
+        {
+          "name": "chamber",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png",
+          "pickRate": 24
+        },
+        {
+          "name": "harbor",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png",
+          "pickRate": 0
+        },
+        {
+          "name": "jett",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png",
+          "pickRate": 3
+        },
+        {
+          "name": "vyse",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png",
+          "pickRate": 59
+        },
+        {
+          "name": "kayo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png",
+          "pickRate": 0
+        },
+        {
+          "name": "raze",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png",
+          "pickRate": 65
+        },
+        {
+          "name": "astra",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png",
+          "pickRate": 0
+        },
+        {
+          "name": "skye",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png",
+          "pickRate": 21
+        },
+        {
+          "name": "waylay",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png",
+          "pickRate": 6
+        },
+        {
+          "name": "sage",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sage.png",
+          "pickRate": 0
+        },
+        {
+          "name": "yoru",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png",
+          "pickRate": 6
+        },
+        {
+          "name": "deadlock",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/deadlock.png",
+          "pickRate": 0
+        },
+        {
+          "name": "brimstone",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png",
+          "pickRate": 0
+        },
+        {
+          "name": "breach",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png",
+          "pickRate": 0
+        },
+        {
+          "name": "killjoy",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png",
+          "pickRate": 0
+        },
+        {
+          "name": "veto",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/veto.png",
+          "pickRate": 0
+        },
+        {
+          "name": "tejo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png",
+          "pickRate": 0
+        },
+        {
+          "name": "reyna",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/reyna.png",
+          "pickRate": 0
+        },
+        {
+          "name": "iso",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/iso.png",
+          "pickRate": 0
+        },
+        {
+          "name": "gekko",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png",
+          "pickRate": 0
+        },
+        {
+          "name": "clove",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/clove.png",
+          "pickRate": 0
+        },
+        {
+          "name": "miks",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/miks.png",
+          "pickRate": 0
+        }
+      ]
+    },
+    {
+      "map": "Split",
+      "played": 16,
+      "atkWinRate": 48,
+      "defWinRate": 52,
+      "agents": [
+        {
+          "name": "omen",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png",
+          "pickRate": 94
+        },
+        {
+          "name": "neon",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png",
+          "pickRate": 75
+        },
+        {
+          "name": "sova",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png",
+          "pickRate": 0
+        },
+        {
+          "name": "phoenix",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png",
+          "pickRate": 50
+        },
+        {
+          "name": "viper",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png",
+          "pickRate": 100
+        },
+        {
+          "name": "cypher",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png",
+          "pickRate": 16
+        },
+        {
+          "name": "fade",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png",
+          "pickRate": 59
+        },
+        {
+          "name": "chamber",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png",
+          "pickRate": 9
+        },
+        {
+          "name": "harbor",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png",
+          "pickRate": 0
+        },
+        {
+          "name": "jett",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png",
+          "pickRate": 16
+        },
+        {
+          "name": "vyse",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png",
+          "pickRate": 0
+        },
+        {
+          "name": "kayo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png",
+          "pickRate": 0
+        },
+        {
+          "name": "raze",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png",
+          "pickRate": 25
+        },
+        {
+          "name": "astra",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png",
+          "pickRate": 6
+        },
+        {
+          "name": "skye",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png",
+          "pickRate": 41
+        },
+        {
+          "name": "waylay",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png",
+          "pickRate": 6
+        },
+        {
+          "name": "sage",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sage.png",
+          "pickRate": 0
+        },
+        {
+          "name": "yoru",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png",
+          "pickRate": 3
+        },
+        {
+          "name": "deadlock",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/deadlock.png",
+          "pickRate": 0
+        },
+        {
+          "name": "brimstone",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png",
+          "pickRate": 0
+        },
+        {
+          "name": "breach",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png",
+          "pickRate": 0
+        },
+        {
+          "name": "killjoy",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png",
+          "pickRate": 0
+        },
+        {
+          "name": "veto",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/veto.png",
+          "pickRate": 0
+        },
+        {
+          "name": "tejo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png",
+          "pickRate": 0
+        },
+        {
+          "name": "reyna",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/reyna.png",
+          "pickRate": 0
+        },
+        {
+          "name": "iso",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/iso.png",
+          "pickRate": 0
+        },
+        {
+          "name": "gekko",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png",
+          "pickRate": 0
+        },
+        {
+          "name": "clove",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/clove.png",
+          "pickRate": 0
+        },
+        {
+          "name": "miks",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/miks.png",
+          "pickRate": 0
+        }
+      ]
+    },
+    {
+      "map": "Ascent",
+      "played": 15,
+      "atkWinRate": 45,
+      "defWinRate": 55,
+      "agents": [
+        {
+          "name": "omen",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png",
+          "pickRate": 100
+        },
+        {
+          "name": "neon",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png",
+          "pickRate": 53
+        },
+        {
+          "name": "sova",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png",
+          "pickRate": 100
+        },
+        {
+          "name": "phoenix",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png",
+          "pickRate": 57
+        },
+        {
+          "name": "viper",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png",
+          "pickRate": 0
+        },
+        {
+          "name": "cypher",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png",
+          "pickRate": 50
+        },
+        {
+          "name": "fade",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png",
+          "pickRate": 0
+        },
+        {
+          "name": "chamber",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png",
+          "pickRate": 37
+        },
+        {
+          "name": "harbor",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png",
+          "pickRate": 0
+        },
+        {
+          "name": "jett",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png",
+          "pickRate": 37
+        },
+        {
+          "name": "vyse",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png",
+          "pickRate": 17
+        },
+        {
+          "name": "kayo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png",
+          "pickRate": 17
+        },
+        {
+          "name": "raze",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png",
+          "pickRate": 0
+        },
+        {
+          "name": "astra",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png",
+          "pickRate": 0
+        },
+        {
+          "name": "skye",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png",
+          "pickRate": 0
+        },
+        {
+          "name": "waylay",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png",
+          "pickRate": 7
+        },
+        {
+          "name": "sage",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sage.png",
+          "pickRate": 0
+        },
+        {
+          "name": "yoru",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png",
+          "pickRate": 13
+        },
+        {
+          "name": "deadlock",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/deadlock.png",
+          "pickRate": 3
+        },
+        {
+          "name": "brimstone",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png",
+          "pickRate": 0
+        },
+        {
+          "name": "breach",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png",
+          "pickRate": 0
+        },
+        {
+          "name": "killjoy",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png",
+          "pickRate": 3
+        },
+        {
+          "name": "veto",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/veto.png",
+          "pickRate": 7
+        },
+        {
+          "name": "tejo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png",
+          "pickRate": 0
+        },
+        {
+          "name": "reyna",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/reyna.png",
+          "pickRate": 0
+        },
+        {
+          "name": "iso",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/iso.png",
+          "pickRate": 0
+        },
+        {
+          "name": "gekko",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png",
+          "pickRate": 0
+        },
+        {
+          "name": "clove",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/clove.png",
+          "pickRate": 0
+        },
+        {
+          "name": "miks",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/miks.png",
+          "pickRate": 0
+        }
+      ]
+    },
+    {
+      "map": "Abyss",
+      "played": 7,
+      "atkWinRate": 53,
+      "defWinRate": 47,
+      "agents": [
+        {
+          "name": "omen",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png",
+          "pickRate": 36
+        },
+        {
+          "name": "neon",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png",
+          "pickRate": 36
+        },
+        {
+          "name": "sova",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png",
+          "pickRate": 100
+        },
+        {
+          "name": "phoenix",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png",
+          "pickRate": 50
+        },
+        {
+          "name": "viper",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png",
+          "pickRate": 14
+        },
+        {
+          "name": "cypher",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png",
+          "pickRate": 7
+        },
+        {
+          "name": "fade",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png",
+          "pickRate": 0
+        },
+        {
+          "name": "chamber",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png",
+          "pickRate": 14
+        },
+        {
+          "name": "harbor",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png",
+          "pickRate": 64
+        },
+        {
+          "name": "jett",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png",
+          "pickRate": 36
+        },
+        {
+          "name": "vyse",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png",
+          "pickRate": 14
+        },
+        {
+          "name": "kayo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png",
+          "pickRate": 0
+        },
+        {
+          "name": "raze",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png",
+          "pickRate": 0
+        },
+        {
+          "name": "astra",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png",
+          "pickRate": 50
+        },
+        {
+          "name": "skye",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png",
+          "pickRate": 0
+        },
+        {
+          "name": "waylay",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png",
+          "pickRate": 50
+        },
+        {
+          "name": "sage",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/sage.png",
+          "pickRate": 0
+        },
+        {
+          "name": "yoru",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png",
+          "pickRate": 29
+        },
+        {
+          "name": "deadlock",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/deadlock.png",
+          "pickRate": 0
+        },
+        {
+          "name": "brimstone",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png",
+          "pickRate": 0
+        },
+        {
+          "name": "breach",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png",
+          "pickRate": 0
+        },
+        {
+          "name": "killjoy",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png",
+          "pickRate": 0
+        },
+        {
+          "name": "veto",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/veto.png",
+          "pickRate": 0
+        },
+        {
+          "name": "tejo",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png",
+          "pickRate": 0
+        },
+        {
+          "name": "reyna",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/reyna.png",
+          "pickRate": 0
+        },
+        {
+          "name": "iso",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/iso.png",
+          "pickRate": 0
+        },
+        {
+          "name": "gekko",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png",
+          "pickRate": 0
+        },
+        {
+          "name": "clove",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/clove.png",
+          "pickRate": 0
+        },
+        {
+          "name": "miks",
+          "img": "https://www.vlr.gg/img/vlr/game/agents/miks.png",
+          "pickRate": 0
+        }
+      ]
+    }
+  ]
+}

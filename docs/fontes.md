@@ -11,7 +11,7 @@
 |---|---|
 | Instância | `https://vlr.orlandomm.net/api/v1` — pública, servidor Express mantido por terceiro, sem CDN de cache aparente |
 | Código | github.com/Orloxx23/vlresports — open source, auto-hospedável (plano B, não necessário por ora) |
-| Versão da API | v1.0.9 (OpenAPI 3.1.0). Guardar a especificação em `docs/vlresports-openapi.json`; se a versão mudar, reauditar |
+| Versão da API | v1.0.9 (OpenAPI 3.1.0). Guardar a especificação em `docs/openAPI-doc.json`; se a versão mudar, reauditar |
 | Escopo | Só **VCT** (tier 1) e **VCL** (tier 2). Game Changers, t3, collegiate e offseason ficam de fora |
 | Rate limit declarado | **30 requisições por 60 s**, via headers `ratelimit-limit`, `ratelimit-remaining`, `ratelimit-reset`, `ratelimit-policy: 30;w=60` |
 | Limite real | O vlr.gg estrangula a instância compartilhada: **502 e 503 aparecem abaixo de 30/min** (rajada de 10 requisições a ~1/s: 4 × 200, 1 × 502, 4 × 503, recuperou na 10ª) |
@@ -57,9 +57,9 @@ Kill matrices ficam só no JSON bruto até haver uso.
 
 ## Pegadinhas
 
-1. **`rounds[].side` é o lado de quem venceu o round.** Não documentado. Confirmado batendo com `roundsCt`/`roundsT` (Bind, partida 130691: OpTic venceu 7 rounds com `side: "t"` e `roundsT: 7`). É o que permite reconstruir o lado de cada time em cada round.
+1. **`rounds[].side` é o lado de quem venceu o round.** Não documentado. Confirmado batendo com `roundsCt`/`roundsT` (Bind, partida 130691: OpTic venceu 7 rounds com `side: "t"` e `roundsT: 7`). É o que permite reconstruir o lado de cada time em cada round. **`roundsCt` e `roundsT` contam só o tempo regulamentar (rounds 1–24)**; `score` inclui o overtime. Num mapa 14–12, os dois times têm `roundsCt + roundsT = 12` (confirmado no D3: Ascent e Haven da 734308, Lotus da 707490).
 
-2. **O mesmo time aparece de três formas.** Id + nome em `teams[]` do detalhe; só nome em `maps[].teams`, `maps[].pickedBy` e na lista de partidas do evento; tag em `rounds[].winner`, `picksBans`, `players[].teamTag` e `economy.teams`. A ponte tag → id é posicional: `economy.teams[i]` ↔ `teams[i]`. Precisa de teste. A chave é sempre o `id` — o nome é o da época ("KIWOOM DRX" já mudou).
+2. **O mesmo time aparece de três formas.** Id + nome em `teams[]` do detalhe; só nome em `maps[].teams`, `maps[].pickedBy` e na lista de partidas do evento; tag em `rounds[].winner`, `picksBans`, `players[].teamTag` e `economy.teams`. A ponte tag → id posicional (`economy.teams[i]` ↔ `teams[i]`) só existe com `tabs=economy`; na resposta básica a ponte é por placar (`ingestion/bridge.py`). As duas concordam na 734308 (teste do D3). A chave é sempre o `id` — o nome é o da época ("KIWOOM DRX" já mudou).
 
 3. **Multikills e clutches por mapa vêm sempre zerados** — confirmado em 2022 (130691) e em 2026 (734308). O agregado da partida tem valores. É defeito do parser: **inutilizável por mapa**.
 
@@ -75,7 +75,7 @@ Kill matrices ficam só no JSON bruto até haver uso.
 
 9. **O mesmo campo muda de significado entre endpoints.** Em `/players`, `country` é código ISO; no detalhe de partida, `country` é o nome e o código fica em `flag`. `limit` volta como string. A paginação também muda: `/players` tem bloco `pagination`, `/events` só tem `size` — o fim é detectado por `data` vazio.
 
-10. **Abas do detalhe são opcionais.** `tabs=performance`, `economy` ou `all`. Sem `tabs`, a resposta já traz rounds com lado e método, veto e stats por mapa (confirmado na 734308). Cada aba é uma requisição extra do servidor ao vlr.gg; o custo em tempo medido foi pequeno (+0,65 s), mas a carga recai sobre o gargalo real.
+10. **Abas do detalhe são opcionais.** `tabs=performance`, `economy` ou `all`. Sem `tabs`, a resposta já traz rounds com lado e método, veto e stats por mapa (confirmado na 734308). Cada aba é uma requisição extra do servidor ao vlr.gg; o custo em tempo medido foi pequeno (+0,65 s), mas a carga recai sobre o gargalo real. Com abas, `economy` e `performance` aparecem **por mapa** (`maps[].economy`, com rounds) e **na partida** (`data.economy`, com `rounds` vazio). O contrato consome só o nível do mapa.
 
 11. **`/teams/{id}` não traz região**, só país. Região do time é derivada da liga VCT ou VCL que ele disputa.
 
@@ -83,7 +83,7 @@ Kill matrices ficam só no JSON bruto até haver uso.
 
 13. **O limite declarado não é o limite real.** 30/min nos headers, mas 502/503 aparecem bem abaixo disso — o vlr.gg estrangula o servidor, que é compartilhado por todos os usuários da instância. 503 vem rápido (~0,5 s), 502 depois de ~6 s. O cliente espaça as requisições muito abaixo do declarado e trata 502/503 como transitórios.
 
-14. **Mapa não jogado some de `maps[]`, mas continua no veto.** Em BO3 decididas em 2–0 (734313, 734307, 734312), só dois mapas aparecem; o decisivo não vem nem com `status` diferente. No `picksBans`, ele continua como `remains`. A análise de veto não pode assumir que todo mapa do veto tem linha em `raw_map`.
+14. **Mapa não jogado some de `maps[]`, mas continua no veto.** Em BO3 decididas em 2–0 (734313, 734307, 734312), só dois mapas aparecem; o decisivo não vem nem com `status` diferente. No `picksBans`, ele continua como `remains`. A análise de veto não pode assumir que todo mapa do veto tem linha em `raw_map`. O inverso também acontece: a 707490 (Challengers Brasil) vem com `picksBans.list` vazio e `pickedBy` nulo em todos os mapas. A análise de veto também não pode assumir que toda partida tem veto.
 
 15. **O tier do vlr.gg é ruidoso.** China Evolution Series 2026: Act 3 (3105) aparece em `tier=vct` **e** em `tier=vcl`. O `vcl` inclui eventos como THE POKAL 2026 e China National Tournament: Pro Qualifier. Antes de 2023, `tier=vct` inclui eventos de Challengers do formato pré-franquia ("Champions Tour Korea Stage 1: Challengers"). Deduplicar por `event_id` e corrigir via seed `event_overrides.csv`.
 
@@ -106,11 +106,13 @@ Kill matrices ficam só no JSON bruto até haver uso.
 | Profundidade de `/events` | `tier=vct`, `status=completed` | ✅ | Página 6 com dados (Challengers pré-franquia); página 10 vazia |
 | Forfeit | Busca manual na VCL | ✅ | Não encontrado. Decisão defensiva: partida sem mapa jogado é descartada no staging e contada em teste |
 | Rate limit | Headers + rajada de 10 | ✅ | 30/60 s declarado; 502/503 abaixo disso |
+| `ratelimit-reset` em segundos relativos | `/events?tier=vct` | ✅ | Conferido no D5: `Ratelimit-Reset: 16` com `Ratelimit-Remaining: 3`. O cliente pausa pelos segundos informados |
+| Cliente real: 2ª busca sem rede | 734308, `pytest -m live` | ✅ | Rodado no D5, com a instância de volta: uma requisição de rede, contrato ok |
 | `/players` | — | ✅ | Leaderboard top 100 por rating. Não usado |
 | `/teams/{id}` | Pela especificação | ✅ | Só país e roster atual |
 | `/events/{id}/agents` | Evento recente de VCT | ✅ | Somas conferem; 8 mapas no evento |
-| Detalhe de partida VCL | — | ➡️ D3 | Baixo risco (mesmo template do vlr.gg); entra como fixture no D3 |
-| Lado reconstruído no overtime | 734308 | ➡️ D3 | Coberto pelo teste de reconstrução de lado |
+| Detalhe de partida VCL | 707490 — Challengers 2026 Brazil Stage 2 | ✅ | Retorna igual as partidas do VCT, só não são atualizadas em tempo real. Passa no contrato; veto vazio |
+| Lado reconstruído no overtime | 734308, 707490 | ✅ | `roundsCt`/`roundsT` excluem os rounds 25+; `score` os inclui |
 
 Fixtures em `ingestion/tests/fixtures/`, com nome descritivo.
 
@@ -122,12 +124,15 @@ Fixtures em `ingestion/tests/fixtures/`, com nome descritivo.
 - **Backfill pela rota de eventos:** `/events` → `/events/{id}/matches` → `/matches/{id}`.
 - **`tabs=all` só na janela** de 12 meses + aquecimento; histórico só com a resposta básica.
 - **Backfill do mais recente para o mais antigo.** Se a instância cair no meio, sobra o que as análises usam.
-- **Cliente conservador:** ~1 requisição a cada 3–6 s, sequencial, retry com backoff exponencial em 429/502/503/504, leitura dos headers `ratelimit-*`.
+- **Cliente conservador** (`ingestion/client.py`): 3–6 s entre o início de duas requisições, sequencial, retry com backoff exponencial em 429/502/503/504 e em falha de transporte, pausa até o reset quando `ratelimit-remaining` ≤ 1 ou quando vem `retry-after`.
+- **Cache de conteúdo, não HTTP:** um JSON por `path + params` em `.cache/api/`, com validade decidida pelo coletor (partida finalizada vale para sempre; listagem expira). Só respostas 200 com `status: OK` entram. Não depende dos headers `Cache-Control` da instância.
 - **Jogadores, times, datas e ids vêm do detalhe da partida.** Listagens só servem para descobrir ids.
 - **Partida sem mapa jogado é descartada** no staging, com contagem em teste.
 - **Região do time** derivada da liga VCT ou VCL que ele disputa.
 - **Agregados do vlr.gg são gabarito:** a validação cruzada do D13 compara completude, win rate de lado e pick rate por evento.
 - **Schema com tipos forçados** em todas as tabelas raw.
+- **Ponte tag → id por placar** (`ingestion/bridge.py`): rounds vencidos por tag em `rounds[].winner` casam com `maps[].teams[i].score`, e o nome casa com `teams[j].name` para chegar ao id. Funciona na resposta básica, a única do histórico. Mapa que não fecha levanta erro em vez de chutar.
+- **Contrato em Pydantic** (`ingestion/schemas.py`) com só os campos consumidos e `extra="ignore"`. Os coletores validam toda resposta por ele antes de gravar.
 
 ---
 

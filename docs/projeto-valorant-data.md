@@ -1,6 +1,6 @@
 # VALORANT Data (Meta-Scope-VAL) — Documento mestre do projeto
 
-> Este arquivo é a fonte de contexto do projeto. No repositório: `docs/projeto.md`.
+> Este arquivo é a fonte de contexto do projeto. No repositório: `docs/projeto-valorant-data.md`.
 > A auditoria detalhada da API fica em `docs/fontes.md`.
 > Última atualização: setembro/2026 · Status: **D1 e D2 concluídos** · 2 decisões pendentes até o D5 (ver `docs/fontes.md`)
 > Repositório: github.com/JoaoGAlmeidaS/Meta-Scope-VAL
@@ -110,10 +110,13 @@ Estas decisões já foram debatidas e fechadas. Não reabrir sem motivo novo.
 
 ```
 ├── docs/
-│   ├── projeto.md               este documento
-│   └── fontes.md                auditoria da API
+│   ├── projeto-valorant-data.md este documento
+│   ├── fontes.md                auditoria da API
+│   └── openAPI-doc.json         especificação OpenAPI da vlresports (referência)
 ├── ingestion/
 │   ├── client.py                httpx, retry, rate limit, cache
+│   ├── schemas.py               contrato Pydantic: só os campos consumidos
+│   ├── bridge.py                ponte tag → id de time por placar
 │   ├── collectors.py            JSON da API → tabelas raw → Parquet
 │   └── tests/fixtures/          JSON real de partidas
 ├── dbt/
@@ -130,7 +133,7 @@ Estas decisões já foram debatidas e fechadas. Não reabrir sem motivo novo.
 ├── notebooks/                   matplotlib, com outputs commitados
 ├── web/                         templates Jinja2, CSS, JS
 ├── dist/                        gerado, publicado no Pages
-├── .github/workflows/build.yml
+├── .github/workflows/build.workflow.yml
 ├── Makefile                     make build / make serve / make test
 ├── DEVLOG.md                    3 linhas por dia
 └── README.md
@@ -171,13 +174,13 @@ Resumo do que mais importa: `rounds[].side` é o lado de quem venceu; o time apa
 ### Bloco 0 — Fundação e validação da fonte · D1–D4
 
 **D1 · Esqueleto** ✅
-Repo, `uv`, pre-commit, estrutura de pastas, `Makefile`, README com as perguntas de pesquisa, `docs/decisoes.md`.
+Repo, `uv`, pre-commit, estrutura de pastas, `Makefile`, README com as perguntas de pesquisa, decisões na seção 2 de `docs/projeto-valorant-data.md`.
 
 **D2 · Auditoria da fonte** ✅
 Gate aprovado: composição de agentes por mapa presente em 2022 e 2026. Rate limit de 30/min declarado, com 502/503 do vlr.gg abaixo disso; ritmo seguro de ~1 requisição a cada 3–6 s. Backfill estimado em ~1h40 por mil partidas. 16 pegadinhas e os casos testados em `docs/fontes.md`.
 
 **D3 · Fixtures e testes de contrato**
-JSONs reais em `ingestion/tests/fixtures/` cobrindo os casos do D2, mais um detalhe de partida da VCL (único caso não testado no D2). Testes que validam a estrutura da resposta contra a especificação OpenAPI, a reconstrução de lado por round — inclusive no overtime (734308) — e a ponte tag → id.
+JSONs reais em `ingestion/tests/fixtures/` cobrindo os casos do D2, mais um detalhe de partida da VCL (único caso não testado no D2). Contrato em Pydantic com só os campos consumidos, reutilizado pelos coletores; a especificação OpenAPI fica em `docs/` como referência. Testes da reconstrução de lado por round — inclusive no overtime (734308) — e da ponte tag → id.
 → *Pronto quando:* uma mudança no formato da API quebra um teste, não uma análise.
 
 **D4 · Cliente de coleta**
@@ -220,7 +223,7 @@ Testes dbt + asset checks: rounds batem com o placar, lado reconstruído bate co
 → *Pronto quando:* `dbt test` passa e você justifica cada exceção.
 
 **D14 · CI e marco** 🏁
-`build.yml` com `workflow_dispatch` ativo e `schedule` comentado. `dbt docs generate`.
+`build.workflow.yml` com `workflow_dispatch` ativo e `schedule` comentado. `dbt docs generate`.
 → *Marco:* **um comando reconstrói o projeto do zero.**
 
 ### Bloco 3 — Análise estatística · D15–D20

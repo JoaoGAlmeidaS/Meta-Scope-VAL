@@ -8,8 +8,7 @@ dependencies = [
     # coleta
     "httpx>=0.27",
     "tenacity>=9.0",
-    "selectolax>=0.3.21",
-    "hishel>=0.0.30",
+    "pydantic>=2.13.5",
     # dados
     "pandas>=2.2",
     "pyarrow>=17.0",
@@ -49,12 +48,15 @@ package = false
 
 [tool.pytest.ini_options]
 testpaths = ["ingestion/tests", "pipeline/tests"]
-addopts = "-q"
+addopts = "-q -m 'not live'"
+markers = [
+    "live: chama a API real; fora da execução padrão (rode com `pytest -m live`)",
+]
 
 [tool.ruff]
 line-length = 100
 target-version = "py312"
-exclude = ["ingestion/vendor", "notebooks"]
+exclude = ["notebooks"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM"]
@@ -62,4 +64,3 @@ select = ["E", "F", "I", "UP", "B", "SIM"]
 [tool.black]
 line-length = 100
 target-version = ["py312"]
-extend-exclude = "ingestion/vendor"

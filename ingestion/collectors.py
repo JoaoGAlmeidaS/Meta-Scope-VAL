@@ -1,8 +1,10 @@
-"""Coletores: HTML → dict → Parquet.
+"""Coletores: JSON da API → contrato (`schemas.py`) → tabelas raw → Parquet.
 
-    * D5 — listagem de partidas, paginada por split/temporada (define a partição)
-    * D6 — detalhe de partida: mapas, veto, placar, rounds, agentes por jogador
-    * D8 — entidades de apoio: times, jogadores, eventos, rankings regionais
+    * D5 — eventos (`/events`, tier vct e vcl), listagem de partidas (`/events/{id}/matches`) e
+      gabarito `/events/{id}/agents`; define a partição por split/temporada
+    * D6 — detalhe de partida (`/matches/{id}`): mapas, veto, rounds, agentes por jogador
+
+Jogadores e times saem do detalhe de partida, nunca das listagens `/players` e `/teams`.
 
 CLI:
     python -m ingestion.collectors --incremental

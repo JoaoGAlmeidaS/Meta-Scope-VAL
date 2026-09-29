@@ -1,0 +1,1234 @@
+{
+  "status": "OK",
+  "data": {
+    "id": "734313",
+    "url": "https://www.vlr.gg/734313",
+    "event": {
+      "id": "2977",
+      "url": "https://www.vlr.gg/event/2977/vct-2026-americas-stage-2/playoffs",
+      "name": "VCT 2026: Americas Stage 2",
+      "series": "Playoffs: Lower Round 3",
+      "img": "https://owcdn.net/img/640f5ab71dfbb.png"
+    },
+    "status": "final",
+    "in": null,
+    "format": "Bo3",
+    "date": "Friday, September 4",
+    "time": "3:05 PM EDT",
+    "timestamp": 1788548700,
+    "utcDate": "Fri, 04 Sep 2026 19:05:00 GMT",
+    "teams": [
+      {
+        "id": "11058",
+        "url": "https://www.vlr.gg/team/11058/g2-esports",
+        "name": "G2 Esports",
+        "img": "https://owcdn.net/img/633822848a741.png",
+        "score": 0
+      },
+      {
+        "id": "6961",
+        "url": "https://www.vlr.gg/team/6961/loud",
+        "name": "LOUD",
+        "img": "https://owcdn.net/img/62bbec8dc1b9f.png",
+        "score": 2
+      }
+    ],
+    "streams": [
+      {
+        "name": "VCT Americas",
+        "link": "https://www.twitch.tv/valorant_americas"
+      },
+      {
+        "name": "VCT Americas (YT)",
+        "link": "https://www.youtube.com/@valorant_americas/live"
+      }
+    ],
+    "vods": [],
+    "picksBans": {
+      "note": "G2 ban Sunset; LOUD ban Split; G2 pick Abyss; LOUD pick Summit; G2 ban Haven; LOUD ban Ascent; Lotus remains",
+      "list": [
+        {
+          "team": "G2",
+          "action": "ban",
+          "map": "Sunset"
+        },
+        {
+          "team": "LOUD",
+          "action": "ban",
+          "map": "Split"
+        },
+        {
+          "team": "G2",
+          "action": "pick",
+          "map": "Abyss"
+        },
+        {
+          "team": "LOUD",
+          "action": "pick",
+          "map": "Summit"
+        },
+        {
+          "team": "G2",
+          "action": "ban",
+          "map": "Haven"
+        },
+        {
+          "team": "LOUD",
+          "action": "ban",
+          "map": "Ascent"
+        },
+        {
+          "team": null,
+          "action": "remains",
+          "map": "Lotus"
+        }
+      ]
+    },
+    "maps": [
+      {
+        "id": "280055",
+        "name": "Abyss",
+        "status": "played",
+        "pickedBy": "G2 Esports",
+        "duration": "39:22",
+        "teams": [
+          {
+            "name": "G2 Esports",
+            "score": 3,
+            "roundsCt": 0,
+            "roundsT": 3
+          },
+          {
+            "name": "LOUD",
+            "score": 13,
+            "roundsCt": 9,
+            "roundsT": 4
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "LOUD",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "LOUD",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 3,
+            "score": "0-3",
+            "winner": "LOUD",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 4,
+            "score": "0-4",
+            "winner": "LOUD",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 5,
+            "score": "1-4",
+            "winner": "G2",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "2-4",
+            "winner": "G2",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 7,
+            "score": "2-5",
+            "winner": "LOUD",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 8,
+            "score": "2-6",
+            "winner": "LOUD",
+            "side": "ct",
+            "method": "time",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/time.webp"
+          },
+          {
+            "number": 9,
+            "score": "2-7",
+            "winner": "LOUD",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 10,
+            "score": "2-8",
+            "winner": "LOUD",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 11,
+            "score": "3-8",
+            "winner": "G2",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "3-9",
+            "winner": "LOUD",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 13,
+            "score": "3-10",
+            "winner": "LOUD",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "3-11",
+            "winner": "LOUD",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "3-12",
+            "winner": "LOUD",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "3-13",
+            "winner": "LOUD",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "7873",
+            "url": "https://www.vlr.gg/player/7873/leaf",
+            "name": "leaf",
+            "teamTag": "G2",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Astra",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.41,
+              "acs": 239,
+              "kills": 13,
+              "deaths": 10,
+              "assists": 10,
+              "kast": 81,
+              "adr": 154,
+              "hs": 27,
+              "firstBloods": 2,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "15500",
+            "url": "https://www.vlr.gg/player/15500/trent",
+            "name": "trent",
+            "teamTag": "G2",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.12,
+              "acs": 209,
+              "kills": 14,
+              "deaths": 13,
+              "assists": 3,
+              "kast": 69,
+              "adr": 146,
+              "hs": 27,
+              "firstBloods": 0,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "2170",
+            "url": "https://www.vlr.gg/player/2170/babybay",
+            "name": "BABYBAY",
+            "teamTag": "G2",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Waylay",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.63,
+              "acs": 154,
+              "kills": 10,
+              "deaths": 14,
+              "assists": 2,
+              "kast": 56,
+              "adr": 84,
+              "hs": 18,
+              "firstBloods": 2,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "3993",
+            "url": "https://www.vlr.gg/player/3993/jawgemo",
+            "name": "jawgemo",
+            "teamTag": "G2",
+            "country": "Cambodia",
+            "flag": "kh",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.48,
+              "acs": 154,
+              "kills": 6,
+              "deaths": 15,
+              "assists": 7,
+              "kast": 63,
+              "adr": 103,
+              "hs": 28,
+              "firstBloods": 2,
+              "firstDeaths": 5
+            }
+          },
+          {
+            "id": "3885",
+            "url": "https://www.vlr.gg/player/3885/valyn",
+            "name": "valyn",
+            "teamTag": "G2",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Harbor",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.28,
+              "acs": 95,
+              "kills": 4,
+              "deaths": 14,
+              "assists": 8,
+              "kast": 63,
+              "adr": 60,
+              "hs": 20,
+              "firstBloods": 0,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "41224",
+            "url": "https://www.vlr.gg/player/41224/tkzin",
+            "name": "tkzin",
+            "teamTag": "LOUD",
+            "country": "Brazil",
+            "flag": "br",
+            "agents": [
+              {
+                "name": "Waylay",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.65,
+              "acs": 359,
+              "kills": 20,
+              "deaths": 11,
+              "assists": 2,
+              "kast": 81,
+              "adr": 235,
+              "hs": 42,
+              "firstBloods": 4,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "10885",
+            "url": "https://www.vlr.gg/player/10885/davih",
+            "name": "DaviH",
+            "teamTag": "LOUD",
+            "country": "Portugal",
+            "flag": "pt",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.44,
+              "acs": 195,
+              "kills": 11,
+              "deaths": 6,
+              "assists": 5,
+              "kast": 88,
+              "adr": 130,
+              "hs": 37,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "28716",
+            "url": "https://www.vlr.gg/player/28716/lukxo",
+            "name": "lukxo",
+            "teamTag": "LOUD",
+            "country": "Brazil",
+            "flag": "br",
+            "agents": [
+              {
+                "name": "Yoru",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.34,
+              "acs": 263,
+              "kills": 17,
+              "deaths": 11,
+              "assists": 2,
+              "kast": 81,
+              "adr": 173,
+              "hs": 22,
+              "firstBloods": 1,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "10557",
+            "url": "https://www.vlr.gg/player/10557/darker",
+            "name": "Darker",
+            "teamTag": "LOUD",
+            "country": "Colombia",
+            "flag": "co",
+            "agents": [
+              {
+                "name": "Harbor",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.09,
+              "acs": 172,
+              "kills": 10,
+              "deaths": 10,
+              "assists": 10,
+              "kast": 81,
+              "adr": 119,
+              "hs": 37,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "29242",
+            "url": "https://www.vlr.gg/player/29242/erde",
+            "name": "erde",
+            "teamTag": "LOUD",
+            "country": "Chile",
+            "flag": "cl",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.8,
+              "acs": 136,
+              "kills": 8,
+              "deaths": 9,
+              "assists": 10,
+              "kast": 88,
+              "adr": 95,
+              "hs": 42,
+              "firstBloods": 1,
+              "firstDeaths": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "280056",
+        "name": "Summit",
+        "status": "played",
+        "pickedBy": "LOUD",
+        "duration": "55:47",
+        "teams": [
+          {
+            "name": "G2 Esports",
+            "score": 6,
+            "roundsCt": 4,
+            "roundsT": 2
+          },
+          {
+            "name": "LOUD",
+            "score": 13,
+            "roundsCt": 5,
+            "roundsT": 8
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "LOUD",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "LOUD",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "0-3",
+            "winner": "LOUD",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "0-4",
+            "winner": "LOUD",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 5,
+            "score": "0-5",
+            "winner": "LOUD",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "0-6",
+            "winner": "LOUD",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 7,
+            "score": "1-6",
+            "winner": "G2",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 8,
+            "score": "2-6",
+            "winner": "G2",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "3-6",
+            "winner": "G2",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 10,
+            "score": "3-7",
+            "winner": "LOUD",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 11,
+            "score": "3-8",
+            "winner": "LOUD",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "4-8",
+            "winner": "G2",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "4-9",
+            "winner": "LOUD",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "4-10",
+            "winner": "LOUD",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 15,
+            "score": "4-11",
+            "winner": "LOUD",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "5-11",
+            "winner": "G2",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 17,
+            "score": "6-11",
+            "winner": "G2",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 18,
+            "score": "6-12",
+            "winner": "LOUD",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 19,
+            "score": "6-13",
+            "winner": "LOUD",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "3993",
+            "url": "https://www.vlr.gg/player/3993/jawgemo",
+            "name": "jawgemo",
+            "teamTag": "G2",
+            "country": "Cambodia",
+            "flag": "kh",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 1,
+              "acs": 248,
+              "kills": 17,
+              "deaths": 16,
+              "assists": 1,
+              "kast": 79,
+              "adr": 150,
+              "hs": 38,
+              "firstBloods": 4,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "3885",
+            "url": "https://www.vlr.gg/player/3885/valyn",
+            "name": "valyn",
+            "teamTag": "G2",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Harbor",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png"
+              }
+            ],
+            "stats": {
+              "rating": 1,
+              "acs": 217,
+              "kills": 14,
+              "deaths": 15,
+              "assists": 8,
+              "kast": 63,
+              "adr": 144,
+              "hs": 24,
+              "firstBloods": 2,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "7873",
+            "url": "https://www.vlr.gg/player/7873/leaf",
+            "name": "leaf",
+            "teamTag": "G2",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Viper",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.79,
+              "acs": 169,
+              "kills": 11,
+              "deaths": 16,
+              "assists": 4,
+              "kast": 47,
+              "adr": 124,
+              "hs": 24,
+              "firstBloods": 1,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "15500",
+            "url": "https://www.vlr.gg/player/15500/trent",
+            "name": "trent",
+            "teamTag": "G2",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.63,
+              "acs": 138,
+              "kills": 9,
+              "deaths": 16,
+              "assists": 3,
+              "kast": 53,
+              "adr": 87,
+              "hs": 28,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "2170",
+            "url": "https://www.vlr.gg/player/2170/babybay",
+            "name": "BABYBAY",
+            "teamTag": "G2",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Vyse",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.56,
+              "acs": 155,
+              "kills": 8,
+              "deaths": 18,
+              "assists": 5,
+              "kast": 68,
+              "adr": 121,
+              "hs": 14,
+              "firstBloods": 0,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "29242",
+            "url": "https://www.vlr.gg/player/29242/erde",
+            "name": "erde",
+            "teamTag": "LOUD",
+            "country": "Chile",
+            "flag": "cl",
+            "agents": [
+              {
+                "name": "Sage",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sage.png"
+              }
+            ],
+            "stats": {
+              "rating": 2.08,
+              "acs": 387,
+              "kills": 28,
+              "deaths": 10,
+              "assists": 12,
+              "kast": 89,
+              "adr": 237,
+              "hs": 29,
+              "firstBloods": 3,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "28716",
+            "url": "https://www.vlr.gg/player/28716/lukxo",
+            "name": "lukxo",
+            "teamTag": "LOUD",
+            "country": "Brazil",
+            "flag": "br",
+            "agents": [
+              {
+                "name": "Chamber",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.2,
+              "acs": 251,
+              "kills": 18,
+              "deaths": 11,
+              "assists": 3,
+              "kast": 84,
+              "adr": 160,
+              "hs": 33,
+              "firstBloods": 4,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "10557",
+            "url": "https://www.vlr.gg/player/10557/darker",
+            "name": "Darker",
+            "teamTag": "LOUD",
+            "country": "Colombia",
+            "flag": "co",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.19,
+              "acs": 222,
+              "kills": 14,
+              "deaths": 12,
+              "assists": 12,
+              "kast": 89,
+              "adr": 150,
+              "hs": 23,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "10885",
+            "url": "https://www.vlr.gg/player/10885/davih",
+            "name": "DaviH",
+            "teamTag": "LOUD",
+            "country": "Portugal",
+            "flag": "pt",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.87,
+              "acs": 119,
+              "kills": 8,
+              "deaths": 10,
+              "assists": 6,
+              "kast": 74,
+              "adr": 72,
+              "hs": 23,
+              "firstBloods": 0,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "41224",
+            "url": "https://www.vlr.gg/player/41224/tkzin",
+            "name": "tkzin",
+            "teamTag": "LOUD",
+            "country": "Brazil",
+            "flag": "br",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.73,
+              "acs": 190,
+              "kills": 13,
+              "deaths": 16,
+              "assists": 8,
+              "kast": 68,
+              "adr": 126,
+              "hs": 36,
+              "firstBloods": 1,
+              "firstDeaths": 4
+            }
+          }
+        ]
+      }
+    ],
+    "players": [
+      {
+        "id": "7873",
+        "url": "https://www.vlr.gg/player/7873/leaf",
+        "name": "leaf",
+        "teamTag": "G2",
+        "country": "United States",
+        "flag": "us",
+        "agents": [
+          {
+            "name": "Astra",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+          },
+          {
+            "name": "Viper",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.07,
+          "acs": 201,
+          "kills": 24,
+          "deaths": 26,
+          "assists": 14,
+          "kast": 63,
+          "adr": 138,
+          "hs": 26,
+          "firstBloods": 3,
+          "firstDeaths": 4
+        }
+      },
+      {
+        "id": "15500",
+        "url": "https://www.vlr.gg/player/15500/trent",
+        "name": "trent",
+        "teamTag": "G2",
+        "country": "United States",
+        "flag": "us",
+        "agents": [
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          },
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.86,
+          "acs": 170,
+          "kills": 23,
+          "deaths": 29,
+          "assists": 6,
+          "kast": 60,
+          "adr": 114,
+          "hs": 27,
+          "firstBloods": 1,
+          "firstDeaths": 1
+        }
+      },
+      {
+        "id": "3993",
+        "url": "https://www.vlr.gg/player/3993/jawgemo",
+        "name": "jawgemo",
+        "teamTag": "G2",
+        "country": "Cambodia",
+        "flag": "kh",
+        "agents": [
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.77,
+          "acs": 205,
+          "kills": 23,
+          "deaths": 31,
+          "assists": 8,
+          "kast": 71,
+          "adr": 129,
+          "hs": 34,
+          "firstBloods": 6,
+          "firstDeaths": 8
+        }
+      },
+      {
+        "id": "3885",
+        "url": "https://www.vlr.gg/player/3885/valyn",
+        "name": "valyn",
+        "teamTag": "G2",
+        "country": "United States",
+        "flag": "us",
+        "agents": [
+          {
+            "name": "Harbor",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.67,
+          "acs": 161,
+          "kills": 18,
+          "deaths": 29,
+          "assists": 16,
+          "kast": 63,
+          "adr": 106,
+          "hs": 23,
+          "firstBloods": 2,
+          "firstDeaths": 3
+        }
+      },
+      {
+        "id": "2170",
+        "url": "https://www.vlr.gg/player/2170/babybay",
+        "name": "BABYBAY",
+        "teamTag": "G2",
+        "country": "United States",
+        "flag": "us",
+        "agents": [
+          {
+            "name": "Waylay",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+          },
+          {
+            "name": "Vyse",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.59,
+          "acs": 155,
+          "kills": 18,
+          "deaths": 32,
+          "assists": 7,
+          "kast": 63,
+          "adr": 104,
+          "hs": 15,
+          "firstBloods": 2,
+          "firstDeaths": 5
+        }
+      },
+      {
+        "id": "29242",
+        "url": "https://www.vlr.gg/player/29242/erde",
+        "name": "erde",
+        "teamTag": "LOUD",
+        "country": "Chile",
+        "flag": "cl",
+        "agents": [
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          },
+          {
+            "name": "Sage",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sage.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.49,
+          "acs": 272,
+          "kills": 36,
+          "deaths": 19,
+          "assists": 22,
+          "kast": 89,
+          "adr": 172,
+          "hs": 32,
+          "firstBloods": 4,
+          "firstDeaths": 0
+        }
+      },
+      {
+        "id": "28716",
+        "url": "https://www.vlr.gg/player/28716/lukxo",
+        "name": "lukxo",
+        "teamTag": "LOUD",
+        "country": "Brazil",
+        "flag": "br",
+        "agents": [
+          {
+            "name": "Yoru",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+          },
+          {
+            "name": "Chamber",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.26,
+          "acs": 256,
+          "kills": 35,
+          "deaths": 22,
+          "assists": 5,
+          "kast": 83,
+          "adr": 166,
+          "hs": 27,
+          "firstBloods": 5,
+          "firstDeaths": 5
+        }
+      },
+      {
+        "id": "41224",
+        "url": "https://www.vlr.gg/player/41224/tkzin",
+        "name": "tkzin",
+        "teamTag": "LOUD",
+        "country": "Brazil",
+        "flag": "br",
+        "agents": [
+          {
+            "name": "Waylay",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+          },
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.15,
+          "acs": 267,
+          "kills": 33,
+          "deaths": 27,
+          "assists": 10,
+          "kast": 74,
+          "adr": 175,
+          "hs": 40,
+          "firstBloods": 5,
+          "firstDeaths": 6
+        }
+      },
+      {
+        "id": "10557",
+        "url": "https://www.vlr.gg/player/10557/darker",
+        "name": "Darker",
+        "teamTag": "LOUD",
+        "country": "Colombia",
+        "flag": "co",
+        "agents": [
+          {
+            "name": "Harbor",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png"
+          },
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.14,
+          "acs": 199,
+          "kills": 24,
+          "deaths": 22,
+          "assists": 22,
+          "kast": 86,
+          "adr": 136,
+          "hs": 28,
+          "firstBloods": 4,
+          "firstDeaths": 2
+        }
+      },
+      {
+        "id": "10885",
+        "url": "https://www.vlr.gg/player/10885/davih",
+        "name": "DaviH",
+        "teamTag": "LOUD",
+        "country": "Portugal",
+        "flag": "pt",
+        "agents": [
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          },
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.13,
+          "acs": 154,
+          "kills": 19,
+          "deaths": 16,
+          "assists": 11,
+          "kast": 80,
+          "adr": 99,
+          "hs": 29,
+          "firstBloods": 3,
+          "firstDeaths": 1
+        }
+      }
+    ]
+  }
+}
