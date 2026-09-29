@@ -1,4 +1,4 @@
-.PHONY: help setup lint fmt test ingest backfill dbt-run dbt-test docs build serve clean
+.PHONY: help setup lint fmt test events ingest backfill lake-push lake-pull seed dbt-run dbt-test docs build serve clean
 
 DBT_DIR := dbt
 DIST    := dist
@@ -21,11 +21,24 @@ fmt:  ## formata
 test:  ## pytest
 	uv run pytest
 
-ingest:  ## carga incremental (ultimo split)
-	uv run python -m ingestion.collectors --incremental
+events:  ## indice de eventos, listagens de partidas e gabarito (D5)
+	uv run python -m ingestion.collectors events
 
-backfill:  ## backfill historico local (roda uma vez, demora)
-	uv run python -m ingestion.collectors --backfill --since 2022
+ingest:  ## carga incremental (temporada corrente)
+	uv run python -m ingestion.collectors incremental
+
+backfill:  ## backfill local desde 2023, do mais recente ao mais antigo (horas: rode no tmux)
+	mkdir -p logs
+	uv run python -m ingestion.collectors backfill 2>&1 | tee -a logs/backfill.log
+
+lake-push:  ## envia data/lake ao dataset privado no Hugging Face
+	uv run python -m ingestion.lake push
+
+lake-pull:  ## baixa o lake do Hugging Face para data/lake
+	uv run python -m ingestion.lake pull
+
+seed:  ## carrega e testa os seeds (patches, overrides de evento)
+	cd $(DBT_DIR) && uv run dbt deps && uv run dbt build --select resource_type:seed
 
 dbt-run:  ## roda os models
 	cd $(DBT_DIR) && uv run dbt build

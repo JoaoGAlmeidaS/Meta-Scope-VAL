@@ -1,0 +1,62 @@
+version: 2
+
+seeds:
+  - name: patches
+    description: >
+      Patches do VALORANT desde o 5.12 (toda partida de 2023 em diante tem patch vigente), com a
+      data de publicação das notas oficiais em playvalorant.com (campo `publishedAt` do CMS da
+      Riot, UTC). Mantido à mão: patch novo, linha nova. Números pulados pela Riot (6.09, 7.11,
+      8.06, 11.03, 13.03) não existem. A partida recebe o patch vigente na data dela (D10);
+      torneio que trava um patch anterior não é modelado (docs/fontes.md, pegadinha 18).
+    config:
+      column_types:
+        patch: varchar
+        major: integer
+        release_date: date
+        source_url: varchar
+    columns:
+      - name: patch
+        description: "`major.minor` com dois dígitos e sufixo opcional (11.07b)."
+        data_tests: [unique, not_null]
+      - name: major
+        description: "Patch maior (episódio). Agrupamento para amostras pequenas no D20."
+        data_tests: [not_null]
+      - name: release_date
+        data_tests: [unique, not_null]
+      - name: source_url
+        data_tests: [not_null]
+
+  - name: event_overrides
+    description: >
+      Correções do tier e da região que vêm do vlr.gg (pegadinhas 15 e 17), aplicadas no
+      `dim_event` (D10). `exclude` tira o evento da análise; `reclassify` troca tier e/ou região
+      (vazio mantém o valor coletado). A coleta não usa este seed: tudo é coletado, o filtro é
+      no dbt. Motivo obrigatório; "julgamento:" marca decisão que pode ser revista.
+    config:
+      column_types:
+        event_id: varchar
+        action: varchar
+        tier: varchar
+        region: varchar
+        reason: varchar
+    columns:
+      - name: event_id
+        data_tests: [unique, not_null]
+      - name: action
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["exclude", "reclassify"]
+      - name: tier
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["vct", "vcl"]
+      - name: region
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["americas", "emea", "pacific", "china", "international"]
+      - name: reason
+        data_tests: [not_null]

@@ -36,10 +36,11 @@ jobs:
 
       # Carga incremental apenas. O backfill historico roda local:
       # os IPs do Actions sao tratados com mais rigor pelo Cloudflare.
+      # D14: fechar o ciclo lake-pull → incremental → lake-push.
       - name: Carga incremental
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: uv run python -m ingestion.collectors --incremental
+        run: uv run python -m ingestion.collectors incremental
         continue-on-error: true
 
       - name: Warehouse

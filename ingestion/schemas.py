@@ -14,7 +14,7 @@ Pegadinhas tratadas aqui (numeração de `docs/fontes.md`):
 from __future__ import annotations
 
 import re
-from datetime import datetime
+from datetime import date, datetime
 from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator
@@ -199,24 +199,39 @@ class MatchDetail(_Contract):
 
 
 class EventSummary(_Contract):
+    """Evento na listagem `/events`. Sem ano nem região (pegadinhas 9 e 16)."""
+
     id: str
     name: str
-    status: str
+    status: Literal["upcoming", "ongoing", "completed"]
     prizepool: str
+    country: str | None = None
 
 
 class EventMatchTeam(_Contract):
-    """Time na lista de partidas do evento: sem id (pegadinha 16)."""
+    """Time na lista de partidas do evento: sem id (pegadinha 16). `score` é nulo em partida
+    `upcoming` (Champions 2026, fixture `event_matches_ongoing_champions_2026.json`)."""
 
     name: str
-    score: int
+    score: int | None
     winner: bool
 
 
 class EventMatch(_Contract):
+    """Partida na listagem do evento. `date` vem sem fuso ("Thu, July 16, 2026"): serve para
+    ordenar a coleta e decidir as abas, nunca como data da partida (essa vem do detalhe)."""
+
     id: str
     status: str
+    date: str | None = None
     teams: list[EventMatchTeam] = Field(min_length=2, max_length=2)
+
+    @property
+    def listed_on(self) -> date | None:
+        try:
+            return datetime.strptime(self.date or "", "%a, %B %d, %Y").date()
+        except ValueError:
+            return None
 
 
 class EventAgent(Agent):

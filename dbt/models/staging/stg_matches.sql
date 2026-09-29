@@ -1,9 +1,9 @@
 -- D9: staging de partidas. Tipagem explicita, nomes padronizados, sem regra de negocio.
--- Placeholder: substituir pelo select real quando o schema do Parquet fechar (D6).
+-- Placeholder: o schema do Parquet fechou no D6 (ingestion/lake.py); o select real e do D9.
 
 with source as (
 
-    select * from {{ source('lake', 'matches') }}
+    select * from {{ source('lake', 'raw_match') }}
 
 ),
 

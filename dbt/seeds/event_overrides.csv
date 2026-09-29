@@ -1,0 +1,34 @@
+event_id,action,tier,region,reason
+1747,exclude,,,China Evolution Series 2024 Act 1: fora do circuito oficial da liga (decisão do D5)
+1825,exclude,,,China Evolution Series 2024 Act 2: fora do circuito oficial da liga (decisão do D5)
+1880,exclude,,,China Evolution Series 2024 Act 3: fora do circuito oficial da liga (decisão do D5)
+2339,exclude,,,China Evolution Series 2025 Act 1: fora do circuito oficial da liga (decisão do D5)
+2450,exclude,,,China Evolution Series 2025 Act 2 X Asian Champions League: fora do circuito oficial (decisão do D5)
+2590,exclude,,,China Evolution Series 2025 Act 3: fora do circuito oficial da liga (decisão do D5)
+2720,exclude,,,China Evolution Series 2025 Epilogue: fora do circuito oficial da liga (decisão do D5)
+2894,exclude,,,China Evolution Series 2026 Act 1: fora do circuito oficial; aparece em vct e vcl (decisão do D5)
+2988,exclude,,,China Evolution Series 2026 Act 2: fora do circuito oficial; aparece em vct e vcl (decisão do D5)
+3105,exclude,,,China Evolution Series 2026 Act 3: fora do circuito oficial; aparece em vct e vcl (decisão do D5)
+3077,exclude,,,THE POKAL 2026: torneio de terceiro listado como vcl
+3125,exclude,,,Elevate Play: Avalanche: torneio de terceiro listado como vcl
+2970,exclude,,,Fortress Grassroots Esports 2026 Series 1 Qualifiers: circuito amador de terceiro listado como vcl
+2971,exclude,,,Fortress Grassroots Esports 2026 Series 1 Regional Finals: circuito amador de terceiro listado como vcl
+1524,exclude,,,Intel Arabian Cup Playground 2023 Season 1: torneio de terceiro listado como vcl
+1774,exclude,,,Intel Arabian Cup Playground 2023 Season 2: torneio de terceiro listado como vcl
+1909,exclude,,,Intel Arabian Cup Playground 2023 Season 3: torneio de terceiro listado como vcl
+2148,exclude,,,Intel Arabian Cup Playground 2024 Season 1: torneio de terceiro listado como vcl
+1309,exclude,,,julgamento: Challengers League North America Qualifiers 2023: qualificatória aberta com times tier 3
+1954,exclude,,,julgamento: Challengers League 2024 North America Qualifiers: qualificatória aberta com times tier 3
+2796,exclude,,,julgamento: Challengers 2026 North America ACE Qualifier: qualificatória aberta com times tier 3
+2794,exclude,,,julgamento: Challengers 2026 NORTH//EAST Kickoff East Open Qualifier: qualificatória aberta
+2138,exclude,,,julgamento: China National Competition Season 2 Wanyoo Qualifier: qualificatória aberta de terceiro
+2492,exclude,,,julgamento: China National Competition Season 4 3rd Party Breakout: qualificatória aberta de terceiro
+3059,exclude,,,julgamento: China National Tournament 2026 Pro Qualifier: qualificatória aberta para a Pro Division
+1188,reclassify,,international,LOCK//IN São Paulo 2023: internacional que o filtro region lista só em americas
+1494,reclassify,,international,Masters Tokyo 2023: internacional que o filtro region lista só em pacific
+1657,reclassify,,international,Valorant Champions 2023: internacional que o filtro region lista só em americas
+1921,reclassify,,international,Masters Madrid 2024: internacional que o filtro region lista só em emea
+2097,reclassify,,international,Valorant Champions 2024: internacional que o filtro region lista só em pacific
+1927,reclassify,,china,Champions Tour 2023 China Ascension: VCL chinesa listada em china e pacific
+2131,reclassify,,china,China National Competition Season 2: VCL chinesa listada em china e pacific
+2149,reclassify,,china,Champions Tour 2024 China Ascension: VCL chinesa listada em china e pacific

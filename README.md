@@ -4,7 +4,8 @@ Plataforma de análise estatística do cenário competitivo de VALORANT: pipelin
 dados próprio (API vlresports, com dados do vlr.gg), warehouse com dbt, análises estatísticas e uma
 camada preditiva calibrada. Site estático, sem backend, publicado no GitHub Pages.
 
-> Status: **D1 — esqueleto**. Documento mestre do projeto: `docs/projeto-valorant-data.md`.
+> Status: **D8 — ingestão e lake** (backfill em andamento). Documento mestre do projeto:
+> `docs/projeto-valorant-data.md`.
 
 ---
 
@@ -51,7 +52,7 @@ Decisões de arquitetura e trade-offs: **`docs/projeto-valorant-data.md`**. Audi
 |---|---|
 | Ambiente | Python 3.12 + `uv` + `make` |
 | Coleta | `httpx` + `tenacity` consumindo a API vlresports, contrato em Pydantic |
-| Lake | Parquet no Hugging Face Datasets (ou Cloudflare R2) |
+| Lake | Parquet no Hugging Face Datasets (privado), partição por temporada |
 | Engine | DuckDB (arquivo efêmero) |
 | Transformação | dbt-core + `dbt-duckdb` |
 | Orquestração | Dagster (assets particionados) |

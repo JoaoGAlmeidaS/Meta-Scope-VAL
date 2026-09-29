@@ -13,6 +13,11 @@ snapshot-paths: ["snapshots"]
 target-path: "target"
 clean-targets: ["target", "dbt_packages"]
 
+# Fonte única da janela: os marts de análise (D16) e a coleta (`ingestion/config.py`) leem daqui.
+vars:
+  analysis_window_months: 12  # regra inviolável: nunca hardcode a janela
+  elo_warmup_months: 6        # aquecimento do Elo antes da janela; também o corte de `tabs=all`
+
 models:
   metascope_val:
     staging:

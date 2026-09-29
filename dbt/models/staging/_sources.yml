@@ -1,24 +1,29 @@
 version: 2
 
 # Os sources apontam direto para os Parquet do lake — sem etapa de carga.
-# `lake_path` vem de uma var do dbt_project/CLI: local no dev, remoto no CI.
+# Layout e schema de cada tabela: ingestion/lake.py. `season` vem do caminho (chave Hive).
+# `lake_path` vem de uma var do dbt_project/CLI: local no dev; no CI, o lake baixado do HF.
 sources:
   - name: lake
-    description: "Parquet gerado por ingestion/, particionado por split."
+    description: "Parquet gerado por ingestion/, partição Hive por temporada, um arquivo por evento."
     meta:
       external_location: "read_parquet('{{ var('lake_path', '../data/lake') }}/{name}/**/*.parquet', hive_partitioning=true)"
     tables:
-      - name: matches
+      - name: raw_event
+        description: "Eventos VCT e VCL, com tier, região derivada do filtro da API e temporada."
+      - name: raw_event_match
+        description: "Listagem de partidas de cada evento. Base do teste de completude."
+      - name: raw_event_agents
+        description: "Agregado do vlr.gg por evento × mapa × agente. Gabarito do D13, nunca fonte."
+      - name: raw_match
         description: "Uma linha por partida (série)."
-      - name: maps
+      - name: raw_map
         description: "Uma linha por mapa jogado."
-      - name: rounds
-        description: "Uma linha por round."
-      - name: player_map_stats
+      - name: raw_veto
+        description: "Passos do veto. Pode faltar (pegadinha 14)."
+      - name: raw_round
+        description: "Uma linha por round, com lado do vencedor e economia quando houver."
+      - name: raw_player_map
         description: "Uma linha por jogador-mapa, com o agente."
-      - name: vetoes
-        description: "Ordem do veto: ban/pick/decider."
-      - name: teams
-      - name: players
-      - name: events
-      - name: patches
+      - name: raw_reject
+        description: "Partidas que falharam no contrato ou na API. Contadas no D13."

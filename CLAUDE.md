@@ -13,6 +13,12 @@ make build      # pipeline completo → dist/
 make serve      # python -m http.server -d dist
 make test       # pytest (dbt test fica em make dbt-test)
 make lint       # ruff + black
+make events     # índice de eventos, listagens de partidas e gabarito → data/lake
+make backfill   # coleta local desde 2023, do mais recente ao mais antigo (horas: rode no tmux)
+make ingest     # carga incremental da temporada corrente
+make lake-push  # data/lake → dataset privado no Hugging Face (requer `hf auth login`)
+make lake-pull  # dataset do Hugging Face → data/lake
+make seed       # dbt deps + seeds (patches, overrides de evento) com testes
 uv sync         # dependências
 uv run dbt deps --project-dir dbt
 uv run dbt build --project-dir dbt
@@ -26,14 +32,18 @@ Nunca `pip install`. Dependência nova entra por `uv add`. Rode ferramentas com 
 API vlresports → coletor Python → Parquet no lake → dbt sobre DuckDB → Elo e análises →
 JSONs pré-computados → site estático. Dagster define os assets, GitHub Actions dispara.
 
+Lake: `data/lake/{tabela}/season=YYYY/{event_id}.parquet` (chave Hive `season`, um arquivo por
+evento), JSON bruto em `data/lake/_json/`, espelhado num dataset **privado** do Hugging Face.
+
 ## Regras invioláveis
 
 Decisões fechadas e documentadas em `docs/projeto-valorant-data.md`. Não sugira reabrir sem motivo novo.
 
 - **Janela de análise: 12 meses.** Todo mart de análise filtra pela variável dbt
   `analysis_window_months`. Nunca hardcode a janela. Exceções: aquecimento do Elo e o mart de drift.
-- **Coleta ampla, análise restrita.** O backfill vai de 2022 até hoje, do mais recente para o mais
-  antigo; o filtro acontece no dbt.
+- **Coleta ampla, análise restrita.** O backfill vai de 2023 (era franqueada) até hoje, do mais
+  recente para o mais antigo; o filtro acontece no dbt. A coleta não aplica overrides: exclusão e
+  reclassificação de evento vivem no seed `event_overrides.csv` (China Evolution Series fica fora).
 - **Não existe backend.** Nada de FastAPI, servidor ou banco em produção. Se algo parece exigir
   servidor, pré-compute.
 - **Sem modelo treinado nos 30 dias.** Previsões usam a probabilidade do Elo. Não proponha
@@ -49,8 +59,14 @@ Decisões fechadas e documentadas em `docs/projeto-valorant-data.md`. Não sugir
 - **Calibração** se mede com log loss, Brier e curva. Acurácia é secundária.
 - **Todo número publicado leva intervalo de confiança.** Inconclusivo é resultado válido.
 - **Composição sempre com shrinkage**, por mapa e patch, controlando força do time.
-- **Idempotência:** rodar duas vezes não duplica linha. Upsert por id.
-- **Particionamento por split/temporada** nos assets do Dagster.
+- **Idempotência:** rodar duas vezes não duplica linha. Upsert por id; no lake, reescrever o
+  arquivo do evento é o upsert.
+- **Particionamento por temporada** (`season`) no lake e nos assets do Dagster.
+- **Janela e aquecimento** (`analysis_window_months`, `elo_warmup_months`) ficam só em
+  `dbt/dbt_project.yml`; o Python lê por `ingestion/config.py`. Elas também decidem o `tabs=all`.
+- **Patch sai do seed `patches.csv` pela data da partida.** A API não expõe o patch; torneio que
+  trava patch anterior fica mal atribuído (limitação documentada).
+- **Região do time** = região do evento doméstico mais recente que ele disputou antes da partida.
 - **Dimensões vêm das partidas.** `dim_player` e `dim_team` saem de `raw_player_map` e `raw_match`.
   Nunca construa dimensão a partir de `/players` ou `/teams`: são leaderboard e ranking, não cadastros.
 
@@ -67,6 +83,13 @@ Decisões fechadas e documentadas em `docs/projeto-valorant-data.md`. Não sugir
 - Kill matrix e `performance` identificam jogador por nome, sem id.
 - Force tipos no schema: `rating` pode vir inteiro, `duration` mistura formatos, `limit` vem como string.
 - `teamTag` em `/players` é o time atual; jogador sem time recebe o próprio nome como tag.
+- Região do evento vem do filtro `region` de `/events`: evento em mais de uma região é internacional.
+  Antes de 2025, Masters e Champions aparecem só na região-sede, e a VCL chinesa aparece em `china`
+  e `pacific`; o seed de overrides corrige.
+- Nome de evento nem sempre tem ano (Challengers 2023, circuito 2021–2022): a temporada vem da data
+  da primeira partida listada.
+- Partida `upcoming` na listagem do evento vem com `score: null`.
+- A cota de 30/min é compartilhada por todos os usuários da instância: vazão real de ~6–10 req/min.
 
 ## Convenções
 
@@ -75,6 +98,8 @@ Decisões fechadas e documentadas em `docs/projeto-valorant-data.md`. Não sugir
   pasta (`_stg_models.yml`, `_marts_models.yml`).
 - Nunca chame a API fora de `ingestion/client.py`, que concentra retry, rate limit, cache e User-Agent.
 - Toda resposta da API é validada por `ingestion/schemas.py` (contrato Pydantic) antes de gravar.
+- Nada grava no lake fora de `ingestion/lake.py`, que fecha o schema de cada tabela (tipos
+  forçados, nunca inferidos). Coluna nova entra em `SCHEMAS` e no `_sources.yml`.
 - Mudança no formato da API deve quebrar um teste de fixture, nunca uma análise.
 - Commits prefixados com o dia: `D6: achata detalhe de partida em tabelas raw`.
 

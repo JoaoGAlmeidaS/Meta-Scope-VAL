@@ -2,7 +2,7 @@
 
 > Este arquivo é a fonte de contexto do projeto. No repositório: `docs/projeto-valorant-data.md`.
 > A auditoria detalhada da API fica em `docs/fontes.md`.
-> Última atualização: setembro/2026 · Status: **D1 e D2 concluídos** · 2 decisões pendentes até o D5 (ver `docs/fontes.md`)
+> Última atualização: 29/09/2026 · Status: **D1 a D8 concluídos**, backfill em andamento · decisões pendentes no fim de `docs/fontes.md`
 > Repositório: github.com/JoaoGAlmeidaS/Meta-Scope-VAL
 
 ---
@@ -30,8 +30,15 @@ Estas decisões já foram debatidas e fechadas. Não reabrir sem motivo novo.
 *Implementação:* variável dbt `analysis_window_months: 12`, lida por todos os models de análise. Nunca hardcoded.
 *Exceções:* (1) o rating de times usa alguns meses anteriores à janela só como aquecimento, sem aparecerem nos resultados; (2) a análise de drift usa o histórico completo, justamente para demonstrar a tese da janela.
 
-**Coleta ampla, análise restrita.** O backfill cobre 2022→hoje, mesmo que a análise use 12 meses.
+**Coleta ampla, análise restrita.** O backfill cobre 2023→hoje, mesmo que a análise use 12 meses.
 *Por quê:* a fonte é uma instância pública de terceiro, e a anterior saiu do ar — o que não for coletado agora pode deixar de existir. Descartar na coleta é irreversível; filtrar na análise é um `WHERE`. E a análise de drift precisa do histórico.
+*Por que 2023 e não 2022 (decidido no D5):* 2023 é o início da era franqueada. Antes disso, `tier=vct` mistura Challengers do formato pré-franquia, e o drift ainda fica com mais de três anos de série.
+
+**China Evolution Series fica fora (decidido no D5).** Times franqueados, mas fora do circuito oficial da liga; mesmo racional do offseason. É coletada e excluída no dbt pelo seed `event_overrides.csv`.
+
+**Lake no Hugging Face Datasets, privado (decidido no D5).** `huggingface-hub` já estava na stack e o DuckDB lê o formato direto. Privado para não republicar dados do vlr.gg; o CI usa `HF_TOKEN`.
+
+**Partição por temporada, um arquivo por evento (decidido no D5).** `data/lake/{tabela}/season=YYYY/{event_id}.parquet`. Reescrever o arquivo do evento é o upsert idempotente. Split como partição física foi descartado: os nomes de split da VCL não têm padrão.
 
 **Escopo: só VCT (tier 1) e VCL (tier 2)**, na coleta e na análise. Game Changers, t3, collegiate e offseason ficam de fora. Tier fica como dimensão, para estratificar e ajustar o Elo.
 *Por quê:* offseason tem times testando formações e agentes fora do padrão, e os demais circuitos têm níveis e pools de jogadores que distorcem o meta competitivo. A VCL dá o volume que 12 meses de VCT sozinho não daria. Mesmo assim as amostras por mapa e lado são pequenas: todo número publicado leva intervalo de confiança, e conclusão sem significância é reportada como inconclusiva.
@@ -56,7 +63,7 @@ Estas decisões já foram debatidas e fechadas. Não reabrir sem motivo novo.
 **Abas do detalhe só na janela.** `tabs=all` (performance e economia) para a janela de 12 meses e o aquecimento; histórico mais antigo só com a resposta básica.
 *Por quê:* cada aba é uma requisição extra ao vlr.gg. A resposta básica já traz rounds com lado, veto e agentes — tudo que as análises e o drift usam.
 
-**Backfill do mais recente para o mais antigo.** Primeiro a janela de 12 meses e o aquecimento do Elo; depois até 2022.
+**Backfill do mais recente para o mais antigo.** Primeiro a janela de 12 meses e o aquecimento do Elo; depois até 2023.
 *Por quê:* a vazão da instância pública não é controlável. Se ela cair no meio, sobra o que as análises usam.
 
 **Jogadores e times vêm das partidas, não das listagens.** `/players` e `/teams` são leaderboard e ranking, não cadastros. `dim_player` e `dim_team` saem de `raw_player_map` e `raw_match`, com o time da época.
@@ -92,7 +99,7 @@ Estas decisões já foram debatidas e fechadas. Não reabrir sem motivo novo.
 |---|---|
 | Ambiente | Python 3.12 + `uv` + `make`, em WSL Ubuntu (repo dentro do FS Linux) |
 | Coleta | `httpx` + `tenacity` consumindo a API vlresports |
-| Lake | Parquet no Hugging Face Datasets (ou Cloudflare R2) |
+| Lake | Parquet no Hugging Face Datasets (privado) |
 | Engine | DuckDB (arquivo efêmero) |
 | Transformação | dbt-core + `dbt-duckdb` |
 | Orquestração | Dagster (assets particionados) |
@@ -117,7 +124,10 @@ Estas decisões já foram debatidas e fechadas. Não reabrir sem motivo novo.
 │   ├── client.py                httpx, retry, rate limit, cache
 │   ├── schemas.py               contrato Pydantic: só os campos consumidos
 │   ├── bridge.py                ponte tag → id de time por placar
-│   ├── collectors.py            JSON da API → tabelas raw → Parquet
+│   ├── config.py                janela e aquecimento lidos do dbt_project.yml
+│   ├── flatten.py               detalhe de partida → linhas das tabelas raw
+│   ├── lake.py                  schema do Parquet, escrita por evento, push/pull no HF
+│   ├── collectors.py            eventos, detalhe e backfill (CLI)
 │   └── tests/fixtures/          JSON real de partidas
 ├── dbt/
 │   ├── models/staging/          stg_*
@@ -179,28 +189,32 @@ Repo, `uv`, pre-commit, estrutura de pastas, `Makefile`, README com as perguntas
 **D2 · Auditoria da fonte** ✅
 Gate aprovado: composição de agentes por mapa presente em 2022 e 2026. Rate limit de 30/min declarado, com 502/503 do vlr.gg abaixo disso; ritmo seguro de ~1 requisição a cada 3–6 s. Backfill estimado em ~1h40 por mil partidas. 16 pegadinhas e os casos testados em `docs/fontes.md`.
 
-**D3 · Fixtures e testes de contrato**
+**D3 · Fixtures e testes de contrato** ✅
 JSONs reais em `ingestion/tests/fixtures/` cobrindo os casos do D2, mais um detalhe de partida da VCL (único caso não testado no D2). Contrato em Pydantic com só os campos consumidos, reutilizado pelos coletores; a especificação OpenAPI fica em `docs/` como referência. Testes da reconstrução de lado por round — inclusive no overtime (734308) — e da ponte tag → id.
 → *Pronto quando:* uma mudança no formato da API quebra um teste, não uma análise.
 
-**D4 · Cliente de coleta**
+**D4 · Cliente de coleta** ✅
 `client.py`: httpx com timeout generoso (respostas levam 3–5 s), rate limiter de ~1 requisição a cada 3–6 s, retry com backoff exponencial em 429/502/503/504, leitura dos headers `ratelimit-*`, User-Agent identificável, cache em disco.
 → *Pronto quando:* buscar a mesma partida duas vezes não toca a rede na segunda.
 
 ### Bloco 1 — Ingestão e lake · D5–D8
 
-**D5 · Eventos e listagem de partidas**
+**D5 · Eventos e listagem de partidas** ✅
 Coletor de `/events?tier=vct` e `tier=vcl` (com tier e região) e de `/events/{id}/matches`. Guardar também `/events/{id}/agents`, o gabarito do D13. Definir o esquema de partição por split/temporada.
+*Feito:* região pelo filtro `region` da API (evento em várias regiões = internacional), temporada pelo nome ou pela data, partição `season=YYYY` com um arquivo por evento. {D5_NUMEROS}
 
-**D6 · Detalhe de partida**
+**D6 · Detalhe de partida** ✅
 Achatar o JSON nas cinco tabelas raw de `docs/fontes.md`, com tipos forçados. `tabs=all` dentro da janela, só o básico no histórico. Fechar o schema do Parquet.
 → *Pronto quando:* uma BO5 completa está em Parquet nas cinco tabelas.
+*Feito:* 734308 nas cinco tabelas, lida pelo DuckDB com os tipos do schema; `raw_reject` e JSON bruto arquivado.
 
-**D7 · Lake + início do backfill**
-Configurar Hugging Face Datasets (ou R2). **Disparar o backfill local do mais recente para o mais antigo:** primeiro a janela de 12 meses + aquecimento, depois até 2022. Deixar rodando à noite.
+**D7 · Lake + início do backfill** ✅
+Configurar Hugging Face Datasets (ou R2). **Disparar o backfill local do mais recente para o mais antigo:** primeiro a janela de 12 meses + aquecimento, depois até 2023. Deixar rodando à noite.
+*Feito:* `make backfill` retomável e `make lake-push|lake-pull` no HF privado. {D7_VALIDACAO} O disparo do backfill completo e o login no HF ficam com o usuário.
 
-**D8 · Região dos times e patches**
+**D8 · Região dos times e patches** ✅
 Região de cada time derivada da liga VCT ou VCL que ele disputa — `/teams/{id}` traz país, não região. Montar à mão os seeds `dbt/seeds/patches.csv` (datas de cada patch) e `dbt/seeds/event_overrides.csv` (eventos a excluir ou reclassificar — o tier do vlr.gg é ruidoso). Jogadores e times **não** saem das listagens — vêm das partidas no D10. Backfill continua.
+*Feito:* 89 patches do CMS oficial da Riot; overrides com exclusões (China Evolution Series, torneios de terceiros, qualificatórias abertas) e reclassificação de região. Regra de região do time em `docs/fontes.md`.
 
 ### Bloco 2 — Warehouse · D9–D14 ⭐ *núcleo do portfólio*
 

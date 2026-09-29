@@ -1,7 +1,7 @@
 # Fontes de dados — auditoria da API vlresports
 
-> Entregável do D2. **Status: concluído** (setembro/2026).
-> Decisões pendentes até o D5 no fim deste arquivo.
+> Entregável do D2, atualizado no D3–D8. **Status: concluído** (29/09/2026).
+> Decisões pendentes no fim deste arquivo.
 
 ---
 
@@ -14,7 +14,7 @@
 | Versão da API | v1.0.9 (OpenAPI 3.1.0). Guardar a especificação em `docs/openAPI-doc.json`; se a versão mudar, reauditar |
 | Escopo | Só **VCT** (tier 1) e **VCL** (tier 2). Game Changers, t3, collegiate e offseason ficam de fora |
 | Rate limit declarado | **30 requisições por 60 s**, via headers `ratelimit-limit`, `ratelimit-remaining`, `ratelimit-reset`, `ratelimit-policy: 30;w=60` |
-| Limite real | O vlr.gg estrangula a instância compartilhada: **502 e 503 aparecem abaixo de 30/min** (rajada de 10 requisições a ~1/s: 4 × 200, 1 × 502, 4 × 503, recuperou na 10ª) |
+| Limite real | O vlr.gg estrangula a instância compartilhada: **502 e 503 aparecem abaixo de 30/min** (rajada de 10 requisições a ~1/s: 4 × 200, 1 × 502, 4 × 503, recuperou na 10ª). E a cota de 30/min é **da instância**, dividida entre todos os usuários: no D5 a vazão real foi de ~6–10/min (pegadinha 21) |
 | Tempo de resposta do detalhe | 3 a 5 s. Sem abas 5,1 s; com `tabs=all` 5,8 s (medido na 734308) |
 | Ritmo seguro | Sequencial, **~1 requisição a cada 3–6 s** (10–20/min), retry com backoff em 429/502/503/504 |
 | Duração do backfill | ~1h40 por mil partidas. Janela VCT + VCL: uma noite. Histórico: mais uma a duas noites. Contagem exata no D5 |
@@ -39,19 +39,29 @@
 
 ---
 
-## Tabelas raw (fechar no D6)
+## Tabelas raw (fechadas no D6)
+
+Schema com tipos forçados em `ingestion/lake.py` (`SCHEMAS`). Layout:
+`data/lake/{tabela}/season=YYYY/{event_id}.parquet`, com `season` só no caminho (chave Hive).
+`raw_event` é um arquivo único, com `season` como coluna.
 
 | Tabela | Grão | Chave |
 |---|---|---|
-| `raw_event` | evento | `event_id` (+ tier, região) |
+| `raw_event` | evento | `event_id` (+ tier, `tier_ambiguous`, região, temporada) |
+| `raw_event_match` | evento × partida listada | `event_id`, `match_id` |
+| `raw_event_agents` | evento × mapa × agente (gabarito) | `event_id`, `map_name`, `agent` |
 | `raw_match` | partida | `match_id` |
 | `raw_map` | partida × mapa jogado | `map_id` (+ `map_order`, que só existe pela posição no array) |
 | `raw_veto` | partida × passo do veto | `match_id`, `step` |
 | `raw_round` | mapa × round, com economia dos dois times quando houver | `map_id`, `round_number` |
 | `raw_player_map` | mapa × jogador, com agente e stats | `map_id`, `player_id` |
-| `raw_event_agents` | evento × mapa × agente (gabarito) | `event_id`, `map`, `agent` |
+| `raw_reject` | partida que falhou no contrato, na API ou não estava finalizada | `match_id` |
 
-Kill matrices ficam só no JSON bruto até haver uso.
+Colunas `team1_*`/`team2_*` seguem sempre a ordem de `teams[]` da partida; tag → id pela ponte
+por placar. Se a ponte não fecha num mapa, os ids dele ficam nulos e `raw_map.bridge_ok = false`.
+
+O JSON bruto de cada detalhe fica em `data/lake/_json/season=YYYY/{event_id}.jsonl.gz`. Kill
+matrices e `performance` existem só ali até haver uso.
 
 ---
 
@@ -89,6 +99,27 @@ Kill matrices ficam só no JSON bruto até haver uso.
 
 16. **A lista de partidas do evento é pobre em identificadores e datas.** Times sem id (só nome e bandeira); `date` e `time` sem fuso horário; `eta` sem sentido em partida concluída; `dates` do evento sem ano ("Sep 3 13"). Datas e ids vêm sempre do detalhe da partida (`timestamp`, `utcDate`, `teams[].id`).
 
+17. **A região do filtro `region` não separa internacional de doméstico antes de 2025.** Masters e
+    Champions de 2025 em diante (e o Masters Shanghai 2024) aparecem nas quatro regiões; LOCK//IN,
+    Masters Tokyo, Champions 2023, Masters Madrid e Champions 2024 aparecem só na região-sede. A VCL
+    chinesa de 2023–2024 aparece em `china` **e** `pacific`. A coleta marca `international` quando o
+    evento aparece em mais de uma região; o resto é corrigido no seed `event_overrides.csv`.
+
+18. **Nenhum endpoint traz o patch da partida.** O vlr.gg mostra o patch na página, a vlresports não
+    expõe. O patch sai do seed `patches.csv` pela data. Torneio que trava um patch anterior ao
+    vigente fica atribuído ao patch errado — limitação conhecida.
+
+19. **Partida `upcoming` vem com `score: null`** na listagem do evento (Champions 2026, fixture
+    `event_matches_ongoing_champions_2026.json`). O contrato aceita nulo só ali.
+
+20. **Nome de evento nem sempre tem ano.** Challengers de 2023 ("Challengers League Brazil: Split 1")
+    e todo o circuito 2021–2022 vêm sem ano. A temporada sai do nome (`VCT 2026`, `VCL 26`) ou, sem
+    ano, da data da primeira partida listada — que custa uma requisição por evento.
+
+21. **A cota de 30/min é da instância, não do cliente.** No D5, a primeira requisição do dia já veio
+    com `ratelimit-remaining: 3`, e houve 429 com o cliente a 10–20/min. A cota é dividida com todos
+    os usuários da instância: a vazão real ficou em ~6–10 requisições por minuto.
+
 **Descartes:** `streams`, `picksBans.note`, `eta`, `dates` do evento.
 
 ---
@@ -113,6 +144,10 @@ Kill matrices ficam só no JSON bruto até haver uso.
 | `/events/{id}/agents` | Evento recente de VCT | ✅ | Somas conferem; 8 mapas no evento |
 | Detalhe de partida VCL | 707490 — Challengers 2026 Brazil Stage 2 | ✅ | Retorna igual as partidas do VCT, só não são atualizadas em tempo real. Passa no contrato; veto vazio |
 | Lado reconstruído no overtime | 734308, 707490 | ✅ | `roundsCt`/`roundsT` excluem os rounds 25+; `score` os inclui |
+| Listagem de evento em andamento | 2766 — Champions 2026 | ✅ | `score: null` nas partidas `upcoming` (pegadinha 19); fixture gravado |
+| Filtro `region` de `/events` | tier vct e vcl × 4 regiões | ✅ | Internacional em várias regiões só de 2025 em diante (pegadinha 17) |
+| Profundidade de `/events?tier=vcl` | páginas 1–16 | ✅ | 7 páginas com dados; página 4 já em 2024 |
+| BO5 completa em Parquet | 734308 com `tabs=all` | ✅ | Cinco tabelas lidas pelo DuckDB com `hive_partitioning`, tipos do schema (`test_lake.py`) |
 
 Fixtures em `ingestion/tests/fixtures/`, com nome descritivo.
 
@@ -133,10 +168,22 @@ Fixtures em `ingestion/tests/fixtures/`, com nome descritivo.
 - **Schema com tipos forçados** em todas as tabelas raw.
 - **Ponte tag → id por placar** (`ingestion/bridge.py`): rounds vencidos por tag em `rounds[].winner` casam com `maps[].teams[i].score`, e o nome casa com `teams[j].name` para chegar ao id. Funciona na resposta básica, a única do histórico. Mapa que não fecha levanta erro em vez de chutar.
 - **Contrato em Pydantic** (`ingestion/schemas.py`) com só os campos consumidos e `extra="ignore"`. Os coletores validam toda resposta por ele antes de gravar.
+- **Histórico desde 2023** (D5): início da era franqueada; antes disso `tier=vct` mistura Challengers.
+- **China Evolution Series excluída** (D5), via seed. A coleta não aplica overrides: tudo que `tier=vct|vcl` devolve é coletado, o filtro é no dbt.
+- **Partição por temporada, um arquivo por evento** (D5). Reescrever o evento é o upsert.
+- **`tabs=all` pela data da listagem** (D6): partida a partir de hoje − (`analysis_window_months` + `elo_warmup_months`) vem com abas. As duas vars ficam em `dbt/dbt_project.yml` e a coleta lê de lá (`ingestion/config.py`). Data que não parseia pede abas.
+- **Gabarito para todos os eventos do escopo** (D5): uma requisição por evento, ~5% do custo da coleta.
+- **Evento gravado inteiro, no fim** (D6). Partida que falha no contrato ou na API vai para `raw_reject` e a coleta segue; **5 falhas seguidas abortam** (sinal de mudança de formato). Queda da instância aborta sem gravar o evento em curso; rodar de novo retoma pelo cache.
+- **Evento completo no lake é pulado** (D7): status `completed` e toda partida listada já em `raw_match` ou `raw_reject`. `--force` regrava.
+- **Região do time** (D8, implementada no `dim_team` do D10): a região do evento doméstico (VCT ou VCL, depois dos overrides) mais recente que o time disputou **antes** da partida. Evento internacional não conta. Time sem evento doméstico anterior herda o primeiro posterior; sem nenhum, região nula e fora da análise regional do D19.
+- **Patches pela data de publicação das notas oficiais** (D8), com a URL de origem no seed.
 
 ---
 
-## Decisões pendentes (até o D5)
+## Decisões pendentes
 
-1. **China Evolution Series entra?** Times franqueados, mas não é etapa oficial da liga.
-2. **Histórico a partir de 2022 ou 2023?** Antes de 2023, `tier=vct` inclui Challengers do formato pré-franquia. Recomendação: 2023, início da era franqueada.
+1. **Patch de torneio** (pegadinha 18): aceitar a atribuição por data como limitação documentada, ou
+   acrescentar uma coluna de patch por evento em `event_overrides.csv` para os torneios que travam
+   patch anterior.
+2. **Revisar as linhas `julgamento:` do `event_overrides.csv`**: qualificatórias abertas excluídas
+   (NA, NORTH//EAST, China). Relegation, promotion, Ascension e LCQ ficaram dentro.
