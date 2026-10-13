@@ -6,7 +6,6 @@ marker `live` pode abrir conexão: o bloqueio abaixo transforma qualquer tentati
 
 from __future__ import annotations
 
-import copy
 import json
 import socket
 from functools import cache
@@ -14,7 +13,6 @@ from pathlib import Path
 
 import pytest
 
-from ingestion.client import ApiError
 from ingestion.schemas import Map, MatchDetail, Response
 
 FIXTURES = Path(__file__).parent / "fixtures"
@@ -25,6 +23,11 @@ MATCH_FILES = [
     "match_bo5_2026_ot_tabs_all.json",
     "match_bo3_2x0_basic.json",
     "match_vcl_brasil_basic.json",
+    "match_vcl_map_without_sides_tabs_all.json",
+    "match_mixed_case_tags_tabs_all.json",
+    "match_veto_note_tabs_all.json",
+    "match_cn_legal_name_tabs_all.json",
+    "match_team_without_tag_tabs_all.json",
 ]
 
 
@@ -59,10 +62,20 @@ def load_match():
     return _load_match
 
 
+# Pedidos com `tabs=all`, mas o vlr.gg não tem economia nem performance (pegadinha 27).
+EMPTY_TABS = {"match_cn_legal_name_tabs_all.json"}
+
+
 @pytest.fixture(params=MATCH_FILES, ids=lambda n: Path(n).stem)
 def match_file(request) -> str:
     """Cada fixture de detalhe de partida."""
     return request.param
+
+
+@pytest.fixture
+def has_economy(match_file) -> bool:
+    """O fixture traz economia e performance: pedido com abas, e o vlr.gg tem o dado."""
+    return match_file.endswith("_tabs_all.json") and match_file not in EMPTY_TABS
 
 
 @pytest.fixture
@@ -76,33 +89,6 @@ def match_map(request) -> tuple[MatchDetail, Map]:
     name, i = request.param
     detail = _load_match(name)
     return detail, detail.maps[i]
-
-
-def route(path: str, **params) -> tuple[str, tuple]:
-    return path, tuple(sorted((k, str(v)) for k, v in params.items()))
-
-
-class FakeClient:
-    """Mesma interface de `ApiClient.fetch`, servindo respostas roteirizadas.
-
-    Rota ausente vira 404 (`ApiError`), exceto em `/events`: página sem rota é página vazia,
-    que é como a API sinaliza o fim da paginação.
-    """
-
-    def __init__(self, routes: dict[tuple[str, tuple], dict]):
-        self.routes = routes
-        self.calls: list[tuple[str, tuple]] = []
-        self.network_requests = 0
-
-    def fetch(self, path: str, params: dict | None = None, *, max_age_s=None) -> dict:
-        key = route(path, **(params or {}))
-        self.calls.append(key)
-        self.network_requests += 1
-        if key in self.routes:
-            return copy.deepcopy(self.routes[key])
-        if path == "/events":
-            return {"status": "OK", "size": 0, "data": []}
-        raise ApiError(f"404 em {path}")
 
 
 @pytest.fixture(autouse=True)

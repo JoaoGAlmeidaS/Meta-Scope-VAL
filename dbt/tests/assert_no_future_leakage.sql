@@ -3,7 +3,8 @@
 -- Contrato: toda feature carrega `feature_computed_through`, o instante mais recente
 -- observado na sua construcao.
 
-{{ config(severity = 'error') }}
+-- Desligado até o D16: o mart ainda não existe e o `dbt build` do D14 roda o projeto inteiro.
+{{ config(severity = 'error', enabled = false) }}
 
 select
     match_id,

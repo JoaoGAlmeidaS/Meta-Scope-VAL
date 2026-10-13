@@ -97,6 +97,7 @@ SCHEMAS: dict[str, pa.Schema] = {
         ("team2_name", pa.string(), False),
         ("team2_score", pa.int16(), False),
         ("n_maps", pa.int16(), False),
+        ("n_maps_without_data", pa.int16()),  # pegadinha 33: mapa de W.O. sem dado, descartado
         ("has_tabs", pa.bool_(), False),
         ("collected_at", TS, False),
     ),
@@ -114,6 +115,8 @@ SCHEMAS: dict[str, pa.Schema] = {
         ("team2_id", pa.string(), False),
         *_team_cols("team2", *_SCORE),
         ("bridge_ok", pa.bool_(), False),
+        ("has_round_sides", pa.bool_(), False),  # pegadinha 22: mapa sem histórico de lado
+        ("has_complete_stats", pa.bool_(), False),  # pegadinha 36: "stats incomplete" na nota
     ),
     "raw_veto": _schema(
         ("match_id", pa.string(), False),
@@ -129,8 +132,8 @@ SCHEMAS: dict[str, pa.Schema] = {
         ("round_number", pa.int16(), False),
         ("winner_tag", pa.string(), False),
         ("winner_team_id", pa.string()),
-        ("winner_side", pa.string(), False),
-        ("method", pa.string(), False),
+        ("winner_side", pa.string()),  # nulo em mapa sem histórico de lado (pegadinha 22)
+        ("method", pa.string()),
         *_team_cols("team1", *_ECONOMY),
         *_team_cols("team2", *_ECONOMY),
     ),
@@ -164,6 +167,7 @@ SCHEMAS: dict[str, pa.Schema] = {
 
 EVENT_TABLES = ("raw_event_match", "raw_event_agents")
 DETAIL_TABLES = ("raw_match", "raw_map", "raw_veto", "raw_round", "raw_player_map", "raw_reject")
+RETRYABLE_REJECTS = frozenset({"unavailable"})  # falha que pode passar: tentar de novo depois
 
 
 def to_table(name: str, rows: list[dict]) -> pa.Table:
@@ -220,20 +224,29 @@ def write_json_archive(root: Path, season: int, event_id: str, records: list[dic
 def read_table(root: Path, name: str) -> pa.Table:
     """Tabela inteira, com `season` vindo do caminho. Vazia (com schema) se não existir."""
     base = root / name
+    if name == "raw_event":
+        path = table_path(root, name)
+        return pq.read_table(path) if path.exists() else SCHEMAS[name].empty_table()
     if not base.exists():
         return SCHEMAS[name].empty_table()
-    if name == "raw_event":
-        return pq.read_table(table_path(root, name))
     dataset = ds.dataset(base, format="parquet", partitioning="hive", exclude_invalid_files=True)
     return dataset.to_table()
 
 
 def collected_match_ids(root: Path, season: int, event_id: str) -> set[str] | None:
-    """Partidas do evento já no lake (gravadas ou rejeitadas). `None`: evento nunca gravado."""
-    paths = [table_path(root, name, season, event_id) for name in ("raw_match", "raw_reject")]
-    if not all(p.exists() for p in paths):
+    """Partidas do evento já resolvidas no lake: gravadas ou rejeitadas de vez.
+
+    Rejeição em `RETRYABLE_REJECTS` não conta: o evento volta a ser coletado na próxima execução
+    (o resto vem do cache). `None`: evento nunca gravado.
+    """
+    match_path, reject_path = (
+        table_path(root, name, season, event_id) for name in ("raw_match", "raw_reject")
+    )
+    if not (match_path.exists() and reject_path.exists()):
         return None
-    return {mid for p in paths for mid in pq.read_table(p, columns=["match_id"])[0].to_pylist()}
+    done = set(pq.read_table(match_path, columns=["match_id"])["match_id"].to_pylist())
+    rejects = pq.read_table(reject_path, columns=["match_id", "reason"]).to_pylist()
+    return done | {r["match_id"] for r in rejects if r["reason"] not in RETRYABLE_REJECTS}
 
 
 def default_root() -> Path:

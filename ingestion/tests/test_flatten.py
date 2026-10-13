@@ -85,8 +85,8 @@ def test_colunas_de_time_seguem_a_ordem_da_partida(match, flat):
     assert (maps_won[t1.id], maps_won[t2.id]) == (t1.score, t2.score)
 
 
-def test_economia_so_com_tabs(match_file, flat):
-    with_tabs = match_file.endswith("_tabs_all.json")
+def test_economia_so_com_tabs(has_economy, flat):
+    with_tabs = has_economy
     for r in flat["raw_round"]:
         assert (r.get("team1_buy") is not None) is with_tabs
         assert (r.get("team2_bank") is not None) is with_tabs
@@ -147,3 +147,22 @@ def test_ponte_que_nao_fecha_anula_ids_do_mapa(load_match):
     rounds = [r for r in flat["raw_round"] if r["map_id"] == row["map_id"]]
     assert rounds and all(r["winner_team_id"] is None for r in rounds)
     lake.to_table("raw_round", flat["raw_round"])  # nulo permitido, gravável
+
+
+def test_mapa_de_lobby_remake_marcado_no_lake(load_match):
+    # Pegadinha 36: o mapa entra no lake, marcado para ficar fora da validação cruzada.
+    flat = _flat(load_match, "match_veto_note_tabs_all.json")
+    assert {m["map_name"]: m["has_complete_stats"] for m in flat["raw_map"]} == {
+        "Sunset": True,
+        "Haven": True,
+        "Ascent": False,
+    }
+
+
+def test_mapa_sem_dado_fica_contado_na_partida(load_match):
+    # Pegadinha 33: o mapa descartado some de `raw_map`, mas a partida guarda quantos foram, para o
+    # teste de placar da série no dbt.
+    flat = _flat(load_match, "match_map_without_data_tabs_all.json")
+    (match,) = flat["raw_match"]
+    assert (match["n_maps"], match["n_maps_without_data"]) == (2, 1)
+    assert all(m["n_maps_without_data"] == 0 for m in _flat(load_match, BO5)["raw_match"])

@@ -1,0 +1,4920 @@
+{
+  "status": "OK",
+  "data": {
+    "id": "669559",
+    "url": "https://www.vlr.gg/669559",
+    "event": {
+      "id": "2825",
+      "url": "https://www.vlr.gg/event/2825/challengers-2026-southeast-asia-split-2/premier-qualifier",
+      "name": "Challengers 2026: Southeast Asia Split 2",
+      "series": "Premier Qualifier: Lower Round 2",
+      "img": "https://owcdn.net/img/6964a9e385d88.png"
+    },
+    "status": "final",
+    "in": null,
+    "format": "Bo3",
+    "date": "Saturday, May 16",
+    "time": "9:00 AM EDT",
+    "timestamp": 1778936400,
+    "utcDate": "Sat, 16 May 2026 13:00:00 GMT",
+    "teams": [
+      {
+        "id": "849",
+        "url": "https://www.vlr.gg/team/849/armory-gaming",
+        "name": "Armory Gaming",
+        "img": "https://owcdn.net/img/5f62b8bac6680.png",
+        "score": 2
+      },
+      {
+        "id": "16868",
+        "url": "https://www.vlr.gg/team/16868/aura",
+        "name": "AURA",
+        "img": "https://owcdn.net/img/69444de100341.png",
+        "score": 1
+      }
+    ],
+    "streams": [],
+    "vods": [],
+    "picksBans": {
+      "note": null,
+      "list": []
+    },
+    "maps": [
+      {
+        "id": "267578",
+        "name": "Lotus",
+        "status": "played",
+        "pickedBy": null,
+        "duration": "26:37",
+        "teams": [
+          {
+            "name": "Armory Gaming",
+            "score": 2,
+            "roundsCt": 2,
+            "roundsT": 0
+          },
+          {
+            "name": "AURA",
+            "score": 13,
+            "roundsCt": 3,
+            "roundsT": 10
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "AURA",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "AURA",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "1-2",
+            "winner": "AG",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "1-3",
+            "winner": "AURA",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 5,
+            "score": "1-4",
+            "winner": "AURA",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "1-5",
+            "winner": "AURA",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 7,
+            "score": "1-6",
+            "winner": "AURA",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 8,
+            "score": "2-6",
+            "winner": "AG",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "2-7",
+            "winner": "AURA",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "2-8",
+            "winner": "AURA",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "2-9",
+            "winner": "AURA",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 12,
+            "score": "2-10",
+            "winner": "AURA",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "2-11",
+            "winner": "AURA",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "2-12",
+            "winner": "AURA",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "2-13",
+            "winner": "AURA",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "52356",
+            "url": "https://www.vlr.gg/player/52356/saranghae",
+            "name": "saranghae",
+            "teamTag": "AG",
+            "country": "Thailand",
+            "flag": "th",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.03,
+              "acs": 217,
+              "kills": 11,
+              "deaths": 13,
+              "assists": 4,
+              "kast": 60,
+              "adr": 148,
+              "hs": 48,
+              "firstBloods": 1,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "52501",
+            "url": "https://www.vlr.gg/player/52501/neft",
+            "name": "Neft",
+            "teamTag": "AG",
+            "country": "Thailand",
+            "flag": "th",
+            "agents": [
+              {
+                "name": "Killjoy",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.77,
+              "acs": 210,
+              "kills": 12,
+              "deaths": 15,
+              "assists": 2,
+              "kast": 47,
+              "adr": 145,
+              "hs": 29,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "46098",
+            "url": "https://www.vlr.gg/player/46098/layman",
+            "name": "Layman",
+            "teamTag": "AG",
+            "country": "Thailand",
+            "flag": "th",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.7,
+              "acs": 181,
+              "kills": 8,
+              "deaths": 14,
+              "assists": 7,
+              "kast": 73,
+              "adr": 105,
+              "hs": 44,
+              "firstBloods": 1,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "48502",
+            "url": "https://www.vlr.gg/player/48502/loley",
+            "name": "loley",
+            "teamTag": "AG",
+            "country": "Thailand",
+            "flag": "th",
+            "agents": [
+              {
+                "name": "Raze",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.59,
+              "acs": 140,
+              "kills": 6,
+              "deaths": 13,
+              "assists": 3,
+              "kast": 67,
+              "adr": 93,
+              "hs": 24,
+              "firstBloods": 1,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "52500",
+            "url": "https://www.vlr.gg/player/52500/pennywise",
+            "name": "pennywise",
+            "teamTag": "AG",
+            "country": "Thailand",
+            "flag": "th",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.41,
+              "acs": 145,
+              "kills": 7,
+              "deaths": 15,
+              "assists": 5,
+              "kast": 67,
+              "adr": 99,
+              "hs": 20,
+              "firstBloods": 2,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "50800",
+            "url": "https://www.vlr.gg/player/50800/zephyr",
+            "name": "Zephyr",
+            "teamTag": "AURA",
+            "country": "Mongolia",
+            "flag": "mn",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.63,
+              "acs": 301,
+              "kills": 17,
+              "deaths": 9,
+              "assists": 10,
+              "kast": 93,
+              "adr": 165,
+              "hs": 21,
+              "firstBloods": 3,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "54807",
+            "url": "https://www.vlr.gg/player/54807/hanaa",
+            "name": "Hanaa",
+            "teamTag": "AURA",
+            "country": "Mongolia",
+            "flag": "mn",
+            "agents": [
+              {
+                "name": "Waylay",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.36,
+              "acs": 262,
+              "kills": 14,
+              "deaths": 9,
+              "assists": 5,
+              "kast": 93,
+              "adr": 171,
+              "hs": 29,
+              "firstBloods": 3,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "13114",
+            "url": "https://www.vlr.gg/player/13114/dvl",
+            "name": "dvL",
+            "teamTag": "AURA",
+            "country": "Indonesia",
+            "flag": "id",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.33,
+              "acs": 214,
+              "kills": 12,
+              "deaths": 8,
+              "assists": 5,
+              "kast": 93,
+              "adr": 155,
+              "hs": 37,
+              "firstBloods": 0,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "54806",
+            "url": "https://www.vlr.gg/player/54806/jkcf",
+            "name": "JKCF",
+            "teamTag": "AURA",
+            "country": "Mongolia",
+            "flag": "mn",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.3,
+              "acs": 319,
+              "kills": 18,
+              "deaths": 11,
+              "assists": 3,
+              "kast": 93,
+              "adr": 185,
+              "hs": 23,
+              "firstBloods": 3,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "47588",
+            "url": "https://www.vlr.gg/player/47588/aston",
+            "name": "Aston",
+            "teamTag": "AURA",
+            "country": "Mongolia",
+            "flag": "mn",
+            "agents": [
+              {
+                "name": "Viper",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.07,
+              "acs": 168,
+              "kills": 9,
+              "deaths": 7,
+              "assists": 7,
+              "kast": 87,
+              "adr": 121,
+              "hs": 19,
+              "firstBloods": 0,
+              "firstDeaths": 2
+            }
+          }
+        ],
+        "performance": {
+          "players": [
+            {
+              "name": "Layman",
+              "teamTag": "AG",
+              "agents": [
+                {
+                  "name": "fade",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 46,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "loley",
+              "teamTag": "AG",
+              "agents": [
+                {
+                  "name": "raze",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 41,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "saranghae",
+              "teamTag": "AG",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 74,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "pennywise",
+              "teamTag": "AG",
+              "agents": [
+                {
+                  "name": "neon",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 42,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "Neft",
+              "teamTag": "AG",
+              "agents": [
+                {
+                  "name": "killjoy",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 63,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "agents": [
+                {
+                  "name": "fade",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 66,
+              "plants": 8,
+              "defuses": 0
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "agents": [
+                {
+                  "name": "viper",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 67,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 57,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "agents": [
+                {
+                  "name": "neon",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 71,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "agents": [
+                {
+                  "name": "waylay",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 59,
+              "plants": 1,
+              "defuses": 1
+            }
+          ],
+          "killMatrix": [
+            {
+              "name": "loley",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 4,
+                  "diff": -3
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 5,
+                  "diff": -4
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "pennywise",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 2,
+                  "deaths": 4,
+                  "diff": -2
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 4,
+                  "diff": -4
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 3,
+                  "deaths": 4,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "Neft",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 4,
+                  "deaths": 4,
+                  "diff": 0
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 5,
+                  "diff": -4
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 3,
+                  "deaths": 2,
+                  "diff": 1
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "saranghae",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 2,
+                  "deaths": 3,
+                  "diff": -1
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 2,
+                  "deaths": 5,
+                  "diff": -3
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 3,
+                  "deaths": 1,
+                  "diff": 2
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 3,
+                  "deaths": 3,
+                  "diff": 0
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Layman",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 3,
+                  "diff": -2
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 3,
+                  "deaths": 4,
+                  "diff": -1
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 2,
+                  "deaths": 3,
+                  "diff": -1
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                }
+              ]
+            }
+          ],
+          "opKillMatrix": [
+            {
+              "name": "loley",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "pennywise",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Neft",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "saranghae",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Layman",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ],
+          "firstKillMatrix": [
+            {
+              "name": "loley",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "pennywise",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                }
+              ]
+            },
+            {
+              "name": "Neft",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "saranghae",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Layman",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ]
+        },
+        "economy": {
+          "teams": [
+            {
+              "name": "AG",
+              "pistolWon": 0,
+              "eco": {
+                "total": 3,
+                "won": 0
+              },
+              "semiEco": {
+                "total": 2,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 4,
+                "won": 0
+              },
+              "fullBuy": {
+                "total": 6,
+                "won": 2
+              }
+            },
+            {
+              "name": "AURA",
+              "pistolWon": 2,
+              "eco": {
+                "total": 2,
+                "won": 2
+              },
+              "semiEco": {
+                "total": 0,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 4,
+                "won": 3
+              },
+              "fullBuy": {
+                "total": 9,
+                "won": 8
+              }
+            }
+          ],
+          "rounds": [
+            {
+              "number": 1,
+              "teams": [
+                {
+                  "bank": 200,
+                  "loadout": 4000,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 100,
+                  "loadout": 4100,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "teams": [
+                {
+                  "bank": 8700,
+                  "loadout": 2900,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 2000,
+                  "loadout": 17050,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "teams": [
+                {
+                  "bank": 700,
+                  "loadout": 21700,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 13600,
+                  "loadout": 15800,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "teams": [
+                {
+                  "bank": 3800,
+                  "loadout": 20500,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 3200,
+                  "loadout": 21500,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "teams": [
+                {
+                  "bank": 8300,
+                  "loadout": 9500,
+                  "buy": "semi-eco",
+                  "winner": false
+                },
+                {
+                  "bank": 17800,
+                  "loadout": 22900,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 6,
+              "teams": [
+                {
+                  "bank": 800,
+                  "loadout": 22150,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 21400,
+                  "loadout": 25250,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 7,
+              "teams": [
+                {
+                  "bank": 7400,
+                  "loadout": 10100,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 21000,
+                  "loadout": 22950,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 8,
+              "teams": [
+                {
+                  "bank": 1800,
+                  "loadout": 22600,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 23100,
+                  "loadout": 24050,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 9,
+              "teams": [
+                {
+                  "bank": 2300,
+                  "loadout": 20850,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 12500,
+                  "loadout": 22350,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 10,
+              "teams": [
+                {
+                  "bank": 8200,
+                  "loadout": 6250,
+                  "buy": "semi-eco",
+                  "winner": false
+                },
+                {
+                  "bank": 11800,
+                  "loadout": 22650,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 11,
+              "teams": [
+                {
+                  "bank": 1300,
+                  "loadout": 21150,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 17900,
+                  "loadout": 23450,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 12,
+              "teams": [
+                {
+                  "bank": 1500,
+                  "loadout": 16450,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 19200,
+                  "loadout": 23250,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 13,
+              "teams": [
+                {
+                  "bank": 200,
+                  "loadout": 4000,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 100,
+                  "loadout": 4050,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 14,
+              "teams": [
+                {
+                  "bank": 800,
+                  "loadout": 10250,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 3400,
+                  "loadout": 15200,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 15,
+              "teams": [
+                {
+                  "bank": 2000,
+                  "loadout": 13400,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 7900,
+                  "loadout": 19100,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "267579",
+        "name": "Ascent",
+        "status": "played",
+        "pickedBy": null,
+        "duration": "45:58",
+        "teams": [
+          {
+            "name": "Armory Gaming",
+            "score": 13,
+            "roundsCt": 8,
+            "roundsT": 5
+          },
+          {
+            "name": "AURA",
+            "score": 11,
+            "roundsCt": 7,
+            "roundsT": 4
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "AURA",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "AURA",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 3,
+            "score": "1-2",
+            "winner": "AG",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 4,
+            "score": "2-2",
+            "winner": "AG",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 5,
+            "score": "3-2",
+            "winner": "AG",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "4-2",
+            "winner": "AG",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 7,
+            "score": "4-3",
+            "winner": "AURA",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 8,
+            "score": "4-4",
+            "winner": "AURA",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "4-5",
+            "winner": "AURA",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "4-6",
+            "winner": "AURA",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "4-7",
+            "winner": "AURA",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "5-7",
+            "winner": "AG",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "5-8",
+            "winner": "AURA",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "5-9",
+            "winner": "AURA",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "6-9",
+            "winner": "AG",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "7-9",
+            "winner": "AG",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 17,
+            "score": "8-9",
+            "winner": "AG",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 18,
+            "score": "9-9",
+            "winner": "AG",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 19,
+            "score": "10-9",
+            "winner": "AG",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 20,
+            "score": "10-10",
+            "winner": "AURA",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 21,
+            "score": "11-10",
+            "winner": "AG",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 22,
+            "score": "12-10",
+            "winner": "AG",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 23,
+            "score": "12-11",
+            "winner": "AURA",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 24,
+            "score": "13-11",
+            "winner": "AG",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "52356",
+            "url": "https://www.vlr.gg/player/52356/saranghae",
+            "name": "saranghae",
+            "teamTag": "AG",
+            "country": "Thailand",
+            "flag": "th",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.28,
+              "acs": 219,
+              "kills": 19,
+              "deaths": 14,
+              "assists": 11,
+              "kast": 67,
+              "adr": 125,
+              "hs": 34,
+              "firstBloods": 4,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "52501",
+            "url": "https://www.vlr.gg/player/52501/neft",
+            "name": "Neft",
+            "teamTag": "AG",
+            "country": "Thailand",
+            "flag": "th",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.07,
+              "acs": 231,
+              "kills": 21,
+              "deaths": 17,
+              "assists": 7,
+              "kast": 79,
+              "adr": 140,
+              "hs": 24,
+              "firstBloods": 1,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "52500",
+            "url": "https://www.vlr.gg/player/52500/pennywise",
+            "name": "pennywise",
+            "teamTag": "AG",
+            "country": "Thailand",
+            "flag": "th",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.04,
+              "acs": 187,
+              "kills": 17,
+              "deaths": 16,
+              "assists": 3,
+              "kast": 71,
+              "adr": 127,
+              "hs": 31,
+              "firstBloods": 2,
+              "firstDeaths": 5
+            }
+          },
+          {
+            "id": "46098",
+            "url": "https://www.vlr.gg/player/46098/layman",
+            "name": "Layman",
+            "teamTag": "AG",
+            "country": "Thailand",
+            "flag": "th",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.87,
+              "acs": 187,
+              "kills": 14,
+              "deaths": 18,
+              "assists": 6,
+              "kast": 75,
+              "adr": 138,
+              "hs": 34,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "48502",
+            "url": "https://www.vlr.gg/player/48502/loley",
+            "name": "loley",
+            "teamTag": "AG",
+            "country": "Thailand",
+            "flag": "th",
+            "agents": [
+              {
+                "name": "Phoenix",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.85,
+              "acs": 220,
+              "kills": 17,
+              "deaths": 19,
+              "assists": 8,
+              "kast": 67,
+              "adr": 138,
+              "hs": 15,
+              "firstBloods": 5,
+              "firstDeaths": 5
+            }
+          },
+          {
+            "id": "54806",
+            "url": "https://www.vlr.gg/player/54806/jkcf",
+            "name": "JKCF",
+            "teamTag": "AURA",
+            "country": "Mongolia",
+            "flag": "mn",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.13,
+              "acs": 233,
+              "kills": 20,
+              "deaths": 18,
+              "assists": 5,
+              "kast": 71,
+              "adr": 149,
+              "hs": 24,
+              "firstBloods": 5,
+              "firstDeaths": 4
+            }
+          },
+          {
+            "id": "47588",
+            "url": "https://www.vlr.gg/player/47588/aston",
+            "name": "Aston",
+            "teamTag": "AURA",
+            "country": "Mongolia",
+            "flag": "mn",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.08,
+              "acs": 234,
+              "kills": 20,
+              "deaths": 19,
+              "assists": 7,
+              "kast": 71,
+              "adr": 159,
+              "hs": 41,
+              "firstBloods": 5,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "13114",
+            "url": "https://www.vlr.gg/player/13114/dvl",
+            "name": "dvL",
+            "teamTag": "AURA",
+            "country": "Indonesia",
+            "flag": "id",
+            "agents": [
+              {
+                "name": "Kayo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.99,
+              "acs": 172,
+              "kills": 14,
+              "deaths": 16,
+              "assists": 11,
+              "kast": 79,
+              "adr": 97,
+              "hs": 24,
+              "firstBloods": 0,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "50800",
+            "url": "https://www.vlr.gg/player/50800/zephyr",
+            "name": "Zephyr",
+            "teamTag": "AURA",
+            "country": "Mongolia",
+            "flag": "mn",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.98,
+              "acs": 209,
+              "kills": 17,
+              "deaths": 18,
+              "assists": 11,
+              "kast": 71,
+              "adr": 135,
+              "hs": 28,
+              "firstBloods": 0,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "54807",
+            "url": "https://www.vlr.gg/player/54807/hanaa",
+            "name": "Hanaa",
+            "teamTag": "AURA",
+            "country": "Mongolia",
+            "flag": "mn",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.88,
+              "acs": 181,
+              "kills": 13,
+              "deaths": 17,
+              "assists": 9,
+              "kast": 75,
+              "adr": 143,
+              "hs": 43,
+              "firstBloods": 1,
+              "firstDeaths": 3
+            }
+          }
+        ],
+        "performance": {
+          "players": [
+            {
+              "name": "Layman",
+              "teamTag": "AG",
+              "agents": [
+                {
+                  "name": "sova",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 50,
+              "plants": 6,
+              "defuses": 1
+            },
+            {
+              "name": "loley",
+              "teamTag": "AG",
+              "agents": [
+                {
+                  "name": "phoenix",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 46,
+              "plants": 0,
+              "defuses": 1
+            },
+            {
+              "name": "saranghae",
+              "teamTag": "AG",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 56,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "pennywise",
+              "teamTag": "AG",
+              "agents": [
+                {
+                  "name": "jett",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 53,
+              "plants": 0,
+              "defuses": 2
+            },
+            {
+              "name": "Neft",
+              "teamTag": "AG",
+              "agents": [
+                {
+                  "name": "cypher",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 49,
+              "plants": 1,
+              "defuses": 1
+            },
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "agents": [
+                {
+                  "name": "kayo",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 42,
+              "plants": 5,
+              "defuses": 2
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "agents": [
+                {
+                  "name": "cypher",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 64,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 51,
+              "plants": 3,
+              "defuses": 0
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "agents": [
+                {
+                  "name": "jett",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 67,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "agents": [
+                {
+                  "name": "sova",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 52,
+              "plants": 0,
+              "defuses": 0
+            }
+          ],
+          "killMatrix": [
+            {
+              "name": "loley",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 2,
+                  "deaths": 4,
+                  "diff": -2
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 5,
+                  "deaths": 5,
+                  "diff": 0
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 6,
+                  "diff": -5
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 5,
+                  "deaths": 1,
+                  "diff": 4
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 4,
+                  "deaths": 3,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "pennywise",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 3,
+                  "deaths": 2,
+                  "diff": 1
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 4,
+                  "deaths": 6,
+                  "diff": -2
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 3,
+                  "deaths": 1,
+                  "diff": 2
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 4,
+                  "deaths": 2,
+                  "diff": 2
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 3,
+                  "deaths": 5,
+                  "diff": -2
+                }
+              ]
+            },
+            {
+              "name": "Neft",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 3,
+                  "deaths": 5,
+                  "diff": -2
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 6,
+                  "deaths": 1,
+                  "diff": 5
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 5,
+                  "deaths": 2,
+                  "diff": 3
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 2,
+                  "deaths": 4,
+                  "diff": -2
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 5,
+                  "deaths": 5,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "saranghae",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 3,
+                  "deaths": 0,
+                  "diff": 3
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 3,
+                  "deaths": 3,
+                  "diff": 0
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 3,
+                  "deaths": 3,
+                  "diff": 0
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 6,
+                  "deaths": 7,
+                  "diff": -1
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                }
+              ]
+            },
+            {
+              "name": "Layman",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 5,
+                  "deaths": 3,
+                  "diff": 2
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 5,
+                  "diff": -5
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 5,
+                  "deaths": 1,
+                  "diff": 4
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 3,
+                  "diff": -2
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 3,
+                  "deaths": 6,
+                  "diff": -3
+                }
+              ]
+            }
+          ],
+          "opKillMatrix": [
+            {
+              "name": "loley",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "pennywise",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Neft",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "saranghae",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Layman",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                }
+              ]
+            }
+          ],
+          "firstKillMatrix": [
+            {
+              "name": "loley",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 3,
+                  "deaths": 1,
+                  "diff": 2
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 3,
+                  "diff": -2
+                }
+              ]
+            },
+            {
+              "name": "pennywise",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 3,
+                  "diff": -3
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "Neft",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "saranghae",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "Layman",
+              "teamTag": "AG",
+              "records": [
+                {
+                  "name": "dvL",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "JKCF",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Hanaa",
+                  "teamTag": "AURA",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Zephyr",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Aston",
+                  "teamTag": "AURA",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ]
+        },
+        "economy": {
+          "teams": [
+            {
+              "name": "AG",
+              "pistolWon": 0,
+              "eco": {
+                "total": 4,
+                "won": 0
+              },
+              "semiEco": {
+                "total": 1,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 0,
+                "won": 0
+              },
+              "fullBuy": {
+                "total": 19,
+                "won": 13
+              }
+            },
+            {
+              "name": "AURA",
+              "pistolWon": 2,
+              "eco": {
+                "total": 2,
+                "won": 2
+              },
+              "semiEco": {
+                "total": 3,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 5,
+                "won": 3
+              },
+              "fullBuy": {
+                "total": 14,
+                "won": 6
+              }
+            }
+          ],
+          "rounds": [
+            {
+              "number": 1,
+              "teams": [
+                {
+                  "bank": 200,
+                  "loadout": 4050,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 100,
+                  "loadout": 3800,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "teams": [
+                {
+                  "bank": 8800,
+                  "loadout": 3800,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 3600,
+                  "loadout": 14100,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "teams": [
+                {
+                  "bank": 1300,
+                  "loadout": 22450,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 9200,
+                  "loadout": 20050,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "teams": [
+                {
+                  "bank": 6000,
+                  "loadout": 21900,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 3500,
+                  "loadout": 21450,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "teams": [
+                {
+                  "bank": 12700,
+                  "loadout": 23600,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 9900,
+                  "loadout": 6750,
+                  "buy": "semi-eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 6,
+              "teams": [
+                {
+                  "bank": 20600,
+                  "loadout": 24250,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 1700,
+                  "loadout": 23800,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 7,
+              "teams": [
+                {
+                  "bank": 25600,
+                  "loadout": 23950,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 1000,
+                  "loadout": 20000,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 8,
+              "teams": [
+                {
+                  "bank": 13200,
+                  "loadout": 23950,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 4600,
+                  "loadout": 16350,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 9,
+              "teams": [
+                {
+                  "bank": 6300,
+                  "loadout": 20450,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 10500,
+                  "loadout": 23750,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 10,
+              "teams": [
+                {
+                  "bank": 1700,
+                  "loadout": 21000,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 18700,
+                  "loadout": 24700,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 11,
+              "teams": [
+                {
+                  "bank": 8000,
+                  "loadout": 9250,
+                  "buy": "semi-eco",
+                  "winner": false
+                },
+                {
+                  "bank": 27600,
+                  "loadout": 25300,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 12,
+              "teams": [
+                {
+                  "bank": 2000,
+                  "loadout": 23350,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 27900,
+                  "loadout": 25500,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 13,
+              "teams": [
+                {
+                  "bank": 100,
+                  "loadout": 4150,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 200,
+                  "loadout": 3800,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 14,
+              "teams": [
+                {
+                  "bank": 7300,
+                  "loadout": 3600,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 1200,
+                  "loadout": 16400,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 15,
+              "teams": [
+                {
+                  "bank": 200,
+                  "loadout": 20200,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 14700,
+                  "loadout": 14300,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 16,
+              "teams": [
+                {
+                  "bank": 8300,
+                  "loadout": 22700,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 2600,
+                  "loadout": 22650,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 17,
+              "teams": [
+                {
+                  "bank": 8200,
+                  "loadout": 24750,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 7300,
+                  "loadout": 10200,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 18,
+              "teams": [
+                {
+                  "bank": 17100,
+                  "loadout": 25850,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 1300,
+                  "loadout": 22300,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 19,
+              "teams": [
+                {
+                  "bank": 16500,
+                  "loadout": 25750,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 9300,
+                  "loadout": 9350,
+                  "buy": "semi-eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 20,
+              "teams": [
+                {
+                  "bank": 24600,
+                  "loadout": 25750,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 2500,
+                  "loadout": 22900,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 21,
+              "teams": [
+                {
+                  "bank": 10100,
+                  "loadout": 25750,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 2300,
+                  "loadout": 21150,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 22,
+              "teams": [
+                {
+                  "bank": 15600,
+                  "loadout": 25750,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 8000,
+                  "loadout": 5200,
+                  "buy": "semi-eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 23,
+              "teams": [
+                {
+                  "bank": 16800,
+                  "loadout": 25750,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 600,
+                  "loadout": 22650,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 24,
+              "teams": [
+                {
+                  "bank": 3700,
+                  "loadout": 24850,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 6100,
+                  "loadout": 25350,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "267580",
+        "name": "Haven",
+        "status": "played",
+        "pickedBy": null,
+        "duration": null,
+        "teams": [
+          {
+            "name": "Armory Gaming",
+            "score": 0,
+            "roundsCt": null,
+            "roundsT": null
+          },
+          {
+            "name": "AURA",
+            "score": 0,
+            "roundsCt": null,
+            "roundsT": null
+          }
+        ],
+        "rounds": [],
+        "players": [
+          {
+            "id": "46098",
+            "url": "https://www.vlr.gg/player/46098/layman",
+            "name": "Layman",
+            "teamTag": "AG",
+            "country": "Thailand",
+            "flag": "th",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "48502",
+            "url": "https://www.vlr.gg/player/48502/loley",
+            "name": "loley",
+            "teamTag": "AG",
+            "country": "Thailand",
+            "flag": "th",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "52356",
+            "url": "https://www.vlr.gg/player/52356/saranghae",
+            "name": "saranghae",
+            "teamTag": "AG",
+            "country": "Thailand",
+            "flag": "th",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "52500",
+            "url": "https://www.vlr.gg/player/52500/pennywise",
+            "name": "pennywise",
+            "teamTag": "AG",
+            "country": "Thailand",
+            "flag": "th",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "52501",
+            "url": "https://www.vlr.gg/player/52501/neft",
+            "name": "Neft",
+            "teamTag": "AG",
+            "country": "Thailand",
+            "flag": "th",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "13114",
+            "url": "https://www.vlr.gg/player/13114/dvl",
+            "name": "dvL",
+            "teamTag": "AURA",
+            "country": "Indonesia",
+            "flag": "id",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "47588",
+            "url": "https://www.vlr.gg/player/47588/aston",
+            "name": "Aston",
+            "teamTag": "AURA",
+            "country": "Mongolia",
+            "flag": "mn",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "50800",
+            "url": "https://www.vlr.gg/player/50800/zephyr",
+            "name": "Zephyr",
+            "teamTag": "AURA",
+            "country": "Mongolia",
+            "flag": "mn",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "54806",
+            "url": "https://www.vlr.gg/player/54806/jkcf",
+            "name": "JKCF",
+            "teamTag": "AURA",
+            "country": "Mongolia",
+            "flag": "mn",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "54807",
+            "url": "https://www.vlr.gg/player/54807/hanaa",
+            "name": "Hanaa",
+            "teamTag": "AURA",
+            "country": "Mongolia",
+            "flag": "mn",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          }
+        ],
+        "performance": {
+          "players": [],
+          "killMatrix": [],
+          "opKillMatrix": [],
+          "firstKillMatrix": []
+        },
+        "economy": {
+          "teams": [],
+          "rounds": []
+        }
+      }
+    ],
+    "players": [
+      {
+        "id": "52356",
+        "url": "https://www.vlr.gg/player/52356/saranghae",
+        "name": "saranghae",
+        "teamTag": "AG",
+        "country": "Thailand",
+        "flag": "th",
+        "agents": [
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.18,
+          "acs": 218,
+          "kills": 30,
+          "deaths": 27,
+          "assists": 15,
+          "kast": 64,
+          "adr": 134,
+          "hs": 40,
+          "firstBloods": 5,
+          "firstDeaths": 2
+        }
+      },
+      {
+        "id": "52501",
+        "url": "https://www.vlr.gg/player/52501/neft",
+        "name": "Neft",
+        "teamTag": "AG",
+        "country": "Thailand",
+        "flag": "th",
+        "agents": [
+          {
+            "name": "Killjoy",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+          },
+          {
+            "name": "Cypher",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.95,
+          "acs": 223,
+          "kills": 33,
+          "deaths": 32,
+          "assists": 9,
+          "kast": 67,
+          "adr": 142,
+          "hs": 26,
+          "firstBloods": 2,
+          "firstDeaths": 1
+        }
+      },
+      {
+        "id": "52500",
+        "url": "https://www.vlr.gg/player/52500/pennywise",
+        "name": "pennywise",
+        "teamTag": "AG",
+        "country": "Thailand",
+        "flag": "th",
+        "agents": [
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          },
+          {
+            "name": "Jett",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.8,
+          "acs": 171,
+          "kills": 24,
+          "deaths": 31,
+          "assists": 8,
+          "kast": 69,
+          "adr": 116,
+          "hs": 26,
+          "firstBloods": 4,
+          "firstDeaths": 8
+        }
+      },
+      {
+        "id": "46098",
+        "url": "https://www.vlr.gg/player/46098/layman",
+        "name": "Layman",
+        "teamTag": "AG",
+        "country": "Thailand",
+        "flag": "th",
+        "agents": [
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          },
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.8,
+          "acs": 185,
+          "kills": 22,
+          "deaths": 32,
+          "assists": 13,
+          "kast": 74,
+          "adr": 125,
+          "hs": 37,
+          "firstBloods": 2,
+          "firstDeaths": 1
+        }
+      },
+      {
+        "id": "48502",
+        "url": "https://www.vlr.gg/player/48502/loley",
+        "name": "loley",
+        "teamTag": "AG",
+        "country": "Thailand",
+        "flag": "th",
+        "agents": [
+          {
+            "name": "Raze",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+          },
+          {
+            "name": "Phoenix",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.75,
+          "acs": 189,
+          "kills": 23,
+          "deaths": 32,
+          "assists": 11,
+          "kast": 67,
+          "adr": 121,
+          "hs": 17,
+          "firstBloods": 6,
+          "firstDeaths": 8
+        }
+      },
+      {
+        "id": "50800",
+        "url": "https://www.vlr.gg/player/50800/zephyr",
+        "name": "Zephyr",
+        "teamTag": "AURA",
+        "country": "Mongolia",
+        "flag": "mn",
+        "agents": [
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.23,
+          "acs": 244,
+          "kills": 34,
+          "deaths": 27,
+          "assists": 21,
+          "kast": 79,
+          "adr": 146,
+          "hs": 25,
+          "firstBloods": 3,
+          "firstDeaths": 3
+        }
+      },
+      {
+        "id": "54806",
+        "url": "https://www.vlr.gg/player/54806/jkcf",
+        "name": "JKCF",
+        "teamTag": "AURA",
+        "country": "Mongolia",
+        "flag": "mn",
+        "agents": [
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          },
+          {
+            "name": "Jett",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.19,
+          "acs": 266,
+          "kills": 38,
+          "deaths": 29,
+          "assists": 8,
+          "kast": 79,
+          "adr": 163,
+          "hs": 24,
+          "firstBloods": 8,
+          "firstDeaths": 6
+        }
+      },
+      {
+        "id": "13114",
+        "url": "https://www.vlr.gg/player/13114/dvl",
+        "name": "dvL",
+        "teamTag": "AURA",
+        "country": "Indonesia",
+        "flag": "id",
+        "agents": [
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          },
+          {
+            "name": "Kayo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.12,
+          "acs": 188,
+          "kills": 26,
+          "deaths": 24,
+          "assists": 16,
+          "kast": 85,
+          "adr": 119,
+          "hs": 30,
+          "firstBloods": 0,
+          "firstDeaths": 0
+        }
+      },
+      {
+        "id": "47588",
+        "url": "https://www.vlr.gg/player/47588/aston",
+        "name": "Aston",
+        "teamTag": "AURA",
+        "country": "Mongolia",
+        "flag": "mn",
+        "agents": [
+          {
+            "name": "Viper",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+          },
+          {
+            "name": "Cypher",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.08,
+          "acs": 209,
+          "kills": 29,
+          "deaths": 26,
+          "assists": 14,
+          "kast": 77,
+          "adr": 144,
+          "hs": 33,
+          "firstBloods": 5,
+          "firstDeaths": 5
+        }
+      },
+      {
+        "id": "54807",
+        "url": "https://www.vlr.gg/player/54807/hanaa",
+        "name": "Hanaa",
+        "teamTag": "AURA",
+        "country": "Mongolia",
+        "flag": "mn",
+        "agents": [
+          {
+            "name": "Waylay",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+          },
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.07,
+          "acs": 212,
+          "kills": 27,
+          "deaths": 26,
+          "assists": 14,
+          "kast": 82,
+          "adr": 154,
+          "hs": 37,
+          "firstBloods": 4,
+          "firstDeaths": 5
+        }
+      }
+    ],
+    "performance": {
+      "players": [
+        {
+          "name": "Layman",
+          "teamTag": "AG",
+          "agents": [
+            {
+              "name": "fade",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+            }
+          ],
+          "multikills": {
+            "2k": 4,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 48,
+          "plants": 7,
+          "defuses": 1
+        },
+        {
+          "name": "loley",
+          "teamTag": "AG",
+          "agents": [
+            {
+              "name": "raze",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+            }
+          ],
+          "multikills": {
+            "2k": 5,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 44,
+          "plants": 0,
+          "defuses": 1
+        },
+        {
+          "name": "saranghae",
+          "teamTag": "AG",
+          "agents": [
+            {
+              "name": "omen",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+            }
+          ],
+          "multikills": {
+            "2k": 7,
+            "3k": 2,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 65,
+          "plants": 0,
+          "defuses": 0
+        },
+        {
+          "name": "pennywise",
+          "teamTag": "AG",
+          "agents": [
+            {
+              "name": "neon",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+            }
+          ],
+          "multikills": {
+            "2k": 2,
+            "3k": 3,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 48,
+          "plants": 0,
+          "defuses": 2
+        },
+        {
+          "name": "Neft",
+          "teamTag": "AG",
+          "agents": [
+            {
+              "name": "killjoy",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+            }
+          ],
+          "multikills": {
+            "2k": 8,
+            "3k": 1,
+            "4k": 1,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 1,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 56,
+          "plants": 1,
+          "defuses": 1
+        },
+        {
+          "name": "dvL",
+          "teamTag": "AURA",
+          "agents": [
+            {
+              "name": "fade",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+            }
+          ],
+          "multikills": {
+            "2k": 8,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 1,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 54,
+          "plants": 13,
+          "defuses": 2
+        },
+        {
+          "name": "Aston",
+          "teamTag": "AURA",
+          "agents": [
+            {
+              "name": "viper",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+            }
+          ],
+          "multikills": {
+            "2k": 7,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 1,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 66,
+          "plants": 0,
+          "defuses": 0
+        },
+        {
+          "name": "Zephyr",
+          "teamTag": "AURA",
+          "agents": [
+            {
+              "name": "omen",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+            }
+          ],
+          "multikills": {
+            "2k": 7,
+            "3k": 3,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 54,
+          "plants": 4,
+          "defuses": 0
+        },
+        {
+          "name": "JKCF",
+          "teamTag": "AURA",
+          "agents": [
+            {
+              "name": "neon",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+            }
+          ],
+          "multikills": {
+            "2k": 4,
+            "3k": 2,
+            "4k": 3,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 1,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 69,
+          "plants": 1,
+          "defuses": 0
+        },
+        {
+          "name": "Hanaa",
+          "teamTag": "AURA",
+          "agents": [
+            {
+              "name": "waylay",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+            }
+          ],
+          "multikills": {
+            "2k": 8,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 1,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 56,
+          "plants": 1,
+          "defuses": 1
+        }
+      ],
+      "killMatrix": [
+        {
+          "name": "loley",
+          "teamTag": "AG",
+          "records": [
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "kills": 4,
+              "deaths": 6,
+              "diff": -2
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "kills": 6,
+              "deaths": 9,
+              "diff": -3
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "kills": 3,
+              "deaths": 8,
+              "diff": -5
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "kills": 6,
+              "deaths": 6,
+              "diff": 0
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "kills": 4,
+              "deaths": 3,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "pennywise",
+          "teamTag": "AG",
+          "records": [
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "kills": 4,
+              "deaths": 4,
+              "diff": 0
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "kills": 5,
+              "deaths": 7,
+              "diff": -2
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "kills": 5,
+              "deaths": 5,
+              "diff": 0
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "kills": 4,
+              "deaths": 6,
+              "diff": -2
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "kills": 6,
+              "deaths": 9,
+              "diff": -3
+            }
+          ]
+        },
+        {
+          "name": "Neft",
+          "teamTag": "AG",
+          "records": [
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "kills": 5,
+              "deaths": 7,
+              "diff": -2
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "kills": 10,
+              "deaths": 5,
+              "diff": 5
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "kills": 6,
+              "deaths": 7,
+              "diff": -1
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "kills": 5,
+              "deaths": 6,
+              "diff": -1
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "kills": 7,
+              "deaths": 7,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "saranghae",
+          "teamTag": "AG",
+          "records": [
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "kills": 5,
+              "deaths": 3,
+              "diff": 2
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "kills": 5,
+              "deaths": 8,
+              "diff": -3
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "kills": 6,
+              "deaths": 4,
+              "diff": 2
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "kills": 9,
+              "deaths": 10,
+              "diff": -1
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "kills": 5,
+              "deaths": 2,
+              "diff": 3
+            }
+          ]
+        },
+        {
+          "name": "Layman",
+          "teamTag": "AG",
+          "records": [
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "kills": 6,
+              "deaths": 6,
+              "diff": 0
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "kills": 3,
+              "deaths": 9,
+              "diff": -6
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "kills": 6,
+              "deaths": 3,
+              "diff": 3
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "kills": 3,
+              "deaths": 6,
+              "diff": -3
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "kills": 4,
+              "deaths": 8,
+              "diff": -4
+            }
+          ]
+        }
+      ],
+      "opKillMatrix": [
+        {
+          "name": "loley",
+          "teamTag": "AG",
+          "records": [
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 2,
+              "diff": -2
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            }
+          ]
+        },
+        {
+          "name": "pennywise",
+          "teamTag": "AG",
+          "records": [
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "Neft",
+          "teamTag": "AG",
+          "records": [
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "saranghae",
+          "teamTag": "AG",
+          "records": [
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "Layman",
+          "teamTag": "AG",
+          "records": [
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 2,
+              "diff": -2
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            }
+          ]
+        }
+      ],
+      "firstKillMatrix": [
+        {
+          "name": "loley",
+          "teamTag": "AG",
+          "records": [
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "kills": 3,
+              "deaths": 3,
+              "diff": 0
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "kills": 2,
+              "deaths": 1,
+              "diff": 1
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "kills": 1,
+              "deaths": 3,
+              "diff": -2
+            }
+          ]
+        },
+        {
+          "name": "pennywise",
+          "teamTag": "AG",
+          "records": [
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 3,
+              "diff": -3
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 2,
+              "diff": -2
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "kills": 1,
+              "deaths": 1,
+              "diff": 0
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "kills": 3,
+              "deaths": 2,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "Neft",
+          "teamTag": "AG",
+          "records": [
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "kills": 1,
+              "deaths": 1,
+              "diff": 0
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "saranghae",
+          "teamTag": "AG",
+          "records": [
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "kills": 1,
+              "deaths": 1,
+              "diff": 0
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "kills": 2,
+              "deaths": 1,
+              "diff": 1
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "Layman",
+          "teamTag": "AG",
+          "records": [
+            {
+              "name": "dvL",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "JKCF",
+              "teamTag": "AURA",
+              "kills": 1,
+              "deaths": 1,
+              "diff": 0
+            },
+            {
+              "name": "Hanaa",
+              "teamTag": "AURA",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "Zephyr",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Aston",
+              "teamTag": "AURA",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        }
+      ]
+    },
+    "economy": {
+      "teams": [
+        {
+          "name": "AG",
+          "pistolWon": 0,
+          "eco": {
+            "total": 7,
+            "won": 0
+          },
+          "semiEco": {
+            "total": 3,
+            "won": 0
+          },
+          "semiBuy": {
+            "total": 4,
+            "won": 0
+          },
+          "fullBuy": {
+            "total": 25,
+            "won": 15
+          }
+        },
+        {
+          "name": "AURA",
+          "pistolWon": 4,
+          "eco": {
+            "total": 4,
+            "won": 4
+          },
+          "semiEco": {
+            "total": 3,
+            "won": 0
+          },
+          "semiBuy": {
+            "total": 9,
+            "won": 6
+          },
+          "fullBuy": {
+            "total": 23,
+            "won": 14
+          }
+        }
+      ],
+      "rounds": []
+    }
+  }
+}

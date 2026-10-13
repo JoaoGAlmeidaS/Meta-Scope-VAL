@@ -57,6 +57,11 @@ class ApiError(RuntimeError):
     """Resposta definitiva de erro: não adianta repetir (404, corpo sem `status: OK`...)."""
 
 
+class NotFound(ApiError):
+    """404: o recurso não existe no vlr.gg. Caso real: partidas de qualificatória aberta que o
+    vlr.gg apagou continuam na listagem do evento (pegadinha 26)."""
+
+
 class TransientError(RuntimeError):
     """Erro que costuma passar sozinho; o retry tenta de novo."""
 
@@ -191,6 +196,8 @@ class ApiClient:
 
         if response.status_code in TRANSIENT_STATUS:
             raise TransientError(f"{response.status_code} em {path}")
+        if response.status_code == 404:
+            raise NotFound(f"404 em {path}: {response.text[:200]}")
         if response.status_code != 200:
             raise ApiError(f"{response.status_code} em {path}: {response.text[:200]}")
         try:

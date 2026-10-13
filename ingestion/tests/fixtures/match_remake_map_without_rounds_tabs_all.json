@@ -1,0 +1,5088 @@
+{
+  "status": "OK",
+  "data": {
+    "id": "459856",
+    "url": "https://www.vlr.gg/459856",
+    "event": {
+      "id": "2380",
+      "url": "https://www.vlr.gg/event/2380/vct-2025-emea-stage-1/group-stage",
+      "name": "VCT 2025: EMEA Stage 1",
+      "series": "Group Stage: Week 5",
+      "img": "https://owcdn.net/img/65ab59620a233.png"
+    },
+    "status": "final",
+    "in": null,
+    "format": "Bo3",
+    "date": "May 2, 2025",
+    "time": "11:00 AM EDT",
+    "timestamp": 1746198000,
+    "utcDate": "Fri, 02 May 2025 15:00:00 GMT",
+    "teams": [
+      {
+        "id": "474",
+        "url": "https://www.vlr.gg/team/474/team-liquid",
+        "name": "Team Liquid",
+        "img": "https://owcdn.net/img/640c381f0603f.png",
+        "score": 2
+      },
+      {
+        "id": "8877",
+        "url": "https://www.vlr.gg/team/8877/karmine-corp",
+        "name": "Karmine Corp",
+        "img": "https://owcdn.net/img/627403a0d9e48.png",
+        "score": 1
+      }
+    ],
+    "streams": [],
+    "vods": [],
+    "picksBans": {
+      "note": "Map 1 stats unavailable due to lobby remake.\t\t\n\t\t\tTL ban Pearl; KC ban Fracture; TL pick Split; KC pick Icebox; TL ban Haven; KC ban Ascent; Lotus remains",
+      "list": [
+        {
+          "team": null,
+          "action": "note",
+          "map": "Map 1 stats unavailable due to lobby remake.\t\t\n\t\t\tTL ban Pearl"
+        },
+        {
+          "team": "KC",
+          "action": "ban",
+          "map": "Fracture"
+        },
+        {
+          "team": "TL",
+          "action": "pick",
+          "map": "Split"
+        },
+        {
+          "team": "KC",
+          "action": "pick",
+          "map": "Icebox"
+        },
+        {
+          "team": "TL",
+          "action": "ban",
+          "map": "Haven"
+        },
+        {
+          "team": "KC",
+          "action": "ban",
+          "map": "Ascent"
+        },
+        {
+          "team": null,
+          "action": "remains",
+          "map": "Lotus"
+        }
+      ]
+    },
+    "maps": [
+      {
+        "id": "207232",
+        "name": "Icebox",
+        "status": "played",
+        "pickedBy": "Karmine Corp",
+        "duration": "54:25",
+        "teams": [
+          {
+            "name": "Team Liquid",
+            "score": 9,
+            "roundsCt": 2,
+            "roundsT": 7
+          },
+          {
+            "name": "Karmine Corp",
+            "score": 13,
+            "roundsCt": 5,
+            "roundsT": 8
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "KC",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "KC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "1-2",
+            "winner": "TL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "2-2",
+            "winner": "TL",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 5,
+            "score": "3-2",
+            "winner": "TL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "4-2",
+            "winner": "TL",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 7,
+            "score": "5-2",
+            "winner": "TL",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 8,
+            "score": "5-3",
+            "winner": "KC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "5-4",
+            "winner": "KC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "6-4",
+            "winner": "TL",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 11,
+            "score": "6-5",
+            "winner": "KC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "7-5",
+            "winner": "TL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "7-6",
+            "winner": "KC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "7-7",
+            "winner": "KC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "7-8",
+            "winner": "KC",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 16,
+            "score": "7-9",
+            "winner": "KC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 17,
+            "score": "7-10",
+            "winner": "KC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "7-11",
+            "winner": "KC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 19,
+            "score": "8-11",
+            "winner": "TL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 20,
+            "score": "8-12",
+            "winner": "KC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 21,
+            "score": "9-12",
+            "winner": "TL",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 22,
+            "score": "9-13",
+            "winner": "KC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "457",
+            "url": "https://www.vlr.gg/player/457/nats",
+            "name": "nAts",
+            "teamTag": "TL",
+            "country": "Russia",
+            "flag": "ru",
+            "agents": [
+              {
+                "name": "Viper",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.4,
+              "acs": 292,
+              "kills": 21,
+              "deaths": 15,
+              "assists": 8,
+              "kast": 77,
+              "adr": 198,
+              "hs": 18,
+              "firstBloods": 5,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "14681",
+            "url": "https://www.vlr.gg/player/14681/kamo",
+            "name": "kamo",
+            "teamTag": "TL",
+            "country": "Poland",
+            "flag": "pl",
+            "agents": [
+              {
+                "name": "Gekko",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.84,
+              "acs": 160,
+              "kills": 13,
+              "deaths": 16,
+              "assists": 2,
+              "kast": 59,
+              "adr": 116,
+              "hs": 46,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "309",
+            "url": "https://www.vlr.gg/player/309/patitek",
+            "name": "paTiTek",
+            "teamTag": "TL",
+            "country": "Poland",
+            "flag": "pl",
+            "agents": [
+              {
+                "name": "Kayo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.83,
+              "acs": 125,
+              "kills": 9,
+              "deaths": 13,
+              "assists": 10,
+              "kast": 86,
+              "adr": 77,
+              "hs": 16,
+              "firstBloods": 0,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "18162",
+            "url": "https://www.vlr.gg/player/18162/serial",
+            "name": "Serial",
+            "teamTag": "TL",
+            "country": "Latvia",
+            "flag": "lv",
+            "agents": [
+              {
+                "name": "Killjoy",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.65,
+              "acs": 132,
+              "kills": 10,
+              "deaths": 16,
+              "assists": 1,
+              "kast": 50,
+              "adr": 96,
+              "hs": 48,
+              "firstBloods": 2,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "11494",
+            "url": "https://www.vlr.gg/player/11494/keiko",
+            "name": "keiko",
+            "teamTag": "TL",
+            "country": "United Kingdom",
+            "flag": "gb",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.53,
+              "acs": 161,
+              "kills": 11,
+              "deaths": 21,
+              "assists": 4,
+              "kast": 64,
+              "adr": 104,
+              "hs": 40,
+              "firstBloods": 6,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "10307",
+            "url": "https://www.vlr.gg/player/10307/marteen",
+            "name": "marteen",
+            "teamTag": "KC",
+            "country": "Czech Republic",
+            "flag": "cz",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.67,
+              "acs": 311,
+              "kills": 26,
+              "deaths": 12,
+              "assists": 5,
+              "kast": 73,
+              "adr": 193,
+              "hs": 38,
+              "firstBloods": 2,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "2858",
+            "url": "https://www.vlr.gg/player/2858/suygetsu",
+            "name": "SUYGETSU",
+            "teamTag": "KC",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Viper",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.14,
+              "acs": 188,
+              "kills": 16,
+              "deaths": 11,
+              "assists": 4,
+              "kast": 68,
+              "adr": 118,
+              "hs": 38,
+              "firstBloods": 0,
+              "firstDeaths": 5
+            }
+          },
+          {
+            "id": "16459",
+            "url": "https://www.vlr.gg/player/16459/elite",
+            "name": "Elite",
+            "teamTag": "KC",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Killjoy",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.11,
+              "acs": 182,
+              "kills": 13,
+              "deaths": 12,
+              "assists": 5,
+              "kast": 77,
+              "adr": 140,
+              "hs": 28,
+              "firstBloods": 2,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "727",
+            "url": "https://www.vlr.gg/player/727/saadhak",
+            "name": "saadhak",
+            "teamTag": "KC",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Kayo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.95,
+              "acs": 207,
+              "kills": 14,
+              "deaths": 16,
+              "assists": 10,
+              "kast": 82,
+              "adr": 125,
+              "hs": 30,
+              "firstBloods": 2,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "5654",
+            "url": "https://www.vlr.gg/player/5654/avez",
+            "name": "Avez",
+            "teamTag": "KC",
+            "country": "Egypt",
+            "flag": "eg",
+            "agents": [
+              {
+                "name": "Tejo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.87,
+              "acs": 149,
+              "kills": 12,
+              "deaths": 13,
+              "assists": 5,
+              "kast": 59,
+              "adr": 91,
+              "hs": 19,
+              "firstBloods": 2,
+              "firstDeaths": 4
+            }
+          }
+        ],
+        "performance": {
+          "players": [
+            {
+              "name": "paTiTek",
+              "teamTag": "TL",
+              "agents": [
+                {
+                  "name": "kayo",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 40,
+              "plants": 2,
+              "defuses": 0
+            },
+            {
+              "name": "nAts",
+              "teamTag": "TL",
+              "agents": [
+                {
+                  "name": "viper",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 90,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "keiko",
+              "teamTag": "TL",
+              "agents": [
+                {
+                  "name": "jett",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 32,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "kamo",
+              "teamTag": "TL",
+              "agents": [
+                {
+                  "name": "gekko",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 46,
+              "plants": 6,
+              "defuses": 0
+            },
+            {
+              "name": "Serial",
+              "teamTag": "TL",
+              "agents": [
+                {
+                  "name": "killjoy",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 39,
+              "plants": 0,
+              "defuses": 1
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "agents": [
+                {
+                  "name": "kayo",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 45,
+              "plants": 5,
+              "defuses": 0
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "agents": [
+                {
+                  "name": "viper",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 56,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "agents": [
+                {
+                  "name": "tejo",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 39,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 68,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "agents": [
+                {
+                  "name": "killjoy",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 60,
+              "plants": 1,
+              "defuses": 1
+            }
+          ],
+          "killMatrix": [
+            {
+              "name": "paTiTek",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 4,
+                  "diff": -3
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 4,
+                  "deaths": 2,
+                  "diff": 2
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 5,
+                  "diff": -4
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "keiko",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 4,
+                  "diff": -3
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 3,
+                  "diff": -2
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 2,
+                  "deaths": 4,
+                  "diff": -2
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 4,
+                  "deaths": 3,
+                  "diff": 1
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 3,
+                  "deaths": 7,
+                  "diff": -4
+                }
+              ]
+            },
+            {
+              "name": "kamo",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 3,
+                  "deaths": 7,
+                  "diff": -4
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 4,
+                  "deaths": 2,
+                  "diff": 2
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 3,
+                  "deaths": 3,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Serial",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 6,
+                  "diff": -6
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 3,
+                  "diff": -2
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 4,
+                  "deaths": 3,
+                  "diff": 1
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 3,
+                  "diff": -2
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                }
+              ]
+            },
+            {
+              "name": "nAts",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 7,
+                  "deaths": 5,
+                  "diff": 2
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 4,
+                  "deaths": 3,
+                  "diff": 1
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 5,
+                  "deaths": 2,
+                  "diff": 3
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 3,
+                  "diff": -2
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 4,
+                  "deaths": 2,
+                  "diff": 2
+                }
+              ]
+            }
+          ],
+          "opKillMatrix": [
+            {
+              "name": "paTiTek",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "keiko",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "kamo",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Serial",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "nAts",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ],
+          "firstKillMatrix": [
+            {
+              "name": "paTiTek",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "keiko",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 3,
+                  "deaths": 0,
+                  "diff": 3
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "kamo",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Serial",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "nAts",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ]
+        },
+        "economy": {
+          "teams": [
+            {
+              "name": "TL",
+              "pistolWon": 0,
+              "eco": {
+                "total": 4,
+                "won": 0
+              },
+              "semiEco": {
+                "total": 1,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 3,
+                "won": 1
+              },
+              "fullBuy": {
+                "total": 14,
+                "won": 8
+              }
+            },
+            {
+              "name": "KC",
+              "pistolWon": 2,
+              "eco": {
+                "total": 2,
+                "won": 2
+              },
+              "semiEco": {
+                "total": 0,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 8,
+                "won": 4
+              },
+              "fullBuy": {
+                "total": 12,
+                "won": 7
+              }
+            }
+          ],
+          "rounds": [
+            {
+              "number": 1,
+              "teams": [
+                {
+                  "bank": 300,
+                  "loadout": 3750,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 200,
+                  "loadout": 3750,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "teams": [
+                {
+                  "bank": 8400,
+                  "loadout": 3500,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 3000,
+                  "loadout": 15050,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "teams": [
+                {
+                  "bank": 600,
+                  "loadout": 20950,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 15100,
+                  "loadout": 14250,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "teams": [
+                {
+                  "bank": 11600,
+                  "loadout": 22800,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 5600,
+                  "loadout": 20400,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "teams": [
+                {
+                  "bank": 16800,
+                  "loadout": 23000,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 3700,
+                  "loadout": 18650,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 6,
+              "teams": [
+                {
+                  "bank": 22800,
+                  "loadout": 23300,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 4500,
+                  "loadout": 15700,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 7,
+              "teams": [
+                {
+                  "bank": 26100,
+                  "loadout": 23300,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 5200,
+                  "loadout": 19550,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 8,
+              "teams": [
+                {
+                  "bank": 27700,
+                  "loadout": 23600,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 2100,
+                  "loadout": 19650,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 9,
+              "teams": [
+                {
+                  "bank": 15600,
+                  "loadout": 23300,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 8200,
+                  "loadout": 21050,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 10,
+              "teams": [
+                {
+                  "bank": 5900,
+                  "loadout": 23600,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 13700,
+                  "loadout": 21350,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 11,
+              "teams": [
+                {
+                  "bank": 19100,
+                  "loadout": 23600,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 8800,
+                  "loadout": 21050,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 12,
+              "teams": [
+                {
+                  "bank": 6300,
+                  "loadout": 23900,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 9100,
+                  "loadout": 25250,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 13,
+              "teams": [
+                {
+                  "bank": 400,
+                  "loadout": 2850,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 400,
+                  "loadout": 3750,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 14,
+              "teams": [
+                {
+                  "bank": 7400,
+                  "loadout": 3100,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 6100,
+                  "loadout": 14300,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 15,
+              "teams": [
+                {
+                  "bank": 200,
+                  "loadout": 19500,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 16700,
+                  "loadout": 12600,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 16,
+              "teams": [
+                {
+                  "bank": 8700,
+                  "loadout": 10200,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 12600,
+                  "loadout": 22650,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 17,
+              "teams": [
+                {
+                  "bank": 1100,
+                  "loadout": 22800,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 22500,
+                  "loadout": 23950,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 18,
+              "teams": [
+                {
+                  "bank": 7900,
+                  "loadout": 8700,
+                  "buy": "semi-eco",
+                  "winner": false
+                },
+                {
+                  "bank": 23500,
+                  "loadout": 24550,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 19,
+              "teams": [
+                {
+                  "bank": 800,
+                  "loadout": 22350,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 32900,
+                  "loadout": 25150,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 20,
+              "teams": [
+                {
+                  "bank": 6200,
+                  "loadout": 22550,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 20700,
+                  "loadout": 22950,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 21,
+              "teams": [
+                {
+                  "bank": 1000,
+                  "loadout": 16850,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 26100,
+                  "loadout": 23850,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 22,
+              "teams": [
+                {
+                  "bank": 6800,
+                  "loadout": 22900,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 14700,
+                  "loadout": 22650,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "207233",
+        "name": "Lotus",
+        "status": "played",
+        "pickedBy": null,
+        "duration": "38:02",
+        "teams": [
+          {
+            "name": "Team Liquid",
+            "score": 13,
+            "roundsCt": 4,
+            "roundsT": 9
+          },
+          {
+            "name": "Karmine Corp",
+            "score": 6,
+            "roundsCt": 3,
+            "roundsT": 3
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "KC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "1-1",
+            "winner": "TL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "2-1",
+            "winner": "TL",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 4,
+            "score": "3-1",
+            "winner": "TL",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 5,
+            "score": "3-2",
+            "winner": "KC",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 6,
+            "score": "4-2",
+            "winner": "TL",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 7,
+            "score": "5-2",
+            "winner": "TL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 8,
+            "score": "6-2",
+            "winner": "TL",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 9,
+            "score": "7-2",
+            "winner": "TL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "8-2",
+            "winner": "TL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "9-2",
+            "winner": "TL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "9-3",
+            "winner": "KC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "10-3",
+            "winner": "TL",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 14,
+            "score": "11-3",
+            "winner": "TL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "11-4",
+            "winner": "KC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "12-4",
+            "winner": "TL",
+            "side": "ct",
+            "method": "time",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/time.webp"
+          },
+          {
+            "number": 17,
+            "score": "12-5",
+            "winner": "KC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "12-6",
+            "winner": "KC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 19,
+            "score": "13-6",
+            "winner": "TL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "11494",
+            "url": "https://www.vlr.gg/player/11494/keiko",
+            "name": "keiko",
+            "teamTag": "TL",
+            "country": "United Kingdom",
+            "flag": "gb",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.47,
+              "acs": 266,
+              "kills": 20,
+              "deaths": 10,
+              "assists": 7,
+              "kast": 95,
+              "adr": 177,
+              "hs": 38,
+              "firstBloods": 2,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "457",
+            "url": "https://www.vlr.gg/player/457/nats",
+            "name": "nAts",
+            "teamTag": "TL",
+            "country": "Russia",
+            "flag": "ru",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.12,
+              "acs": 149,
+              "kills": 13,
+              "deaths": 7,
+              "assists": 2,
+              "kast": 74,
+              "adr": 102,
+              "hs": 22,
+              "firstBloods": 2,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "14681",
+            "url": "https://www.vlr.gg/player/14681/kamo",
+            "name": "kamo",
+            "teamTag": "TL",
+            "country": "Poland",
+            "flag": "pl",
+            "agents": [
+              {
+                "name": "Waylay",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.05,
+              "acs": 248,
+              "kills": 16,
+              "deaths": 16,
+              "assists": 3,
+              "kast": 74,
+              "adr": 150,
+              "hs": 40,
+              "firstBloods": 6,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "18162",
+            "url": "https://www.vlr.gg/player/18162/serial",
+            "name": "Serial",
+            "teamTag": "TL",
+            "country": "Latvia",
+            "flag": "lv",
+            "agents": [
+              {
+                "name": "Deadlock",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/deadlock.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.03,
+              "acs": 174,
+              "kills": 12,
+              "deaths": 11,
+              "assists": 6,
+              "kast": 74,
+              "adr": 120,
+              "hs": 60,
+              "firstBloods": 2,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "309",
+            "url": "https://www.vlr.gg/player/309/patitek",
+            "name": "paTiTek",
+            "teamTag": "TL",
+            "country": "Poland",
+            "flag": "pl",
+            "agents": [
+              {
+                "name": "Tejo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.03,
+              "acs": 197,
+              "kills": 13,
+              "deaths": 13,
+              "assists": 10,
+              "kast": 84,
+              "adr": 139,
+              "hs": 22,
+              "firstBloods": 2,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "10307",
+            "url": "https://www.vlr.gg/player/10307/marteen",
+            "name": "marteen",
+            "teamTag": "KC",
+            "country": "Czech Republic",
+            "flag": "cz",
+            "agents": [
+              {
+                "name": "Yoru",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.15,
+              "acs": 227,
+              "kills": 15,
+              "deaths": 14,
+              "assists": 5,
+              "kast": 79,
+              "adr": 159,
+              "hs": 47,
+              "firstBloods": 2,
+              "firstDeaths": 4
+            }
+          },
+          {
+            "id": "5654",
+            "url": "https://www.vlr.gg/player/5654/avez",
+            "name": "Avez",
+            "teamTag": "KC",
+            "country": "Egypt",
+            "flag": "eg",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.95,
+              "acs": 186,
+              "kills": 11,
+              "deaths": 14,
+              "assists": 6,
+              "kast": 68,
+              "adr": 130,
+              "hs": 41,
+              "firstBloods": 1,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "2858",
+            "url": "https://www.vlr.gg/player/2858/suygetsu",
+            "name": "SUYGETSU",
+            "teamTag": "KC",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.76,
+              "acs": 144,
+              "kills": 10,
+              "deaths": 14,
+              "assists": 1,
+              "kast": 58,
+              "adr": 101,
+              "hs": 30,
+              "firstBloods": 0,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "727",
+            "url": "https://www.vlr.gg/player/727/saadhak",
+            "name": "saadhak",
+            "teamTag": "KC",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Harbor",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.71,
+              "acs": 187,
+              "kills": 12,
+              "deaths": 17,
+              "assists": 8,
+              "kast": 79,
+              "adr": 111,
+              "hs": 17,
+              "firstBloods": 2,
+              "firstDeaths": 5
+            }
+          },
+          {
+            "id": "16459",
+            "url": "https://www.vlr.gg/player/16459/elite",
+            "name": "Elite",
+            "teamTag": "KC",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Vyse",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.59,
+              "acs": 142,
+              "kills": 9,
+              "deaths": 15,
+              "assists": 5,
+              "kast": 68,
+              "adr": 106,
+              "hs": 33,
+              "firstBloods": 0,
+              "firstDeaths": 2
+            }
+          }
+        ],
+        "performance": {
+          "players": [
+            {
+              "name": "paTiTek",
+              "teamTag": "TL",
+              "agents": [
+                {
+                  "name": "tejo",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 52,
+              "plants": 4,
+              "defuses": 0
+            },
+            {
+              "name": "nAts",
+              "teamTag": "TL",
+              "agents": [
+                {
+                  "name": "cypher",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 46,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "keiko",
+              "teamTag": "TL",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 91,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "kamo",
+              "teamTag": "TL",
+              "agents": [
+                {
+                  "name": "waylay",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 56,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "Serial",
+              "teamTag": "TL",
+              "agents": [
+                {
+                  "name": "deadlock",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/deadlock.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 48,
+              "plants": 3,
+              "defuses": 1
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "agents": [
+                {
+                  "name": "harbor",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 43,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 41,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "agents": [
+                {
+                  "name": "fade",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 60,
+              "plants": 2,
+              "defuses": 1
+            },
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "agents": [
+                {
+                  "name": "yoru",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 65,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "agents": [
+                {
+                  "name": "vyse",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 45,
+              "plants": 1,
+              "defuses": 0
+            }
+          ],
+          "killMatrix": [
+            {
+              "name": "paTiTek",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 3,
+                  "deaths": 2,
+                  "diff": 1
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 4,
+                  "deaths": 3,
+                  "diff": 1
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 3,
+                  "deaths": 4,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "keiko",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 4,
+                  "deaths": 4,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 4,
+                  "deaths": 4,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 6,
+                  "deaths": 0,
+                  "diff": 6
+                }
+              ]
+            },
+            {
+              "name": "kamo",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 4,
+                  "deaths": 5,
+                  "diff": -1
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 6,
+                  "deaths": 1,
+                  "diff": 5
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 3,
+                  "deaths": 7,
+                  "diff": -4
+                }
+              ]
+            },
+            {
+              "name": "Serial",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 3,
+                  "deaths": 4,
+                  "diff": -1
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 3,
+                  "deaths": 2,
+                  "diff": 1
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 4,
+                  "diff": -3
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 3,
+                  "deaths": 0,
+                  "diff": 3
+                }
+              ]
+            },
+            {
+              "name": "nAts",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 2,
+                  "deaths": 3,
+                  "diff": -1
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 4,
+                  "deaths": 2,
+                  "diff": 2
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                }
+              ]
+            }
+          ],
+          "opKillMatrix": [
+            {
+              "name": "paTiTek",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "keiko",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "kamo",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Serial",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "nAts",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            }
+          ],
+          "firstKillMatrix": [
+            {
+              "name": "paTiTek",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "keiko",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "kamo",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Serial",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "nAts",
+              "teamTag": "TL",
+              "records": [
+                {
+                  "name": "marteen",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                },
+                {
+                  "name": "Elite",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Avez",
+                  "teamTag": "KC",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "SUYGETSU",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "saadhak",
+                  "teamTag": "KC",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ]
+        },
+        "economy": {
+          "teams": [
+            {
+              "name": "TL",
+              "pistolWon": 1,
+              "eco": {
+                "total": 3,
+                "won": 2
+              },
+              "semiEco": {
+                "total": 1,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 4,
+                "won": 3
+              },
+              "fullBuy": {
+                "total": 11,
+                "won": 8
+              }
+            },
+            {
+              "name": "KC",
+              "pistolWon": 1,
+              "eco": {
+                "total": 3,
+                "won": 1
+              },
+              "semiEco": {
+                "total": 1,
+                "won": 1
+              },
+              "semiBuy": {
+                "total": 9,
+                "won": 3
+              },
+              "fullBuy": {
+                "total": 6,
+                "won": 1
+              }
+            }
+          ],
+          "rounds": [
+            {
+              "number": 1,
+              "teams": [
+                {
+                  "bank": 100,
+                  "loadout": 3900,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 500,
+                  "loadout": 3200,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "teams": [
+                {
+                  "bank": 9000,
+                  "loadout": 1550,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 2600,
+                  "loadout": 15300,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "teams": [
+                {
+                  "bank": 9500,
+                  "loadout": 21250,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 8900,
+                  "loadout": 4300,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "teams": [
+                {
+                  "bank": 19200,
+                  "loadout": 22350,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 900,
+                  "loadout": 20900,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "teams": [
+                {
+                  "bank": 23900,
+                  "loadout": 22850,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 8200,
+                  "loadout": 9900,
+                  "buy": "semi-eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 6,
+              "teams": [
+                {
+                  "bank": 12600,
+                  "loadout": 23350,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 6200,
+                  "loadout": 22350,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 7,
+              "teams": [
+                {
+                  "bank": 23300,
+                  "loadout": 23850,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 10300,
+                  "loadout": 10150,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 8,
+              "teams": [
+                {
+                  "bank": 23300,
+                  "loadout": 23650,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 2500,
+                  "loadout": 20900,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 9,
+              "teams": [
+                {
+                  "bank": 24500,
+                  "loadout": 23350,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 7600,
+                  "loadout": 11700,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 10,
+              "teams": [
+                {
+                  "bank": 25800,
+                  "loadout": 25650,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 3800,
+                  "loadout": 19800,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 11,
+              "teams": [
+                {
+                  "bank": 28300,
+                  "loadout": 23650,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 1200,
+                  "loadout": 18650,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 12,
+              "teams": [
+                {
+                  "bank": 24100,
+                  "loadout": 23350,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 400,
+                  "loadout": 16200,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 13,
+              "teams": [
+                {
+                  "bank": 100,
+                  "loadout": 3400,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 300,
+                  "loadout": 3850,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 14,
+              "teams": [
+                {
+                  "bank": 300,
+                  "loadout": 16700,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 900,
+                  "loadout": 11650,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 15,
+              "teams": [
+                {
+                  "bank": 8700,
+                  "loadout": 15900,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 4900,
+                  "loadout": 10250,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 16,
+              "teams": [
+                {
+                  "bank": 1400,
+                  "loadout": 18000,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 3700,
+                  "loadout": 21050,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 17,
+              "teams": [
+                {
+                  "bank": 5500,
+                  "loadout": 22300,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 300,
+                  "loadout": 14100,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 18,
+              "teams": [
+                {
+                  "bank": 7900,
+                  "loadout": 8800,
+                  "buy": "semi-eco",
+                  "winner": false
+                },
+                {
+                  "bank": 5200,
+                  "loadout": 23000,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 19,
+              "teams": [
+                {
+                  "bank": 600,
+                  "loadout": 19950,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 15000,
+                  "loadout": 25350,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "214836",
+        "name": "Split",
+        "status": "played",
+        "pickedBy": "Team Liquid",
+        "duration": null,
+        "teams": [
+          {
+            "name": "Team Liquid",
+            "score": 13,
+            "roundsCt": null,
+            "roundsT": null
+          },
+          {
+            "name": "Karmine Corp",
+            "score": 6,
+            "roundsCt": null,
+            "roundsT": null
+          }
+        ],
+        "rounds": [],
+        "players": [
+          {
+            "id": "457",
+            "url": "https://www.vlr.gg/player/457/nats",
+            "name": "nAts",
+            "teamTag": "TL",
+            "country": "Russia",
+            "flag": "ru",
+            "agents": [
+              {
+                "name": "Viper",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 21,
+              "deaths": 14,
+              "assists": 4,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "18162",
+            "url": "https://www.vlr.gg/player/18162/serial",
+            "name": "Serial",
+            "teamTag": "TL",
+            "country": "Latvia",
+            "flag": "lv",
+            "agents": [
+              {
+                "name": "Astra",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 21,
+              "deaths": 13,
+              "assists": 9,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "11494",
+            "url": "https://www.vlr.gg/player/11494/keiko",
+            "name": "keiko",
+            "teamTag": "TL",
+            "country": "United Kingdom",
+            "flag": "gb",
+            "agents": [
+              {
+                "name": "Raze",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 18,
+              "deaths": 16,
+              "assists": 4,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "14681",
+            "url": "https://www.vlr.gg/player/14681/kamo",
+            "name": "kamo",
+            "teamTag": "TL",
+            "country": "Poland",
+            "flag": "pl",
+            "agents": [
+              {
+                "name": "Yoru",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 14,
+              "deaths": 12,
+              "assists": 1,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "309",
+            "url": "https://www.vlr.gg/player/309/patitek",
+            "name": "paTiTek",
+            "teamTag": "TL",
+            "country": "Poland",
+            "flag": "pl",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 7,
+              "deaths": 14,
+              "assists": 6,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "16459",
+            "url": "https://www.vlr.gg/player/16459/elite",
+            "name": "Elite",
+            "teamTag": "KC",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 22,
+              "deaths": 17,
+              "assists": 2,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "10307",
+            "url": "https://www.vlr.gg/player/10307/marteen",
+            "name": "marteen",
+            "teamTag": "KC",
+            "country": "Czech Republic",
+            "flag": "cz",
+            "agents": [
+              {
+                "name": "Yoru",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 14,
+              "deaths": 15,
+              "assists": 5,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "5654",
+            "url": "https://www.vlr.gg/player/5654/avez",
+            "name": "Avez",
+            "teamTag": "KC",
+            "country": "Egypt",
+            "flag": "eg",
+            "agents": [
+              {
+                "name": "Tejo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 13,
+              "deaths": 16,
+              "assists": 2,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "2858",
+            "url": "https://www.vlr.gg/player/2858/suygetsu",
+            "name": "SUYGETSU",
+            "teamTag": "KC",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 12,
+              "deaths": 17,
+              "assists": 7,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "727",
+            "url": "https://www.vlr.gg/player/727/saadhak",
+            "name": "saadhak",
+            "teamTag": "KC",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Breach",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 8,
+              "deaths": 16,
+              "assists": 8,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          }
+        ],
+        "performance": {
+          "players": [],
+          "killMatrix": [],
+          "opKillMatrix": [],
+          "firstKillMatrix": []
+        },
+        "economy": {
+          "teams": [],
+          "rounds": []
+        }
+      }
+    ],
+    "players": [
+      {
+        "id": "457",
+        "url": "https://www.vlr.gg/player/457/nats",
+        "name": "nAts",
+        "teamTag": "TL",
+        "country": "Russia",
+        "flag": "ru",
+        "agents": [
+          {
+            "name": "Viper",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+          },
+          {
+            "name": "Cypher",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.27,
+          "acs": 226,
+          "kills": 55,
+          "deaths": 36,
+          "assists": 14,
+          "kast": 76,
+          "adr": 153,
+          "hs": 20,
+          "firstBloods": 7,
+          "firstDeaths": 4
+        }
+      },
+      {
+        "id": "11494",
+        "url": "https://www.vlr.gg/player/11494/keiko",
+        "name": "keiko",
+        "teamTag": "TL",
+        "country": "United Kingdom",
+        "flag": "gb",
+        "agents": [
+          {
+            "name": "Jett",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+          },
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          },
+          {
+            "name": "Raze",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.96,
+          "acs": 210,
+          "kills": 49,
+          "deaths": 47,
+          "assists": 15,
+          "kast": 78,
+          "adr": 138,
+          "hs": 39,
+          "firstBloods": 8,
+          "firstDeaths": 3
+        }
+      },
+      {
+        "id": "14681",
+        "url": "https://www.vlr.gg/player/14681/kamo",
+        "name": "kamo",
+        "teamTag": "TL",
+        "country": "Poland",
+        "flag": "pl",
+        "agents": [
+          {
+            "name": "Gekko",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png"
+          },
+          {
+            "name": "Waylay",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+          },
+          {
+            "name": "Yoru",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.94,
+          "acs": 201,
+          "kills": 43,
+          "deaths": 44,
+          "assists": 6,
+          "kast": 66,
+          "adr": 132,
+          "hs": 43,
+          "firstBloods": 7,
+          "firstDeaths": 3
+        }
+      },
+      {
+        "id": "309",
+        "url": "https://www.vlr.gg/player/309/patitek",
+        "name": "paTiTek",
+        "teamTag": "TL",
+        "country": "Poland",
+        "flag": "pl",
+        "agents": [
+          {
+            "name": "Kayo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+          },
+          {
+            "name": "Tejo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+          },
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.92,
+          "acs": 158,
+          "kills": 29,
+          "deaths": 40,
+          "assists": 26,
+          "kast": 85,
+          "adr": 106,
+          "hs": 19,
+          "firstBloods": 2,
+          "firstDeaths": 1
+        }
+      },
+      {
+        "id": "18162",
+        "url": "https://www.vlr.gg/player/18162/serial",
+        "name": "Serial",
+        "teamTag": "TL",
+        "country": "Latvia",
+        "flag": "lv",
+        "agents": [
+          {
+            "name": "Killjoy",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+          },
+          {
+            "name": "Deadlock",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/deadlock.png"
+          },
+          {
+            "name": "Astra",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.83,
+          "acs": 151,
+          "kills": 43,
+          "deaths": 40,
+          "assists": 16,
+          "kast": 61,
+          "adr": 107,
+          "hs": 53,
+          "firstBloods": 4,
+          "firstDeaths": 2
+        }
+      },
+      {
+        "id": "10307",
+        "url": "https://www.vlr.gg/player/10307/marteen",
+        "name": "marteen",
+        "teamTag": "KC",
+        "country": "Czech Republic",
+        "flag": "cz",
+        "agents": [
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          },
+          {
+            "name": "Yoru",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.43,
+          "acs": 272,
+          "kills": 55,
+          "deaths": 41,
+          "assists": 15,
+          "kast": 76,
+          "adr": 177,
+          "hs": 42,
+          "firstBloods": 4,
+          "firstDeaths": 7
+        }
+      },
+      {
+        "id": "2858",
+        "url": "https://www.vlr.gg/player/2858/suygetsu",
+        "name": "SUYGETSU",
+        "teamTag": "KC",
+        "country": "International",
+        "flag": "un",
+        "agents": [
+          {
+            "name": "Viper",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+          },
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.96,
+          "acs": 168,
+          "kills": 38,
+          "deaths": 42,
+          "assists": 12,
+          "kast": 63,
+          "adr": 110,
+          "hs": 34,
+          "firstBloods": 0,
+          "firstDeaths": 6
+        }
+      },
+      {
+        "id": "5654",
+        "url": "https://www.vlr.gg/player/5654/avez",
+        "name": "Avez",
+        "teamTag": "KC",
+        "country": "Egypt",
+        "flag": "eg",
+        "agents": [
+          {
+            "name": "Tejo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+          },
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.9,
+          "acs": 166,
+          "kills": 36,
+          "deaths": 43,
+          "assists": 13,
+          "kast": 63,
+          "adr": 109,
+          "hs": 30,
+          "firstBloods": 3,
+          "firstDeaths": 6
+        }
+      },
+      {
+        "id": "16459",
+        "url": "https://www.vlr.gg/player/16459/elite",
+        "name": "Elite",
+        "teamTag": "KC",
+        "country": "Türkiye",
+        "flag": "tr",
+        "agents": [
+          {
+            "name": "Killjoy",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+          },
+          {
+            "name": "Vyse",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png"
+          },
+          {
+            "name": "Cypher",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.87,
+          "acs": 163,
+          "kills": 44,
+          "deaths": 44,
+          "assists": 12,
+          "kast": 73,
+          "adr": 124,
+          "hs": 30,
+          "firstBloods": 2,
+          "firstDeaths": 2
+        }
+      },
+      {
+        "id": "727",
+        "url": "https://www.vlr.gg/player/727/saadhak",
+        "name": "saadhak",
+        "teamTag": "KC",
+        "country": "Argentina",
+        "flag": "ar",
+        "agents": [
+          {
+            "name": "Kayo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+          },
+          {
+            "name": "Harbor",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/harbor.png"
+          },
+          {
+            "name": "Breach",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.84,
+          "acs": 198,
+          "kills": 34,
+          "deaths": 49,
+          "assists": 26,
+          "kast": 80,
+          "adr": 118,
+          "hs": 23,
+          "firstBloods": 4,
+          "firstDeaths": 7
+        }
+      }
+    ],
+    "performance": {
+      "players": [
+        {
+          "name": "paTiTek",
+          "teamTag": "TL",
+          "agents": [
+            {
+              "name": "kayo",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+            }
+          ],
+          "multikills": {
+            "2k": 3,
+            "3k": 1,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 46,
+          "plants": 6,
+          "defuses": 0
+        },
+        {
+          "name": "nAts",
+          "teamTag": "TL",
+          "agents": [
+            {
+              "name": "viper",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+            }
+          ],
+          "multikills": {
+            "2k": 4,
+            "3k": 2,
+            "4k": 1,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 68,
+          "plants": 1,
+          "defuses": 0
+        },
+        {
+          "name": "keiko",
+          "teamTag": "TL",
+          "agents": [
+            {
+              "name": "jett",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+            }
+          ],
+          "multikills": {
+            "2k": 6,
+            "3k": 0,
+            "4k": 1,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 62,
+          "plants": 1,
+          "defuses": 0
+        },
+        {
+          "name": "kamo",
+          "teamTag": "TL",
+          "agents": [
+            {
+              "name": "gekko",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png"
+            }
+          ],
+          "multikills": {
+            "2k": 3,
+            "3k": 2,
+            "4k": 1,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 51,
+          "plants": 6,
+          "defuses": 0
+        },
+        {
+          "name": "Serial",
+          "teamTag": "TL",
+          "agents": [
+            {
+              "name": "killjoy",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+            }
+          ],
+          "multikills": {
+            "2k": 6,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 44,
+          "plants": 3,
+          "defuses": 2
+        },
+        {
+          "name": "saadhak",
+          "teamTag": "KC",
+          "agents": [
+            {
+              "name": "kayo",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+            }
+          ],
+          "multikills": {
+            "2k": 5,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 44,
+          "plants": 6,
+          "defuses": 0
+        },
+        {
+          "name": "SUYGETSU",
+          "teamTag": "KC",
+          "agents": [
+            {
+              "name": "viper",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+            }
+          ],
+          "multikills": {
+            "2k": 4,
+            "3k": 1,
+            "4k": 1,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 49,
+          "plants": 1,
+          "defuses": 0
+        },
+        {
+          "name": "Avez",
+          "teamTag": "KC",
+          "agents": [
+            {
+              "name": "tejo",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+            }
+          ],
+          "multikills": {
+            "2k": 4,
+            "3k": 1,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 50,
+          "plants": 3,
+          "defuses": 1
+        },
+        {
+          "name": "marteen",
+          "teamTag": "KC",
+          "agents": [
+            {
+              "name": "omen",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+            }
+          ],
+          "multikills": {
+            "2k": 4,
+            "3k": 6,
+            "4k": 1,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 67,
+          "plants": 1,
+          "defuses": 0
+        },
+        {
+          "name": "Elite",
+          "teamTag": "KC",
+          "agents": [
+            {
+              "name": "killjoy",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+            }
+          ],
+          "multikills": {
+            "2k": 5,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 53,
+          "plants": 2,
+          "defuses": 1
+        }
+      ],
+      "killMatrix": [
+        {
+          "name": "paTiTek",
+          "teamTag": "TL",
+          "records": [
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "kills": 4,
+              "deaths": 6,
+              "diff": -2
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "kills": 5,
+              "deaths": 4,
+              "diff": 1
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "kills": 5,
+              "deaths": 4,
+              "diff": 1
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "kills": 3,
+              "deaths": 7,
+              "diff": -4
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "kills": 5,
+              "deaths": 5,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "keiko",
+          "teamTag": "TL",
+          "records": [
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "kills": 3,
+              "deaths": 5,
+              "diff": -2
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "kills": 5,
+              "deaths": 7,
+              "diff": -2
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "kills": 6,
+              "deaths": 5,
+              "diff": 1
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "kills": 8,
+              "deaths": 7,
+              "diff": 1
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "kills": 9,
+              "deaths": 7,
+              "diff": 2
+            }
+          ]
+        },
+        {
+          "name": "kamo",
+          "teamTag": "TL",
+          "records": [
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "kills": 7,
+              "deaths": 12,
+              "diff": -5
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "kills": 8,
+              "deaths": 3,
+              "diff": 5
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "kills": 2,
+              "deaths": 4,
+              "diff": -2
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "kills": 6,
+              "deaths": 3,
+              "diff": 3
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "kills": 6,
+              "deaths": 10,
+              "diff": -4
+            }
+          ]
+        },
+        {
+          "name": "Serial",
+          "teamTag": "TL",
+          "records": [
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "kills": 3,
+              "deaths": 10,
+              "diff": -7
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "kills": 4,
+              "deaths": 5,
+              "diff": -1
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "kills": 5,
+              "deaths": 7,
+              "diff": -2
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "kills": 3,
+              "deaths": 4,
+              "diff": -1
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "kills": 7,
+              "deaths": 1,
+              "diff": 6
+            }
+          ]
+        },
+        {
+          "name": "nAts",
+          "teamTag": "TL",
+          "records": [
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "kills": 9,
+              "deaths": 8,
+              "diff": 1
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "kills": 5,
+              "deaths": 3,
+              "diff": 2
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "kills": 9,
+              "deaths": 3,
+              "diff": 6
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "kills": 5,
+              "deaths": 5,
+              "diff": 0
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "kills": 6,
+              "deaths": 3,
+              "diff": 3
+            }
+          ]
+        }
+      ],
+      "opKillMatrix": [
+        {
+          "name": "paTiTek",
+          "teamTag": "TL",
+          "records": [
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "keiko",
+          "teamTag": "TL",
+          "records": [
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "kamo",
+          "teamTag": "TL",
+          "records": [
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "Serial",
+          "teamTag": "TL",
+          "records": [
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "nAts",
+          "teamTag": "TL",
+          "records": [
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            }
+          ]
+        }
+      ],
+      "firstKillMatrix": [
+        {
+          "name": "paTiTek",
+          "teamTag": "TL",
+          "records": [
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "keiko",
+          "teamTag": "TL",
+          "records": [
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "kills": 2,
+              "deaths": 0,
+              "diff": 2
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "kills": 1,
+              "deaths": 1,
+              "diff": 0
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "kills": 3,
+              "deaths": 0,
+              "diff": 3
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "kills": 2,
+              "deaths": 1,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "kamo",
+          "teamTag": "TL",
+          "records": [
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "kills": 2,
+              "deaths": 0,
+              "diff": 2
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "kills": 2,
+              "deaths": 0,
+              "diff": 2
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "kills": 2,
+              "deaths": 2,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "Serial",
+          "teamTag": "TL",
+          "records": [
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "kills": 1,
+              "deaths": 1,
+              "diff": 0
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "kills": 2,
+              "deaths": 1,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "nAts",
+          "teamTag": "TL",
+          "records": [
+            {
+              "name": "marteen",
+              "teamTag": "KC",
+              "kills": 3,
+              "deaths": 3,
+              "diff": 0
+            },
+            {
+              "name": "Elite",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "Avez",
+              "teamTag": "KC",
+              "kills": 3,
+              "deaths": 0,
+              "diff": 3
+            },
+            {
+              "name": "SUYGETSU",
+              "teamTag": "KC",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "saadhak",
+              "teamTag": "KC",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        }
+      ]
+    },
+    "economy": {
+      "teams": [
+        {
+          "name": "TL",
+          "pistolWon": 1,
+          "eco": {
+            "total": 7,
+            "won": 2
+          },
+          "semiEco": {
+            "total": 2,
+            "won": 0
+          },
+          "semiBuy": {
+            "total": 7,
+            "won": 4
+          },
+          "fullBuy": {
+            "total": 25,
+            "won": 16
+          }
+        },
+        {
+          "name": "KC",
+          "pistolWon": 3,
+          "eco": {
+            "total": 5,
+            "won": 3
+          },
+          "semiEco": {
+            "total": 1,
+            "won": 1
+          },
+          "semiBuy": {
+            "total": 17,
+            "won": 7
+          },
+          "fullBuy": {
+            "total": 18,
+            "won": 8
+          }
+        }
+      ],
+      "rounds": []
+    }
+  }
+}

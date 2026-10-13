@@ -1,6 +1,14 @@
 name: build
 
+# Dois trilhos (decisão do D14):
+#   test   todo push e PR, sem segredo: lint, pytest e o build inteiro (Dagster → dbt → testes)
+#          sobre o lake gerado dos fixtures do repositório.
+#   build  manual (e semanal a partir do D29): lake real do Hugging Face, coleta incremental,
+#          warehouse e linhagem. Precisa do segredo HF_TOKEN.
 on:
+  push:
+    branches: [main]
+  pull_request:
   workflow_dispatch:
   # D29: ligar o schedule semanal quando o pipeline estabilizar.
   # schedule:
@@ -8,15 +16,9 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,40 +31,80 @@ jobs:
       - name: Ambiente
         run: uv sync --frozen
 
-      - name: Lint e testes
-        run: |
-          uv run ruff check .
-          uv run pytest
+      - name: Lint
+        run: make lint
 
-      # Carga incremental apenas. O backfill historico roda local:
-      # os IPs do Actions sao tratados com mais rigor pelo Cloudflare.
-      # D14: fechar o ciclo lake-pull → incremental → lake-push.
-      - name: Carga incremental
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: uv run python -m ingestion.collectors incremental
-        continue-on-error: true
+      - name: Pacotes do dbt
+        run: make dbt-deps
 
-      - name: Warehouse
-        run: |
-          cd dbt
-          uv run dbt build
-          uv run dbt docs generate
+      - name: Testes
+        run: make test
 
-      - name: Gerar o site
-        run: uv run python -m pipeline.build_site
+      - name: Build do zero sobre o lake de fixtures
+        run: make build-fixtures
 
-      - name: Upload do artefato
-        uses: actions/upload-pages-artifact@v3
+  build:
+    needs: test
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: build-real
+      cancel-in-progress: false
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      HF_LAKE_REPO: ${{ vars.HF_LAKE_REPO }}  # opcional; vazio = <usuário do token>/meta-scope-val-lake
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@v3
         with:
+          enable-cache: true
+
+      - name: Ambiente
+        run: uv sync --frozen
+
+      - name: Conferir o segredo
+        run: |
+          if [ -z "$HF_TOKEN" ]; then
+            echo "::error::Segredo HF_TOKEN ausente (Settings → Secrets and variables → Actions)."
+            exit 1
+          fi
+
+      - name: Baixar o lake
+        run: make lake-pull
+
+      # Só carga incremental no CI: o histórico roda local, uma vez. Se o vlr.gg bloquear os IPs
+      # do Actions, o build segue com o lake baixado (e o lake remoto não é tocado).
+      - name: Coleta incremental (temporada corrente)
+        id: ingest
+        continue-on-error: true
+        run: make ingest
+
+      - name: Enviar o lake
+        if: steps.ingest.outcome == 'success'
+        run: make lake-push
+
+      - name: Warehouse e linhagem
+        run: make build
+
+      - name: Guardar dist/
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
           path: dist
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+  # D29: publicação no GitHub Pages (dbt docs em /lineage e o site), junto com o schedule.
+  # deploy:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     pages: write
+  #     id-token: write
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   steps:
+  #     - uses: actions/upload-pages-artifact@v3 ...
+  #     - id: deployment
+  #       uses: actions/deploy-pages@v4

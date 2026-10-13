@@ -1,23 +1,255 @@
 version: 2
 
-# D10 — dimensoes (resolver aqui a normalizacao de nomes de time)
-# D11 — fatos
-# D16 — mart de features anti-vazamento
+# D10 — dimensões. D11 — fatos. Os fatos cobrem todo o histórico coletado e carregam
+# `is_excluded` e `is_in_analysis_window`; os marts de análise (D16, `mart_*`) filtram por elas.
+# O mart de features com teste anti-vazamento (tests/assert_no_future_leakage.sql) entra no D16.
+
 models:
-  - name: dim_team
-    description: "Times, com nomes historicos normalizados para uma unica identidade."
-  - name: dim_player
-  - name: dim_map
+  # --- dimensões ------------------------------------------------------------------------------
+
   - name: dim_event
-    description: "Eventos, com tier — usado como feature e no ajuste do rating."
+    description: "Eventos com os overrides do seed aplicados: tier, região e exclusão valem daqui."
+    columns:
+      - name: event_id
+        data_tests: [unique, not_null]
+      - name: tier
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["vct", "vcl"]
+      - name: region
+        data_tests:
+          - not_null:
+              config:
+                where: "not is_excluded"
+          - accepted_values:
+              arguments:
+                values: ["americas", "emea", "pacific", "china", "international"]
+
   - name: dim_patch
-  - name: fct_match
-  - name: fct_map
-  - name: fct_round
-  - name: fct_player_map
-  - name: fct_composition
-    description: "Uma linha por time-mapa, com os 5 agentes."
-  - name: mart_match_features
+    description: "Patches do seed com a vigência (release_date até next_release_date)."
+    columns:
+      - name: patch
+        data_tests: [unique, not_null]
+
+  - name: dim_map
+    description: "Mapas com partidas jogadas no lake."
+    columns:
+      - name: map_name
+        data_tests: [unique, not_null]
+
+  - name: dim_team
     description: >
-      Features computaveis ESTRITAMENTE antes do match_datetime.
-      Coberto pelo teste anti-vazamento em tests/assert_no_future_leakage.sql (D16).
+      Times, uma linha por id: nome, tag e região mais recentes (retrato). O nome da época fica
+      nos fatos. Nunca sai de `/teams`.
+    columns:
+      - name: team_id
+        data_tests: [unique, not_null]
+      - name: team_name
+        data_tests: [not_null]
+      - name: region
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["americas", "emea", "pacific", "china"]
+
+  - name: dim_player
+    description: "Jogadores, uma linha por id: nome e time mais recentes, agente mais jogado."
+    columns:
+      - name: player_id
+        data_tests: [unique, not_null]
+      - name: latest_team_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_team')
+                field: team_id
+
+  # --- fatos ----------------------------------------------------------------------------------
+
+  - name: fct_match
+    description: "Partidas (séries), com patch, tier, região do evento e dos times na época."
+    data_tests:
+      - dbt_utils.expression_is_true:
+          arguments:
+            expression: "not is_draw or fixed_maps is not null"  # empate só em mapas fixos
+    columns:
+      - name: match_id
+        data_tests: [unique, not_null]
+      - name: event_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_event')
+                field: event_id
+      - name: tier
+        data_tests: [not_null]
+      - name: team1_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_team')
+                field: team_id
+      - name: team2_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_team')
+                field: team_id
+      - name: winner_team_id
+        description: "Nulo só em empate, que só existe em formato de mapas fixos (pegadinha 38)."
+        data_tests:
+          - not_null:
+              config:
+                where: "not is_draw"
+      - name: is_draw
+        data_tests: [not_null]
+      - name: is_showmatch
+        description: "Showmatch pelo nome da série (pegadinha 41). Também liga `is_excluded`."
+        data_tests: [not_null]
+      - name: patch
+        description: "Nulo só antes do primeiro patch do seed (5.12, dez/2022)."
+        data_tests:
+          - not_null:
+              config:
+                where: "match_date >= date '2022-12-06'"
+
+  - name: fct_map
+    description: "Mapas jogados, com decider do veto, vencedor e overtime."
+    columns:
+      - name: map_id
+        data_tests: [unique, not_null]
+      - name: match_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('fct_match')
+                field: match_id
+      - name: winner_team_id
+        data_tests:
+          - not_null:
+              config:
+                where: "is_bridge_ok"
+      - name: has_complete_stats
+        description: >
+          Falso no mapa refeito por lobby remake, marcado pela nota do veto (pegadinha 36). O mapa
+          conta no placar e no Elo; o gabarito do vlr.gg o deixa fora, e a validação também.
+        data_tests: [not_null]
+
+  - name: fct_veto
+    description: "Passos do veto, com `was_played` para o decider que não foi jogado."
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [match_id, veto_step]
+
+  - name: fct_round
+    description: >
+      Rounds com o lado de cada time reconstruído (atacante e defensor) e a economia orientada por
+      lado; pistol vira `pistol`, nunca `eco`.
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [map_id, round_number]
+      - dbt_utils.expression_is_true:
+          arguments:
+            expression: "attacker_team_id <> defender_team_id"
+          config:
+            where: "attacker_team_id is not null"
+    columns:
+      - name: winner_side
+        data_tests:
+          - not_null:
+              config:
+                where: "has_round_sides"
+      - name: attacker_team_id
+        description: "Nulo em mapa sem histórico de lado (pegadinha 22) ou sem ponte tag → id."
+        data_tests:
+          - not_null:
+              config:
+                where: "winner_team_id is not null and has_round_sides"
+      - name: attacker_buy_type
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["pistol", "eco", "semi-eco", "semi-buy", "full-buy"]
+
+  - name: fct_player_map
+    description: "Jogador × mapa, com nome e tag da época, agente e stats."
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [map_id, player_id]
+
+  - name: fct_composition
+    description: "Uma linha por time × mapa com os 5 agentes; `composition_key` é a lista ordenada."
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [map_id, team_id]
+    columns:
+      - name: players
+        description: >
+          Agentes na composição. Torneio amador de terceiro às vezes lista 9 jogadores no mapa
+          (3125, 2970); o teste vale para os eventos da análise, fora do seed de exclusões.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [5]
+                quote: false
+              config:
+                where: "not is_excluded"
+
+unit_tests:
+  - name: lado_de_cada_time_sai_do_lado_do_vencedor
+    description: >
+      A API só diz o lado de quem venceu. O perdedor está no outro lado, inclusive no overtime; a
+      economia é orientada por lado, e o pistol deixa de ser `eco`.
+    model: fct_round
+    given:
+      - input: ref('stg_rounds')
+        rows:
+          - {map_id: "mp1", round_number: 1, winner_team_id: "A", winner_side: "attack",
+             team1_buy_type: "eco", team2_buy_type: "eco", team1_bank: 100, team2_bank: 200}
+          - {map_id: "mp1", round_number: 2, winner_team_id: "B", winner_side: "defense",
+             team1_buy_type: "full-buy", team2_buy_type: "semi-buy", team1_bank: 300, team2_bank: 400}
+          - {map_id: "mp1", round_number: 25, winner_team_id: "B", winner_side: "attack",
+             team1_buy_type: "full-buy", team2_buy_type: "full-buy", team1_bank: 500, team2_bank: 600}
+          # Mapa sem histórico de lado (pegadinha 22): vencedor sim, lado não.
+          - {map_id: "mp2", round_number: 3, winner_team_id: "A", winner_side: null,
+             team1_buy_type: "eco", team2_buy_type: "eco", team1_bank: 0, team2_bank: 0}
+      - input: ref('fct_map')
+        rows:
+          - {map_id: "mp1", team1_id: "A", team2_id: "B", has_round_sides: true}
+          - {map_id: "mp2", team1_id: "A", team2_id: "B", has_round_sides: false}
+    expect:
+      rows:
+        - {round_number: 1, half: 1, is_pistol: true, loser_team_id: "B",
+           attacker_team_id: "A", defender_team_id: "B",
+           attacker_buy_type: "pistol", defender_buy_type: "pistol", attacker_bank: 100}
+        - {round_number: 2, half: 1, is_pistol: false, loser_team_id: "A",
+           attacker_team_id: "A", defender_team_id: "B",
+           attacker_buy_type: "full-buy", defender_buy_type: "semi-buy", attacker_bank: 300}
+        - {round_number: 25, half: 3, is_pistol: false, loser_team_id: "A",
+           attacker_team_id: "B", defender_team_id: "A",
+           attacker_buy_type: "full-buy", defender_buy_type: "full-buy", attacker_bank: 600}
+        - {round_number: 3, half: 1, is_pistol: false, loser_team_id: "B",
+           attacker_team_id: null, defender_team_id: null,
+           attacker_buy_type: null, defender_buy_type: null, attacker_bank: null}
+
+  - name: composicao_nao_depende_de_quem_jogou_o_que
+    model: fct_composition
+    given:
+      - input: ref('fct_player_map')
+        rows:
+          - {map_id: "mp1", team_id: "A", agent: "sova", won_map: true}
+          - {map_id: "mp1", team_id: "A", agent: "omen", won_map: true}
+          - {map_id: "mp1", team_id: "A", agent: "jett", won_map: true}
+          - {map_id: "mp1", team_id: "A", agent: "killjoy", won_map: true}
+          - {map_id: "mp1", team_id: "A", agent: "breach", won_map: true}
+          - {map_id: "mp1", team_id: null, agent: "raze", won_map: null}
+    expect:
+      rows:
+        - {map_id: "mp1", team_id: "A", players: 5, won_map: true,
+           composition_key: "breach+jett+killjoy+omen+sova"}

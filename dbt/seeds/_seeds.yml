@@ -60,3 +60,28 @@ seeds:
                 values: ["americas", "emea", "pacific", "china", "international"]
       - name: reason
         data_tests: [not_null]
+
+  - name: validation_exceptions
+    description: >
+      Divergências aceitas nos testes de qualidade do D13, cada uma com justificativa. Um teste só
+      ignora a linha que casa exatamente com a exceção: `maps_played`, `attack_win_rate` e
+      `pick_rate` por evento × mapa (× agente); `unplayed_pick` e `series_score` por partida.
+      Exceção sem motivo escrito não passa no teste do seed.
+    config:
+      column_types:
+        event_id: varchar
+        match_id: varchar
+        map_name: varchar
+        check_name: varchar
+        agent: varchar
+        reason: varchar
+    columns:
+      - name: check_name
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  ["maps_played", "attack_win_rate", "pick_rate", "unplayed_pick", "series_score"]
+      - name: reason
+        data_tests: [not_null]

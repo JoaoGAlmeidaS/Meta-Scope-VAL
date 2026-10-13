@@ -4,8 +4,8 @@ Plataforma de análise estatística do cenário competitivo de VALORANT: pipelin
 dados próprio (API vlresports, com dados do vlr.gg), warehouse com dbt, análises estatísticas e uma
 camada preditiva calibrada. Site estático, sem backend, publicado no GitHub Pages.
 
-> Status: **D8 — ingestão e lake** (backfill em andamento). Documento mestre do projeto:
-> `docs/projeto-valorant-data.md`.
+> Status: **D14 — warehouse pronto** (dbt + Dagster + CI; backfill completo em andamento).
+> Documento mestre do projeto: `docs/projeto-valorant-data.md`.
 
 ---
 
@@ -68,25 +68,30 @@ Decisões de arquitetura e trade-offs: **`docs/projeto-valorant-data.md`**. Audi
 ```bash
 uv sync                # ambiente
 uv run pre-commit install
-make test              # pytest
-make build             # pipeline completo -> dist/
+make dbt-deps          # pacotes do dbt
+make test              # pytest (fixtures reais, sem rede)
+make build-fixtures    # warehouse do zero sobre o lake de fixtures, sem segredo nem rede
+make build             # warehouse do zero sobre o lake real (data/lake) -> dist/lineage
 make serve             # serve dist/ em localhost:8000
 ```
 
-Alvos disponíveis: `make help`.
+O lake real vem do backfill local (`make backfill`) ou do dataset privado no Hugging Face
+(`make lake-pull`, com `hf auth login`). Alvos disponíveis: `make help`.
 
 ## Estrutura
 
 ```
 ingestion/     cliente da API, contrato Pydantic, coletores e testes sobre fixtures reais
-dbt/           staging + marts, o núcleo avaliável do projeto
+dbt/           staging → intermediate → marts, o núcleo avaliável do projeto
 pipeline/      features, treino, geração do site
-dagster_defs/  assets particionados por split, checks
+dagster_defs/  assets particionados por temporada, checks, jobs
 notebooks/     análises em matplotlib, outputs commitados
 web/           templates Jinja2, CSS, JS
 dist/          gerado; é o que vai ao ar
 docs/          decisões, auditoria da API e especificação OpenAPI
 ```
+
+Guia arquivo por arquivo: **`docs/estrutura.md`**.
 
 ## Créditos
 

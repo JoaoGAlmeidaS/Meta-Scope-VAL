@@ -48,10 +48,14 @@ dev = [
 package = false
 
 [tool.pytest.ini_options]
-testpaths = ["ingestion/tests", "pipeline/tests"]
+testpaths = ["ingestion/tests", "pipeline/tests", "dagster_defs/tests"]
 addopts = "-q -m 'not live'"
 markers = [
     "live: chama a API real; fora da execução padrão (rode com `pytest -m live`)",
+]
+filterwarnings = [
+    # Ruído de dentro do Dagster (camada de compatibilidade com o Pydantic 1), não deste código.
+    "ignore:The `__fields__` attribute is deprecated:DeprecationWarning",
 ]
 
 [tool.ruff]

@@ -1,10 +1,25 @@
-.PHONY: help setup lint fmt test events ingest backfill lake-push lake-pull seed dbt-run dbt-test docs build serve clean
+.PHONY: help setup lint fmt test events backfill ingest lake-push lake-pull fixture-lake \
+        dbt-deps dbt-parse seed dbt-build dbt-test build build-fixtures docs dagster-dev serve \
+        clean
 
-DBT_DIR := dbt
-DIST    := dist
+DBT_DIR       := dbt
+DIST          := dist
+DAGSTER       := uv run dagster
+DEFS          := -m dagster_defs.definitions
+
+# O dbt roda de dentro de dbt/ e o Python da raiz: o lake vai por caminho absoluto, em LAKE_DIR,
+# que os dois leem. AS_OF_DATE vazio = hoje (data de referência da janela, macros/window.sql).
+LAKE_DIR      ?= $(CURDIR)/data/lake
+AS_OF_DATE    ?=
+SEASON        ?= $(shell date +%Y)
+export LAKE_DIR AS_OF_DATE
+
+# Trilho de CI sem segredo: lake gerado dos fixtures, com a data de referência deles fixa.
+FIXTURE_LAKE  := $(CURDIR)/data/fixture_lake
+FIXTURE_AS_OF := 2026-09-29
 
 help:  ## lista os alvos
-	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-12s\033[0m %s\n", $$1, $$2}'
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-14s\033[0m %s\n", $$1, $$2}'
 
 setup:  ## cria o ambiente e instala os hooks
 	uv sync
@@ -18,18 +33,20 @@ fmt:  ## formata
 	uv run ruff check --fix .
 	uv run black .
 
-test:  ## pytest
+test:  ## pytest (fixtures, sem rede; os testes do Dagster pedem `make dbt-deps` antes)
 	uv run pytest
+
+# --- coleta -------------------------------------------------------------------------------
 
 events:  ## indice de eventos, listagens de partidas e gabarito (D5)
 	uv run python -m ingestion.collectors events
 
-ingest:  ## carga incremental (temporada corrente)
-	uv run python -m ingestion.collectors incremental
-
-backfill:  ## backfill local desde 2023, do mais recente ao mais antigo (horas: rode no tmux)
+backfill:  ## backfill local desde 2025, do mais recente ao mais antigo (horas: rode no tmux)
 	mkdir -p logs
 	uv run python -m ingestion.collectors backfill 2>&1 | tee -a logs/backfill.log
+
+ingest: dbt-parse  ## coleta uma temporada pelo Dagster (SEASON=2026 por padrao: a corrente)
+	$(DAGSTER) asset materialize $(DEFS) --select 'group:lake' --partition $(SEASON)
 
 lake-push:  ## envia data/lake ao dataset privado no Hugging Face
 	uv run python -m ingestion.lake push
@@ -37,23 +54,46 @@ lake-push:  ## envia data/lake ao dataset privado no Hugging Face
 lake-pull:  ## baixa o lake do Hugging Face para data/lake
 	uv run python -m ingestion.lake pull
 
-seed:  ## carrega e testa os seeds (patches, overrides de evento)
-	cd $(DBT_DIR) && uv run dbt deps && uv run dbt build --select resource_type:seed
+fixture-lake:  ## recria o lake de fixtures em data/fixture_lake (CI sem segredo)
+	uv run python -m ingestion.fixture_lake --lake $(FIXTURE_LAKE)
 
-dbt-run:  ## roda os models
+# --- warehouse ----------------------------------------------------------------------------
+
+dbt-deps:  ## pacotes do dbt (dbt_utils)
+	cd $(DBT_DIR) && uv run dbt deps --quiet
+
+dbt-parse: dbt-deps  ## manifest do dbt, que o Dagster le ao carregar as definicoes
+	cd $(DBT_DIR) && uv run dbt parse --quiet
+
+seed: dbt-deps  ## carrega e testa os seeds (patches, overrides, excecoes de validacao)
+	cd $(DBT_DIR) && uv run dbt build --select resource_type:seed
+
+dbt-build: dbt-deps  ## dbt build direto, sem o Dagster (depuracao)
 	cd $(DBT_DIR) && uv run dbt build
 
-dbt-test:  ## roda so os testes do dbt
+dbt-test:  ## so os testes do dbt
 	cd $(DBT_DIR) && uv run dbt test
 
-docs:  ## gera o dbt docs em dist/lineage
-	cd $(DBT_DIR) && uv run dbt docs generate
+build: dbt-parse  ## reconstroi o warehouse do zero pelo Dagster (dbt + checks) e gera a linhagem
+	rm -f $(DBT_DIR)/metascope.duckdb $(DBT_DIR)/metascope.duckdb.wal
+	$(DAGSTER) job execute $(DEFS) -j build
+	$(MAKE) docs
 
-build: dbt-run docs  ## reconstroi o projeto do zero -> dist/
-	uv run python -m pipeline.build_site
+build-fixtures: fixture-lake  ## o mesmo build sobre o lake de fixtures (trilho 1 do CI)
+	$(MAKE) build LAKE_DIR=$(FIXTURE_LAKE) AS_OF_DATE=$(FIXTURE_AS_OF)
 
-serve: ## serve dist/ em localhost:8000
+docs:  ## dbt docs estatico em dist/lineage (a linhagem publica)
+	cd $(DBT_DIR) && uv run dbt docs generate --static --quiet
+	mkdir -p $(DIST)/lineage
+	cp $(DBT_DIR)/target/static_index.html $(DIST)/lineage/index.html
+
+dagster-dev: dbt-parse  ## UI local do Dagster, com historico em .dagster/
+	mkdir -p .dagster
+	DAGSTER_HOME=$(CURDIR)/.dagster $(DAGSTER) dev $(DEFS)
+
+serve:  ## serve dist/ em localhost:8000
 	uv run python -m http.server 8000 --directory $(DIST)
 
-clean:  ## remove artefatos de build
-	rm -rf $(DIST) $(DBT_DIR)/target $(DBT_DIR)/*.duckdb .pytest_cache
+clean:  ## remove artefatos de build (o lake real e o cache da API ficam)
+	find $(DIST) -mindepth 1 ! -name .gitkeep -delete
+	rm -rf $(DBT_DIR)/target $(DBT_DIR)/metascope.duckdb* $(FIXTURE_LAKE) .pytest_cache

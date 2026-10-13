@@ -1,0 +1,1259 @@
+{
+  "status": "OK",
+  "data": {
+    "id": "748625",
+    "url": "https://www.vlr.gg/748625",
+    "event": {
+      "id": "3105",
+      "url": "https://www.vlr.gg/event/3105/china-evolution-series-2026-act-3/main-event",
+      "name": "China Evolution Series 2026: Act 3",
+      "series": "Main Event: Round of 16",
+      "img": "https://owcdn.net/img/67a5eb9b2ccea.png"
+    },
+    "status": "final",
+    "in": null,
+    "format": "Bo3",
+    "date": "Sunday, September 6",
+    "time": "5:00 AM EDT",
+    "timestamp": 1788685200,
+    "utcDate": "Sun, 06 Sep 2026 09:00:00 GMT",
+    "teams": [
+      {
+        "id": "1119",
+        "url": "https://www.vlr.gg/team/1119/all-gamers",
+        "name": "All Gamers",
+        "img": "https://owcdn.net/img/6549c2b905061.png",
+        "score": 0
+      },
+      {
+        "id": "13576",
+        "url": "https://www.vlr.gg/team/13576/jd-gaming",
+        "name": "JD Gaming",
+        "img": "https://owcdn.net/img/64f9825408326.png",
+        "score": 2
+      }
+    ],
+    "streams": [],
+    "vods": [],
+    "picksBans": {
+      "note": "JDG ban Sunset; AG ban Abyss; JDG pick Lotus; AG pick Haven; JDG ban Summit; AG ban Split; Ascent remains",
+      "list": [
+        {
+          "team": "JDG",
+          "action": "ban",
+          "map": "Sunset"
+        },
+        {
+          "team": "AG",
+          "action": "ban",
+          "map": "Abyss"
+        },
+        {
+          "team": "JDG",
+          "action": "pick",
+          "map": "Lotus"
+        },
+        {
+          "team": "AG",
+          "action": "pick",
+          "map": "Haven"
+        },
+        {
+          "team": "JDG",
+          "action": "ban",
+          "map": "Summit"
+        },
+        {
+          "team": "AG",
+          "action": "ban",
+          "map": "Split"
+        },
+        {
+          "team": null,
+          "action": "remains",
+          "map": "Ascent"
+        }
+      ]
+    },
+    "maps": [
+      {
+        "id": "282220",
+        "name": "Lotus",
+        "status": "played",
+        "pickedBy": "JD Gaming",
+        "duration": null,
+        "teams": [
+          {
+            "name": "All Gamers",
+            "score": 7,
+            "roundsCt": 3,
+            "roundsT": 4
+          },
+          {
+            "name": "JD Gaming",
+            "score": 13,
+            "roundsCt": 8,
+            "roundsT": 5
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "JDG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "JDG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 3,
+            "score": "0-3",
+            "winner": "JDG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 4,
+            "score": "1-3",
+            "winner": "AG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 5,
+            "score": "2-3",
+            "winner": "AG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 6,
+            "score": "2-4",
+            "winner": "JDG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 7,
+            "score": "2-5",
+            "winner": "JDG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 8,
+            "score": "2-6",
+            "winner": "JDG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 9,
+            "score": "2-7",
+            "winner": "JDG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 10,
+            "score": "2-8",
+            "winner": "JDG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 11,
+            "score": "3-8",
+            "winner": "AG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 12,
+            "score": "4-8",
+            "winner": "AG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 13,
+            "score": "4-9",
+            "winner": "JDG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 14,
+            "score": "4-10",
+            "winner": "JDG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 15,
+            "score": "5-10",
+            "winner": "AG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 16,
+            "score": "6-10",
+            "winner": "AG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 17,
+            "score": "7-10",
+            "winner": "AG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 18,
+            "score": "7-11",
+            "winner": "JDG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 19,
+            "score": "7-12",
+            "winner": "JDG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 20,
+            "score": "7-13",
+            "winner": "JDG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          }
+        ],
+        "players": [
+          {
+            "id": "66828",
+            "url": "https://www.vlr.gg/player/66828/sakura",
+            "name": "Sakura",
+            "teamTag": "AG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 258,
+              "kills": 17,
+              "deaths": 16,
+              "assists": 3,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "66829",
+            "url": "https://www.vlr.gg/player/66829/tensions3y",
+            "name": "Tensions3Y",
+            "teamTag": "AG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Raze",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 190,
+              "kills": 13,
+              "deaths": 19,
+              "assists": 4,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "64852",
+            "url": "https://www.vlr.gg/player/64852/sanye",
+            "name": "sanye",
+            "teamTag": "AG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 172,
+              "kills": 13,
+              "deaths": 16,
+              "assists": 4,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "66826",
+            "url": "https://www.vlr.gg/player/66826/never",
+            "name": "Never",
+            "teamTag": "AG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 150,
+              "kills": 9,
+              "deaths": 18,
+              "assists": 5,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "66827",
+            "url": "https://www.vlr.gg/player/66827/xp1aner",
+            "name": "Xp1Aner",
+            "teamTag": "AG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 68,
+              "kills": 5,
+              "deaths": 17,
+              "assists": 6,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "15302",
+            "url": "https://www.vlr.gg/player/15302/babyblue",
+            "name": "Babyblue",
+            "teamTag": "JDG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 312,
+              "kills": 24,
+              "deaths": 12,
+              "assists": 8,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "66817",
+            "url": "https://www.vlr.gg/player/66817/silent",
+            "name": "Silent",
+            "teamTag": "JDG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 311,
+              "kills": 23,
+              "deaths": 13,
+              "assists": 7,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "66818",
+            "url": "https://www.vlr.gg/player/66818/nysleeptight",
+            "name": "NYsleeptight",
+            "teamTag": "JDG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Raze",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 307,
+              "kills": 22,
+              "deaths": 11,
+              "assists": 6,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "66819",
+            "url": "https://www.vlr.gg/player/66819/yun",
+            "name": "YUN",
+            "teamTag": "JDG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Viper",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 126,
+              "kills": 8,
+              "deaths": 9,
+              "assists": 4,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "54490",
+            "url": "https://www.vlr.gg/player/54490/link7",
+            "name": "Link7",
+            "teamTag": "JDG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Vyse",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 112,
+              "kills": 9,
+              "deaths": 12,
+              "assists": 2,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          }
+        ],
+        "performance": {
+          "players": [],
+          "killMatrix": [],
+          "opKillMatrix": [],
+          "firstKillMatrix": []
+        },
+        "economy": {
+          "teams": [],
+          "rounds": []
+        }
+      },
+      {
+        "id": "282221",
+        "name": "Haven",
+        "status": "played",
+        "pickedBy": "All Gamers",
+        "duration": null,
+        "teams": [
+          {
+            "name": "All Gamers",
+            "score": 2,
+            "roundsCt": 2,
+            "roundsT": 0
+          },
+          {
+            "name": "JD Gaming",
+            "score": 13,
+            "roundsCt": 3,
+            "roundsT": 10
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "JDG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "JDG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 3,
+            "score": "0-3",
+            "winner": "JDG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 4,
+            "score": "0-4",
+            "winner": "JDG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 5,
+            "score": "0-5",
+            "winner": "JDG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 6,
+            "score": "1-5",
+            "winner": "AG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 7,
+            "score": "2-5",
+            "winner": "AG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 8,
+            "score": "2-6",
+            "winner": "JDG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 9,
+            "score": "2-7",
+            "winner": "JDG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 10,
+            "score": "2-8",
+            "winner": "JDG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 11,
+            "score": "2-9",
+            "winner": "JDG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 12,
+            "score": "2-10",
+            "winner": "JDG",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 13,
+            "score": "2-11",
+            "winner": "JDG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 14,
+            "score": "2-12",
+            "winner": "JDG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 15,
+            "score": "2-13",
+            "winner": "JDG",
+            "side": "ct",
+            "method": null,
+            "methodIcon": null
+          }
+        ],
+        "players": [
+          {
+            "id": "66829",
+            "url": "https://www.vlr.gg/player/66829/tensions3y",
+            "name": "Tensions3Y",
+            "teamTag": "AG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Chamber",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 237,
+              "kills": 12,
+              "deaths": 14,
+              "assists": 1,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "66828",
+            "url": "https://www.vlr.gg/player/66828/sakura",
+            "name": "Sakura",
+            "teamTag": "AG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 195,
+              "kills": 8,
+              "deaths": 15,
+              "assists": 4,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "64852",
+            "url": "https://www.vlr.gg/player/64852/sanye",
+            "name": "sanye",
+            "teamTag": "AG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 165,
+              "kills": 9,
+              "deaths": 15,
+              "assists": 2,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "66827",
+            "url": "https://www.vlr.gg/player/66827/xp1aner",
+            "name": "Xp1Aner",
+            "teamTag": "AG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Phoenix",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 156,
+              "kills": 6,
+              "deaths": 14,
+              "assists": 4,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "66826",
+            "url": "https://www.vlr.gg/player/66826/never",
+            "name": "Never",
+            "teamTag": "AG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 147,
+              "kills": 6,
+              "deaths": 14,
+              "assists": 4,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "15302",
+            "url": "https://www.vlr.gg/player/15302/babyblue",
+            "name": "Babyblue",
+            "teamTag": "JDG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Phoenix",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 337,
+              "kills": 19,
+              "deaths": 8,
+              "assists": 10,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "66819",
+            "url": "https://www.vlr.gg/player/66819/yun",
+            "name": "YUN",
+            "teamTag": "JDG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 277,
+              "kills": 16,
+              "deaths": 12,
+              "assists": 3,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "66817",
+            "url": "https://www.vlr.gg/player/66817/silent",
+            "name": "Silent",
+            "teamTag": "JDG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 276,
+              "kills": 14,
+              "deaths": 6,
+              "assists": 6,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "66818",
+            "url": "https://www.vlr.gg/player/66818/nysleeptight",
+            "name": "NYsleeptight",
+            "teamTag": "JDG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 245,
+              "kills": 15,
+              "deaths": 9,
+              "assists": 4,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "54490",
+            "url": "https://www.vlr.gg/player/54490/link7",
+            "name": "Link7",
+            "teamTag": "JDG",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": 150,
+              "kills": 8,
+              "deaths": 6,
+              "assists": 8,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          }
+        ],
+        "performance": {
+          "players": [],
+          "killMatrix": [],
+          "opKillMatrix": [],
+          "firstKillMatrix": []
+        },
+        "economy": {
+          "teams": [],
+          "rounds": []
+        }
+      }
+    ],
+    "players": [
+      {
+        "id": "66828",
+        "url": "https://www.vlr.gg/player/66828/sakura",
+        "name": "Sakura",
+        "teamTag": "AG",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          }
+        ],
+        "stats": {
+          "rating": null,
+          "acs": 231,
+          "kills": 25,
+          "deaths": 31,
+          "assists": 7,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "66829",
+        "url": "https://www.vlr.gg/player/66829/tensions3y",
+        "name": "Tensions3Y",
+        "teamTag": "AG",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Raze",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+          },
+          {
+            "name": "Chamber",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+          }
+        ],
+        "stats": {
+          "rating": null,
+          "acs": 210,
+          "kills": 25,
+          "deaths": 33,
+          "assists": 5,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "64852",
+        "url": "https://www.vlr.gg/player/64852/sanye",
+        "name": "sanye",
+        "teamTag": "AG",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Cypher",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+          },
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": null,
+          "acs": 169,
+          "kills": 22,
+          "deaths": 31,
+          "assists": 6,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "66826",
+        "url": "https://www.vlr.gg/player/66826/never",
+        "name": "Never",
+        "teamTag": "AG",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          },
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          }
+        ],
+        "stats": {
+          "rating": null,
+          "acs": 149,
+          "kills": 15,
+          "deaths": 32,
+          "assists": 9,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "66827",
+        "url": "https://www.vlr.gg/player/66827/xp1aner",
+        "name": "Xp1Aner",
+        "teamTag": "AG",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          },
+          {
+            "name": "Phoenix",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+          }
+        ],
+        "stats": {
+          "rating": null,
+          "acs": 106,
+          "kills": 11,
+          "deaths": 31,
+          "assists": 10,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "15302",
+        "url": "https://www.vlr.gg/player/15302/babyblue",
+        "name": "Babyblue",
+        "teamTag": "JDG",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          },
+          {
+            "name": "Phoenix",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+          }
+        ],
+        "stats": {
+          "rating": null,
+          "acs": 323,
+          "kills": 43,
+          "deaths": 20,
+          "assists": 18,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "66817",
+        "url": "https://www.vlr.gg/player/66817/silent",
+        "name": "Silent",
+        "teamTag": "JDG",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          },
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          }
+        ],
+        "stats": {
+          "rating": null,
+          "acs": 296,
+          "kills": 37,
+          "deaths": 19,
+          "assists": 13,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "66818",
+        "url": "https://www.vlr.gg/player/66818/nysleeptight",
+        "name": "NYsleeptight",
+        "teamTag": "JDG",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Raze",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+          },
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          }
+        ],
+        "stats": {
+          "rating": null,
+          "acs": 280,
+          "kills": 37,
+          "deaths": 20,
+          "assists": 10,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "66819",
+        "url": "https://www.vlr.gg/player/66819/yun",
+        "name": "YUN",
+        "teamTag": "JDG",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Viper",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+          },
+          {
+            "name": "Cypher",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+          }
+        ],
+        "stats": {
+          "rating": null,
+          "acs": 191,
+          "kills": 24,
+          "deaths": 21,
+          "assists": 7,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "54490",
+        "url": "https://www.vlr.gg/player/54490/link7",
+        "name": "Link7",
+        "teamTag": "JDG",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Vyse",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/vyse.png"
+          },
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": null,
+          "acs": 128,
+          "kills": 17,
+          "deaths": 18,
+          "assists": 10,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      }
+    ],
+    "performance": {
+      "players": [],
+      "killMatrix": [],
+      "opKillMatrix": [],
+      "firstKillMatrix": []
+    },
+    "economy": {
+      "teams": [],
+      "rounds": []
+    }
+  }
+}

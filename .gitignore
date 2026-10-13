@@ -34,3 +34,7 @@ tmp*/
 # ambiente
 .env
 .DS_Store
+
+#Docs fora do projeto
+docs/estrutura.md
+dbt.rar

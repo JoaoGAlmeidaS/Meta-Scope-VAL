@@ -1,10 +1,174 @@
 version: 2
 
+# Staging (D9): tipagem explícita e nomes padronizados sobre o lake, sem regra de negócio.
+# Uma linha por chave: a deduplicação protege a idempotência se um mesmo registro aparecer em dois
+# arquivos de evento.
+
 models:
+  - name: stg_events
+    description: "Eventos VCT e VCL como a coleta viu (tier e região antes dos overrides)."
+    columns:
+      - name: event_id
+        data_tests: [unique, not_null]
+      - name: tier
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["vct", "vcl"]
+      - name: region
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["americas", "emea", "pacific", "china", "international"]
+      - name: season
+        data_tests: [not_null]
+
+  - name: stg_event_matches
+    description: "Listagem de partidas por evento. Só para completude da coleta."
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [event_id, match_id]
+    columns:
+      - name: event_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_events')
+                field: event_id
+
+  - name: stg_event_agents
+    description: "Gabarito do vlr.gg (pegadinha 12). Só entra na validação cruzada do D13."
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [event_id, map_name, agent]
+
   - name: stg_matches
-    description: "Partidas com tipagem e nomenclatura padronizadas."
+    description: >
+      Partidas (séries) com ao menos um mapa jogado. `team1`/`team2` seguem a ordem de `teams[]`
+      do detalhe; `match_at` é UTC.
     columns:
       - name: match_id
-        tests: [unique, not_null]
-      - name: match_datetime
-        tests: [not_null]
+        data_tests: [unique, not_null]
+      - name: match_at
+        data_tests: [not_null]
+      - name: event_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_events')
+                field: event_id
+      - name: team1_id
+        data_tests: [not_null]
+      - name: team2_id
+        data_tests: [not_null]
+      - name: best_of
+        description: "Melhor-de-N. Nulo em formato de mapas fixos (`fixed_maps`)."
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [1, 3, 5]
+                quote: false
+      - name: fixed_maps
+        description: "Mapas jogados sempre, sem desempate (\"2 maps\"): admite empate (pegadinha 38)."
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [2]
+                quote: false
+
+  - name: stg_maps
+    description: "Mapas jogados. `*_def_rounds`/`*_atk_rounds` só contam o tempo regulamentar."
+    columns:
+      - name: map_id
+        data_tests: [unique, not_null]
+      - name: match_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_matches')
+                field: match_id
+      - name: map_status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["played"]
+      - name: has_round_sides
+        data_tests: [not_null]
+      - name: has_complete_stats
+        description: "Falso no mapa marcado pela nota \"Map N stats are incomplete\" (pegadinha 36)."
+        data_tests: [not_null]
+
+  - name: stg_vetoes
+    description: "Passos do veto; `decider` é o mapa que sobrou."
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [match_id, veto_step]
+    columns:
+      - name: veto_action
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["ban", "pick", "decider"]
+
+  - name: stg_rounds
+    description: "Rounds com o lado do vencedor padronizado (attack/defense)."
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [map_id, round_number]
+    columns:
+      - name: map_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_maps')
+                field: map_id
+      - name: winner_side
+        description: "Nulo em mapa sem histórico de lado (pegadinha 22); o fct_round testa o resto."
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["attack", "defense"]
+      - name: win_method
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["elimination", "detonation", "defuse", "time"]
+      - name: team1_buy_type
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["eco", "semi-eco", "semi-buy", "full-buy"]
+
+  - name: stg_player_maps
+    description: "Jogador × mapa, com agente e stats por mapa."
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [map_id, player_id]
+    columns:
+      - name: agent
+        data_tests: [not_null]
+      - name: map_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_maps')
+                field: map_id
+
+  - name: stg_rejects
+    description: "Partidas não gravadas pela coleta, com o motivo."
+    columns:
+      - name: match_id
+        data_tests: [unique, not_null]
+      - name: reject_reason
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["contract", "source", "api", "not_found", "not_final", "unavailable"]

@@ -1,0 +1,761 @@
+{
+  "status": "OK",
+  "data": {
+    "id": "688926",
+    "url": "https://www.vlr.gg/688926",
+    "event": {
+      "id": "3018",
+      "url": "https://www.vlr.gg/event/3018/challengers-2026-emea-last-chance-qualifier/play-in",
+      "name": "Challengers 2026: EMEA Last Chance Qualifier",
+      "series": "Play-In: Round 1",
+      "img": "https://owcdn.net/img/6009f963577f4.png"
+    },
+    "status": "forfeited by\n\t\t\t\t\tfraggerz",
+    "in": null,
+    "format": "Bo3",
+    "date": "Thursday, June 4",
+    "time": "9:30 AM EDT",
+    "timestamp": 1780579800,
+    "utcDate": "Thu, 04 Jun 2026 13:30:00 GMT",
+    "teams": [
+      {
+        "id": "4569",
+        "url": "https://www.vlr.gg/team/4569/fraggerz",
+        "name": "Fraggerz",
+        "img": "https://owcdn.net/img/644636258ad70.png",
+        "score": 0
+      },
+      {
+        "id": "1981",
+        "url": "https://www.vlr.gg/team/1981/dark-passage",
+        "name": "Dark Passage",
+        "img": "https://owcdn.net/img/6533d06928972.png",
+        "score": 2
+      }
+    ],
+    "streams": [],
+    "vods": [],
+    "picksBans": {
+      "note": "Fraggerz didn't meet roster requirements and therefore lose by default.",
+      "list": [
+        {
+          "team": null,
+          "action": "note",
+          "map": "Fraggerz didn't meet roster requirements and therefore lose by default."
+        }
+      ]
+    },
+    "maps": [
+      {
+        "id": "272009",
+        "name": "TBD",
+        "status": "upcoming",
+        "pickedBy": null,
+        "duration": null,
+        "teams": [
+          {
+            "name": "Fraggerz",
+            "score": null,
+            "roundsCt": null,
+            "roundsT": null
+          },
+          {
+            "name": "Dark Passage",
+            "score": null,
+            "roundsCt": null,
+            "roundsT": null
+          }
+        ],
+        "rounds": [],
+        "players": [
+          {
+            "id": "5619",
+            "url": "https://www.vlr.gg/player/5619/ebeeee",
+            "name": "Ebeeee",
+            "teamTag": "FRG",
+            "country": "United Arab Emirates",
+            "flag": "ae",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "5621",
+            "url": "https://www.vlr.gg/player/5621/ttyke",
+            "name": "TTyke",
+            "teamTag": "FRG",
+            "country": "United Arab Emirates",
+            "flag": "ae",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "7293",
+            "url": "https://www.vlr.gg/player/7293/kasper",
+            "name": "kasper",
+            "teamTag": "FRG",
+            "country": "United Kingdom",
+            "flag": "gb",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "7292",
+            "url": "https://www.vlr.gg/player/7292/aimhunterr",
+            "name": "aimhunterr",
+            "teamTag": "FRG",
+            "country": "United Arab Emirates",
+            "flag": "ae",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "5618",
+            "url": "https://www.vlr.gg/player/5618/dvdov",
+            "name": "DVDOV",
+            "teamTag": "FRG",
+            "country": "United Arab Emirates",
+            "flag": "ae",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "41552",
+            "url": "https://www.vlr.gg/player/41552/doozy",
+            "name": "doozy",
+            "teamTag": "DP",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "42348",
+            "url": "https://www.vlr.gg/player/42348/elyxo",
+            "name": "Elyxo",
+            "teamTag": "DP",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "58707",
+            "url": "https://www.vlr.gg/player/58707/b3zginn",
+            "name": "b3zginn",
+            "teamTag": "DP",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "58750",
+            "url": "https://www.vlr.gg/player/58750/frostt",
+            "name": "Frostt",
+            "teamTag": "DP",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "58753",
+            "url": "https://www.vlr.gg/player/58753/x3ryo",
+            "name": "X3ryo",
+            "teamTag": "DP",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          }
+        ],
+        "performance": {
+          "players": [],
+          "killMatrix": [],
+          "opKillMatrix": [],
+          "firstKillMatrix": []
+        },
+        "economy": {
+          "teams": [],
+          "rounds": []
+        }
+      },
+      {
+        "id": "272010",
+        "name": "TBD",
+        "status": "upcoming",
+        "pickedBy": null,
+        "duration": null,
+        "teams": [
+          {
+            "name": "Fraggerz",
+            "score": null,
+            "roundsCt": null,
+            "roundsT": null
+          },
+          {
+            "name": "Dark Passage",
+            "score": null,
+            "roundsCt": null,
+            "roundsT": null
+          }
+        ],
+        "rounds": [],
+        "players": [
+          {
+            "id": "5619",
+            "url": "https://www.vlr.gg/player/5619/ebeeee",
+            "name": "Ebeeee",
+            "teamTag": "FRG",
+            "country": "United Arab Emirates",
+            "flag": "ae",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "5621",
+            "url": "https://www.vlr.gg/player/5621/ttyke",
+            "name": "TTyke",
+            "teamTag": "FRG",
+            "country": "United Arab Emirates",
+            "flag": "ae",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "7293",
+            "url": "https://www.vlr.gg/player/7293/kasper",
+            "name": "kasper",
+            "teamTag": "FRG",
+            "country": "United Kingdom",
+            "flag": "gb",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "7292",
+            "url": "https://www.vlr.gg/player/7292/aimhunterr",
+            "name": "aimhunterr",
+            "teamTag": "FRG",
+            "country": "United Arab Emirates",
+            "flag": "ae",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "5618",
+            "url": "https://www.vlr.gg/player/5618/dvdov",
+            "name": "DVDOV",
+            "teamTag": "FRG",
+            "country": "United Arab Emirates",
+            "flag": "ae",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "41552",
+            "url": "https://www.vlr.gg/player/41552/doozy",
+            "name": "doozy",
+            "teamTag": "DP",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "42348",
+            "url": "https://www.vlr.gg/player/42348/elyxo",
+            "name": "Elyxo",
+            "teamTag": "DP",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "58707",
+            "url": "https://www.vlr.gg/player/58707/b3zginn",
+            "name": "b3zginn",
+            "teamTag": "DP",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "58750",
+            "url": "https://www.vlr.gg/player/58750/frostt",
+            "name": "Frostt",
+            "teamTag": "DP",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "58753",
+            "url": "https://www.vlr.gg/player/58753/x3ryo",
+            "name": "X3ryo",
+            "teamTag": "DP",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": null,
+              "deaths": null,
+              "assists": null,
+              "kast": null,
+              "adr": null,
+              "hs": null,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          }
+        ],
+        "performance": {
+          "players": [],
+          "killMatrix": [],
+          "opKillMatrix": [],
+          "firstKillMatrix": []
+        },
+        "economy": {
+          "teams": [],
+          "rounds": []
+        }
+      }
+    ],
+    "players": [
+      {
+        "id": "5619",
+        "url": "https://www.vlr.gg/player/5619/ebeeee",
+        "name": "Ebeeee",
+        "teamTag": "FRG",
+        "country": "United Arab Emirates",
+        "flag": "ae",
+        "agents": [],
+        "stats": {
+          "rating": null,
+          "acs": null,
+          "kills": null,
+          "deaths": null,
+          "assists": null,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "5621",
+        "url": "https://www.vlr.gg/player/5621/ttyke",
+        "name": "TTyke",
+        "teamTag": "FRG",
+        "country": "United Arab Emirates",
+        "flag": "ae",
+        "agents": [],
+        "stats": {
+          "rating": null,
+          "acs": null,
+          "kills": null,
+          "deaths": null,
+          "assists": null,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "7293",
+        "url": "https://www.vlr.gg/player/7293/kasper",
+        "name": "kasper",
+        "teamTag": "FRG",
+        "country": "United Kingdom",
+        "flag": "gb",
+        "agents": [],
+        "stats": {
+          "rating": null,
+          "acs": null,
+          "kills": null,
+          "deaths": null,
+          "assists": null,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "7292",
+        "url": "https://www.vlr.gg/player/7292/aimhunterr",
+        "name": "aimhunterr",
+        "teamTag": "FRG",
+        "country": "United Arab Emirates",
+        "flag": "ae",
+        "agents": [],
+        "stats": {
+          "rating": null,
+          "acs": null,
+          "kills": null,
+          "deaths": null,
+          "assists": null,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "5618",
+        "url": "https://www.vlr.gg/player/5618/dvdov",
+        "name": "DVDOV",
+        "teamTag": "FRG",
+        "country": "United Arab Emirates",
+        "flag": "ae",
+        "agents": [],
+        "stats": {
+          "rating": null,
+          "acs": null,
+          "kills": null,
+          "deaths": null,
+          "assists": null,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "41552",
+        "url": "https://www.vlr.gg/player/41552/doozy",
+        "name": "doozy",
+        "teamTag": "DP",
+        "country": "Türkiye",
+        "flag": "tr",
+        "agents": [],
+        "stats": {
+          "rating": null,
+          "acs": null,
+          "kills": null,
+          "deaths": null,
+          "assists": null,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "42348",
+        "url": "https://www.vlr.gg/player/42348/elyxo",
+        "name": "Elyxo",
+        "teamTag": "DP",
+        "country": "Türkiye",
+        "flag": "tr",
+        "agents": [],
+        "stats": {
+          "rating": null,
+          "acs": null,
+          "kills": null,
+          "deaths": null,
+          "assists": null,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "58707",
+        "url": "https://www.vlr.gg/player/58707/b3zginn",
+        "name": "b3zginn",
+        "teamTag": "DP",
+        "country": "Türkiye",
+        "flag": "tr",
+        "agents": [],
+        "stats": {
+          "rating": null,
+          "acs": null,
+          "kills": null,
+          "deaths": null,
+          "assists": null,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "58750",
+        "url": "https://www.vlr.gg/player/58750/frostt",
+        "name": "Frostt",
+        "teamTag": "DP",
+        "country": "Türkiye",
+        "flag": "tr",
+        "agents": [],
+        "stats": {
+          "rating": null,
+          "acs": null,
+          "kills": null,
+          "deaths": null,
+          "assists": null,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      },
+      {
+        "id": "58753",
+        "url": "https://www.vlr.gg/player/58753/x3ryo",
+        "name": "X3ryo",
+        "teamTag": "DP",
+        "country": "Türkiye",
+        "flag": "tr",
+        "agents": [],
+        "stats": {
+          "rating": null,
+          "acs": null,
+          "kills": null,
+          "deaths": null,
+          "assists": null,
+          "kast": null,
+          "adr": null,
+          "hs": null,
+          "firstBloods": null,
+          "firstDeaths": null
+        }
+      }
+    ],
+    "performance": {
+      "players": [],
+      "killMatrix": [],
+      "opKillMatrix": [],
+      "firstKillMatrix": []
+    },
+    "economy": {
+      "teams": [],
+      "rounds": []
+    }
+  }
+}

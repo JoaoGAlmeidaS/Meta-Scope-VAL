@@ -10,6 +10,9 @@ Nada de regra de negócio aqui: só achatar, forçar tipos e resolver tag → id
 (`ingestion/bridge.py`). As colunas `team1_*`/`team2_*` seguem sempre a ordem de `teams[]` da
 partida. Se a ponte não fecha num mapa, os ids daquele mapa ficam nulos e `bridge_ok = false`:
 o staging descarta e conta, em vez de atribuir rounds ao time errado.
+
+Mapa sem histórico de lado (pegadinha 22) entra com `has_round_sides = false`: placar, vencedor
+de cada round, jogadores e agentes valem; lado e método ficam nulos.
 """
 
 from __future__ import annotations
@@ -17,7 +20,7 @@ from __future__ import annotations
 import logging
 from datetime import datetime
 
-from ingestion.bridge import BridgeError, tag_to_team_id
+from ingestion.bridge import BridgeError, tag_to_team_id, team_id_by_name
 from ingestion.schemas import Map, MatchDetail
 
 log = logging.getLogger(__name__)
@@ -40,7 +43,6 @@ def flatten_match(
     detail: MatchDetail, *, has_tabs: bool, collected_at: datetime
 ) -> dict[str, list[dict]]:
     team1, team2 = detail.teams
-    ids_by_name = {t.name: t.id for t in detail.teams}
     match_id = detail.id
 
     rows: dict[str, list[dict]] = {
@@ -59,6 +61,7 @@ def flatten_match(
                 "team2_name": team2.name,
                 "team2_score": team2.score,
                 "n_maps": len(detail.maps),
+                "n_maps_without_data": detail.maps_without_data,
                 "has_tabs": has_tabs,
                 "collected_at": collected_at,
             }
@@ -78,8 +81,9 @@ def flatten_match(
             bridge = {}
         tag_ids.update(bridge)
 
-        sides = {t.name: t for t in map_.teams}
-        a, b = sides.get(team1.name), sides.get(team2.name)
+        # Time do mapa → time da partida pelo nome em qualquer forma (pegadinha 35).
+        sides = {team_id_by_name(detail, t.name): t for t in map_.teams}
+        a, b = sides.get(team1.id), sides.get(team2.id)
         rows["raw_map"].append(
             {
                 "map_id": map_.id,
@@ -88,17 +92,19 @@ def flatten_match(
                 "map_name": map_.name,
                 "status": map_.status,
                 "picked_by_name": map_.picked_by,
-                "picked_by_team_id": ids_by_name.get(map_.picked_by),
+                "picked_by_team_id": team_id_by_name(detail, map_.picked_by),
                 "duration_s": map_.duration_seconds,
                 "team1_id": team1.id,
                 **_map_team("team1", a),
                 "team2_id": team2.id,
                 **_map_team("team2", b),
                 "bridge_ok": bool(bridge) and a is not None and b is not None,
+                "has_round_sides": map_.has_sides,
+                "has_complete_stats": not map_.stats_incomplete,
             }
         )
 
-        economy = _economy_by_round(map_, bridge, team1.id, team2.id)
+        economy = _economy_by_round(map_, bridge, detail, team1.id, team2.id)
         for rnd in map_.rounds:
             rows["raw_round"].append(
                 {
@@ -156,12 +162,22 @@ def _map_team(prefix: str, team) -> dict:
     }
 
 
-def _economy_by_round(map_: Map, bridge: dict[str, str], team1_id: str, team2_id: str):
-    """Economia por número de round, nas colunas `team1_*`/`team2_*`, alinhada por tag → id."""
+def _economy_by_round(
+    map_: Map, bridge: dict[str, str], detail: MatchDetail, team1_id: str, team2_id: str
+):
+    """Economia por número de round, nas colunas `team1_*`/`team2_*`, alinhada por tag → id.
+
+    O rótulo de `economy.teams` é a tag ou, quando a tag não é toda maiúscula, o nome do time
+    (pegadinha 29): casa pela ponte e, se não for tag, pelo nome da partida.
+    """
     if map_.economy is None or not bridge:
         return {}
     slots = {team1_id: "team1", team2_id: "team2"}
-    prefixes = [slots.get(bridge.get(t.name)) for t in map_.economy.teams]
+
+    def team_id(label: str) -> str | None:
+        return bridge.get(label.strip().upper()) or team_id_by_name(detail, label)
+
+    prefixes = [slots.get(team_id(t.name)) for t in map_.economy.teams]
     if set(prefixes) != {"team1", "team2"}:
         log.warning("mapa %s: economia não casa com a ponte (%s)", map_.id, prefixes)
         return {}

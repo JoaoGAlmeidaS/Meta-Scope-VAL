@@ -1,0 +1,1283 @@
+{
+  "status": "OK",
+  "data": {
+    "id": "701025",
+    "url": "https://www.vlr.gg/701025",
+    "event": {
+      "id": "2978",
+      "url": "https://www.vlr.gg/event/2978/vct-2026-china-stage-2/group-stage",
+      "name": "VCT 2026: China Stage 2",
+      "series": "Group Stage: Week 1",
+      "img": "https://owcdn.net/img/65dd97cea9a25.png"
+    },
+    "status": "final",
+    "in": null,
+    "format": "Bo3",
+    "date": "Thursday, July 9",
+    "time": "4:00 AM EDT",
+    "timestamp": 1783584000,
+    "utcDate": "Thu, 09 Jul 2026 08:00:00 GMT",
+    "teams": [
+      {
+        "id": "13790",
+        "url": "https://www.vlr.gg/team/13790/wolves-esports",
+        "name": "Wolves Esports",
+        "img": "https://owcdn.net/img/651d33f8e6a1f.png",
+        "score": 2
+      },
+      {
+        "id": "14137",
+        "url": "https://www.vlr.gg/team/14137/titan-esports-club",
+        "name": "Wuxi Titan Esports Club (Titan Esports Club)",
+        "img": "https://owcdn.net/img/65487414b8562.png",
+        "score": 0
+      }
+    ],
+    "streams": [],
+    "vods": [],
+    "picksBans": {
+      "note": "TEC ban Lotus; WOL ban Breeze; TEC pick Sunset; WOL pick Haven; TEC ban Split; WOL ban Summit; Ascent remains",
+      "list": [
+        {
+          "team": "TEC",
+          "action": "ban",
+          "map": "Lotus"
+        },
+        {
+          "team": "WOL",
+          "action": "ban",
+          "map": "Breeze"
+        },
+        {
+          "team": "TEC",
+          "action": "pick",
+          "map": "Sunset"
+        },
+        {
+          "team": "WOL",
+          "action": "pick",
+          "map": "Haven"
+        },
+        {
+          "team": "TEC",
+          "action": "ban",
+          "map": "Split"
+        },
+        {
+          "team": "WOL",
+          "action": "ban",
+          "map": "Summit"
+        },
+        {
+          "team": null,
+          "action": "remains",
+          "map": "Ascent"
+        }
+      ]
+    },
+    "maps": [
+      {
+        "id": "273938",
+        "name": "Sunset",
+        "status": "played",
+        "pickedBy": "Wuxi Titan Esports Club (Titan Esports Club)",
+        "duration": "57:13",
+        "teams": [
+          {
+            "name": "Wolves Esports",
+            "score": 13,
+            "roundsCt": 8,
+            "roundsT": 5
+          },
+          {
+            "name": "Titan Esports Club",
+            "score": 5,
+            "roundsCt": 1,
+            "roundsT": 4
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "1-0",
+            "winner": "WOL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "2-0",
+            "winner": "WOL",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 3,
+            "score": "3-0",
+            "winner": "WOL",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 4,
+            "score": "4-0",
+            "winner": "WOL",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 5,
+            "score": "4-1",
+            "winner": "TEC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "5-1",
+            "winner": "WOL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 7,
+            "score": "6-1",
+            "winner": "WOL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 8,
+            "score": "6-2",
+            "winner": "TEC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "7-2",
+            "winner": "WOL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "8-2",
+            "winner": "WOL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "8-3",
+            "winner": "TEC",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 12,
+            "score": "8-4",
+            "winner": "TEC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "8-5",
+            "winner": "TEC",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 14,
+            "score": "9-5",
+            "winner": "WOL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "10-5",
+            "winner": "WOL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "11-5",
+            "winner": "WOL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 17,
+            "score": "12-5",
+            "winner": "WOL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "13-5",
+            "winner": "WOL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "9152",
+            "url": "https://www.vlr.gg/player/9152/deryeon",
+            "name": "Deryeon",
+            "teamTag": "WOL",
+            "country": "Singapore",
+            "flag": "sg",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.92,
+              "acs": 397,
+              "kills": 28,
+              "deaths": 11,
+              "assists": 8,
+              "kast": 94,
+              "adr": 259,
+              "hs": 30,
+              "firstBloods": 2,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "14441",
+            "url": "https://www.vlr.gg/player/14441/aluba",
+            "name": "aluba",
+            "teamTag": "WOL",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.39,
+              "acs": 255,
+              "kills": 16,
+              "deaths": 9,
+              "assists": 2,
+              "kast": 78,
+              "adr": 189,
+              "hs": 44,
+              "firstBloods": 2,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "14125",
+            "url": "https://www.vlr.gg/player/14125/spring",
+            "name": "Spring",
+            "teamTag": "WOL",
+            "country": "Taiwan",
+            "flag": "tw",
+            "agents": [
+              {
+                "name": "Viper",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.06,
+              "acs": 227,
+              "kills": 14,
+              "deaths": 12,
+              "assists": 7,
+              "kast": 67,
+              "adr": 146,
+              "hs": 30,
+              "firstBloods": 2,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "6022",
+            "url": "https://www.vlr.gg/player/6022/yosemite",
+            "name": "yosemite",
+            "teamTag": "WOL",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Sage",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sage.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.78,
+              "acs": 162,
+              "kills": 10,
+              "deaths": 12,
+              "assists": 8,
+              "kast": 89,
+              "adr": 99,
+              "hs": 8,
+              "firstBloods": 3,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "49973",
+            "url": "https://www.vlr.gg/player/49973/glacier",
+            "name": "glacier",
+            "teamTag": "WOL",
+            "country": "Taiwan",
+            "flag": "tw",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.54,
+              "acs": 180,
+              "kills": 12,
+              "deaths": 15,
+              "assists": 1,
+              "kast": 78,
+              "adr": 110,
+              "hs": 27,
+              "firstBloods": 5,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "4881",
+            "url": "https://www.vlr.gg/player/4881/spitfires",
+            "name": "Spitfires",
+            "teamTag": "TEC",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Sage",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sage.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.12,
+              "acs": 247,
+              "kills": 14,
+              "deaths": 16,
+              "assists": 5,
+              "kast": 78,
+              "adr": 170,
+              "hs": 36,
+              "firstBloods": 0,
+              "firstDeaths": 4
+            }
+          },
+          {
+            "id": "4720",
+            "url": "https://www.vlr.gg/player/4720/haodong",
+            "name": "Haodong",
+            "teamTag": "TEC",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.97,
+              "acs": 197,
+              "kills": 13,
+              "deaths": 14,
+              "assists": 1,
+              "kast": 61,
+              "adr": 125,
+              "hs": 52,
+              "firstBloods": 2,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "47629",
+            "url": "https://www.vlr.gg/player/47629/coco",
+            "name": "Coco",
+            "teamTag": "TEC",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.88,
+              "acs": 203,
+              "kills": 13,
+              "deaths": 18,
+              "assists": 7,
+              "kast": 72,
+              "adr": 118,
+              "hs": 45,
+              "firstBloods": 0,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "19677",
+            "url": "https://www.vlr.gg/player/19677/lucas",
+            "name": "lucas",
+            "teamTag": "TEC",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.79,
+              "acs": 165,
+              "kills": 8,
+              "deaths": 15,
+              "assists": 8,
+              "kast": 61,
+              "adr": 131,
+              "hs": 21,
+              "firstBloods": 0,
+              "firstDeaths": 4
+            }
+          },
+          {
+            "id": "42235",
+            "url": "https://www.vlr.gg/player/42235/dynamite",
+            "name": "Dynamite",
+            "teamTag": "TEC",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.77,
+              "acs": 187,
+              "kills": 11,
+              "deaths": 17,
+              "assists": 8,
+              "kast": 72,
+              "adr": 108,
+              "hs": 19,
+              "firstBloods": 2,
+              "firstDeaths": 5
+            }
+          }
+        ],
+        "performance": {
+          "players": [],
+          "killMatrix": [],
+          "opKillMatrix": [],
+          "firstKillMatrix": []
+        },
+        "economy": {
+          "teams": [],
+          "rounds": []
+        }
+      },
+      {
+        "id": "273939",
+        "name": "Haven",
+        "status": "played",
+        "pickedBy": "Wolves Esports",
+        "duration": "51:59",
+        "teams": [
+          {
+            "name": "Wolves Esports",
+            "score": 13,
+            "roundsCt": 5,
+            "roundsT": 8
+          },
+          {
+            "name": "Titan Esports Club",
+            "score": 10,
+            "roundsCt": 3,
+            "roundsT": 7
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "TEC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "TEC",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 3,
+            "score": "1-2",
+            "winner": "WOL",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 4,
+            "score": "1-3",
+            "winner": "TEC",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 5,
+            "score": "1-4",
+            "winner": "TEC",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 6,
+            "score": "2-4",
+            "winner": "WOL",
+            "side": "ct",
+            "method": "time",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/time.webp"
+          },
+          {
+            "number": 7,
+            "score": "2-5",
+            "winner": "TEC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 8,
+            "score": "2-6",
+            "winner": "TEC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "2-7",
+            "winner": "TEC",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "3-7",
+            "winner": "WOL",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 11,
+            "score": "4-7",
+            "winner": "WOL",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 12,
+            "score": "5-7",
+            "winner": "WOL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "6-7",
+            "winner": "WOL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "7-7",
+            "winner": "WOL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "8-7",
+            "winner": "WOL",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 16,
+            "score": "9-7",
+            "winner": "WOL",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 17,
+            "score": "10-7",
+            "winner": "WOL",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 18,
+            "score": "10-8",
+            "winner": "TEC",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 19,
+            "score": "10-9",
+            "winner": "TEC",
+            "side": "ct",
+            "method": "time",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/time.webp"
+          },
+          {
+            "number": 20,
+            "score": "10-10",
+            "winner": "TEC",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 21,
+            "score": "11-10",
+            "winner": "WOL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 22,
+            "score": "12-10",
+            "winner": "WOL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 23,
+            "score": "13-10",
+            "winner": "WOL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "6022",
+            "url": "https://www.vlr.gg/player/6022/yosemite",
+            "name": "yosemite",
+            "teamTag": "WOL",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Killjoy",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.32,
+              "acs": 243,
+              "kills": 20,
+              "deaths": 13,
+              "assists": 2,
+              "kast": 91,
+              "adr": 177,
+              "hs": 24,
+              "firstBloods": 5,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "14125",
+            "url": "https://www.vlr.gg/player/14125/spring",
+            "name": "Spring",
+            "teamTag": "WOL",
+            "country": "Taiwan",
+            "flag": "tw",
+            "agents": [
+              {
+                "name": "Viper",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.26,
+              "acs": 210,
+              "kills": 17,
+              "deaths": 13,
+              "assists": 9,
+              "kast": 70,
+              "adr": 150,
+              "hs": 23,
+              "firstBloods": 3,
+              "firstDeaths": 4
+            }
+          },
+          {
+            "id": "9152",
+            "url": "https://www.vlr.gg/player/9152/deryeon",
+            "name": "Deryeon",
+            "teamTag": "WOL",
+            "country": "Singapore",
+            "flag": "sg",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.24,
+              "acs": 195,
+              "kills": 17,
+              "deaths": 12,
+              "assists": 8,
+              "kast": 83,
+              "adr": 107,
+              "hs": 24,
+              "firstBloods": 0,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "14441",
+            "url": "https://www.vlr.gg/player/14441/aluba",
+            "name": "aluba",
+            "teamTag": "WOL",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.89,
+              "acs": 150,
+              "kills": 13,
+              "deaths": 14,
+              "assists": 3,
+              "kast": 74,
+              "adr": 93,
+              "hs": 30,
+              "firstBloods": 2,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "49973",
+            "url": "https://www.vlr.gg/player/49973/glacier",
+            "name": "glacier",
+            "teamTag": "WOL",
+            "country": "Taiwan",
+            "flag": "tw",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.82,
+              "acs": 152,
+              "kills": 11,
+              "deaths": 17,
+              "assists": 8,
+              "kast": 70,
+              "adr": 109,
+              "hs": 29,
+              "firstBloods": 4,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "42235",
+            "url": "https://www.vlr.gg/player/42235/dynamite",
+            "name": "Dynamite",
+            "teamTag": "TEC",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.05,
+              "acs": 202,
+              "kills": 17,
+              "deaths": 15,
+              "assists": 3,
+              "kast": 70,
+              "adr": 126,
+              "hs": 25,
+              "firstBloods": 3,
+              "firstDeaths": 5
+            }
+          },
+          {
+            "id": "19677",
+            "url": "https://www.vlr.gg/player/19677/lucas",
+            "name": "lucas",
+            "teamTag": "TEC",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.98,
+              "acs": 197,
+              "kills": 14,
+              "deaths": 15,
+              "assists": 7,
+              "kast": 78,
+              "adr": 135,
+              "hs": 22,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "47629",
+            "url": "https://www.vlr.gg/player/47629/coco",
+            "name": "Coco",
+            "teamTag": "TEC",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.84,
+              "acs": 120,
+              "kills": 8,
+              "deaths": 13,
+              "assists": 13,
+              "kast": 78,
+              "adr": 83,
+              "hs": 28,
+              "firstBloods": 0,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "4881",
+            "url": "https://www.vlr.gg/player/4881/spitfires",
+            "name": "Spitfires",
+            "teamTag": "TEC",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Waylay",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.82,
+              "acs": 214,
+              "kills": 16,
+              "deaths": 19,
+              "assists": 3,
+              "kast": 70,
+              "adr": 138,
+              "hs": 30,
+              "firstBloods": 3,
+              "firstDeaths": 5
+            }
+          },
+          {
+            "id": "4720",
+            "url": "https://www.vlr.gg/player/4720/haodong",
+            "name": "Haodong",
+            "teamTag": "TEC",
+            "country": "China",
+            "flag": "cn",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.77,
+              "acs": 168,
+              "kills": 14,
+              "deaths": 16,
+              "assists": 3,
+              "kast": 78,
+              "adr": 108,
+              "hs": 28,
+              "firstBloods": 2,
+              "firstDeaths": 3
+            }
+          }
+        ],
+        "performance": {
+          "players": [],
+          "killMatrix": [],
+          "opKillMatrix": [],
+          "firstKillMatrix": []
+        },
+        "economy": {
+          "teams": [],
+          "rounds": []
+        }
+      }
+    ],
+    "players": [
+      {
+        "id": "9152",
+        "url": "https://www.vlr.gg/player/9152/deryeon",
+        "name": "Deryeon",
+        "teamTag": "WOL",
+        "country": "Singapore",
+        "flag": "sg",
+        "agents": [
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.54,
+          "acs": 284,
+          "kills": 45,
+          "deaths": 23,
+          "assists": 16,
+          "kast": 88,
+          "adr": 174,
+          "hs": 27,
+          "firstBloods": 2,
+          "firstDeaths": 0
+        }
+      },
+      {
+        "id": "14125",
+        "url": "https://www.vlr.gg/player/14125/spring",
+        "name": "Spring",
+        "teamTag": "WOL",
+        "country": "Taiwan",
+        "flag": "tw",
+        "agents": [
+          {
+            "name": "Viper",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.17,
+          "acs": 217,
+          "kills": 31,
+          "deaths": 25,
+          "assists": 16,
+          "kast": 68,
+          "adr": 148,
+          "hs": 27,
+          "firstBloods": 5,
+          "firstDeaths": 6
+        }
+      },
+      {
+        "id": "14441",
+        "url": "https://www.vlr.gg/player/14441/aluba",
+        "name": "aluba",
+        "teamTag": "WOL",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.11,
+          "acs": 196,
+          "kills": 29,
+          "deaths": 23,
+          "assists": 5,
+          "kast": 76,
+          "adr": 135,
+          "hs": 37,
+          "firstBloods": 4,
+          "firstDeaths": 1
+        }
+      },
+      {
+        "id": "6022",
+        "url": "https://www.vlr.gg/player/6022/yosemite",
+        "name": "yosemite",
+        "teamTag": "WOL",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Sage",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sage.png"
+          },
+          {
+            "name": "Killjoy",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.08,
+          "acs": 207,
+          "kills": 30,
+          "deaths": 25,
+          "assists": 10,
+          "kast": 90,
+          "adr": 143,
+          "hs": 16,
+          "firstBloods": 8,
+          "firstDeaths": 3
+        }
+      },
+      {
+        "id": "49973",
+        "url": "https://www.vlr.gg/player/49973/glacier",
+        "name": "glacier",
+        "teamTag": "WOL",
+        "country": "Taiwan",
+        "flag": "tw",
+        "agents": [
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.7,
+          "acs": 164,
+          "kills": 23,
+          "deaths": 32,
+          "assists": 9,
+          "kast": 73,
+          "adr": 109,
+          "hs": 28,
+          "firstBloods": 9,
+          "firstDeaths": 3
+        }
+      },
+      {
+        "id": "4881",
+        "url": "https://www.vlr.gg/player/4881/spitfires",
+        "name": "Spitfires",
+        "teamTag": "TEC",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Sage",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sage.png"
+          },
+          {
+            "name": "Waylay",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.95,
+          "acs": 228,
+          "kills": 30,
+          "deaths": 35,
+          "assists": 8,
+          "kast": 73,
+          "adr": 152,
+          "hs": 33,
+          "firstBloods": 3,
+          "firstDeaths": 9
+        }
+      },
+      {
+        "id": "42235",
+        "url": "https://www.vlr.gg/player/42235/dynamite",
+        "name": "Dynamite",
+        "teamTag": "TEC",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          },
+          {
+            "name": "Jett",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.93,
+          "acs": 195,
+          "kills": 28,
+          "deaths": 32,
+          "assists": 11,
+          "kast": 71,
+          "adr": 118,
+          "hs": 22,
+          "firstBloods": 5,
+          "firstDeaths": 10
+        }
+      },
+      {
+        "id": "19677",
+        "url": "https://www.vlr.gg/player/19677/lucas",
+        "name": "lucas",
+        "teamTag": "TEC",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.9,
+          "acs": 183,
+          "kills": 22,
+          "deaths": 30,
+          "assists": 15,
+          "kast": 71,
+          "adr": 133,
+          "hs": 22,
+          "firstBloods": 1,
+          "firstDeaths": 5
+        }
+      },
+      {
+        "id": "4720",
+        "url": "https://www.vlr.gg/player/4720/haodong",
+        "name": "Haodong",
+        "teamTag": "TEC",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Cypher",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.86,
+          "acs": 181,
+          "kills": 27,
+          "deaths": 30,
+          "assists": 4,
+          "kast": 71,
+          "adr": 115,
+          "hs": 40,
+          "firstBloods": 4,
+          "firstDeaths": 3
+        }
+      },
+      {
+        "id": "47629",
+        "url": "https://www.vlr.gg/player/47629/coco",
+        "name": "Coco",
+        "teamTag": "TEC",
+        "country": "China",
+        "flag": "cn",
+        "agents": [
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.86,
+          "acs": 156,
+          "kills": 21,
+          "deaths": 31,
+          "assists": 20,
+          "kast": 76,
+          "adr": 98,
+          "hs": 37,
+          "firstBloods": 0,
+          "firstDeaths": 1
+        }
+      }
+    ],
+    "performance": {
+      "players": [],
+      "killMatrix": [],
+      "opKillMatrix": [],
+      "firstKillMatrix": []
+    },
+    "economy": {
+      "teams": [],
+      "rounds": []
+    }
+  }
+}

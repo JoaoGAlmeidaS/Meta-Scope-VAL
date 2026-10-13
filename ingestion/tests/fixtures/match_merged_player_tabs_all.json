@@ -1,0 +1,4582 @@
+{
+  "status": "OK",
+  "data": {
+    "id": "656111",
+    "url": "https://www.vlr.gg/656111",
+    "event": {
+      "id": "2829",
+      "url": "https://www.vlr.gg/event/2829/challengers-2026-sea-split-2-vietnam-qualifier/open-qualifier",
+      "name": "Challengers 2026: SEA Split 2 - Vietnam Qualifier",
+      "series": "Open Qualifier: Round 1",
+      "img": "https://owcdn.net/img/6964a9e385d88.png"
+    },
+    "status": "final",
+    "in": null,
+    "format": "Bo3",
+    "date": "Tuesday, April 14",
+    "time": "7:00 AM EDT",
+    "timestamp": 1776164400,
+    "utcDate": "Tue, 14 Apr 2026 11:00:00 GMT",
+    "teams": [
+      {
+        "id": "20302",
+        "url": "https://www.vlr.gg/team/20302/vnsport",
+        "name": "VNSport",
+        "img": "https://owcdn.net/img/697bba96a9c77.png",
+        "score": 2
+      },
+      {
+        "id": "21968",
+        "url": "https://www.vlr.gg/team/21968/silence-reborn",
+        "name": "Silence Reborn",
+        "img": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+        "score": 0
+      }
+    ],
+    "streams": [],
+    "vods": [],
+    "picksBans": {
+      "note": null,
+      "list": []
+    },
+    "maps": [
+      {
+        "id": "263241",
+        "name": "Pearl",
+        "status": "played",
+        "pickedBy": null,
+        "duration": "41:52",
+        "teams": [
+          {
+            "name": "VNSport",
+            "score": 13,
+            "roundsCt": 7,
+            "roundsT": 6
+          },
+          {
+            "name": "Silence Reborn",
+            "score": 6,
+            "roundsCt": 6,
+            "roundsT": 0
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "SILE",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "SILE",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 3,
+            "score": "0-3",
+            "winner": "SILE",
+            "side": "ct",
+            "method": "time",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/time.webp"
+          },
+          {
+            "number": 4,
+            "score": "0-4",
+            "winner": "SILE",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 5,
+            "score": "1-4",
+            "winner": "VNS",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "2-4",
+            "winner": "VNS",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 7,
+            "score": "2-5",
+            "winner": "SILE",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 8,
+            "score": "3-5",
+            "winner": "VNS",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "4-5",
+            "winner": "VNS",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "5-5",
+            "winner": "VNS",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "5-6",
+            "winner": "SILE",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "6-6",
+            "winner": "VNS",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "7-6",
+            "winner": "VNS",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 14,
+            "score": "8-6",
+            "winner": "VNS",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "9-6",
+            "winner": "VNS",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "10-6",
+            "winner": "VNS",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 17,
+            "score": "11-6",
+            "winner": "VNS",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 18,
+            "score": "12-6",
+            "winner": "VNS",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 19,
+            "score": "13-6",
+            "winner": "VNS",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "44148",
+            "url": "https://www.vlr.gg/player/44148/sins",
+            "name": "SinS",
+            "teamTag": "VNS",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Astra",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.41,
+              "acs": 186,
+              "kills": 13,
+              "deaths": 7,
+              "assists": 11,
+              "kast": 89,
+              "adr": 118,
+              "hs": 29,
+              "firstBloods": 1,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "48700",
+            "url": "https://www.vlr.gg/player/48700/gaksayoshi",
+            "name": "Gaksayoshi",
+            "teamTag": "VNS",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.15,
+              "acs": 176,
+              "kills": 11,
+              "deaths": 8,
+              "assists": 10,
+              "kast": 84,
+              "adr": 126,
+              "hs": 30,
+              "firstBloods": 1,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "23028",
+            "url": "https://www.vlr.gg/player/23028/messikk",
+            "name": "MessiKK",
+            "teamTag": "VNS",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Chamber",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.99,
+              "acs": 222,
+              "kills": 16,
+              "deaths": 13,
+              "assists": 0,
+              "kast": 63,
+              "adr": 145,
+              "hs": 24,
+              "firstBloods": 5,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "44146",
+            "url": "https://www.vlr.gg/player/44146/bumble",
+            "name": "Bumble",
+            "teamTag": "VNS",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              },
+              {
+                "name": "Tejo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.98,
+              "acs": 166,
+              "kills": 12,
+              "deaths": 11,
+              "assists": 4,
+              "kast": 84,
+              "adr": 117,
+              "hs": 40,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "63924",
+            "url": "https://www.vlr.gg/player/63924/starbucks-devour",
+            "name": "starbucks devour",
+            "teamTag": "Sile",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.33,
+              "acs": 279,
+              "kills": 18,
+              "deaths": 15,
+              "assists": 5,
+              "kast": 68,
+              "adr": 172,
+              "hs": 27,
+              "firstBloods": 1,
+              "firstDeaths": 4
+            }
+          },
+          {
+            "id": "63923",
+            "url": "https://www.vlr.gg/player/63923/f1lthy",
+            "name": "F1LTHY",
+            "teamTag": "Sile",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Astra",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.97,
+              "acs": 209,
+              "kills": 14,
+              "deaths": 15,
+              "assists": 3,
+              "kast": 68,
+              "adr": 134,
+              "hs": 26,
+              "firstBloods": 2,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "63922",
+            "url": "https://www.vlr.gg/player/63922/doraemon",
+            "name": "Doraemon",
+            "teamTag": "Sile",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.75,
+              "acs": 136,
+              "kills": 10,
+              "deaths": 15,
+              "assists": 2,
+              "kast": 58,
+              "adr": 78,
+              "hs": 19,
+              "firstBloods": 0,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "63921",
+            "url": "https://www.vlr.gg/player/63921/hamburger",
+            "name": "hamburger",
+            "teamTag": "Sile",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Chamber",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.22,
+              "acs": 101,
+              "kills": 6,
+              "deaths": 18,
+              "assists": 2,
+              "kast": 37,
+              "adr": 77,
+              "hs": 18,
+              "firstBloods": 1,
+              "firstDeaths": 5
+            }
+          },
+          {
+            "id": "63925",
+            "url": "https://www.vlr.gg/player/63925/bihcookies",
+            "name": "Bihcookies",
+            "teamTag": "Sile",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Phoenix",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.18,
+              "acs": 66,
+              "kills": 3,
+              "deaths": 17,
+              "assists": 1,
+              "kast": 26,
+              "adr": 55,
+              "hs": 33,
+              "firstBloods": 0,
+              "firstDeaths": 4
+            }
+          }
+        ],
+        "performance": {
+          "players": [
+            {
+              "name": "MessiKK",
+              "teamTag": "VNS",
+              "agents": [
+                {
+                  "name": "chamber",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 88,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "Bumble",
+              "teamTag": "VNS",
+              "agents": [
+                {
+                  "name": "neon",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 49,
+              "plants": 5,
+              "defuses": 2
+            },
+            {
+              "name": "SinS",
+              "teamTag": "VNS",
+              "agents": [
+                {
+                  "name": "astra",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 45,
+              "plants": 1,
+              "defuses": 1
+            },
+            {
+              "name": "Gaksayoshi",
+              "teamTag": "VNS",
+              "agents": [
+                {
+                  "name": "sova",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 60,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "agents": [
+                {
+                  "name": "chamber",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 29,
+              "plants": 0,
+              "defuses": 1
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "agents": [
+                {
+                  "name": "fade",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 34,
+              "plants": 3,
+              "defuses": 2
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "agents": [
+                {
+                  "name": "astra",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 52,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "agents": [
+                {
+                  "name": "neon",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 68,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "agents": [
+                {
+                  "name": "phoenix",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 21,
+              "plants": 0,
+              "defuses": 0
+            }
+          ],
+          "killMatrix": [
+            {
+              "name": "SinS",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 5,
+                  "deaths": 2,
+                  "diff": 3
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 3,
+                  "deaths": 2,
+                  "diff": 1
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "MessiKK",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 5,
+                  "deaths": 5,
+                  "diff": 0
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 4,
+                  "deaths": 3,
+                  "diff": 1
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                }
+              ]
+            },
+            {
+              "name": "Gaksayoshi",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 3,
+                  "deaths": 0,
+                  "diff": 3
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 3,
+                  "deaths": 2,
+                  "diff": 1
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 2,
+                  "deaths": 3,
+                  "diff": -1
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "Bumble",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 4,
+                  "deaths": 0,
+                  "diff": 4
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 3,
+                  "deaths": 0,
+                  "diff": 3
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 4,
+                  "diff": -4
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 7,
+                  "diff": -6
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 4,
+                  "deaths": 0,
+                  "diff": 4
+                }
+              ]
+            },
+            {
+              "name": "Bumble",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 4,
+                  "deaths": 0,
+                  "diff": 4
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 3,
+                  "deaths": 0,
+                  "diff": 3
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 4,
+                  "diff": -4
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 7,
+                  "diff": -6
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 4,
+                  "deaths": 0,
+                  "diff": 4
+                }
+              ]
+            }
+          ],
+          "opKillMatrix": [
+            {
+              "name": "SinS",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "MessiKK",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "Gaksayoshi",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Bumble",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Bumble",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ],
+          "firstKillMatrix": [
+            {
+              "name": "SinS",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "MessiKK",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                }
+              ]
+            },
+            {
+              "name": "Gaksayoshi",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Bumble",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Bumble",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ]
+        },
+        "economy": {
+          "teams": [
+            {
+              "name": "VNS",
+              "pistolWon": 1,
+              "eco": {
+                "total": 3,
+                "won": 1
+              },
+              "semiEco": {
+                "total": 0,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 3,
+                "won": 2
+              },
+              "fullBuy": {
+                "total": 13,
+                "won": 10
+              }
+            },
+            {
+              "name": "Silence Reborn",
+              "pistolWon": 1,
+              "eco": {
+                "total": 2,
+                "won": 1
+              },
+              "semiEco": {
+                "total": 4,
+                "won": 1
+              },
+              "semiBuy": {
+                "total": 4,
+                "won": 2
+              },
+              "fullBuy": {
+                "total": 9,
+                "won": 2
+              }
+            }
+          ],
+          "rounds": [
+            {
+              "number": 1,
+              "teams": [
+                {
+                  "bank": 200,
+                  "loadout": 3600,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 300,
+                  "loadout": 3800,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "teams": [
+                {
+                  "bank": 9200,
+                  "loadout": 2500,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 3100,
+                  "loadout": 15150,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "teams": [
+                {
+                  "bank": 1400,
+                  "loadout": 22800,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 12200,
+                  "loadout": 13250,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "teams": [
+                {
+                  "bank": 8500,
+                  "loadout": 11500,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 15100,
+                  "loadout": 23950,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "teams": [
+                {
+                  "bank": 4000,
+                  "loadout": 22500,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 22300,
+                  "loadout": 22200,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 6,
+              "teams": [
+                {
+                  "bank": 14400,
+                  "loadout": 23100,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 8500,
+                  "loadout": 25650,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 7,
+              "teams": [
+                {
+                  "bank": 24300,
+                  "loadout": 25200,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 6800,
+                  "loadout": 20450,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 8,
+              "teams": [
+                {
+                  "bank": 17300,
+                  "loadout": 20400,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 4300,
+                  "loadout": 24350,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 9,
+              "teams": [
+                {
+                  "bank": 22900,
+                  "loadout": 25550,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 8900,
+                  "loadout": 7200,
+                  "buy": "semi-eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 10,
+              "teams": [
+                {
+                  "bank": 24900,
+                  "loadout": 26000,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 2300,
+                  "loadout": 21150,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 11,
+              "teams": [
+                {
+                  "bank": 27200,
+                  "loadout": 26000,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 9400,
+                  "loadout": 9000,
+                  "buy": "semi-eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 12,
+              "teams": [
+                {
+                  "bank": 15000,
+                  "loadout": 24350,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 5500,
+                  "loadout": 24500,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 13,
+              "teams": [
+                {
+                  "bank": 200,
+                  "loadout": 3750,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 300,
+                  "loadout": 3950,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 14,
+              "teams": [
+                {
+                  "bank": 2500,
+                  "loadout": 15650,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 7200,
+                  "loadout": 5750,
+                  "buy": "semi-eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 15,
+              "teams": [
+                {
+                  "bank": 13500,
+                  "loadout": 13300,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 1000,
+                  "loadout": 20700,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 16,
+              "teams": [
+                {
+                  "bank": 22400,
+                  "loadout": 25200,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 9000,
+                  "loadout": 8600,
+                  "buy": "semi-eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 17,
+              "teams": [
+                {
+                  "bank": 29000,
+                  "loadout": 27650,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 2800,
+                  "loadout": 23800,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 18,
+              "teams": [
+                {
+                  "bank": 24200,
+                  "loadout": 26350,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 2900,
+                  "loadout": 18050,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 19,
+              "teams": [
+                {
+                  "bank": 32200,
+                  "loadout": 26650,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 1000,
+                  "loadout": 19700,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "263242",
+        "name": "Haven",
+        "status": "played",
+        "pickedBy": null,
+        "duration": "43:26",
+        "teams": [
+          {
+            "name": "VNSport",
+            "score": 13,
+            "roundsCt": 7,
+            "roundsT": 6
+          },
+          {
+            "name": "Silence Reborn",
+            "score": 9,
+            "roundsCt": 6,
+            "roundsT": 3
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "1-0",
+            "winner": "VNS",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "2-0",
+            "winner": "VNS",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "2-1",
+            "winner": "SILE",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 4,
+            "score": "3-1",
+            "winner": "VNS",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 5,
+            "score": "3-2",
+            "winner": "SILE",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 6,
+            "score": "4-2",
+            "winner": "VNS",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 7,
+            "score": "5-2",
+            "winner": "VNS",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 8,
+            "score": "5-3",
+            "winner": "SILE",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 9,
+            "score": "6-3",
+            "winner": "VNS",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 10,
+            "score": "6-4",
+            "winner": "SILE",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 11,
+            "score": "6-5",
+            "winner": "SILE",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 12,
+            "score": "6-6",
+            "winner": "SILE",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 13,
+            "score": "6-7",
+            "winner": "SILE",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "6-8",
+            "winner": "SILE",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "7-8",
+            "winner": "VNS",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 16,
+            "score": "8-8",
+            "winner": "VNS",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 17,
+            "score": "9-8",
+            "winner": "VNS",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "10-8",
+            "winner": "VNS",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 19,
+            "score": "11-8",
+            "winner": "VNS",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 20,
+            "score": "12-8",
+            "winner": "VNS",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 21,
+            "score": "12-9",
+            "winner": "SILE",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 22,
+            "score": "13-9",
+            "winner": "VNS",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "48700",
+            "url": "https://www.vlr.gg/player/48700/gaksayoshi",
+            "name": "Gaksayoshi",
+            "teamTag": "VNS",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.11,
+              "acs": 226,
+              "kills": 18,
+              "deaths": 13,
+              "assists": 3,
+              "kast": 86,
+              "adr": 156,
+              "hs": 42,
+              "firstBloods": 0,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "23028",
+            "url": "https://www.vlr.gg/player/23028/messikk",
+            "name": "MessiKK",
+            "teamTag": "VNS",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1,
+              "acs": 171,
+              "kills": 14,
+              "deaths": 13,
+              "assists": 6,
+              "kast": 64,
+              "adr": 90,
+              "hs": 33,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "44148",
+            "url": "https://www.vlr.gg/player/44148/sins",
+            "name": "SinS",
+            "teamTag": "VNS",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Viper",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.91,
+              "acs": 196,
+              "kills": 14,
+              "deaths": 14,
+              "assists": 6,
+              "kast": 77,
+              "adr": 136,
+              "hs": 22,
+              "firstBloods": 3,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "44146",
+            "url": "https://www.vlr.gg/player/44146/bumble",
+            "name": "Bumble",
+            "teamTag": "VNS",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              },
+              {
+                "name": "Killjoy",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.89,
+              "acs": 180,
+              "kills": 14,
+              "deaths": 13,
+              "assists": 4,
+              "kast": 91,
+              "adr": 107,
+              "hs": 27,
+              "firstBloods": 2,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "63923",
+            "url": "https://www.vlr.gg/player/63923/f1lthy",
+            "name": "F1LTHY",
+            "teamTag": "Sile",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.25,
+              "acs": 239,
+              "kills": 18,
+              "deaths": 15,
+              "assists": 2,
+              "kast": 50,
+              "adr": 165,
+              "hs": 32,
+              "firstBloods": 3,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "63924",
+            "url": "https://www.vlr.gg/player/63924/starbucks-devour",
+            "name": "starbucks devour",
+            "teamTag": "Sile",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.13,
+              "acs": 225,
+              "kills": 17,
+              "deaths": 16,
+              "assists": 3,
+              "kast": 59,
+              "adr": 144,
+              "hs": 23,
+              "firstBloods": 2,
+              "firstDeaths": 4
+            }
+          },
+          {
+            "id": "63921",
+            "url": "https://www.vlr.gg/player/63921/hamburger",
+            "name": "hamburger",
+            "teamTag": "Sile",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Killjoy",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.93,
+              "acs": 197,
+              "kills": 16,
+              "deaths": 18,
+              "assists": 0,
+              "kast": 59,
+              "adr": 129,
+              "hs": 52,
+              "firstBloods": 0,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "63922",
+            "url": "https://www.vlr.gg/player/63922/doraemon",
+            "name": "Doraemon",
+            "teamTag": "Sile",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.55,
+              "acs": 100,
+              "kills": 8,
+              "deaths": 17,
+              "assists": 10,
+              "kast": 55,
+              "adr": 64,
+              "hs": 27,
+              "firstBloods": 0,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "63925",
+            "url": "https://www.vlr.gg/player/63925/bihcookies",
+            "name": "Bihcookies",
+            "teamTag": "Sile",
+            "country": "Vietnam",
+            "flag": "vn",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.31,
+              "acs": 111,
+              "kills": 5,
+              "deaths": 21,
+              "assists": 6,
+              "kast": 41,
+              "adr": 85,
+              "hs": 18,
+              "firstBloods": 0,
+              "firstDeaths": 5
+            }
+          }
+        ],
+        "performance": {
+          "players": [
+            {
+              "name": "MessiKK",
+              "teamTag": "VNS",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 30,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "Bumble",
+              "teamTag": "VNS",
+              "agents": [
+                {
+                  "name": "neon",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 43,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "SinS",
+              "teamTag": "VNS",
+              "agents": [
+                {
+                  "name": "viper",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 59,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "Gaksayoshi",
+              "teamTag": "VNS",
+              "agents": [
+                {
+                  "name": "sova",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 66,
+              "plants": 10,
+              "defuses": 1
+            },
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "agents": [
+                {
+                  "name": "killjoy",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 52,
+              "plants": 0,
+              "defuses": 1
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 24,
+              "plants": 2,
+              "defuses": 0
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "agents": [
+                {
+                  "name": "sova",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 80,
+              "plants": 1,
+              "defuses": 1
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "agents": [
+                {
+                  "name": "jett",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 55,
+              "plants": 1,
+              "defuses": 4
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "agents": [
+                {
+                  "name": "neon",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 31,
+              "plants": 1,
+              "defuses": 0
+            }
+          ],
+          "killMatrix": [
+            {
+              "name": "SinS",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 4,
+                  "deaths": 2,
+                  "diff": 2
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 3,
+                  "deaths": 6,
+                  "diff": -3
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 4,
+                  "diff": -3
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 5,
+                  "deaths": 1,
+                  "diff": 4
+                }
+              ]
+            },
+            {
+              "name": "MessiKK",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 3,
+                  "deaths": 4,
+                  "diff": -1
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 5,
+                  "deaths": 2,
+                  "diff": 3
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 4,
+                  "deaths": 5,
+                  "diff": -1
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "Gaksayoshi",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 5,
+                  "deaths": 5,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 3,
+                  "deaths": 5,
+                  "diff": -2
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 5,
+                  "deaths": 0,
+                  "diff": 5
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 3,
+                  "deaths": 1,
+                  "diff": 2
+                }
+              ]
+            },
+            {
+              "name": "Bumble",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 3,
+                  "diff": -3
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 4,
+                  "deaths": 3,
+                  "diff": 1
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 2,
+                  "deaths": 4,
+                  "diff": -2
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 4,
+                  "deaths": 2,
+                  "diff": 2
+                }
+              ]
+            },
+            {
+              "name": "Bumble",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 3,
+                  "diff": -3
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 4,
+                  "deaths": 3,
+                  "diff": 1
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 2,
+                  "deaths": 4,
+                  "diff": -2
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 4,
+                  "deaths": 2,
+                  "diff": 2
+                }
+              ]
+            }
+          ],
+          "opKillMatrix": [
+            {
+              "name": "SinS",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "MessiKK",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Gaksayoshi",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Bumble",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Bumble",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ],
+          "firstKillMatrix": [
+            {
+              "name": "SinS",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 3,
+                  "diff": -2
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "MessiKK",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Gaksayoshi",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Bumble",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Bumble",
+              "teamTag": "VNS",
+              "records": [
+                {
+                  "name": "hamburger",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Doraemon",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "F1LTHY",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "starbucks devour",
+                  "teamTag": "Sile",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Bihcookies",
+                  "teamTag": "Sile",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ]
+        },
+        "economy": {
+          "teams": [
+            {
+              "name": "VNS",
+              "pistolWon": 1,
+              "eco": {
+                "total": 3,
+                "won": 1
+              },
+              "semiEco": {
+                "total": 0,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 2,
+                "won": 1
+              },
+              "fullBuy": {
+                "total": 17,
+                "won": 11
+              }
+            },
+            {
+              "name": "Silence Reborn",
+              "pistolWon": 1,
+              "eco": {
+                "total": 3,
+                "won": 1
+              },
+              "semiEco": {
+                "total": 3,
+                "won": 1
+              },
+              "semiBuy": {
+                "total": 5,
+                "won": 3
+              },
+              "fullBuy": {
+                "total": 11,
+                "won": 4
+              }
+            }
+          ],
+          "rounds": [
+            {
+              "number": 1,
+              "teams": [
+                {
+                  "bank": 400,
+                  "loadout": 3600,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 200,
+                  "loadout": 3750,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "teams": [
+                {
+                  "bank": 2700,
+                  "loadout": 15800,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 8300,
+                  "loadout": 2450,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "teams": [
+                {
+                  "bank": 14100,
+                  "loadout": 18200,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 400,
+                  "loadout": 20500,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "teams": [
+                {
+                  "bank": 3700,
+                  "loadout": 22350,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 5700,
+                  "loadout": 20300,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "teams": [
+                {
+                  "bank": 13500,
+                  "loadout": 22100,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 8000,
+                  "loadout": 9400,
+                  "buy": "semi-eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 6,
+              "teams": [
+                {
+                  "bank": 6400,
+                  "loadout": 20500,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 4300,
+                  "loadout": 24350,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 7,
+              "teams": [
+                {
+                  "bank": 9700,
+                  "loadout": 22350,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 8600,
+                  "loadout": 7800,
+                  "buy": "semi-eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 8,
+              "teams": [
+                {
+                  "bank": 21500,
+                  "loadout": 23450,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 1300,
+                  "loadout": 21250,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 9,
+              "teams": [
+                {
+                  "bank": 11800,
+                  "loadout": 22850,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 7500,
+                  "loadout": 21250,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 10,
+              "teams": [
+                {
+                  "bank": 18100,
+                  "loadout": 22950,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 3300,
+                  "loadout": 17900,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 11,
+              "teams": [
+                {
+                  "bank": 8200,
+                  "loadout": 20900,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 7100,
+                  "loadout": 23450,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 12,
+              "teams": [
+                {
+                  "bank": 3000,
+                  "loadout": 21400,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 6300,
+                  "loadout": 23900,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 13,
+              "teams": [
+                {
+                  "bank": 400,
+                  "loadout": 3150,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 100,
+                  "loadout": 4050,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 14,
+              "teams": [
+                {
+                  "bank": 9500,
+                  "loadout": 1600,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 5500,
+                  "loadout": 13700,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 15,
+              "teams": [
+                {
+                  "bank": 800,
+                  "loadout": 21250,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 10500,
+                  "loadout": 20450,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 16,
+              "teams": [
+                {
+                  "bank": 7700,
+                  "loadout": 21950,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 3700,
+                  "loadout": 19450,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 17,
+              "teams": [
+                {
+                  "bank": 16500,
+                  "loadout": 22050,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 7900,
+                  "loadout": 9650,
+                  "buy": "semi-eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 18,
+              "teams": [
+                {
+                  "bank": 25600,
+                  "loadout": 24250,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 2300,
+                  "loadout": 22250,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 19,
+              "teams": [
+                {
+                  "bank": 36000,
+                  "loadout": 24150,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 6800,
+                  "loadout": 12150,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 20,
+              "teams": [
+                {
+                  "bank": 40500,
+                  "loadout": 24350,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 2600,
+                  "loadout": 21500,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 21,
+              "teams": [
+                {
+                  "bank": 25400,
+                  "loadout": 23250,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 700,
+                  "loadout": 19850,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 22,
+              "teams": [
+                {
+                  "bank": 12800,
+                  "loadout": 22750,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 5900,
+                  "loadout": 22300,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "players": [
+      {
+        "id": "44146",
+        "url": "https://www.vlr.gg/player/44146/bumble",
+        "name": "Bumble",
+        "teamTag": "VNS",
+        "country": "Vietnam",
+        "flag": "vn",
+        "agents": [
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          },
+          {
+            "name": "Tejo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+          },
+          {
+            "name": "Killjoy",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.37,
+          "acs": 267,
+          "kills": 81,
+          "deaths": 47,
+          "assists": 16,
+          "kast": 87,
+          "adr": 172,
+          "hs": 32,
+          "firstBloods": 19,
+          "firstDeaths": 3
+        }
+      },
+      {
+        "id": "44148",
+        "url": "https://www.vlr.gg/player/44148/sins",
+        "name": "SinS",
+        "teamTag": "VNS",
+        "country": "Vietnam",
+        "flag": "vn",
+        "agents": [
+          {
+            "name": "Astra",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+          },
+          {
+            "name": "Viper",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.14,
+          "acs": 191,
+          "kills": 27,
+          "deaths": 21,
+          "assists": 17,
+          "kast": 83,
+          "adr": 128,
+          "hs": 25,
+          "firstBloods": 4,
+          "firstDeaths": 3
+        }
+      },
+      {
+        "id": "48700",
+        "url": "https://www.vlr.gg/player/48700/gaksayoshi",
+        "name": "Gaksayoshi",
+        "teamTag": "VNS",
+        "country": "Vietnam",
+        "flag": "vn",
+        "agents": [
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.13,
+          "acs": 203,
+          "kills": 29,
+          "deaths": 21,
+          "assists": 13,
+          "kast": 85,
+          "adr": 142,
+          "hs": 36,
+          "firstBloods": 1,
+          "firstDeaths": 0
+        }
+      },
+      {
+        "id": "23028",
+        "url": "https://www.vlr.gg/player/23028/messikk",
+        "name": "MessiKK",
+        "teamTag": "VNS",
+        "country": "Vietnam",
+        "flag": "vn",
+        "agents": [
+          {
+            "name": "Chamber",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+          },
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": 1,
+          "acs": 195,
+          "kills": 30,
+          "deaths": 26,
+          "assists": 6,
+          "kast": 63,
+          "adr": 116,
+          "hs": 29,
+          "firstBloods": 8,
+          "firstDeaths": 3
+        }
+      },
+      {
+        "id": "63924",
+        "url": "https://www.vlr.gg/player/63924/starbucks-devour",
+        "name": "starbucks devour",
+        "teamTag": "Sile",
+        "country": "Vietnam",
+        "flag": "vn",
+        "agents": [
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          },
+          {
+            "name": "Jett",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.22,
+          "acs": 250,
+          "kills": 35,
+          "deaths": 31,
+          "assists": 8,
+          "kast": 63,
+          "adr": 157,
+          "hs": 25,
+          "firstBloods": 3,
+          "firstDeaths": 8
+        }
+      },
+      {
+        "id": "63923",
+        "url": "https://www.vlr.gg/player/63923/f1lthy",
+        "name": "F1LTHY",
+        "teamTag": "Sile",
+        "country": "Vietnam",
+        "flag": "vn",
+        "agents": [
+          {
+            "name": "Astra",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+          },
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.12,
+          "acs": 225,
+          "kills": 32,
+          "deaths": 30,
+          "assists": 5,
+          "kast": 59,
+          "adr": 151,
+          "hs": 29,
+          "firstBloods": 5,
+          "firstDeaths": 4
+        }
+      },
+      {
+        "id": "63922",
+        "url": "https://www.vlr.gg/player/63922/doraemon",
+        "name": "Doraemon",
+        "teamTag": "Sile",
+        "country": "Vietnam",
+        "flag": "vn",
+        "agents": [
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          },
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.64,
+          "acs": 117,
+          "kills": 18,
+          "deaths": 32,
+          "assists": 12,
+          "kast": 56,
+          "adr": 71,
+          "hs": 22,
+          "firstBloods": 0,
+          "firstDeaths": 3
+        }
+      },
+      {
+        "id": "63921",
+        "url": "https://www.vlr.gg/player/63921/hamburger",
+        "name": "hamburger",
+        "teamTag": "Sile",
+        "country": "Vietnam",
+        "flag": "vn",
+        "agents": [
+          {
+            "name": "Chamber",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+          },
+          {
+            "name": "Killjoy",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.61,
+          "acs": 153,
+          "kills": 22,
+          "deaths": 36,
+          "assists": 2,
+          "kast": 49,
+          "adr": 105,
+          "hs": 40,
+          "firstBloods": 1,
+          "firstDeaths": 8
+        }
+      },
+      {
+        "id": "63925",
+        "url": "https://www.vlr.gg/player/63925/bihcookies",
+        "name": "Bihcookies",
+        "teamTag": "Sile",
+        "country": "Vietnam",
+        "flag": "vn",
+        "agents": [
+          {
+            "name": "Phoenix",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+          },
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.25,
+          "acs": 90,
+          "kills": 8,
+          "deaths": 38,
+          "assists": 7,
+          "kast": 34,
+          "adr": 71,
+          "hs": 20,
+          "firstBloods": 0,
+          "firstDeaths": 9
+        }
+      }
+    ],
+    "performance": {
+      "players": [
+        {
+          "name": "MessiKK",
+          "teamTag": "VNS",
+          "agents": [
+            {
+              "name": "chamber",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+            }
+          ],
+          "multikills": {
+            "2k": 10,
+            "3k": 1,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 59,
+          "plants": 2,
+          "defuses": 0
+        },
+        {
+          "name": "Bumble",
+          "teamTag": "VNS",
+          "agents": [
+            {
+              "name": "neon",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+            }
+          ],
+          "multikills": {
+            "2k": 10,
+            "3k": 7,
+            "4k": 3,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 80,
+          "plants": 7,
+          "defuses": 3
+        },
+        {
+          "name": "SinS",
+          "teamTag": "VNS",
+          "agents": [
+            {
+              "name": "astra",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+            }
+          ],
+          "multikills": {
+            "2k": 4,
+            "3k": 1,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 1,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 52,
+          "plants": 1,
+          "defuses": 1
+        },
+        {
+          "name": "Gaksayoshi",
+          "teamTag": "VNS",
+          "agents": [
+            {
+              "name": "sova",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+            }
+          ],
+          "multikills": {
+            "2k": 3,
+            "3k": 2,
+            "4k": 1,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 63,
+          "plants": 11,
+          "defuses": 1
+        },
+        {
+          "name": "hamburger",
+          "teamTag": "Sile",
+          "agents": [
+            {
+              "name": "chamber",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+            }
+          ],
+          "multikills": {
+            "2k": 4,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 41,
+          "plants": 0,
+          "defuses": 2
+        },
+        {
+          "name": "Doraemon",
+          "teamTag": "Sile",
+          "agents": [
+            {
+              "name": "fade",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+            }
+          ],
+          "multikills": {
+            "2k": 3,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 29,
+          "plants": 5,
+          "defuses": 2
+        },
+        {
+          "name": "F1LTHY",
+          "teamTag": "Sile",
+          "agents": [
+            {
+              "name": "astra",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+            }
+          ],
+          "multikills": {
+            "2k": 7,
+            "3k": 2,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 66,
+          "plants": 1,
+          "defuses": 1
+        },
+        {
+          "name": "starbucks devour",
+          "teamTag": "Sile",
+          "agents": [
+            {
+              "name": "neon",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+            }
+          ],
+          "multikills": {
+            "2k": 8,
+            "3k": 3,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 62,
+          "plants": 1,
+          "defuses": 4
+        },
+        {
+          "name": "Bihcookies",
+          "teamTag": "Sile",
+          "agents": [
+            {
+              "name": "phoenix",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+            }
+          ],
+          "multikills": {
+            "2k": 3,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 26,
+          "plants": 1,
+          "defuses": 0
+        }
+      ],
+      "killMatrix": [
+        {
+          "name": "SinS",
+          "teamTag": "VNS",
+          "records": [
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "kills": 9,
+              "deaths": 4,
+              "diff": 5
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "kills": 2,
+              "deaths": 3,
+              "diff": -1
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "kills": 7,
+              "deaths": 7,
+              "diff": 0
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "kills": 4,
+              "deaths": 6,
+              "diff": -2
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "kills": 5,
+              "deaths": 1,
+              "diff": 4
+            }
+          ]
+        },
+        {
+          "name": "MessiKK",
+          "teamTag": "VNS",
+          "records": [
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "kills": 4,
+              "deaths": 6,
+              "diff": -2
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "kills": 7,
+              "deaths": 4,
+              "diff": 3
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "kills": 6,
+              "deaths": 7,
+              "diff": -1
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "kills": 8,
+              "deaths": 8,
+              "diff": 0
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "kills": 5,
+              "deaths": 1,
+              "diff": 4
+            }
+          ]
+        },
+        {
+          "name": "Gaksayoshi",
+          "teamTag": "VNS",
+          "records": [
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "kills": 6,
+              "deaths": 7,
+              "diff": -1
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "kills": 5,
+              "deaths": 2,
+              "diff": 3
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "kills": 6,
+              "deaths": 7,
+              "diff": -1
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "kills": 7,
+              "deaths": 3,
+              "diff": 4
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "kills": 5,
+              "deaths": 2,
+              "diff": 3
+            }
+          ]
+        },
+        {
+          "name": "Bumble",
+          "teamTag": "VNS",
+          "records": [
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "kills": 17,
+              "deaths": 5,
+              "diff": 12
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "kills": 18,
+              "deaths": 9,
+              "diff": 9
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "kills": 11,
+              "deaths": 11,
+              "diff": 0
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "kills": 12,
+              "deaths": 18,
+              "diff": -6
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "kills": 23,
+              "deaths": 4,
+              "diff": 19
+            }
+          ]
+        },
+        {
+          "name": "Bumble",
+          "teamTag": "VNS",
+          "records": [
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "kills": 17,
+              "deaths": 5,
+              "diff": 12
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "kills": 18,
+              "deaths": 9,
+              "diff": 9
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "kills": 11,
+              "deaths": 11,
+              "diff": 0
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "kills": 12,
+              "deaths": 18,
+              "diff": -6
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "kills": 23,
+              "deaths": 4,
+              "diff": 19
+            }
+          ]
+        }
+      ],
+      "opKillMatrix": [
+        {
+          "name": "SinS",
+          "teamTag": "VNS",
+          "records": [
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "MessiKK",
+          "teamTag": "VNS",
+          "records": [
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "kills": 2,
+              "deaths": 0,
+              "diff": 2
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "Gaksayoshi",
+          "teamTag": "VNS",
+          "records": [
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "Bumble",
+          "teamTag": "VNS",
+          "records": [
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "Bumble",
+          "teamTag": "VNS",
+          "records": [
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        }
+      ],
+      "firstKillMatrix": [
+        {
+          "name": "SinS",
+          "teamTag": "VNS",
+          "records": [
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "kills": 1,
+              "deaths": 3,
+              "diff": -2
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "MessiKK",
+          "teamTag": "VNS",
+          "records": [
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "kills": 1,
+              "deaths": 1,
+              "diff": 0
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "kills": 3,
+              "deaths": 2,
+              "diff": 1
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "kills": 2,
+              "deaths": 0,
+              "diff": 2
+            }
+          ]
+        },
+        {
+          "name": "Gaksayoshi",
+          "teamTag": "VNS",
+          "records": [
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "Bumble",
+          "teamTag": "VNS",
+          "records": [
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "kills": 5,
+              "deaths": 0,
+              "diff": 5
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "kills": 2,
+              "deaths": 0,
+              "diff": 2
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "kills": 2,
+              "deaths": 2,
+              "diff": 0
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "kills": 4,
+              "deaths": 1,
+              "diff": 3
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "kills": 6,
+              "deaths": 0,
+              "diff": 6
+            }
+          ]
+        },
+        {
+          "name": "Bumble",
+          "teamTag": "VNS",
+          "records": [
+            {
+              "name": "hamburger",
+              "teamTag": "Sile",
+              "kills": 5,
+              "deaths": 0,
+              "diff": 5
+            },
+            {
+              "name": "Doraemon",
+              "teamTag": "Sile",
+              "kills": 2,
+              "deaths": 0,
+              "diff": 2
+            },
+            {
+              "name": "F1LTHY",
+              "teamTag": "Sile",
+              "kills": 2,
+              "deaths": 2,
+              "diff": 0
+            },
+            {
+              "name": "starbucks devour",
+              "teamTag": "Sile",
+              "kills": 4,
+              "deaths": 1,
+              "diff": 3
+            },
+            {
+              "name": "Bihcookies",
+              "teamTag": "Sile",
+              "kills": 6,
+              "deaths": 0,
+              "diff": 6
+            }
+          ]
+        }
+      ]
+    },
+    "economy": {
+      "teams": [
+        {
+          "name": "VNS",
+          "pistolWon": 2,
+          "eco": {
+            "total": 6,
+            "won": 2
+          },
+          "semiEco": {
+            "total": 0,
+            "won": 0
+          },
+          "semiBuy": {
+            "total": 5,
+            "won": 3
+          },
+          "fullBuy": {
+            "total": 30,
+            "won": 21
+          }
+        },
+        {
+          "name": "Silence Reborn",
+          "pistolWon": 2,
+          "eco": {
+            "total": 5,
+            "won": 2
+          },
+          "semiEco": {
+            "total": 7,
+            "won": 2
+          },
+          "semiBuy": {
+            "total": 9,
+            "won": 5
+          },
+          "fullBuy": {
+            "total": 20,
+            "won": 6
+          }
+        }
+      ],
+      "rounds": []
+    }
+  }
+}

@@ -10,7 +10,7 @@ from collections import Counter
 
 import pytest
 
-from ingestion.bridge import BridgeError, tag_to_team_id, tags_by_score
+from ingestion.bridge import BridgeError, name_keys, tag_to_team_id, tags_by_score, team_id_by_name
 
 TABS_ALL = "match_bo5_2026_ot_tabs_all.json"
 
@@ -79,3 +79,31 @@ def test_ponte_recusa_placar_que_nao_fecha(load_match):
     )
     with pytest.raises(BridgeError):
         tags_by_score(wrong)
+
+
+# --- nome do time em mais de uma forma (pegadinha 35) -------------------------------------------
+
+RAZAO_SOCIAL = "match_cn_legal_name_tabs_all.json"
+
+
+def test_nome_com_razao_social_tem_as_tres_formas():
+    assert name_keys("Wuxi Titan Esports Club (Titan Esports Club)") == {
+        "wuxi titan esports club (titan esports club)",
+        "wuxi titan esports club",
+        "titan esports club",
+    }
+    assert name_keys("TYLOO") == {"tyloo"}
+
+
+def test_mapa_com_nome_curto_casa_com_a_razao_social(load_json, load_match):
+    # 701025 (VCT 2026 China Stage 2): partida com a razão social, mapa só com o nome curto.
+    raw = load_json(RAZAO_SOCIAL)["data"]
+    assert raw["teams"][1]["name"] == "Wuxi Titan Esports Club (Titan Esports Club)"
+    assert raw["maps"][0]["teams"][1]["name"] == "Titan Esports Club"
+    match = load_match(RAZAO_SOCIAL)
+    titan = match.teams[1].id
+    assert team_id_by_name(match, "Titan Esports Club") == titan
+    assert team_id_by_name(match, "titan esports club") == titan
+    assert team_id_by_name(match, "Outro Time") is None
+    for map_ in match.maps:
+        assert set(tag_to_team_id(match, map_).values()) == {t.id for t in match.teams}

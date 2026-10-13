@@ -13,8 +13,9 @@ Partição: temporada (`season=YYYY`, chave Hive), um arquivo por evento.
 
 CLI:
     python -m ingestion.collectors events                  índice, listagens e gabarito
-    python -m ingestion.collectors backfill                tudo desde 2023, mais recente primeiro
+    python -m ingestion.collectors backfill                tudo desde 2025, mais recente primeiro
     python -m ingestion.collectors backfill --event 2977   um evento só
+    python -m ingestion.collectors backfill --season 2026  uma temporada (partição do Dagster)
     python -m ingestion.collectors incremental             só a temporada corrente
 """
 
@@ -32,10 +33,17 @@ from pathlib import Path
 from pydantic import ValidationError
 
 from ingestion import lake
-from ingestion.client import ApiClient, ApiError
+from ingestion.client import ApiClient, ApiError, NotFound, TransientError
 from ingestion.config import HISTORY_SINCE, tabs_cutoff
 from ingestion.flatten import flatten_match
-from ingestion.schemas import EventAgentsMap, EventMatch, EventSummary, MatchDetail, Response
+from ingestion.schemas import (
+    EventAgentsMap,
+    EventMatch,
+    EventSummary,
+    MatchDetail,
+    Response,
+    known_source_defect,
+)
 
 log = logging.getLogger(__name__)
 
@@ -50,6 +58,7 @@ ONGOING_MAX_AGE_S = 6 * 3600  # listagem e gabarito de evento em andamento
 MAX_PAGES = 50
 OLDER_PAGES_TO_STOP = 2  # páginas seguidas só com temporadas anteriores a `since`
 MAX_CONSECUTIVE_REJECTS = 5
+MAX_CONSECUTIVE_UNAVAILABLE = 3  # listagens de evento seguidas sem resposta: instância fora do ar
 SECONDS_PER_MATCH = 6.0  # medido no D2: ~1h40 por mil partidas
 
 _SEASON_FULL = re.compile(r"\b(20[2-9]\d)\b")
@@ -57,7 +66,8 @@ _SEASON_SHORT = re.compile(r"\b(?:VCT|VCL)\s?(\d{2})\b")
 
 
 class CollectionAborted(RuntimeError):
-    """Rejeições seguidas demais: sinal de mudança de formato da API, não de partida estranha."""
+    """Falhas seguidas demais: mudança de formato da API ou instância fora do ar, não um caso
+    isolado. Rodar de novo retoma pelo cache."""
 
 
 def season_from_name(name: str) -> int | None:
@@ -153,11 +163,25 @@ def _event_pages(client: ApiClient, tier: str, region: str | None, since: int):
             return
 
 
+def is_china_tier2(event: Event) -> bool:
+    """Tier 2 chinês: fica fora da coleta (decisão de 05/10).
+
+    Disputado em plataformas de terceiros, chega com dados faltando (pegadinhas 27, 31 e 33) e vale
+    pouco para a análise além do volume. Pega a VCL China (aparece em `tier=vcl` com `region=china`,
+    inclusive o China Evolution Series 2026, que aparece nos dois tiers) e o China Evolution Series
+    pelo nome (o de 2025 só aparece em `tier=vct`). O VCT China (Kickoff e Stages) é tier 1 e fica.
+    """
+    return ("vcl" in event.tiers and "china" in event.regions) or (
+        "china evolution series" in event.name.casefold()
+    )
+
+
 def list_events(client: ApiClient, *, since: int) -> list[Event]:
     """Eventos VCT e VCL, deduplicados por id, com as regiões em que aparecem.
 
     Cada tier é listado por região e sem filtro: o evento que só aparece sem filtro fica com
-    região nula (override no seed). Eventos futuros e de temporadas anteriores ficam de fora.
+    região nula (override no seed). Eventos futuros, de temporadas anteriores e o tier 2 chinês
+    (`is_china_tier2`) ficam de fora.
     """
     events: dict[str, Event] = {}
     for tier in TIERS:
@@ -169,10 +193,15 @@ def list_events(client: ApiClient, *, since: int) -> list[Event]:
                 event.tiers.add(tier)
                 if region:
                     event.regions.add(region)
+    china = [e.id for e in events.values() if is_china_tier2(e)]
+    if china:
+        log.info("%d eventos do tier 2 chinês fora da coleta", len(china))
     return [
         e
         for e in events.values()
-        if e.status != "upcoming" and (season_from_name(e.name) or since) >= since
+        if e.status != "upcoming"
+        and (season_from_name(e.name) or since) >= since
+        and not is_china_tier2(e)
     ]
 
 
@@ -186,12 +215,20 @@ def attach_matches(client: ApiClient, event: Event) -> None:
 
 
 def event_agents(client: ApiClient, event: Event) -> list[EventAgentsMap] | None:
-    """Gabarito do D13. `None` se o vlr.gg não tem o agregado do evento."""
+    """Gabarito do D13. É opcional: nenhuma falha aqui para a coleta.
+
+    `[]` quando o vlr.gg não tem o agregado (erro definitivo): grava arquivo vazio e não insiste.
+    `None` quando a falha pode passar (502 persistente, contrato): não grava, e a próxima
+    execução tenta de novo. Caso real: `/events/1309/agents` deu 502 em 6 tentativas no D5.
+    """
     try:
         body = client.fetch(f"/events/{event.id}/agents", max_age_s=_max_age(event))
         return Response[list[EventAgentsMap]].model_validate(body).data
-    except (ApiError, ValidationError) as exc:
-        log.error("gabarito do evento %s indisponível: %s", event.id, str(exc)[:200])
+    except ApiError as exc:
+        log.error("evento %s sem gabarito: %s", event.id, str(exc)[:200])
+        return []
+    except (TransientError, ValidationError) as exc:
+        log.error("gabarito do evento %s indisponível agora: %s", event.id, str(exc)[:200])
         return None
 
 
@@ -228,43 +265,76 @@ def _event_agent_rows(event: Event, maps: list[EventAgentsMap]) -> list[dict]:
     ]
 
 
-def collect_events(client: ApiClient, *, since: int, root: Path) -> list[Event]:
-    """D5: índice de eventos + listagem de partidas + gabarito, gravados no lake."""
-    collected_at = datetime.now(UTC)
-    events = []
-    candidates = list_events(client, since=since)
-    log.info("%d eventos candidatos desde %d", len(candidates), since)
-    for event in candidates:
-        try:
-            attach_matches(client, event)
-        except (ApiError, ValidationError) as exc:
-            # Um evento estranho não derruba horas de coleta: fica fora, com o motivo no log.
-            log.error("listagem do evento %s ignorada: %s", event.id, str(exc)[:300])
-            continue
-        if event.season is None or event.season < since:
-            log.info("evento %s (%s) fora da temporada; ignorado", event.id, event.name)
-            continue
-        agents = event_agents(client, event)
-        lake.write_table(
-            root,
-            "raw_event_match",
-            _event_match_rows(event),
-            season=event.season,
-            event_id=event.id,
-        )
-        lake.write_table(
-            root,
-            "raw_event_agents",
-            _event_agent_rows(event, agents or []),
-            season=event.season,
-            event_id=event.id,
-        )
-        events.append(event)
+def collect_events(
+    client: ApiClient,
+    *,
+    since: int,
+    root: Path,
+    only_event: str | None = None,
+    only_season: int | None = None,
+) -> list[Event]:
+    """D5: índice de eventos + listagem de partidas + gabarito, gravados no lake.
 
-    # Upsert por id: a carga incremental reescreve só os eventos que viu.
-    existing = {r["event_id"]: r for r in lake.read_table(root, "raw_event").to_pylist()}
-    existing.update({e.id: e.row(collected_at) for e in events})
-    lake.write_table(root, "raw_event", sorted(existing.values(), key=lambda r: r["event_id"]))
+    Um evento com problema fica fora, com o motivo no log, e a coleta segue. Listagens seguidas
+    sem resposta abortam (instância fora do ar). O índice `raw_event` é gravado mesmo quando a
+    coleta cai no meio, com os eventos vistos até ali.
+
+    `only_event` e `only_season` recortam antes de buscar as listagens: validar um evento ou
+    materializar uma partição do Dagster não custa as listagens de todos os outros eventos.
+    """
+    collected_at = datetime.now(UTC)
+    events: list[Event] = []
+    candidates = [
+        e
+        for e in list_events(client, since=since)
+        if (only_event is None or e.id == only_event)
+        and (only_season is None or season_from_name(e.name) in (None, only_season))
+    ]
+    log.info("%d eventos candidatos desde %d", len(candidates), since)
+    unavailable = 0
+    try:
+        for event in candidates:
+            try:
+                attach_matches(client, event)
+            except (ApiError, ValidationError) as exc:
+                log.error("listagem do evento %s ignorada: %s", event.id, str(exc)[:300])
+                continue
+            except TransientError as exc:
+                unavailable += 1
+                log.error("listagem do evento %s indisponível agora: %s", event.id, exc)
+                if unavailable >= MAX_CONSECUTIVE_UNAVAILABLE:
+                    raise CollectionAborted(
+                        f"{unavailable} listagens seguidas sem resposta; instância fora do ar?"
+                    ) from exc
+                continue
+            unavailable = 0
+            if event.season is None or event.season < since:
+                log.info("evento %s (%s) fora da temporada; ignorado", event.id, event.name)
+                continue
+            if only_season is not None and event.season != only_season:
+                continue
+            lake.write_table(
+                root,
+                "raw_event_match",
+                _event_match_rows(event),
+                season=event.season,
+                event_id=event.id,
+            )
+            agents = event_agents(client, event)
+            if agents is not None:
+                lake.write_table(
+                    root,
+                    "raw_event_agents",
+                    _event_agent_rows(event, agents),
+                    season=event.season,
+                    event_id=event.id,
+                )
+            events.append(event)
+    finally:
+        # Upsert por id: a carga incremental (ou uma coleta interrompida) reescreve só o que viu.
+        existing = {r["event_id"]: r for r in lake.read_table(root, "raw_event").to_pylist()}
+        existing.update({e.id: e.row(collected_at) for e in events})
+        lake.write_table(root, "raw_event", sorted(existing.values(), key=lambda r: r["event_id"]))
     return events
 
 
@@ -334,18 +404,35 @@ def collect_event_details(
     for match in listed:
         try:
             tabs, body = _fetch_detail(client, match, cutoff)
+            # Partida não finalizada (forfeit, adiada) não passa pelo contrato: os mapas vêm "TBD"
+            # com placar nulo e falhariam como formato novo (pegadinha 34, 688926).
+            status = (body.get("data") or {}).get("status")
+            if status != "final":
+                reject(match.id, "not_final", f"status {status!r}", counts=False)
+                continue
+            # Defeito conhecido da fonte (time "TBD", jogador fundido...): definitivo, mas não é
+            # formato novo; não conta para o aborto.
+            if defect := known_source_defect(body):
+                reject(match.id, "source", defect, counts=False)
+                continue
             detail = Response[MatchDetail].model_validate(body).data
         except ValidationError as exc:
             reject(match.id, "contract", exc, counts=True)
             continue
+        except NotFound as exc:
+            # Página apagada no vlr.gg (pegadinha 26): definitiva e comum em qualificatória aberta,
+            # não é sinal de formato novo nem de instância fora do ar.
+            reject(match.id, "not_found", exc, counts=False)
+            continue
         except ApiError as exc:
             reject(match.id, "api", exc, counts=True)
             continue
+        except TransientError as exc:
+            # Não conta como coletada (`lake.RETRYABLE_REJECTS`): a próxima execução tenta de novo.
+            reject(match.id, "unavailable", exc, counts=True)
+            continue
         stats.consecutive_failures = 0
 
-        if detail.status != "final":
-            reject(match.id, "not_final", f"status {detail.status!r}", counts=False)
-            continue
         if detail.event.id != event.id:
             log.warning(
                 "partida %s listada no evento %s, detalhe diz %s",
@@ -376,16 +463,17 @@ def backfill(
     root: Path,
     today: date | None = None,
     only_event: str | None = None,
+    only_season: int | None = None,
     force: bool = False,
 ) -> RunStats:
     """Do evento mais recente para o mais antigo. Janela + aquecimento vêm com `tabs=all`."""
     today = today or datetime.now(UTC).date()
     cutoff = tabs_cutoff(today)
-    events = collect_events(client, since=since, root=root)
-    if only_event:
-        events = [e for e in events if e.id == only_event]
-        if not events:
-            raise SystemExit(f"evento {only_event} fora do escopo (tier vct/vcl, desde {since})")
+    events = collect_events(
+        client, since=since, root=root, only_event=only_event, only_season=only_season
+    )
+    if only_event and not events:
+        raise SystemExit(f"evento {only_event} fora do escopo (tier vct/vcl, desde {since})")
     events.sort(key=lambda e: e.last_listed_on or date.min, reverse=True)
 
     stats = RunStats()
@@ -441,6 +529,7 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument("command", choices=["events", "backfill", "incremental"])
     parser.add_argument("--since", type=int, default=HISTORY_SINCE, help="primeira temporada")
     parser.add_argument("--event", help="só este evento (backfill)")
+    parser.add_argument("--season", type=int, help="só esta temporada (backfill)")
     parser.add_argument("--force", action="store_true", help="regrava eventos já completos")
     parser.add_argument("--lake", type=Path, default=None, help="raiz do lake (padrão: data/lake)")
     args = parser.parse_args(argv)
@@ -453,9 +542,16 @@ def main(argv: list[str] | None = None) -> None:
         if args.command == "events":
             print(report(collect_events(client, since=args.since, root=root)))
         elif args.command == "backfill":
-            backfill(client, since=args.since, root=root, only_event=args.event, force=args.force)
+            backfill(
+                client,
+                since=args.season or args.since,
+                root=root,
+                only_event=args.event,
+                only_season=args.season,
+                force=args.force,
+            )
         else:
-            backfill(client, since=today.year, root=root, force=args.force)
+            backfill(client, since=today.year, root=root, only_season=today.year, force=args.force)
 
 
 if __name__ == "__main__":

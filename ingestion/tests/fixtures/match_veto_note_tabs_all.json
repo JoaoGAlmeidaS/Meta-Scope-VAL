@@ -1,0 +1,6196 @@
+{
+  "status": "OK",
+  "data": {
+    "id": "698906",
+    "url": "https://www.vlr.gg/698906",
+    "event": {
+      "id": "2776",
+      "url": "https://www.vlr.gg/event/2776/vct-2026-pacific-stage-2/group-stage",
+      "name": "VCT 2026: Pacific Stage 2",
+      "series": "Group Stage: Week 3",
+      "img": "https://owcdn.net/img/640f5ae002674.png"
+    },
+    "status": "final",
+    "in": null,
+    "format": "Bo3",
+    "date": "Saturday, August 1",
+    "time": "4:00 AM EDT",
+    "timestamp": 1785571200,
+    "utcDate": "Sat, 01 Aug 2026 08:00:00 GMT",
+    "teams": [
+      {
+        "id": "14",
+        "url": "https://www.vlr.gg/team/14/t1",
+        "name": "T1",
+        "img": "https://owcdn.net/img/62fe0b8f6b084.png",
+        "score": 1
+      },
+      {
+        "id": "278",
+        "url": "https://www.vlr.gg/team/278/detonation-focusme",
+        "name": "DetonatioN FocusMe",
+        "img": "https://owcdn.net/img/63972e548cdc9.png",
+        "score": 2
+      }
+    ],
+    "streams": [],
+    "vods": [],
+    "picksBans": {
+      "note": "Map 3 stats are incomplete due to lobby remake.\t\t\n\t\t\tT1 ban Split; DFM ban Breeze; T1 pick Sunset; DFM pick Haven; T1 ban Lotus; DFM ban Summit; Ascent remains",
+      "list": [
+        {
+          "team": null,
+          "action": "note",
+          "map": "Map 3 stats are incomplete due to lobby remake.\t\t\n\t\t\tT1 ban Split"
+        },
+        {
+          "team": "DFM",
+          "action": "ban",
+          "map": "Breeze"
+        },
+        {
+          "team": "T1",
+          "action": "pick",
+          "map": "Sunset"
+        },
+        {
+          "team": "DFM",
+          "action": "pick",
+          "map": "Haven"
+        },
+        {
+          "team": "T1",
+          "action": "ban",
+          "map": "Lotus"
+        },
+        {
+          "team": "DFM",
+          "action": "ban",
+          "map": "Summit"
+        },
+        {
+          "team": null,
+          "action": "remains",
+          "map": "Ascent"
+        }
+      ]
+    },
+    "maps": [
+      {
+        "id": "273265",
+        "name": "Sunset",
+        "status": "played",
+        "pickedBy": "T1",
+        "duration": "50:18",
+        "teams": [
+          {
+            "name": "T1",
+            "score": 5,
+            "roundsCt": 2,
+            "roundsT": 3
+          },
+          {
+            "name": "DetonatioN FocusMe",
+            "score": 13,
+            "roundsCt": 9,
+            "roundsT": 4
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "1-0",
+            "winner": "T1",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "2-0",
+            "winner": "T1",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "2-1",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 4,
+            "score": "2-2",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 5,
+            "score": "2-3",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 6,
+            "score": "2-4",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 7,
+            "score": "2-5",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 8,
+            "score": "2-6",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "2-7",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 10,
+            "score": "2-8",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "2-9",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "3-9",
+            "winner": "T1",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "3-10",
+            "winner": "DFM",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "4-10",
+            "winner": "T1",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 15,
+            "score": "4-11",
+            "winner": "DFM",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 16,
+            "score": "4-12",
+            "winner": "DFM",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 17,
+            "score": "5-12",
+            "winner": "T1",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "5-13",
+            "winner": "DFM",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "13039",
+            "url": "https://www.vlr.gg/player/13039/meteor",
+            "name": "Meteor",
+            "teamTag": "T1",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Chamber",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.39,
+              "acs": 307,
+              "kills": 20,
+              "deaths": 14,
+              "assists": 2,
+              "kast": 78,
+              "adr": 194,
+              "hs": 32,
+              "firstBloods": 3,
+              "firstDeaths": 4
+            }
+          },
+          {
+            "id": "804",
+            "url": "https://www.vlr.gg/player/804/buzz",
+            "name": "BuZz",
+            "teamTag": "T1",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Phoenix",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.72,
+              "acs": 167,
+              "kills": 10,
+              "deaths": 15,
+              "assists": 7,
+              "kast": 72,
+              "adr": 107,
+              "hs": 35,
+              "firstBloods": 0,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "43057",
+            "url": "https://www.vlr.gg/player/43057/dh",
+            "name": "DH",
+            "teamTag": "T1",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.71,
+              "acs": 164,
+              "kills": 9,
+              "deaths": 15,
+              "assists": 7,
+              "kast": 72,
+              "adr": 109,
+              "hs": 33,
+              "firstBloods": 1,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "29833",
+            "url": "https://www.vlr.gg/player/29833/izu",
+            "name": "iZu",
+            "teamTag": "T1",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.54,
+              "acs": 172,
+              "kills": 9,
+              "deaths": 16,
+              "assists": 3,
+              "kast": 61,
+              "adr": 113,
+              "hs": 23,
+              "firstBloods": 1,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "2489",
+            "url": "https://www.vlr.gg/player/2489/munchkin",
+            "name": "Munchkin",
+            "teamTag": "T1",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.54,
+              "acs": 145,
+              "kills": 9,
+              "deaths": 16,
+              "assists": 2,
+              "kast": 44,
+              "adr": 97,
+              "hs": 23,
+              "firstBloods": 2,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "29843",
+            "url": "https://www.vlr.gg/player/29843/yatsuka",
+            "name": "yatsuka",
+            "teamTag": "DFM",
+            "country": "Japan",
+            "flag": "jp",
+            "agents": [
+              {
+                "name": "Yoru",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.48,
+              "acs": 269,
+              "kills": 17,
+              "deaths": 11,
+              "assists": 6,
+              "kast": 89,
+              "adr": 201,
+              "hs": 36,
+              "firstBloods": 2,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "29841",
+            "url": "https://www.vlr.gg/player/29841/caedye",
+            "name": "Caedye",
+            "teamTag": "DFM",
+            "country": "Japan",
+            "flag": "jp",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.42,
+              "acs": 262,
+              "kills": 18,
+              "deaths": 11,
+              "assists": 6,
+              "kast": 78,
+              "adr": 162,
+              "hs": 53,
+              "firstBloods": 3,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "13002",
+            "url": "https://www.vlr.gg/player/13002/akame",
+            "name": "Akame",
+            "teamTag": "DFM",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.41,
+              "acs": 285,
+              "kills": 19,
+              "deaths": 12,
+              "assists": 4,
+              "kast": 78,
+              "adr": 178,
+              "hs": 21,
+              "firstBloods": 3,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "21438",
+            "url": "https://www.vlr.gg/player/21438/ssees",
+            "name": "SSeeS",
+            "teamTag": "DFM",
+            "country": "Japan",
+            "flag": "jp",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.39,
+              "acs": 222,
+              "kills": 13,
+              "deaths": 9,
+              "assists": 12,
+              "kast": 89,
+              "adr": 151,
+              "hs": 27,
+              "firstBloods": 1,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "6672",
+            "url": "https://www.vlr.gg/player/6672/meiy",
+            "name": "Meiy",
+            "teamTag": "DFM",
+            "country": "Japan",
+            "flag": "jp",
+            "agents": [
+              {
+                "name": "Waylay",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.51,
+              "acs": 131,
+              "kills": 9,
+              "deaths": 14,
+              "assists": 2,
+              "kast": 61,
+              "adr": 83,
+              "hs": 14,
+              "firstBloods": 2,
+              "firstDeaths": 5
+            }
+          }
+        ],
+        "performance": {
+          "players": [
+            {
+              "name": "BuZz",
+              "teamTag": "T1",
+              "agents": [
+                {
+                  "name": "phoenix",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 41,
+              "plants": 2,
+              "defuses": 0
+            },
+            {
+              "name": "Munchkin",
+              "teamTag": "T1",
+              "agents": [
+                {
+                  "name": "sova",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 36,
+              "plants": 2,
+              "defuses": 0
+            },
+            {
+              "name": "Meteor",
+              "teamTag": "T1",
+              "agents": [
+                {
+                  "name": "chamber",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 77,
+              "plants": 0,
+              "defuses": 1
+            },
+            {
+              "name": "iZu",
+              "teamTag": "T1",
+              "agents": [
+                {
+                  "name": "neon",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 42,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "DH",
+              "teamTag": "T1",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 47,
+              "plants": 4,
+              "defuses": 0
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "agents": [
+                {
+                  "name": "waylay",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 27,
+              "plants": 0,
+              "defuses": 1
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "agents": [
+                {
+                  "name": "fade",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 69,
+              "plants": 4,
+              "defuses": 1
+            },
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 82,
+              "plants": 0,
+              "defuses": 1
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "agents": [
+                {
+                  "name": "cypher",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 63,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "agents": [
+                {
+                  "name": "yoru",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 78,
+              "plants": 1,
+              "defuses": 2
+            }
+          ],
+          "killMatrix": [
+            {
+              "name": "BuZz",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 4,
+                  "diff": -3
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 4,
+                  "deaths": 3,
+                  "diff": 1
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 5,
+                  "diff": -4
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Meteor",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 4,
+                  "deaths": 3,
+                  "diff": 1
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 3,
+                  "deaths": 4,
+                  "diff": -1
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 3,
+                  "diff": -2
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 3,
+                  "deaths": 2,
+                  "diff": 1
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 9,
+                  "deaths": 2,
+                  "diff": 7
+                }
+              ]
+            },
+            {
+              "name": "DH",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 3,
+                  "deaths": 2,
+                  "diff": 1
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 5,
+                  "diff": -3
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 5,
+                  "diff": -3
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "iZu",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 3,
+                  "deaths": 2,
+                  "diff": 1
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 7,
+                  "diff": -6
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 4,
+                  "diff": -2
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 3,
+                  "deaths": 2,
+                  "diff": 1
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "Munchkin",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 3,
+                  "diff": -3
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 4,
+                  "diff": -2
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 3,
+                  "deaths": 4,
+                  "diff": -1
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 3,
+                  "diff": -1
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                }
+              ]
+            }
+          ],
+          "opKillMatrix": [
+            {
+              "name": "BuZz",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Meteor",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "DH",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "iZu",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Munchkin",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ],
+          "firstKillMatrix": [
+            {
+              "name": "BuZz",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Meteor",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 3,
+                  "deaths": 2,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "DH",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "iZu",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Munchkin",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            }
+          ]
+        },
+        "economy": {
+          "teams": [
+            {
+              "name": "T1",
+              "pistolWon": 1,
+              "eco": {
+                "total": 3,
+                "won": 2
+              },
+              "semiEco": {
+                "total": 1,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 6,
+                "won": 3
+              },
+              "fullBuy": {
+                "total": 8,
+                "won": 0
+              }
+            },
+            {
+              "name": "DFM",
+              "pistolWon": 1,
+              "eco": {
+                "total": 3,
+                "won": 1
+              },
+              "semiEco": {
+                "total": 1,
+                "won": 1
+              },
+              "semiBuy": {
+                "total": 1,
+                "won": 0
+              },
+              "fullBuy": {
+                "total": 13,
+                "won": 11
+              }
+            }
+          ],
+          "rounds": [
+            {
+              "number": 1,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": 4400,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 100,
+                  "loadout": 4000,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "teams": [
+                {
+                  "bank": 4200,
+                  "loadout": 15650,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 8200,
+                  "loadout": 2500,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "teams": [
+                {
+                  "bank": 13000,
+                  "loadout": 20450,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 1300,
+                  "loadout": 21150,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "teams": [
+                {
+                  "bank": 2600,
+                  "loadout": 23100,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 7100,
+                  "loadout": 20500,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "teams": [
+                {
+                  "bank": 6500,
+                  "loadout": 11100,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 8500,
+                  "loadout": 21100,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 6,
+              "teams": [
+                {
+                  "bank": 2800,
+                  "loadout": 23400,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 8700,
+                  "loadout": 22500,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 7,
+              "teams": [
+                {
+                  "bank": 10500,
+                  "loadout": 9900,
+                  "buy": "semi-eco",
+                  "winner": false
+                },
+                {
+                  "bank": 15600,
+                  "loadout": 23450,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 8,
+              "teams": [
+                {
+                  "bank": 3600,
+                  "loadout": 23100,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 18600,
+                  "loadout": 25600,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 9,
+              "teams": [
+                {
+                  "bank": 6900,
+                  "loadout": 13550,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 15500,
+                  "loadout": 22550,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 10,
+              "teams": [
+                {
+                  "bank": 4900,
+                  "loadout": 20500,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 14900,
+                  "loadout": 22950,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 11,
+              "teams": [
+                {
+                  "bank": 500,
+                  "loadout": 21450,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 18200,
+                  "loadout": 23300,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 12,
+              "teams": [
+                {
+                  "bank": 400,
+                  "loadout": 18350,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 12600,
+                  "loadout": 25450,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 13,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": 4200,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 100,
+                  "loadout": 4050,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 14,
+              "teams": [
+                {
+                  "bank": 7400,
+                  "loadout": 3400,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 3700,
+                  "loadout": 15350,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 15,
+              "teams": [
+                {
+                  "bank": 4600,
+                  "loadout": 23000,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 10300,
+                  "loadout": 5750,
+                  "buy": "semi-eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 16,
+              "teams": [
+                {
+                  "bank": 5000,
+                  "loadout": 14150,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 16500,
+                  "loadout": 24550,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 17,
+              "teams": [
+                {
+                  "bank": 1500,
+                  "loadout": 18050,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 21000,
+                  "loadout": 24200,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 18,
+              "teams": [
+                {
+                  "bank": 9800,
+                  "loadout": 24000,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 7500,
+                  "loadout": 23250,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "273266",
+        "name": "Haven",
+        "status": "played",
+        "pickedBy": "DetonatioN FocusMe",
+        "duration": "52:20",
+        "teams": [
+          {
+            "name": "T1",
+            "score": 13,
+            "roundsCt": 5,
+            "roundsT": 8
+          },
+          {
+            "name": "DetonatioN FocusMe",
+            "score": 11,
+            "roundsCt": 4,
+            "roundsT": 7
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 3,
+            "score": "1-2",
+            "winner": "T1",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "2-2",
+            "winner": "T1",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 5,
+            "score": "3-2",
+            "winner": "T1",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "3-3",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 7,
+            "score": "3-4",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 8,
+            "score": "4-4",
+            "winner": "T1",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "5-4",
+            "winner": "T1",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "6-4",
+            "winner": "T1",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "7-4",
+            "winner": "T1",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 12,
+            "score": "8-4",
+            "winner": "T1",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "8-5",
+            "winner": "DFM",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "9-5",
+            "winner": "T1",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 15,
+            "score": "10-5",
+            "winner": "T1",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "11-5",
+            "winner": "T1",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 17,
+            "score": "11-6",
+            "winner": "DFM",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "11-7",
+            "winner": "DFM",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 19,
+            "score": "11-8",
+            "winner": "DFM",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 20,
+            "score": "11-9",
+            "winner": "DFM",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 21,
+            "score": "12-9",
+            "winner": "T1",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 22,
+            "score": "12-10",
+            "winner": "DFM",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 23,
+            "score": "12-11",
+            "winner": "DFM",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 24,
+            "score": "13-11",
+            "winner": "T1",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "29833",
+            "url": "https://www.vlr.gg/player/29833/izu",
+            "name": "iZu",
+            "teamTag": "T1",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.42,
+              "acs": 307,
+              "kills": 28,
+              "deaths": 17,
+              "assists": 7,
+              "kast": 75,
+              "adr": 190,
+              "hs": 17,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "2489",
+            "url": "https://www.vlr.gg/player/2489/munchkin",
+            "name": "Munchkin",
+            "teamTag": "T1",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.18,
+              "acs": 185,
+              "kills": 15,
+              "deaths": 11,
+              "assists": 11,
+              "kast": 67,
+              "adr": 128,
+              "hs": 29,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "804",
+            "url": "https://www.vlr.gg/player/804/buzz",
+            "name": "BuZz",
+            "teamTag": "T1",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Phoenix",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.09,
+              "acs": 204,
+              "kills": 18,
+              "deaths": 15,
+              "assists": 9,
+              "kast": 67,
+              "adr": 137,
+              "hs": 21,
+              "firstBloods": 0,
+              "firstDeaths": 4
+            }
+          },
+          {
+            "id": "43057",
+            "url": "https://www.vlr.gg/player/43057/dh",
+            "name": "DH",
+            "teamTag": "T1",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.01,
+              "acs": 197,
+              "kills": 15,
+              "deaths": 18,
+              "assists": 16,
+              "kast": 79,
+              "adr": 123,
+              "hs": 27,
+              "firstBloods": 6,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "13039",
+            "url": "https://www.vlr.gg/player/13039/meteor",
+            "name": "Meteor",
+            "teamTag": "T1",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Chamber",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.78,
+              "acs": 155,
+              "kills": 11,
+              "deaths": 15,
+              "assists": 4,
+              "kast": 63,
+              "adr": 99,
+              "hs": 40,
+              "firstBloods": 4,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "13002",
+            "url": "https://www.vlr.gg/player/13002/akame",
+            "name": "Akame",
+            "teamTag": "DFM",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Skye",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.29,
+              "acs": 226,
+              "kills": 19,
+              "deaths": 15,
+              "assists": 8,
+              "kast": 75,
+              "adr": 142,
+              "hs": 27,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "21438",
+            "url": "https://www.vlr.gg/player/21438/ssees",
+            "name": "SSeeS",
+            "teamTag": "DFM",
+            "country": "Japan",
+            "flag": "jp",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.1,
+              "acs": 189,
+              "kills": 18,
+              "deaths": 16,
+              "assists": 6,
+              "kast": 71,
+              "adr": 123,
+              "hs": 40,
+              "firstBloods": 1,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "29841",
+            "url": "https://www.vlr.gg/player/29841/caedye",
+            "name": "Caedye",
+            "teamTag": "DFM",
+            "country": "Japan",
+            "flag": "jp",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.07,
+              "acs": 196,
+              "kills": 15,
+              "deaths": 16,
+              "assists": 6,
+              "kast": 79,
+              "adr": 151,
+              "hs": 39,
+              "firstBloods": 0,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "6672",
+            "url": "https://www.vlr.gg/player/6672/meiy",
+            "name": "Meiy",
+            "teamTag": "DFM",
+            "country": "Japan",
+            "flag": "jp",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.88,
+              "acs": 206,
+              "kills": 15,
+              "deaths": 20,
+              "assists": 6,
+              "kast": 71,
+              "adr": 140,
+              "hs": 36,
+              "firstBloods": 6,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "29843",
+            "url": "https://www.vlr.gg/player/29843/yatsuka",
+            "name": "yatsuka",
+            "teamTag": "DFM",
+            "country": "Japan",
+            "flag": "jp",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.46,
+              "acs": 127,
+              "kills": 9,
+              "deaths": 20,
+              "assists": 10,
+              "kast": 63,
+              "adr": 85,
+              "hs": 25,
+              "firstBloods": 2,
+              "firstDeaths": 7
+            }
+          }
+        ],
+        "performance": {
+          "players": [
+            {
+              "name": "BuZz",
+              "teamTag": "T1",
+              "agents": [
+                {
+                  "name": "phoenix",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 59,
+              "plants": 5,
+              "defuses": 1
+            },
+            {
+              "name": "Munchkin",
+              "teamTag": "T1",
+              "agents": [
+                {
+                  "name": "sova",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 66,
+              "plants": 2,
+              "defuses": 1
+            },
+            {
+              "name": "Meteor",
+              "teamTag": "T1",
+              "agents": [
+                {
+                  "name": "chamber",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 35,
+              "plants": 1,
+              "defuses": 1
+            },
+            {
+              "name": "iZu",
+              "teamTag": "T1",
+              "agents": [
+                {
+                  "name": "neon",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 74,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "DH",
+              "teamTag": "T1",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 45,
+              "plants": 2,
+              "defuses": 0
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "agents": [
+                {
+                  "name": "jett",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 48,
+              "plants": 0,
+              "defuses": 1
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "agents": [
+                {
+                  "name": "skye",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 59,
+              "plants": 5,
+              "defuses": 0
+            },
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 56,
+              "plants": 2,
+              "defuses": 0
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "agents": [
+                {
+                  "name": "cypher",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 58,
+              "plants": 1,
+              "defuses": 1
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "agents": [
+                {
+                  "name": "neon",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 29,
+              "plants": 2,
+              "defuses": 0
+            }
+          ],
+          "killMatrix": [
+            {
+              "name": "BuZz",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 3,
+                  "deaths": 4,
+                  "diff": -1
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 3,
+                  "deaths": 2,
+                  "diff": 1
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 4,
+                  "deaths": 4,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 3,
+                  "deaths": 1,
+                  "diff": 2
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 5,
+                  "deaths": 4,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "Meteor",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 5,
+                  "deaths": 2,
+                  "diff": 3
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 6,
+                  "diff": -4
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 4,
+                  "deaths": 0,
+                  "diff": 4
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 5,
+                  "diff": -5
+                }
+              ]
+            },
+            {
+              "name": "DH",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 3,
+                  "diff": -2
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 5,
+                  "deaths": 4,
+                  "diff": 1
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 3,
+                  "diff": -1
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 5,
+                  "deaths": 5,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 3,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "iZu",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 3,
+                  "deaths": 5,
+                  "diff": -2
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 4,
+                  "deaths": 6,
+                  "diff": -2
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 4,
+                  "deaths": 3,
+                  "diff": 1
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 6,
+                  "deaths": 2,
+                  "diff": 4
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 11,
+                  "deaths": 1,
+                  "diff": 10
+                }
+              ]
+            },
+            {
+              "name": "Munchkin",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 4,
+                  "deaths": 4,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 3,
+                  "deaths": 3,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                }
+              ]
+            }
+          ],
+          "opKillMatrix": [
+            {
+              "name": "BuZz",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "Meteor",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "DH",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "iZu",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Munchkin",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ],
+          "firstKillMatrix": [
+            {
+              "name": "BuZz",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 3,
+                  "diff": -3
+                }
+              ]
+            },
+            {
+              "name": "Meteor",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "DH",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "iZu",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 3,
+                  "deaths": 1,
+                  "diff": 2
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Munchkin",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                }
+              ]
+            }
+          ]
+        },
+        "economy": {
+          "teams": [
+            {
+              "name": "T1",
+              "pistolWon": 0,
+              "eco": {
+                "total": 4,
+                "won": 1
+              },
+              "semiEco": {
+                "total": 0,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 2,
+                "won": 1
+              },
+              "fullBuy": {
+                "total": 18,
+                "won": 11
+              }
+            },
+            {
+              "name": "DFM",
+              "pistolWon": 2,
+              "eco": {
+                "total": 2,
+                "won": 2
+              },
+              "semiEco": {
+                "total": 3,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 6,
+                "won": 3
+              },
+              "fullBuy": {
+                "total": 13,
+                "won": 6
+              }
+            }
+          ],
+          "rounds": [
+            {
+              "number": 1,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": 4400,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 100,
+                  "loadout": 4000,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "teams": [
+                {
+                  "bank": 7500,
+                  "loadout": 3150,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 1800,
+                  "loadout": 17300,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "teams": [
+                {
+                  "bank": 300,
+                  "loadout": 22600,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 12300,
+                  "loadout": 17750,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "teams": [
+                {
+                  "bank": 9900,
+                  "loadout": 23700,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 3000,
+                  "loadout": 20200,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "teams": [
+                {
+                  "bank": 20400,
+                  "loadout": 23500,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 6900,
+                  "loadout": 9850,
+                  "buy": "semi-eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 6,
+              "teams": [
+                {
+                  "bank": 33000,
+                  "loadout": 23250,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 6500,
+                  "loadout": 17350,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 7,
+              "teams": [
+                {
+                  "bank": 19800,
+                  "loadout": 25800,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 11200,
+                  "loadout": 23350,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 8,
+              "teams": [
+                {
+                  "bank": 10200,
+                  "loadout": 23400,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 10500,
+                  "loadout": 24000,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 9,
+              "teams": [
+                {
+                  "bank": 16100,
+                  "loadout": 23700,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 3000,
+                  "loadout": 17450,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 10,
+              "teams": [
+                {
+                  "bank": 15300,
+                  "loadout": 23700,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 8300,
+                  "loadout": 8050,
+                  "buy": "semi-eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 11,
+              "teams": [
+                {
+                  "bank": 23200,
+                  "loadout": 26400,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 3500,
+                  "loadout": 21300,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 12,
+              "teams": [
+                {
+                  "bank": 23400,
+                  "loadout": 26700,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 600,
+                  "loadout": 22150,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 13,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": 4200,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 100,
+                  "loadout": 4100,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 14,
+              "teams": [
+                {
+                  "bank": 8400,
+                  "loadout": 3050,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 4300,
+                  "loadout": 14150,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 15,
+              "teams": [
+                {
+                  "bank": 10900,
+                  "loadout": 21500,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 11100,
+                  "loadout": 6150,
+                  "buy": "semi-eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 16,
+              "teams": [
+                {
+                  "bank": 13100,
+                  "loadout": 26300,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 3400,
+                  "loadout": 22450,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 17,
+              "teams": [
+                {
+                  "bank": 21900,
+                  "loadout": 26300,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 2400,
+                  "loadout": 17250,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 18,
+              "teams": [
+                {
+                  "bank": 7900,
+                  "loadout": 25700,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 7700,
+                  "loadout": 22300,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 19,
+              "teams": [
+                {
+                  "bank": 5400,
+                  "loadout": 24400,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 16600,
+                  "loadout": 23550,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 20,
+              "teams": [
+                {
+                  "bank": 1600,
+                  "loadout": 21800,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 18600,
+                  "loadout": 23350,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 21,
+              "teams": [
+                {
+                  "bank": 6800,
+                  "loadout": 11950,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 23300,
+                  "loadout": 23600,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 22,
+              "teams": [
+                {
+                  "bank": 7300,
+                  "loadout": 25700,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 10200,
+                  "loadout": 25450,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 23,
+              "teams": [
+                {
+                  "bank": 7400,
+                  "loadout": 12100,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 9000,
+                  "loadout": 23650,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 24,
+              "teams": [
+                {
+                  "bank": 800,
+                  "loadout": 21000,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 17100,
+                  "loadout": 23650,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "273267",
+        "name": "Ascent",
+        "status": "played",
+        "pickedBy": null,
+        "duration": "21:29",
+        "teams": [
+          {
+            "name": "T1",
+            "score": 5,
+            "roundsCt": 1,
+            "roundsT": 4
+          },
+          {
+            "name": "DetonatioN FocusMe",
+            "score": 13,
+            "roundsCt": 8,
+            "roundsT": 5
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "1-2",
+            "winner": "T1",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "1-3",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "time",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/time.webp"
+          },
+          {
+            "number": 5,
+            "score": "1-4",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 6,
+            "score": "2-4",
+            "winner": "T1",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 7,
+            "score": "2-5",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 8,
+            "score": "2-6",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "3-6",
+            "winner": "T1",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "4-6",
+            "winner": "T1",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 11,
+            "score": "4-7",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "4-8",
+            "winner": "DFM",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "4-9",
+            "winner": "DFM",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "4-10",
+            "winner": "DFM",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "4-11",
+            "winner": "DFM",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "5-11",
+            "winner": "T1",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 17,
+            "score": "5-12",
+            "winner": "DFM",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "5-13",
+            "winner": "DFM",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "13039",
+            "url": "https://www.vlr.gg/player/13039/meteor",
+            "name": "Meteor",
+            "teamTag": "T1",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.07,
+              "acs": 105,
+              "kills": 8,
+              "deaths": 16,
+              "assists": 3,
+              "kast": 89,
+              "adr": 64,
+              "hs": 44,
+              "firstBloods": 1,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "2489",
+            "url": "https://www.vlr.gg/player/2489/munchkin",
+            "name": "Munchkin",
+            "teamTag": "T1",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Kayo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.88,
+              "acs": 105,
+              "kills": 16,
+              "deaths": 15,
+              "assists": 8,
+              "kast": 89,
+              "adr": 76,
+              "hs": 15,
+              "firstBloods": 2,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "43057",
+            "url": "https://www.vlr.gg/player/43057/dh",
+            "name": "DH",
+            "teamTag": "T1",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.77,
+              "acs": 79,
+              "kills": 15,
+              "deaths": 17,
+              "assists": 4,
+              "kast": 89,
+              "adr": 50,
+              "hs": 17,
+              "firstBloods": 0,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "29833",
+            "url": "https://www.vlr.gg/player/29833/izu",
+            "name": "iZu",
+            "teamTag": "T1",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.59,
+              "acs": 23,
+              "kills": 7,
+              "deaths": 14,
+              "assists": 4,
+              "kast": 89,
+              "adr": 19,
+              "hs": 33,
+              "firstBloods": 0,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "804",
+            "url": "https://www.vlr.gg/player/804/buzz",
+            "name": "BuZz",
+            "teamTag": "T1",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.57,
+              "acs": 11,
+              "kills": 5,
+              "deaths": 14,
+              "assists": 8,
+              "kast": 83,
+              "adr": 6,
+              "hs": 0,
+              "firstBloods": 0,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "6672",
+            "url": "https://www.vlr.gg/player/6672/meiy",
+            "name": "Meiy",
+            "teamTag": "DFM",
+            "country": "Japan",
+            "flag": "jp",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.98,
+              "acs": 82,
+              "kills": 17,
+              "deaths": 9,
+              "assists": 5,
+              "kast": 94,
+              "adr": 57,
+              "hs": 17,
+              "firstBloods": 1,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "21438",
+            "url": "https://www.vlr.gg/player/21438/ssees",
+            "name": "SSeeS",
+            "teamTag": "DFM",
+            "country": "Japan",
+            "flag": "jp",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.92,
+              "acs": 45,
+              "kills": 12,
+              "deaths": 12,
+              "assists": 9,
+              "kast": 89,
+              "adr": 20,
+              "hs": 40,
+              "firstBloods": 0,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "29843",
+            "url": "https://www.vlr.gg/player/29843/yatsuka",
+            "name": "yatsuka",
+            "teamTag": "DFM",
+            "country": "Japan",
+            "flag": "jp",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.88,
+              "acs": 83,
+              "kills": 17,
+              "deaths": 9,
+              "assists": 3,
+              "kast": 94,
+              "adr": 51,
+              "hs": 50,
+              "firstBloods": 1,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "29841",
+            "url": "https://www.vlr.gg/player/29841/caedye",
+            "name": "Caedye",
+            "teamTag": "DFM",
+            "country": "Japan",
+            "flag": "jp",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.83,
+              "acs": 90,
+              "kills": 13,
+              "deaths": 11,
+              "assists": 2,
+              "kast": 89,
+              "adr": 46,
+              "hs": 36,
+              "firstBloods": 1,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "13002",
+            "url": "https://www.vlr.gg/player/13002/akame",
+            "name": "Akame",
+            "teamTag": "DFM",
+            "country": "South Korea",
+            "flag": "kr",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.74,
+              "acs": 71,
+              "kills": 17,
+              "deaths": 10,
+              "assists": 2,
+              "kast": 89,
+              "adr": 47,
+              "hs": 33,
+              "firstBloods": 0,
+              "firstDeaths": 0
+            }
+          }
+        ],
+        "performance": {
+          "players": [],
+          "killMatrix": [
+            {
+              "name": "BuZz",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                }
+              ]
+            },
+            {
+              "name": "Meteor",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "DH",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "iZu",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Munchkin",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                }
+              ]
+            }
+          ],
+          "opKillMatrix": [
+            {
+              "name": "BuZz",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Meteor",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "DH",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "iZu",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Munchkin",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ],
+          "firstKillMatrix": [
+            {
+              "name": "BuZz",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Meteor",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "DH",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "iZu",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Munchkin",
+              "teamTag": "T1",
+              "records": [
+                {
+                  "name": "SSeeS",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Caedye",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "Akame",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yatsuka",
+                  "teamTag": "DFM",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "Meiy",
+                  "teamTag": "DFM",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                }
+              ]
+            }
+          ]
+        },
+        "economy": {
+          "teams": [
+            {
+              "name": "T1",
+              "pistolWon": 0,
+              "eco": {
+                "total": 4,
+                "won": 0
+              },
+              "semiEco": {
+                "total": 1,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 3,
+                "won": 1
+              },
+              "fullBuy": {
+                "total": 10,
+                "won": 4
+              }
+            },
+            {
+              "name": "DFM",
+              "pistolWon": 2,
+              "eco": {
+                "total": 2,
+                "won": 2
+              },
+              "semiEco": {
+                "total": 1,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 5,
+                "won": 5
+              },
+              "fullBuy": {
+                "total": 10,
+                "won": 6
+              }
+            }
+          ],
+          "rounds": [
+            {
+              "number": 1,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": 4550,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 0,
+                  "loadout": 3950,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "teams": [
+                {
+                  "bank": 7100,
+                  "loadout": 3300,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 1800,
+                  "loadout": 17700,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "teams": [
+                {
+                  "bank": 1800,
+                  "loadout": 21200,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 12300,
+                  "loadout": 8000,
+                  "buy": "semi-eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "teams": [
+                {
+                  "bank": 4800,
+                  "loadout": 20850,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 1600,
+                  "loadout": 23100,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "teams": [
+                {
+                  "bank": 9800,
+                  "loadout": 9300,
+                  "buy": "semi-eco",
+                  "winner": false
+                },
+                {
+                  "bank": 10400,
+                  "loadout": 26700,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 6,
+              "teams": [
+                {
+                  "bank": 3400,
+                  "loadout": 24800,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 12700,
+                  "loadout": 29100,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 7,
+              "teams": [
+                {
+                  "bank": 6300,
+                  "loadout": 25950,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 9400,
+                  "loadout": 15600,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 8,
+              "teams": [
+                {
+                  "bank": 8700,
+                  "loadout": 11000,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 9800,
+                  "loadout": 29700,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 9,
+              "teams": [
+                {
+                  "bank": 2700,
+                  "loadout": 23350,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 22000,
+                  "loadout": 30400,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 10,
+              "teams": [
+                {
+                  "bank": 6100,
+                  "loadout": 23200,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 7800,
+                  "loadout": 29500,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 11,
+              "teams": [
+                {
+                  "bank": 12100,
+                  "loadout": 28800,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 3700,
+                  "loadout": 26800,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 12,
+              "teams": [
+                {
+                  "bank": 1700,
+                  "loadout": 23150,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 11800,
+                  "loadout": 30100,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 13,
+              "teams": [
+                {
+                  "bank": 400,
+                  "loadout": 3300,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 0,
+                  "loadout": 3950,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 14,
+              "teams": [
+                {
+                  "bank": 7700,
+                  "loadout": 2800,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 1800,
+                  "loadout": 16100,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 15,
+              "teams": [
+                {
+                  "bank": 300,
+                  "loadout": 20650,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 14000,
+                  "loadout": 13600,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 16,
+              "teams": [
+                {
+                  "bank": 500,
+                  "loadout": 15400,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 14900,
+                  "loadout": 23450,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 17,
+              "teams": [
+                {
+                  "bank": 4900,
+                  "loadout": 20500,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 6400,
+                  "loadout": 19150,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 18,
+              "teams": [
+                {
+                  "bank": 700,
+                  "loadout": 15400,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 7300,
+                  "loadout": 23300,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "players": [
+      {
+        "id": "13039",
+        "url": "https://www.vlr.gg/player/13039/meteor",
+        "name": "Meteor",
+        "teamTag": "T1",
+        "country": "South Korea",
+        "flag": "kr",
+        "agents": [
+          {
+            "name": "Chamber",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+          },
+          {
+            "name": "Jett",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.05,
+          "acs": 186,
+          "kills": 39,
+          "deaths": 45,
+          "assists": 9,
+          "kast": 75,
+          "adr": 117,
+          "hs": 37,
+          "firstBloods": 8,
+          "firstDeaths": 5
+        }
+      },
+      {
+        "id": "29833",
+        "url": "https://www.vlr.gg/player/29833/izu",
+        "name": "iZu",
+        "teamTag": "T1",
+        "country": "South Korea",
+        "flag": "kr",
+        "agents": [
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          },
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.91,
+          "acs": 181,
+          "kills": 44,
+          "deaths": 47,
+          "assists": 14,
+          "kast": 75,
+          "adr": 116,
+          "hs": 20,
+          "firstBloods": 4,
+          "firstDeaths": 4
+        }
+      },
+      {
+        "id": "2489",
+        "url": "https://www.vlr.gg/player/2489/munchkin",
+        "name": "Munchkin",
+        "teamTag": "T1",
+        "country": "South Korea",
+        "flag": "kr",
+        "agents": [
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          },
+          {
+            "name": "Kayo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.9,
+          "acs": 149,
+          "kills": 40,
+          "deaths": 42,
+          "assists": 21,
+          "kast": 67,
+          "adr": 103,
+          "hs": 24,
+          "firstBloods": 5,
+          "firstDeaths": 5
+        }
+      },
+      {
+        "id": "43057",
+        "url": "https://www.vlr.gg/player/43057/dh",
+        "name": "DH",
+        "teamTag": "T1",
+        "country": "South Korea",
+        "flag": "kr",
+        "agents": [
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          },
+          {
+            "name": "Cypher",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.85,
+          "acs": 152,
+          "kills": 39,
+          "deaths": 50,
+          "assists": 27,
+          "kast": 80,
+          "adr": 97,
+          "hs": 26,
+          "firstBloods": 7,
+          "firstDeaths": 4
+        }
+      },
+      {
+        "id": "804",
+        "url": "https://www.vlr.gg/player/804/buzz",
+        "name": "BuZz",
+        "teamTag": "T1",
+        "country": "South Korea",
+        "flag": "kr",
+        "agents": [
+          {
+            "name": "Phoenix",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+          },
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.82,
+          "acs": 135,
+          "kills": 33,
+          "deaths": 44,
+          "assists": 24,
+          "kast": 73,
+          "adr": 89,
+          "hs": 24,
+          "firstBloods": 0,
+          "firstDeaths": 6
+        }
+      },
+      {
+        "id": "13002",
+        "url": "https://www.vlr.gg/player/13002/akame",
+        "name": "Akame",
+        "teamTag": "DFM",
+        "country": "South Korea",
+        "flag": "kr",
+        "agents": [
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          },
+          {
+            "name": "Skye",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/skye.png"
+          },
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.16,
+          "acs": 197,
+          "kills": 55,
+          "deaths": 37,
+          "assists": 14,
+          "kast": 80,
+          "adr": 124,
+          "hs": 25,
+          "firstBloods": 4,
+          "firstDeaths": 1
+        }
+      },
+      {
+        "id": "21438",
+        "url": "https://www.vlr.gg/player/21438/ssees",
+        "name": "SSeeS",
+        "teamTag": "DFM",
+        "country": "Japan",
+        "flag": "jp",
+        "agents": [
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.13,
+          "acs": 156,
+          "kills": 43,
+          "deaths": 37,
+          "assists": 27,
+          "kast": 82,
+          "adr": 101,
+          "hs": 34,
+          "firstBloods": 2,
+          "firstDeaths": 3
+        }
+      },
+      {
+        "id": "29841",
+        "url": "https://www.vlr.gg/player/29841/caedye",
+        "name": "Caedye",
+        "teamTag": "DFM",
+        "country": "Japan",
+        "flag": "jp",
+        "agents": [
+          {
+            "name": "Cypher",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.11,
+          "acs": 184,
+          "kills": 46,
+          "deaths": 38,
+          "assists": 14,
+          "kast": 82,
+          "adr": 123,
+          "hs": 43,
+          "firstBloods": 4,
+          "firstDeaths": 2
+        }
+      },
+      {
+        "id": "29843",
+        "url": "https://www.vlr.gg/player/29843/yatsuka",
+        "name": "yatsuka",
+        "teamTag": "DFM",
+        "country": "Japan",
+        "flag": "jp",
+        "agents": [
+          {
+            "name": "Yoru",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+          },
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.89,
+          "acs": 156,
+          "kills": 43,
+          "deaths": 40,
+          "assists": 19,
+          "kast": 80,
+          "adr": 109,
+          "hs": 34,
+          "firstBloods": 5,
+          "firstDeaths": 11
+        }
+      },
+      {
+        "id": "6672",
+        "url": "https://www.vlr.gg/player/6672/meiy",
+        "name": "Meiy",
+        "teamTag": "DFM",
+        "country": "Japan",
+        "flag": "jp",
+        "agents": [
+          {
+            "name": "Waylay",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+          },
+          {
+            "name": "Jett",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.8,
+          "acs": 146,
+          "kills": 41,
+          "deaths": 43,
+          "assists": 13,
+          "kast": 75,
+          "adr": 98,
+          "hs": 25,
+          "firstBloods": 9,
+          "firstDeaths": 7
+        }
+      }
+    ],
+    "performance": {
+      "players": [
+        {
+          "name": "BuZz",
+          "teamTag": "T1",
+          "agents": [
+            {
+              "name": "phoenix",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+            }
+          ],
+          "multikills": {
+            "2k": 4,
+            "3k": 3,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 50,
+          "plants": 7,
+          "defuses": 1
+        },
+        {
+          "name": "Munchkin",
+          "teamTag": "T1",
+          "agents": [
+            {
+              "name": "sova",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+            }
+          ],
+          "multikills": {
+            "2k": 5,
+            "3k": 1,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 1,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 51,
+          "plants": 4,
+          "defuses": 1
+        },
+        {
+          "name": "Meteor",
+          "teamTag": "T1",
+          "agents": [
+            {
+              "name": "chamber",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+            }
+          ],
+          "multikills": {
+            "2k": 8,
+            "3k": 2,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 1,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 56,
+          "plants": 1,
+          "defuses": 2
+        },
+        {
+          "name": "iZu",
+          "teamTag": "T1",
+          "agents": [
+            {
+              "name": "neon",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+            }
+          ],
+          "multikills": {
+            "2k": 6,
+            "3k": 3,
+            "4k": 1,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 58,
+          "plants": 0,
+          "defuses": 0
+        },
+        {
+          "name": "DH",
+          "teamTag": "T1",
+          "agents": [
+            {
+              "name": "omen",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+            }
+          ],
+          "multikills": {
+            "2k": 4,
+            "3k": 1,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 46,
+          "plants": 6,
+          "defuses": 0
+        },
+        {
+          "name": "Meiy",
+          "teamTag": "DFM",
+          "agents": [
+            {
+              "name": "waylay",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+            }
+          ],
+          "multikills": {
+            "2k": 6,
+            "3k": 1,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 38,
+          "plants": 0,
+          "defuses": 2
+        },
+        {
+          "name": "Akame",
+          "teamTag": "DFM",
+          "agents": [
+            {
+              "name": "fade",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+            }
+          ],
+          "multikills": {
+            "2k": 8,
+            "3k": 2,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 1,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 64,
+          "plants": 9,
+          "defuses": 1
+        },
+        {
+          "name": "SSeeS",
+          "teamTag": "DFM",
+          "agents": [
+            {
+              "name": "omen",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+            }
+          ],
+          "multikills": {
+            "2k": 8,
+            "3k": 0,
+            "4k": 1,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 69,
+          "plants": 2,
+          "defuses": 1
+        },
+        {
+          "name": "Caedye",
+          "teamTag": "DFM",
+          "agents": [
+            {
+              "name": "cypher",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+            }
+          ],
+          "multikills": {
+            "2k": 4,
+            "3k": 1,
+            "4k": 1,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 1,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 61,
+          "plants": 1,
+          "defuses": 1
+        },
+        {
+          "name": "yatsuka",
+          "teamTag": "DFM",
+          "agents": [
+            {
+              "name": "yoru",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+            }
+          ],
+          "multikills": {
+            "2k": 5,
+            "3k": 1,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 54,
+          "plants": 3,
+          "defuses": 2
+        }
+      ],
+      "killMatrix": [
+        {
+          "name": "BuZz",
+          "teamTag": "T1",
+          "records": [
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "kills": 4,
+              "deaths": 9,
+              "diff": -5
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "kills": 5,
+              "deaths": 5,
+              "diff": 0
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "kills": 8,
+              "deaths": 7,
+              "diff": 1
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "kills": 4,
+              "deaths": 6,
+              "diff": -2
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "kills": 7,
+              "deaths": 8,
+              "diff": -1
+            }
+          ]
+        },
+        {
+          "name": "Meteor",
+          "teamTag": "T1",
+          "records": [
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "kills": 9,
+              "deaths": 5,
+              "diff": 4
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "kills": 5,
+              "deaths": 7,
+              "diff": -2
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "kills": 4,
+              "deaths": 11,
+              "diff": -7
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "kills": 9,
+              "deaths": 3,
+              "diff": 6
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "kills": 11,
+              "deaths": 8,
+              "diff": 3
+            }
+          ]
+        },
+        {
+          "name": "DH",
+          "teamTag": "T1",
+          "records": [
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "kills": 4,
+              "deaths": 5,
+              "diff": -1
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "kills": 9,
+              "deaths": 7,
+              "diff": 2
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "kills": 5,
+              "deaths": 9,
+              "diff": -4
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "kills": 8,
+              "deaths": 11,
+              "diff": -3
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "kills": 3,
+              "deaths": 6,
+              "diff": -3
+            }
+          ]
+        },
+        {
+          "name": "iZu",
+          "teamTag": "T1",
+          "records": [
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "kills": 6,
+              "deaths": 8,
+              "diff": -2
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "kills": 5,
+              "deaths": 15,
+              "diff": -10
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "kills": 7,
+              "deaths": 7,
+              "diff": 0
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "kills": 9,
+              "deaths": 6,
+              "diff": 3
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "kills": 11,
+              "deaths": 2,
+              "diff": 9
+            }
+          ]
+        },
+        {
+          "name": "Munchkin",
+          "teamTag": "T1",
+          "records": [
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "kills": 5,
+              "deaths": 8,
+              "diff": -3
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "kills": 8,
+              "deaths": 5,
+              "diff": 3
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "kills": 7,
+              "deaths": 9,
+              "diff": -2
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "kills": 5,
+              "deaths": 6,
+              "diff": -1
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "kills": 4,
+              "deaths": 5,
+              "diff": -1
+            }
+          ]
+        }
+      ],
+      "opKillMatrix": [
+        {
+          "name": "BuZz",
+          "teamTag": "T1",
+          "records": [
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            }
+          ]
+        },
+        {
+          "name": "Meteor",
+          "teamTag": "T1",
+          "records": [
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "DH",
+          "teamTag": "T1",
+          "records": [
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "iZu",
+          "teamTag": "T1",
+          "records": [
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "Munchkin",
+          "teamTag": "T1",
+          "records": [
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        }
+      ],
+      "firstKillMatrix": [
+        {
+          "name": "BuZz",
+          "teamTag": "T1",
+          "records": [
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 2,
+              "diff": -2
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 3,
+              "diff": -3
+            }
+          ]
+        },
+        {
+          "name": "Meteor",
+          "teamTag": "T1",
+          "records": [
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "kills": 2,
+              "deaths": 0,
+              "diff": 2
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "kills": 3,
+              "deaths": 1,
+              "diff": 2
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "kills": 3,
+              "deaths": 3,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "DH",
+          "teamTag": "T1",
+          "records": [
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "kills": 2,
+              "deaths": 0,
+              "diff": 2
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "kills": 2,
+              "deaths": 2,
+              "diff": 0
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "kills": 3,
+              "deaths": 1,
+              "diff": 2
+            }
+          ]
+        },
+        {
+          "name": "iZu",
+          "teamTag": "T1",
+          "records": [
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 2,
+              "diff": -2
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "kills": 4,
+              "deaths": 1,
+              "diff": 3
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "Munchkin",
+          "teamTag": "T1",
+          "records": [
+            {
+              "name": "SSeeS",
+              "teamTag": "DFM",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "Caedye",
+              "teamTag": "DFM",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "Akame",
+              "teamTag": "DFM",
+              "kills": 1,
+              "deaths": 2,
+              "diff": -1
+            },
+            {
+              "name": "yatsuka",
+              "teamTag": "DFM",
+              "kills": 2,
+              "deaths": 1,
+              "diff": 1
+            },
+            {
+              "name": "Meiy",
+              "teamTag": "DFM",
+              "kills": 1,
+              "deaths": 2,
+              "diff": -1
+            }
+          ]
+        }
+      ]
+    },
+    "economy": {
+      "teams": [
+        {
+          "name": "T1",
+          "pistolWon": 1,
+          "eco": {
+            "total": 11,
+            "won": 3
+          },
+          "semiEco": {
+            "total": 2,
+            "won": 0
+          },
+          "semiBuy": {
+            "total": 11,
+            "won": 5
+          },
+          "fullBuy": {
+            "total": 36,
+            "won": 15
+          }
+        },
+        {
+          "name": "DFM",
+          "pistolWon": 5,
+          "eco": {
+            "total": 7,
+            "won": 5
+          },
+          "semiEco": {
+            "total": 5,
+            "won": 1
+          },
+          "semiBuy": {
+            "total": 12,
+            "won": 8
+          },
+          "fullBuy": {
+            "total": 36,
+            "won": 23
+          }
+        }
+      ],
+      "rounds": []
+    }
+  }
+}

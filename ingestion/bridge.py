@@ -15,6 +15,7 @@ rounds ao time errado.
 
 from __future__ import annotations
 
+import re
 from collections import Counter
 
 from ingestion.schemas import Map, MatchDetail
@@ -48,12 +49,36 @@ def tags_by_score(map_: Map) -> dict[str, str]:
     return bridge
 
 
+_LEGAL_NAME = re.compile(r"^(?P<full>.+?)\s*\((?P<short>[^()]+)\)$")
+
+
+def name_keys(name: str) -> set[str]:
+    """Formas de um nome de time, sem caixa. Na partida, time chinês vem com a razão social e o
+    nome curto entre parênteses ("Wuxi Titan Esports Club (Titan Esports Club)"); no mapa e no
+    `pickedBy`, às vezes só o curto (pegadinha 35)."""
+    name = name.strip()
+    keys = {name.casefold()}
+    if m := _LEGAL_NAME.match(name):
+        keys |= {m["full"].strip().casefold(), m["short"].strip().casefold()}
+    return keys
+
+
+def team_id_by_name(match: MatchDetail, name: str | None) -> str | None:
+    """`teams[].id` da partida pelo nome em qualquer das formas; `None` se não casa ou é ambíguo."""
+    if not name:
+        return None
+    ids = {t.id for t in match.teams if name_keys(t.name) & name_keys(name)}
+    return ids.pop() if len(ids) == 1 else None
+
+
 def tag_to_team_id(match: MatchDetail, map_: Map) -> dict[str, str]:
     """Tag → `teams[].id` da partida, para um mapa dela."""
-    ids_by_name = {t.name: t.id for t in match.teams}
     bridge = {}
     for tag, name in tags_by_score(map_).items():
-        if name not in ids_by_name:
+        team_id = team_id_by_name(match, name)
+        if team_id is None:
             raise BridgeError(f"mapa {map_.id}: {name!r} não está em teams[] da partida")
-        bridge[tag] = ids_by_name[name]
+        bridge[tag] = team_id
+    if len(set(bridge.values())) != 2:
+        raise BridgeError(f"mapa {map_.id}: as duas tags caem no mesmo time ({bridge})")
     return bridge

@@ -1,0 +1,1758 @@
+{
+  "status": "OK",
+  "data": {
+    "id": "433835",
+    "url": "https://www.vlr.gg/433835",
+    "event": {
+      "id": "2325",
+      "url": "https://www.vlr.gg/event/2325/challengers-2025-latam-south-ace-stage-1/open-qualifier",
+      "name": "Challengers 2025: LATAM South ACE Stage 1",
+      "series": "Open Qualifier: Round of 28",
+      "img": "https://owcdn.net/img/63cbac52cf906.png"
+    },
+    "status": "final",
+    "in": null,
+    "format": "Bo3",
+    "date": "January 13, 2025",
+    "time": "4:00 PM EST",
+    "timestamp": 1736802000,
+    "utcDate": "Mon, 13 Jan 2025 21:00:00 GMT",
+    "teams": [
+      {
+        "id": "17318",
+        "url": "https://www.vlr.gg/team/17318/quantico",
+        "name": "QUANTICO",
+        "img": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+        "score": 1
+      },
+      {
+        "id": "17319",
+        "url": "https://www.vlr.gg/team/17319/b-site-gaming",
+        "name": "B SITE GAMING",
+        "img": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+        "score": 2
+      }
+    ],
+    "streams": [],
+    "vods": [],
+    "picksBans": {
+      "note": null,
+      "list": []
+    },
+    "maps": [
+      {
+        "id": "198474",
+        "name": "Abyss",
+        "status": "played",
+        "pickedBy": null,
+        "duration": "51:22",
+        "teams": [
+          {
+            "name": "QUANTICO",
+            "score": 14,
+            "roundsCt": 6,
+            "roundsT": 6
+          },
+          {
+            "name": "B SITE GAMING",
+            "score": 12,
+            "roundsCt": 6,
+            "roundsT": 6
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "B SI",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "B SI",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "1-2",
+            "winner": "QUAN",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "1-3",
+            "winner": "B SI",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 5,
+            "score": "1-4",
+            "winner": "B SI",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "1-5",
+            "winner": "B SI",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 7,
+            "score": "2-5",
+            "winner": "QUAN",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 8,
+            "score": "3-5",
+            "winner": "QUAN",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "3-6",
+            "winner": "B SI",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 10,
+            "score": "4-6",
+            "winner": "QUAN",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 11,
+            "score": "5-6",
+            "winner": "QUAN",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "6-6",
+            "winner": "QUAN",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 13,
+            "score": "6-7",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "6-8",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 15,
+            "score": "6-9",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 16,
+            "score": "7-9",
+            "winner": "QUAN",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 17,
+            "score": "7-10",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 18,
+            "score": "8-10",
+            "winner": "QUAN",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 19,
+            "score": "8-11",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 20,
+            "score": "8-12",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 21,
+            "score": "9-12",
+            "winner": "QUAN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 22,
+            "score": "10-12",
+            "winner": "QUAN",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 23,
+            "score": "11-12",
+            "winner": "QUAN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 24,
+            "score": "12-12",
+            "winner": "QUAN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 25,
+            "score": "13-12",
+            "winner": "QUAN",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 26,
+            "score": "14-12",
+            "winner": "QUAN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "50482",
+            "url": "https://www.vlr.gg/player/50482/raam",
+            "name": "raam",
+            "teamTag": "QUAN",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.32,
+              "acs": 249,
+              "kills": 23,
+              "deaths": 18,
+              "assists": 7,
+              "kast": 73,
+              "adr": 178,
+              "hs": 28,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "50481",
+            "url": "https://www.vlr.gg/player/50481/frimus",
+            "name": "Frimus",
+            "teamTag": "QUAN",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.28,
+              "acs": 264,
+              "kills": 24,
+              "deaths": 18,
+              "assists": 7,
+              "kast": 62,
+              "adr": 181,
+              "hs": 29,
+              "firstBloods": 3,
+              "firstDeaths": 7
+            }
+          },
+          {
+            "id": "33109",
+            "url": "https://www.vlr.gg/player/33109/minitahara",
+            "name": "miniTahara",
+            "teamTag": "QUAN",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Astra",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.2,
+              "acs": 237,
+              "kills": 21,
+              "deaths": 18,
+              "assists": 14,
+              "kast": 73,
+              "adr": 149,
+              "hs": 25,
+              "firstBloods": 4,
+              "firstDeaths": 4
+            }
+          },
+          {
+            "id": "50483",
+            "url": "https://www.vlr.gg/player/50483/surpass",
+            "name": "Surpass",
+            "teamTag": "QUAN",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.06,
+              "acs": 204,
+              "kills": 19,
+              "deaths": 20,
+              "assists": 9,
+              "kast": 62,
+              "adr": 128,
+              "hs": 13,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "50484",
+            "url": "https://www.vlr.gg/player/50484/ebeus",
+            "name": "EBEUS",
+            "teamTag": "QUAN",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Breach",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.41,
+              "acs": 56,
+              "kills": 5,
+              "deaths": 20,
+              "assists": 9,
+              "kast": 62,
+              "adr": 34,
+              "hs": 31,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "50487",
+            "url": "https://www.vlr.gg/player/50487/splotza",
+            "name": "Splotza",
+            "teamTag": "B SI",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.37,
+              "acs": 281,
+              "kills": 26,
+              "deaths": 18,
+              "assists": 7,
+              "kast": 73,
+              "adr": 188,
+              "hs": 43,
+              "firstBloods": 2,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "50485",
+            "url": "https://www.vlr.gg/player/50485/saninn",
+            "name": "Saninn",
+            "teamTag": "B SI",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.05,
+              "acs": 190,
+              "kills": 15,
+              "deaths": 17,
+              "assists": 6,
+              "kast": 81,
+              "adr": 136,
+              "hs": 44,
+              "firstBloods": 4,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "50488",
+            "url": "https://www.vlr.gg/player/50488/sr-kl-deus",
+            "name": "sr kl deus",
+            "teamTag": "B SI",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Deadlock",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/deadlock.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.99,
+              "acs": 187,
+              "kills": 20,
+              "deaths": 18,
+              "assists": 5,
+              "kast": 65,
+              "adr": 132,
+              "hs": 38,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "50486",
+            "url": "https://www.vlr.gg/player/50486/devian",
+            "name": "Devian",
+            "teamTag": "B SI",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.88,
+              "acs": 226,
+              "kills": 21,
+              "deaths": 18,
+              "assists": 4,
+              "kast": 77,
+              "adr": 158,
+              "hs": 25,
+              "firstBloods": 3,
+              "firstDeaths": 4
+            }
+          },
+          {
+            "id": "50489",
+            "url": "https://www.vlr.gg/player/50489/manutetera",
+            "name": "manutetera",
+            "teamTag": "B SI",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.39,
+              "acs": 126,
+              "kills": 12,
+              "deaths": 22,
+              "assists": 2,
+              "kast": 46,
+              "adr": 82,
+              "hs": 32,
+              "firstBloods": 2,
+              "firstDeaths": 5
+            }
+          }
+        ]
+      },
+      {
+        "id": "198475",
+        "name": "Lotus",
+        "status": "played",
+        "pickedBy": null,
+        "duration": "37:13",
+        "teams": [
+          {
+            "name": "QUANTICO",
+            "score": 10,
+            "roundsCt": 5,
+            "roundsT": 5
+          },
+          {
+            "name": "B SITE GAMING",
+            "score": 13,
+            "roundsCt": 6,
+            "roundsT": 7
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "B SI",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "B SI",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "0-3",
+            "winner": "B SI",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "0-4",
+            "winner": "B SI",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 5,
+            "score": "1-4",
+            "winner": "QUAN",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 6,
+            "score": "1-5",
+            "winner": "B SI",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 7,
+            "score": "1-6",
+            "winner": "B SI",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 8,
+            "score": "2-6",
+            "winner": "QUAN",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "3-6",
+            "winner": "QUAN",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 10,
+            "score": "3-7",
+            "winner": "B SI",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "4-7",
+            "winner": "QUAN",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 12,
+            "score": "5-7",
+            "winner": "QUAN",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 13,
+            "score": "5-8",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "5-9",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "6-9",
+            "winner": "QUAN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "6-10",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 17,
+            "score": "7-10",
+            "winner": "QUAN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "8-10",
+            "winner": "QUAN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 19,
+            "score": "9-10",
+            "winner": "QUAN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 20,
+            "score": "9-11",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 21,
+            "score": "9-12",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 22,
+            "score": "10-12",
+            "winner": "QUAN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 23,
+            "score": "10-13",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "33109",
+            "url": "https://www.vlr.gg/player/33109/minitahara",
+            "name": "miniTahara",
+            "teamTag": "QUAN",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.46,
+              "acs": 305,
+              "kills": 25,
+              "deaths": 16,
+              "assists": 7,
+              "kast": 78,
+              "adr": 198,
+              "hs": 29,
+              "firstBloods": 1,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "50483",
+            "url": "https://www.vlr.gg/player/50483/surpass",
+            "name": "Surpass",
+            "teamTag": "QUAN",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Killjoy",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.06,
+              "acs": 198,
+              "kills": 16,
+              "deaths": 15,
+              "assists": 2,
+              "kast": 78,
+              "adr": 146,
+              "hs": 22,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "50484",
+            "url": "https://www.vlr.gg/player/50484/ebeus",
+            "name": "EBEUS",
+            "teamTag": "QUAN",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Breach",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.92,
+              "acs": 191,
+              "kills": 15,
+              "deaths": 17,
+              "assists": 14,
+              "kast": 65,
+              "adr": 120,
+              "hs": 30,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "50482",
+            "url": "https://www.vlr.gg/player/50482/raam",
+            "name": "raam",
+            "teamTag": "QUAN",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Gekko",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.76,
+              "acs": 150,
+              "kills": 11,
+              "deaths": 18,
+              "assists": 11,
+              "kast": 74,
+              "adr": 106,
+              "hs": 22,
+              "firstBloods": 0,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "50481",
+            "url": "https://www.vlr.gg/player/50481/frimus",
+            "name": "Frimus",
+            "teamTag": "QUAN",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.6,
+              "acs": 198,
+              "kills": 16,
+              "deaths": 20,
+              "assists": 4,
+              "kast": 65,
+              "adr": 139,
+              "hs": 25,
+              "firstBloods": 3,
+              "firstDeaths": 7
+            }
+          },
+          {
+            "id": "50489",
+            "url": "https://www.vlr.gg/player/50489/manutetera",
+            "name": "manutetera",
+            "teamTag": "B SI",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Gekko",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.5,
+              "acs": 257,
+              "kills": 21,
+              "deaths": 14,
+              "assists": 7,
+              "kast": 74,
+              "adr": 168,
+              "hs": 65,
+              "firstBloods": 2,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "50488",
+            "url": "https://www.vlr.gg/player/50488/sr-kl-deus",
+            "name": "sr kl deus",
+            "teamTag": "B SI",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Astra",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.1,
+              "acs": 173,
+              "kills": 15,
+              "deaths": 15,
+              "assists": 11,
+              "kast": 78,
+              "adr": 120,
+              "hs": 38,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "50487",
+            "url": "https://www.vlr.gg/player/50487/splotza",
+            "name": "Splotza",
+            "teamTag": "B SI",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Killjoy",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.08,
+              "acs": 244,
+              "kills": 21,
+              "deaths": 18,
+              "assists": 1,
+              "kast": 65,
+              "adr": 168,
+              "hs": 32,
+              "firstBloods": 5,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "50485",
+            "url": "https://www.vlr.gg/player/50485/saninn",
+            "name": "Saninn",
+            "teamTag": "B SI",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Breach",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.92,
+              "acs": 167,
+              "kills": 15,
+              "deaths": 18,
+              "assists": 9,
+              "kast": 74,
+              "adr": 107,
+              "hs": 50,
+              "firstBloods": 1,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "50486",
+            "url": "https://www.vlr.gg/player/50486/devian",
+            "name": "Devian",
+            "teamTag": "B SI",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Raze",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.87,
+              "acs": 189,
+              "kills": 14,
+              "deaths": 18,
+              "assists": 8,
+              "kast": 83,
+              "adr": 142,
+              "hs": 17,
+              "firstBloods": 4,
+              "firstDeaths": 5
+            }
+          }
+        ]
+      },
+      {
+        "id": "198476",
+        "name": "Fracture",
+        "status": "played",
+        "pickedBy": null,
+        "duration": "1:14:03",
+        "teams": [
+          {
+            "name": "QUANTICO",
+            "score": 6,
+            "roundsCt": 3,
+            "roundsT": 3
+          },
+          {
+            "name": "B SITE GAMING",
+            "score": 13,
+            "roundsCt": 9,
+            "roundsT": 4
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "0-1",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "0-2",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "0-3",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "0-4",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 5,
+            "score": "1-4",
+            "winner": "QUAN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "1-5",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 7,
+            "score": "2-5",
+            "winner": "QUAN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 8,
+            "score": "2-6",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 9,
+            "score": "2-7",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "2-8",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 11,
+            "score": "3-8",
+            "winner": "QUAN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "3-9",
+            "winner": "B SI",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "3-10",
+            "winner": "B SI",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "4-10",
+            "winner": "QUAN",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 15,
+            "score": "5-10",
+            "winner": "QUAN",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "5-11",
+            "winner": "B SI",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 17,
+            "score": "6-11",
+            "winner": "QUAN",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "6-12",
+            "winner": "B SI",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          },
+          {
+            "number": 19,
+            "score": "6-13",
+            "winner": "B SI",
+            "side": "t",
+            "method": null,
+            "methodIcon": null
+          }
+        ],
+        "players": [
+          {
+            "id": "33109",
+            "url": "https://www.vlr.gg/player/33109/minitahara",
+            "name": "miniTahara",
+            "teamTag": "QUAN",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Brimstone",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.17,
+              "acs": 254,
+              "kills": 17,
+              "deaths": 13,
+              "assists": 7,
+              "kast": 79,
+              "adr": 158,
+              "hs": 27,
+              "firstBloods": 1,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "50482",
+            "url": "https://www.vlr.gg/player/50482/raam",
+            "name": "raam",
+            "teamTag": "QUAN",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.98,
+              "acs": 172,
+              "kills": 11,
+              "deaths": 13,
+              "assists": 7,
+              "kast": 84,
+              "adr": 106,
+              "hs": 9,
+              "firstBloods": 1,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "50483",
+            "url": "https://www.vlr.gg/player/50483/surpass",
+            "name": "Surpass",
+            "teamTag": "QUAN",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Killjoy",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.74,
+              "acs": 157,
+              "kills": 10,
+              "deaths": 13,
+              "assists": 1,
+              "kast": 63,
+              "adr": 104,
+              "hs": 14,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "50484",
+            "url": "https://www.vlr.gg/player/50484/ebeus",
+            "name": "EBEUS",
+            "teamTag": "QUAN",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Breach",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.72,
+              "acs": 161,
+              "kills": 11,
+              "deaths": 13,
+              "assists": 3,
+              "kast": 74,
+              "adr": 84,
+              "hs": 27,
+              "firstBloods": 2,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "50481",
+            "url": "https://www.vlr.gg/player/50481/frimus",
+            "name": "Frimus",
+            "teamTag": "QUAN",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.57,
+              "acs": 124,
+              "kills": 8,
+              "deaths": 14,
+              "assists": 2,
+              "kast": 63,
+              "adr": 84,
+              "hs": 16,
+              "firstBloods": 1,
+              "firstDeaths": 8
+            }
+          },
+          {
+            "id": "50486",
+            "url": "https://www.vlr.gg/player/50486/devian",
+            "name": "Devian",
+            "teamTag": "B SI",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.59,
+              "acs": 272,
+              "kills": 21,
+              "deaths": 10,
+              "assists": 2,
+              "kast": 79,
+              "adr": 164,
+              "hs": 25,
+              "firstBloods": 5,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "50488",
+            "url": "https://www.vlr.gg/player/50488/sr-kl-deus",
+            "name": "sr kl deus",
+            "teamTag": "B SI",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Brimstone",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.15,
+              "acs": 202,
+              "kills": 14,
+              "deaths": 13,
+              "assists": 6,
+              "kast": 79,
+              "adr": 136,
+              "hs": 54,
+              "firstBloods": 0,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "50489",
+            "url": "https://www.vlr.gg/player/50489/manutetera",
+            "name": "manutetera",
+            "teamTag": "B SI",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Gekko",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.98,
+              "acs": 175,
+              "kills": 12,
+              "deaths": 12,
+              "assists": 3,
+              "kast": 74,
+              "adr": 129,
+              "hs": 30,
+              "firstBloods": 2,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "50485",
+            "url": "https://www.vlr.gg/player/50485/saninn",
+            "name": "Saninn",
+            "teamTag": "B SI",
+            "country": "International",
+            "flag": "un",
+            "agents": [
+              {
+                "name": "Breach",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.95,
+              "acs": 141,
+              "kills": 9,
+              "deaths": 11,
+              "assists": 10,
+              "kast": 84,
+              "adr": 101,
+              "hs": 40,
+              "firstBloods": 2,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "50487",
+            "url": "https://www.vlr.gg/player/50487/splotza",
+            "name": "Splotza",
+            "teamTag": "B SI",
+            "country": "Argentina",
+            "flag": "ar",
+            "agents": [
+              {
+                "name": "Killjoy",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.89,
+              "acs": 137,
+              "kills": 10,
+              "deaths": 11,
+              "assists": 3,
+              "kast": 68,
+              "adr": 83,
+              "hs": 28,
+              "firstBloods": 2,
+              "firstDeaths": 2
+            }
+          }
+        ]
+      }
+    ],
+    "players": [
+      {
+        "id": "33109",
+        "url": "https://www.vlr.gg/player/33109/minitahara",
+        "name": "miniTahara",
+        "teamTag": "QUAN",
+        "country": "Argentina",
+        "flag": "ar",
+        "agents": [
+          {
+            "name": "Astra",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+          },
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          },
+          {
+            "name": "Brimstone",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.28,
+          "acs": 265,
+          "kills": 63,
+          "deaths": 47,
+          "assists": 28,
+          "kast": 76,
+          "adr": 168,
+          "hs": 27,
+          "firstBloods": 6,
+          "firstDeaths": 6
+        }
+      },
+      {
+        "id": "50482",
+        "url": "https://www.vlr.gg/player/50482/raam",
+        "name": "raam",
+        "teamTag": "QUAN",
+        "country": "Argentina",
+        "flag": "ar",
+        "agents": [
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          },
+          {
+            "name": "Gekko",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png"
+          },
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.04,
+          "acs": 194,
+          "kills": 45,
+          "deaths": 49,
+          "assists": 25,
+          "kast": 76,
+          "adr": 133,
+          "hs": 20,
+          "firstBloods": 2,
+          "firstDeaths": 3
+        }
+      },
+      {
+        "id": "50483",
+        "url": "https://www.vlr.gg/player/50483/surpass",
+        "name": "Surpass",
+        "teamTag": "QUAN",
+        "country": "International",
+        "flag": "un",
+        "agents": [
+          {
+            "name": "Cypher",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+          },
+          {
+            "name": "Killjoy",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.97,
+          "acs": 189,
+          "kills": 45,
+          "deaths": 48,
+          "assists": 12,
+          "kast": 68,
+          "adr": 127,
+          "hs": 17,
+          "firstBloods": 7,
+          "firstDeaths": 3
+        }
+      },
+      {
+        "id": "50481",
+        "url": "https://www.vlr.gg/player/50481/frimus",
+        "name": "Frimus",
+        "teamTag": "QUAN",
+        "country": "Argentina",
+        "flag": "ar",
+        "agents": [
+          {
+            "name": "Jett",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+          },
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.85,
+          "acs": 203,
+          "kills": 48,
+          "deaths": 52,
+          "assists": 13,
+          "kast": 63,
+          "adr": 140,
+          "hs": 25,
+          "firstBloods": 7,
+          "firstDeaths": 22
+        }
+      },
+      {
+        "id": "50484",
+        "url": "https://www.vlr.gg/player/50484/ebeus",
+        "name": "EBEUS",
+        "teamTag": "QUAN",
+        "country": "Argentina",
+        "flag": "ar",
+        "agents": [
+          {
+            "name": "Breach",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.67,
+          "acs": 131,
+          "kills": 31,
+          "deaths": 50,
+          "assists": 26,
+          "kast": 66,
+          "adr": 77,
+          "hs": 29,
+          "firstBloods": 6,
+          "firstDeaths": 4
+        }
+      },
+      {
+        "id": "50487",
+        "url": "https://www.vlr.gg/player/50487/splotza",
+        "name": "Splotza",
+        "teamTag": "B SI",
+        "country": "Argentina",
+        "flag": "ar",
+        "agents": [
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          },
+          {
+            "name": "Killjoy",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.14,
+          "acs": 228,
+          "kills": 57,
+          "deaths": 47,
+          "assists": 11,
+          "kast": 69,
+          "adr": 152,
+          "hs": 36,
+          "firstBloods": 9,
+          "firstDeaths": 5
+        }
+      },
+      {
+        "id": "50486",
+        "url": "https://www.vlr.gg/player/50486/devian",
+        "name": "Devian",
+        "teamTag": "B SI",
+        "country": "International",
+        "flag": "un",
+        "agents": [
+          {
+            "name": "Jett",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+          },
+          {
+            "name": "Raze",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+          },
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.08,
+          "acs": 226,
+          "kills": 56,
+          "deaths": 46,
+          "assists": 14,
+          "kast": 79,
+          "adr": 154,
+          "hs": 22,
+          "firstBloods": 12,
+          "firstDeaths": 10
+        }
+      },
+      {
+        "id": "50488",
+        "url": "https://www.vlr.gg/player/50488/sr-kl-deus",
+        "name": "sr kl deus",
+        "teamTag": "B SI",
+        "country": "International",
+        "flag": "un",
+        "agents": [
+          {
+            "name": "Deadlock",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/deadlock.png"
+          },
+          {
+            "name": "Astra",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+          },
+          {
+            "name": "Brimstone",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.07,
+          "acs": 186,
+          "kills": 49,
+          "deaths": 46,
+          "assists": 22,
+          "kast": 74,
+          "adr": 129,
+          "hs": 42,
+          "firstBloods": 4,
+          "firstDeaths": 2
+        }
+      },
+      {
+        "id": "50485",
+        "url": "https://www.vlr.gg/player/50485/saninn",
+        "name": "Saninn",
+        "teamTag": "B SI",
+        "country": "International",
+        "flag": "un",
+        "agents": [
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          },
+          {
+            "name": "Breach",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.98,
+          "acs": 169,
+          "kills": 39,
+          "deaths": 46,
+          "assists": 25,
+          "kast": 79,
+          "adr": 117,
+          "hs": 45,
+          "firstBloods": 7,
+          "firstDeaths": 5
+        }
+      },
+      {
+        "id": "50489",
+        "url": "https://www.vlr.gg/player/50489/manutetera",
+        "name": "manutetera",
+        "teamTag": "B SI",
+        "country": "International",
+        "flag": "un",
+        "agents": [
+          {
+            "name": "Cypher",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+          },
+          {
+            "name": "Gekko",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/gekko.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.93,
+          "acs": 184,
+          "kills": 45,
+          "deaths": 48,
+          "assists": 12,
+          "kast": 63,
+          "adr": 125,
+          "hs": 43,
+          "firstBloods": 6,
+          "firstDeaths": 6
+        }
+      }
+    ]
+  }
+}

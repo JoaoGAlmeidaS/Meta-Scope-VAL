@@ -32,3 +32,13 @@ event_id,action,tier,region,reason
 1927,reclassify,,china,Champions Tour 2023 China Ascension: VCL chinesa listada em china e pacific
 2131,reclassify,,china,China National Competition Season 2: VCL chinesa listada em china e pacific
 2149,reclassify,,china,Champions Tour 2024 China Ascension: VCL chinesa listada em china e pacific
+2818,exclude,,,julgamento: Challengers 2026: SEA Split 1 - Indonesia Qualifier: qualificatória nacional aberta para o Challengers SEA (mesmo critério de NA e NORTH//EAST)
+2819,exclude,,,julgamento: Challengers 2026: SEA Split 1 - Philippines Qualifier: qualificatória nacional aberta para o Challengers SEA (mesmo critério de NA e NORTH//EAST)
+2820,exclude,,,julgamento: Challengers 2026: SEA Split 1 - Rest of SEA Qualifier: qualificatória nacional aberta para o Challengers SEA (mesmo critério de NA e NORTH//EAST)
+2821,exclude,,,julgamento: Challengers 2026: SEA Split 1 - Thailand Qualifier: qualificatória nacional aberta para o Challengers SEA (mesmo critério de NA e NORTH//EAST)
+2822,exclude,,,julgamento: Challengers 2026: SEA Split 1 - Vietnam Qualifier: qualificatória nacional aberta para o Challengers SEA (mesmo critério de NA e NORTH//EAST)
+2824,exclude,,,julgamento: Challengers 2026: SEA Split 2 - Indonesia Qualifier: qualificatória nacional aberta para o Challengers SEA (mesmo critério de NA e NORTH//EAST)
+2826,exclude,,,julgamento: Challengers 2026: SEA Split 2 - Philippines Qualifier: qualificatória nacional aberta para o Challengers SEA (mesmo critério de NA e NORTH//EAST)
+2827,exclude,,,julgamento: Challengers 2026: SEA Split 2 - Rest of SEA Qualifier: qualificatória nacional aberta para o Challengers SEA (mesmo critério de NA e NORTH//EAST)
+2828,exclude,,,julgamento: Challengers 2026: SEA Split 2 - Thailand Qualifier: qualificatória nacional aberta para o Challengers SEA (mesmo critério de NA e NORTH//EAST)
+2829,exclude,,,julgamento: Challengers 2026: SEA Split 2 - Vietnam Qualifier: qualificatória nacional aberta para o Challengers SEA (mesmo critério de NA e NORTH//EAST)

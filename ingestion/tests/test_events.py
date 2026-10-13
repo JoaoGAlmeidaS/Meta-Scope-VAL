@@ -7,16 +7,20 @@ from datetime import date
 import pytest
 
 from ingestion import lake
+from ingestion.client import TransientError
 from ingestion.collectors import (
     INTERNATIONAL,
+    CollectionAborted,
     Event,
     attach_matches,
     collect_events,
+    is_china_tier2,
     list_events,
     season_from_name,
 )
+from ingestion.fixture_lake import OfflineClient as FakeClient
+from ingestion.fixture_lake import route
 from ingestion.schemas import EventMatch, Response
-from ingestion.tests.conftest import FakeClient, route
 
 
 def _page(load_json, name: str, ids: list[str] | None = None) -> dict:
@@ -65,11 +69,47 @@ def test_regiao_e_tier_pelos_filtros_da_listagem(load_json):
     assert events["2976"].region == "emea"
     assert events["2765"].region == INTERNATIONAL  # Masters London: aparece em duas regiões
     assert events["2776"].region is None  # só na listagem sem filtro
-    # China Evolution Series Act 3 aparece em vct e vcl (pegadinha 15).
-    assert events["3105"].tier_ambiguous
-    assert events["3105"].tier == "vct"
+    # China Evolution Series Act 3 aparece em vct e vcl (pegadinha 15); é tier 2 chinês e fica fora.
+    assert "3105" not in events
     assert not events["2977"].tier_ambiguous
     assert events["3077"].tier == "vcl"  # THE POKAL 2026
+
+
+def test_evento_nos_dois_tiers_fica_ambiguo_e_vale_vct():
+    # Pegadinha 15: o tier do vlr.gg é ruidoso; vct prevalece, e o seed corrige o resto.
+    event = Event("1", "Algum evento 2026", "completed", None, "0", tiers={"vct", "vcl"})
+    assert event.tier_ambiguous
+    assert event.tier == "vct"
+
+
+def _rows(rows: list[dict]) -> dict:
+    return {"status": "OK", "data": rows}
+
+
+def test_tier_2_chines_fica_fora_da_coleta():
+    # Decisão de 05/10: VCL China e China Evolution Series saem; VCT China e internacionais ficam.
+    vct = [
+        _event("10", "VCT 2026: China Stage 2"),
+        _event("11", "China Evolution Series: Act 1"),  # 2025: só em tier=vct
+        _event("12", "Valorant Masters Toronto 2025"),
+    ]
+    vcl = [
+        _event("20", "China National Tournament 2026 Split Alpha: Pro Division"),
+        _event("21", "VCT 2025: China Ascension"),
+        _event("22", "Challengers 2026: Japan Split 2"),
+    ]
+    client = FakeClient(
+        {
+            route("/events", tier="vct", page=1): _rows(vct),
+            route("/events", tier="vct", region="china", page=1): _rows(vct[:2]),
+            route("/events", tier="vcl", page=1): _rows(vcl),
+            route("/events", tier="vcl", region="china", page=1): _rows(vcl[:2]),
+            route("/events", tier="vcl", region="pacific", page=1): _rows(vcl[2:]),
+        }
+    )
+    events = list_events(client, since=2025)
+    assert sorted(e.id for e in events) == ["10", "12", "22"]
+    assert not any(is_china_tier2(e) for e in events)
 
 
 def test_upcoming_e_temporada_anterior_ficam_de_fora():
@@ -198,6 +238,39 @@ def test_listagem_fora_do_contrato_pula_so_aquele_evento(load_json, tmp_path):
     broken["data"][0]["teams"] = broken["data"][0]["teams"][:1]  # "bye": um time só
     events = collect_events(FakeClient(routes), since=2023, root=tmp_path)
     assert [e.id for e in events] == ["2977"]
+    assert [r["event_id"] for r in lake.read_table(tmp_path, "raw_event").to_pylist()] == ["2977"]
+
+
+def test_gabarito_indisponivel_nao_para_a_coleta_e_volta_depois(load_json, tmp_path):
+    # Caso real do D5: `/events/1309/agents` deu 502 nas 6 tentativas e derrubou a coleta.
+    routes = _collect_routes(load_json, ["2977", "2976"])
+    routes[route("/events/2976/agents")] = TransientError("502 em /events/2976/agents")
+    events = collect_events(FakeClient(routes), since=2023, root=tmp_path)
+
+    assert [e.id for e in events] == ["2977", "2976"]
+    agents_2976 = tmp_path / "raw_event_agents" / "season=2026" / "2976.parquet"
+    assert not agents_2976.exists()  # sem arquivo: a próxima execução tenta de novo
+
+    routes[route("/events/2976/agents")] = load_json("event_agents_vct_americas_s2_2026.json")
+    collect_events(FakeClient(routes), since=2023, root=tmp_path)
+    assert agents_2976.exists()
+
+
+def test_uma_listagem_indisponivel_pula_so_aquele_evento(load_json, tmp_path):
+    routes = _collect_routes(load_json, ["2977", "2776", "2976"])
+    routes[route("/events/2776/matches")] = TransientError("502 em /events/2776/matches")
+    events = collect_events(FakeClient(routes), since=2023, root=tmp_path)
+    assert [e.id for e in events] == ["2977", "2976"]
+
+
+def test_listagens_seguidas_indisponiveis_abortam_mas_gravam_o_indice(load_json, tmp_path):
+    down = ["2776", "2976", "2978"]
+    routes = _collect_routes(load_json, ["2977", *down])
+    for eid in down:
+        routes[route(f"/events/{eid}/matches")] = TransientError(f"503 em /events/{eid}/matches")
+
+    with pytest.raises(CollectionAborted):
+        collect_events(FakeClient(routes), since=2023, root=tmp_path)
     assert [r["event_id"] for r in lake.read_table(tmp_path, "raw_event").to_pylist()] == ["2977"]
 
 

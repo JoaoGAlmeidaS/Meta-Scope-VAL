@@ -17,9 +17,10 @@ ROOT = Path(__file__).resolve().parents[1]
 DBT_PROJECT = ROOT / "dbt" / "dbt_project.yml"
 LAKE_DIR = ROOT / "data" / "lake"
 
-# Coleta ampla, análise restrita: o histórico começa na era franqueada (decisão do D5; antes de
-# 2023, `tier=vct` mistura Challengers do formato pré-franquia).
-HISTORY_SINCE = 2023
+# A coleta própria começa em 2025 (decisão de 05/10): janela de análise e aquecimento do Elo cabem
+# aí, e a instância pública rende ~13 requisições/min. O histórico anterior, que só o drift (D17)
+# usa, vem de um dataset pronto importado à parte.
+HISTORY_SINCE = 2025
 
 
 @cache

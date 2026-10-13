@@ -22,8 +22,14 @@ OVERTIME_MAPS = [
 ]
 
 
+def _com_lado(map_):
+    if not map_.has_sides:
+        pytest.skip("mapa sem histórico de lado (pegadinha 22)")
+
+
 def test_lado_do_vencedor_soma_rounds_ct_e_rounds_t(match_map):
     _, map_ = match_map
+    _com_lado(map_)
     teams = {t.name: t for t in map_.teams}
     for tag, name in tags_by_score(map_).items():
         won = [r for r in map_.rounds if r.winner == tag and r.number <= REGULATION]
@@ -33,6 +39,7 @@ def test_lado_do_vencedor_soma_rounds_ct_e_rounds_t(match_map):
 
 def test_lado_constante_no_tempo_e_invertido_no_intervalo(match_map):
     _, map_ = match_map
+    _com_lado(map_)
     tags = tags_by_score(map_)
     sides = {
         (half, tag): {r.side for r in map_.rounds if r.winner == tag and r.number in rounds}

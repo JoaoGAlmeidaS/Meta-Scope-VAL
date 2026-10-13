@@ -1,18 +1,12 @@
-# DuckDB como engine, nao como banco: o arquivo e descartavel e some no `make clean`.
+# DuckDB como engine, não como banco: o arquivo é descartável, recriado a cada build e apagado no
+# `make clean`. Os caminhos são relativos a `dbt/`: rode o dbt de dentro da pasta (o Makefile e o
+# dagster-dbt fazem isso).
 metascope_val:
   target: dev
   outputs:
     dev:
       type: duckdb
-      path: "metascope.duckdb"
+      path: "{{ env_var('DBT_DUCKDB_PATH', 'metascope.duckdb') }}"
       threads: 4
-      extensions:
-        - httpfs
-        - parquet
-    ci:
-      type: duckdb
-      path: "metascope.duckdb"
-      threads: 4
-      extensions:
-        - httpfs
-        - parquet
+      settings:
+        TimeZone: UTC  # `timestamptz` do lake vira `timestamp` em UTC, nunca no fuso da máquina

@@ -1,0 +1,5198 @@
+{
+  "status": "OK",
+  "data": {
+    "id": "482510",
+    "url": "https://www.vlr.gg/482510",
+    "event": {
+      "id": "2380",
+      "url": "https://www.vlr.gg/event/2380/vct-2025-emea-stage-1/playoffs",
+      "name": "VCT 2025: EMEA Stage 1",
+      "series": "Playoffs: Lower Round 2",
+      "img": "https://owcdn.net/img/65ab59620a233.png"
+    },
+    "status": "final",
+    "in": null,
+    "format": "Bo3",
+    "date": "May 11, 2025",
+    "time": "11:00 AM EDT",
+    "timestamp": 1746975600,
+    "utcDate": "Sun, 11 May 2025 15:00:00 GMT",
+    "teams": [
+      {
+        "id": "397",
+        "url": "https://www.vlr.gg/team/397/bbl-esports",
+        "name": "BBL Esports",
+        "img": "https://owcdn.net/img/65b8ccef5e273.png",
+        "score": 2
+      },
+      {
+        "id": "1184",
+        "url": "https://www.vlr.gg/team/1184/fut-esports",
+        "name": "FUT Esports",
+        "img": "https://owcdn.net/img/632be9976b8fe.png",
+        "score": 1
+      }
+    ],
+    "streams": [],
+    "vods": [],
+    "picksBans": {
+      "note": "Map 1 stats are unavailable due to lobby remake.\t\t\n\t\t\tBBL ban Fracture; FUT ban Icebox; BBL pick Haven; FUT pick Split; BBL ban Lotus; FUT ban Pearl; Ascent remains",
+      "list": [
+        {
+          "team": null,
+          "action": "note",
+          "map": "Map 1 stats are unavailable due to lobby remake.\t\t\n\t\t\tBBL ban Fracture"
+        },
+        {
+          "team": "FUT",
+          "action": "ban",
+          "map": "Icebox"
+        },
+        {
+          "team": "BBL",
+          "action": "pick",
+          "map": "Haven"
+        },
+        {
+          "team": "FUT",
+          "action": "pick",
+          "map": "Split"
+        },
+        {
+          "team": "BBL",
+          "action": "ban",
+          "map": "Lotus"
+        },
+        {
+          "team": "FUT",
+          "action": "ban",
+          "map": "Pearl"
+        },
+        {
+          "team": null,
+          "action": "remains",
+          "map": "Ascent"
+        }
+      ]
+    },
+    "maps": [
+      {
+        "id": "215402",
+        "name": "Ascent",
+        "status": "played",
+        "pickedBy": null,
+        "duration": "56:55",
+        "teams": [
+          {
+            "name": "BBL Esports",
+            "score": 13,
+            "roundsCt": 7,
+            "roundsT": 6
+          },
+          {
+            "name": "FUT Esports",
+            "score": 10,
+            "roundsCt": 5,
+            "roundsT": 5
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "1-0",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 2,
+            "score": "2-0",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "2-1",
+            "winner": "FUT",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "3-1",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 5,
+            "score": "3-2",
+            "winner": "FUT",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "3-3",
+            "winner": "FUT",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 7,
+            "score": "3-4",
+            "winner": "FUT",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 8,
+            "score": "3-5",
+            "winner": "FUT",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "4-5",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "5-5",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "6-5",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 12,
+            "score": "7-5",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 13,
+            "score": "7-6",
+            "winner": "FUT",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "7-7",
+            "winner": "FUT",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "8-7",
+            "winner": "BBL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "9-7",
+            "winner": "BBL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 17,
+            "score": "10-7",
+            "winner": "BBL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "10-8",
+            "winner": "FUT",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 19,
+            "score": "10-9",
+            "winner": "FUT",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 20,
+            "score": "11-9",
+            "winner": "BBL",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 21,
+            "score": "12-9",
+            "winner": "BBL",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 22,
+            "score": "12-10",
+            "winner": "FUT",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 23,
+            "score": "13-10",
+            "winner": "BBL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "5554",
+            "url": "https://www.vlr.gg/player/5554/profek",
+            "name": "PROFEK",
+            "teamTag": "BBL",
+            "country": "Poland",
+            "flag": "pl",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.61,
+              "acs": 275,
+              "kills": 23,
+              "deaths": 14,
+              "assists": 10,
+              "kast": 87,
+              "adr": 166,
+              "hs": 34,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "20144",
+            "url": "https://www.vlr.gg/player/20144/lewn",
+            "name": "LewN",
+            "teamTag": "BBL",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.25,
+              "acs": 204,
+              "kills": 16,
+              "deaths": 12,
+              "assists": 6,
+              "kast": 61,
+              "adr": 139,
+              "hs": 39,
+              "firstBloods": 4,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "2173",
+            "url": "https://www.vlr.gg/player/2173/magnum",
+            "name": "MAGNUM",
+            "teamTag": "BBL",
+            "country": "Czech Republic",
+            "flag": "cz",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.01,
+              "acs": 209,
+              "kills": 18,
+              "deaths": 17,
+              "assists": 8,
+              "kast": 74,
+              "adr": 125,
+              "hs": 21,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "5568",
+            "url": "https://www.vlr.gg/player/5568/sociablee",
+            "name": "sociablEE",
+            "teamTag": "BBL",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Tejo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.97,
+              "acs": 172,
+              "kills": 14,
+              "deaths": 14,
+              "assists": 8,
+              "kast": 83,
+              "adr": 131,
+              "hs": 20,
+              "firstBloods": 0,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "9780",
+            "url": "https://www.vlr.gg/player/9780/jamppi",
+            "name": "Jamppi",
+            "teamTag": "BBL",
+            "country": "Finland",
+            "flag": "fi",
+            "agents": [
+              {
+                "name": "Kayo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.66,
+              "acs": 147,
+              "kills": 10,
+              "deaths": 19,
+              "assists": 17,
+              "kast": 78,
+              "adr": 86,
+              "hs": 14,
+              "firstBloods": 1,
+              "firstDeaths": 5
+            }
+          },
+          {
+            "id": "8044",
+            "url": "https://www.vlr.gg/player/8044/mrfalin",
+            "name": "MrFaliN",
+            "teamTag": "FUT",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.11,
+              "acs": 198,
+              "kills": 18,
+              "deaths": 13,
+              "assists": 2,
+              "kast": 74,
+              "adr": 129,
+              "hs": 27,
+              "firstBloods": 3,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "8369",
+            "url": "https://www.vlr.gg/player/8369/yetujey",
+            "name": "yetujey",
+            "teamTag": "FUT",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Killjoy",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.04,
+              "acs": 226,
+              "kills": 15,
+              "deaths": 16,
+              "assists": 5,
+              "kast": 70,
+              "adr": 167,
+              "hs": 19,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "12793",
+            "url": "https://www.vlr.gg/player/12793/xeus",
+            "name": "xeus",
+            "teamTag": "FUT",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Yoru",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.95,
+              "acs": 223,
+              "kills": 19,
+              "deaths": 19,
+              "assists": 2,
+              "kast": 70,
+              "adr": 128,
+              "hs": 55,
+              "firstBloods": 3,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "1139",
+            "url": "https://www.vlr.gg/player/1139/qraxs",
+            "name": "qRaxs",
+            "teamTag": "FUT",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Kayo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.81,
+              "acs": 193,
+              "kills": 14,
+              "deaths": 19,
+              "assists": 8,
+              "kast": 61,
+              "adr": 139,
+              "hs": 27,
+              "firstBloods": 1,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "6510",
+            "url": "https://www.vlr.gg/player/6510/atakaptan",
+            "name": "AtaKaptan",
+            "teamTag": "FUT",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.8,
+              "acs": 132,
+              "kills": 10,
+              "deaths": 14,
+              "assists": 11,
+              "kast": 65,
+              "adr": 91,
+              "hs": 21,
+              "firstBloods": 2,
+              "firstDeaths": 4
+            }
+          }
+        ],
+        "performance": {
+          "players": [
+            {
+              "name": "MAGNUM",
+              "teamTag": "BBL",
+              "agents": [
+                {
+                  "name": "fade",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 44,
+              "plants": 0,
+              "defuses": 1
+            },
+            {
+              "name": "PROFEK",
+              "teamTag": "BBL",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 64,
+              "plants": 1,
+              "defuses": 1
+            },
+            {
+              "name": "sociablEE",
+              "teamTag": "BBL",
+              "agents": [
+                {
+                  "name": "tejo",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 54,
+              "plants": 0,
+              "defuses": 1
+            },
+            {
+              "name": "Jamppi",
+              "teamTag": "BBL",
+              "agents": [
+                {
+                  "name": "kayo",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 29,
+              "plants": 5,
+              "defuses": 0
+            },
+            {
+              "name": "LewN",
+              "teamTag": "BBL",
+              "agents": [
+                {
+                  "name": "jett",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 66,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "agents": [
+                {
+                  "name": "kayo",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 49,
+              "plants": 2,
+              "defuses": 0
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 43,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "agents": [
+                {
+                  "name": "sova",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 57,
+              "plants": 4,
+              "defuses": 1
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "agents": [
+                {
+                  "name": "killjoy",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 67,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "agents": [
+                {
+                  "name": "yoru",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 40,
+              "plants": 0,
+              "defuses": 0
+            }
+          ],
+          "killMatrix": [
+            {
+              "name": "MAGNUM",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 4,
+                  "deaths": 3,
+                  "diff": 1
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 5,
+                  "deaths": 2,
+                  "diff": 3
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 6,
+                  "deaths": 6,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 4,
+                  "diff": -3
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "PROFEK",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 4,
+                  "deaths": 3,
+                  "diff": 1
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 5,
+                  "deaths": 5,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 5,
+                  "deaths": 3,
+                  "diff": 2
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 5,
+                  "deaths": 2,
+                  "diff": 3
+                }
+              ]
+            },
+            {
+              "name": "Jamppi",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 6,
+                  "diff": -5
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 5,
+                  "diff": -3
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 3,
+                  "deaths": 5,
+                  "diff": -2
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 3,
+                  "diff": -1
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                }
+              ]
+            },
+            {
+              "name": "LewN",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 6,
+                  "deaths": 2,
+                  "diff": 4
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 3,
+                  "deaths": 3,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 3,
+                  "deaths": 4,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "sociablEE",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 4,
+                  "deaths": 2,
+                  "diff": 2
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 3,
+                  "deaths": 3,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 3,
+                  "deaths": 2,
+                  "diff": 1
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 5,
+                  "diff": -3
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                }
+              ]
+            }
+          ],
+          "opKillMatrix": [
+            {
+              "name": "MAGNUM",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "PROFEK",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Jamppi",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "LewN",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "sociablEE",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ],
+          "firstKillMatrix": [
+            {
+              "name": "MAGNUM",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "PROFEK",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "Jamppi",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "LewN",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "sociablEE",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ]
+        },
+        "economy": {
+          "teams": [
+            {
+              "name": "BBL",
+              "pistolWon": 1,
+              "eco": {
+                "total": 3,
+                "won": 1
+              },
+              "semiEco": {
+                "total": 2,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 3,
+                "won": 1
+              },
+              "fullBuy": {
+                "total": 15,
+                "won": 11
+              }
+            },
+            {
+              "name": "FUT",
+              "pistolWon": 1,
+              "eco": {
+                "total": 4,
+                "won": 1
+              },
+              "semiEco": {
+                "total": 0,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 4,
+                "won": 2
+              },
+              "fullBuy": {
+                "total": 15,
+                "won": 7
+              }
+            }
+          ],
+          "rounds": [
+            {
+              "number": 1,
+              "teams": [
+                {
+                  "bank": 200,
+                  "loadout": 4000,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 200,
+                  "loadout": 3950,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "teams": [
+                {
+                  "bank": 900,
+                  "loadout": 17450,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 10600,
+                  "loadout": 1300,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "teams": [
+                {
+                  "bank": 12900,
+                  "loadout": 15450,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 700,
+                  "loadout": 23250,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "teams": [
+                {
+                  "bank": 2400,
+                  "loadout": 21600,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 16200,
+                  "loadout": 23050,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "teams": [
+                {
+                  "bank": 4500,
+                  "loadout": 22550,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 3400,
+                  "loadout": 23250,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 6,
+              "teams": [
+                {
+                  "bank": 7400,
+                  "loadout": 7850,
+                  "buy": "semi-eco",
+                  "winner": false
+                },
+                {
+                  "bank": 9100,
+                  "loadout": 23250,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 7,
+              "teams": [
+                {
+                  "bank": 500,
+                  "loadout": 20650,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 11200,
+                  "loadout": 23250,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 8,
+              "teams": [
+                {
+                  "bank": 7300,
+                  "loadout": 9000,
+                  "buy": "semi-eco",
+                  "winner": false
+                },
+                {
+                  "bank": 16100,
+                  "loadout": 23650,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 9,
+              "teams": [
+                {
+                  "bank": 600,
+                  "loadout": 22500,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 23000,
+                  "loadout": 23650,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 10,
+              "teams": [
+                {
+                  "bank": 7200,
+                  "loadout": 23400,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 10700,
+                  "loadout": 23350,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 11,
+              "teams": [
+                {
+                  "bank": 14900,
+                  "loadout": 23700,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 2700,
+                  "loadout": 22000,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 12,
+              "teams": [
+                {
+                  "bank": 9700,
+                  "loadout": 24300,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 800,
+                  "loadout": 18900,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 13,
+              "teams": [
+                {
+                  "bank": 300,
+                  "loadout": 3850,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 400,
+                  "loadout": 3600,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 14,
+              "teams": [
+                {
+                  "bank": 8200,
+                  "loadout": 2200,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 5700,
+                  "loadout": 11700,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 15,
+              "teams": [
+                {
+                  "bank": 300,
+                  "loadout": 21300,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 13700,
+                  "loadout": 16600,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 16,
+              "teams": [
+                {
+                  "bank": 6500,
+                  "loadout": 20950,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 2900,
+                  "loadout": 22100,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 17,
+              "teams": [
+                {
+                  "bank": 6800,
+                  "loadout": 23250,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 12200,
+                  "loadout": 4100,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 18,
+              "teams": [
+                {
+                  "bank": 8900,
+                  "loadout": 23400,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 4500,
+                  "loadout": 22500,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 19,
+              "teams": [
+                {
+                  "bank": 8100,
+                  "loadout": 11400,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 6700,
+                  "loadout": 22100,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 20,
+              "teams": [
+                {
+                  "bank": 1300,
+                  "loadout": 20950,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 11700,
+                  "loadout": 23600,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 21,
+              "teams": [
+                {
+                  "bank": 10100,
+                  "loadout": 23700,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 3900,
+                  "loadout": 21250,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 22,
+              "teams": [
+                {
+                  "bank": 15400,
+                  "loadout": 24000,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 700,
+                  "loadout": 18650,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 23,
+              "teams": [
+                {
+                  "bank": 3300,
+                  "loadout": 23050,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 6900,
+                  "loadout": 20400,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "216645",
+        "name": "Split",
+        "status": "played",
+        "pickedBy": "FUT Esports",
+        "duration": "34:02",
+        "teams": [
+          {
+            "name": "BBL Esports",
+            "score": 13,
+            "roundsCt": 10,
+            "roundsT": 3
+          },
+          {
+            "name": "FUT Esports",
+            "score": 2,
+            "roundsCt": 0,
+            "roundsT": 2
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "1-0",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "2-0",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "2-1",
+            "winner": "FUT",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "3-1",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 5,
+            "score": "4-1",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "time",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/time.webp"
+          },
+          {
+            "number": 6,
+            "score": "5-1",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 7,
+            "score": "5-2",
+            "winner": "FUT",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 8,
+            "score": "6-2",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "7-2",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "8-2",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "9-2",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "10-2",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 13,
+            "score": "11-2",
+            "winner": "BBL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "12-2",
+            "winner": "BBL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "13-2",
+            "winner": "BBL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "9780",
+            "url": "https://www.vlr.gg/player/9780/jamppi",
+            "name": "Jamppi",
+            "teamTag": "BBL",
+            "country": "Finland",
+            "flag": "fi",
+            "agents": [
+              {
+                "name": "Breach",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.69,
+              "acs": 203,
+              "kills": 12,
+              "deaths": 3,
+              "assists": 4,
+              "kast": 87,
+              "adr": 125,
+              "hs": 29,
+              "firstBloods": 0,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "5568",
+            "url": "https://www.vlr.gg/player/5568/sociablee",
+            "name": "sociablEE",
+            "teamTag": "BBL",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Tejo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.53,
+              "acs": 281,
+              "kills": 18,
+              "deaths": 6,
+              "assists": 1,
+              "kast": 80,
+              "adr": 177,
+              "hs": 23,
+              "firstBloods": 1,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "5554",
+            "url": "https://www.vlr.gg/player/5554/profek",
+            "name": "PROFEK",
+            "teamTag": "BBL",
+            "country": "Poland",
+            "flag": "pl",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.49,
+              "acs": 285,
+              "kills": 14,
+              "deaths": 8,
+              "assists": 9,
+              "kast": 73,
+              "adr": 196,
+              "hs": 29,
+              "firstBloods": 3,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "20144",
+            "url": "https://www.vlr.gg/player/20144/lewn",
+            "name": "LewN",
+            "teamTag": "BBL",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Raze",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.28,
+              "acs": 207,
+              "kills": 12,
+              "deaths": 7,
+              "assists": 2,
+              "kast": 80,
+              "adr": 131,
+              "hs": 25,
+              "firstBloods": 4,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "2173",
+            "url": "https://www.vlr.gg/player/2173/magnum",
+            "name": "MAGNUM",
+            "teamTag": "BBL",
+            "country": "Czech Republic",
+            "flag": "cz",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.03,
+              "acs": 163,
+              "kills": 8,
+              "deaths": 7,
+              "assists": 4,
+              "kast": 93,
+              "adr": 110,
+              "hs": 30,
+              "firstBloods": 3,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "12793",
+            "url": "https://www.vlr.gg/player/12793/xeus",
+            "name": "xeus",
+            "teamTag": "FUT",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Yoru",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.79,
+              "acs": 145,
+              "kills": 7,
+              "deaths": 13,
+              "assists": 4,
+              "kast": 53,
+              "adr": 104,
+              "hs": 32,
+              "firstBloods": 3,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "8044",
+            "url": "https://www.vlr.gg/player/8044/mrfalin",
+            "name": "MrFaliN",
+            "teamTag": "FUT",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Tejo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.64,
+              "acs": 152,
+              "kills": 8,
+              "deaths": 12,
+              "assists": 3,
+              "kast": 60,
+              "adr": 92,
+              "hs": 32,
+              "firstBloods": 0,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "6510",
+            "url": "https://www.vlr.gg/player/6510/atakaptan",
+            "name": "AtaKaptan",
+            "teamTag": "FUT",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.62,
+              "acs": 157,
+              "kills": 8,
+              "deaths": 13,
+              "assists": 0,
+              "kast": 47,
+              "adr": 110,
+              "hs": 25,
+              "firstBloods": 0,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "8369",
+            "url": "https://www.vlr.gg/player/8369/yetujey",
+            "name": "yetujey",
+            "teamTag": "FUT",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Viper",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.5,
+              "acs": 118,
+              "kills": 5,
+              "deaths": 13,
+              "assists": 3,
+              "kast": 60,
+              "adr": 83,
+              "hs": 16,
+              "firstBloods": 1,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "1139",
+            "url": "https://www.vlr.gg/player/1139/qraxs",
+            "name": "qRaxs",
+            "teamTag": "FUT",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.24,
+              "acs": 71,
+              "kills": 3,
+              "deaths": 13,
+              "assists": 3,
+              "kast": 33,
+              "adr": 48,
+              "hs": 31,
+              "firstBloods": 0,
+              "firstDeaths": 3
+            }
+          }
+        ],
+        "performance": {
+          "players": [
+            {
+              "name": "MAGNUM",
+              "teamTag": "BBL",
+              "agents": [
+                {
+                  "name": "cypher",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 58,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "PROFEK",
+              "teamTag": "BBL",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 73,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "sociablEE",
+              "teamTag": "BBL",
+              "agents": [
+                {
+                  "name": "tejo",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 106,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "Jamppi",
+              "teamTag": "BBL",
+              "agents": [
+                {
+                  "name": "breach",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 85,
+              "plants": 3,
+              "defuses": 1
+            },
+            {
+              "name": "LewN",
+              "teamTag": "BBL",
+              "agents": [
+                {
+                  "name": "raze",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 54,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "agents": [
+                {
+                  "name": "fade",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 21,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 48,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "agents": [
+                {
+                  "name": "tejo",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 41,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "agents": [
+                {
+                  "name": "viper",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 35,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "agents": [
+                {
+                  "name": "yoru",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 44,
+              "plants": 1,
+              "defuses": 0
+            }
+          ],
+          "killMatrix": [
+            {
+              "name": "MAGNUM",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 3,
+                  "deaths": 1,
+                  "diff": 2
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 3,
+                  "diff": -1
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                }
+              ]
+            },
+            {
+              "name": "PROFEK",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 4,
+                  "deaths": 0,
+                  "diff": 4
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 3,
+                  "deaths": 2,
+                  "diff": 1
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 4,
+                  "deaths": 3,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "Jamppi",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "LewN",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 3,
+                  "deaths": 1,
+                  "diff": 2
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 3,
+                  "deaths": 1,
+                  "diff": 2
+                }
+              ]
+            },
+            {
+              "name": "sociablEE",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 3,
+                  "deaths": 1,
+                  "diff": 2
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 5,
+                  "deaths": 1,
+                  "diff": 4
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                }
+              ]
+            }
+          ],
+          "opKillMatrix": [
+            {
+              "name": "MAGNUM",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "PROFEK",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Jamppi",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "LewN",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "sociablEE",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ],
+          "firstKillMatrix": [
+            {
+              "name": "MAGNUM",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "PROFEK",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Jamppi",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "LewN",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "sociablEE",
+              "teamTag": "BBL",
+              "records": [
+                {
+                  "name": "qRaxs",
+                  "teamTag": "FUT",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "yetujey",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "xeus",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "MrFaliN",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "AtaKaptan",
+                  "teamTag": "FUT",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ]
+        },
+        "economy": {
+          "teams": [
+            {
+              "name": "BBL",
+              "pistolWon": 2,
+              "eco": {
+                "total": 2,
+                "won": 2
+              },
+              "semiEco": {
+                "total": 0,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 4,
+                "won": 3
+              },
+              "fullBuy": {
+                "total": 9,
+                "won": 8
+              }
+            },
+            {
+              "name": "FUT",
+              "pistolWon": 0,
+              "eco": {
+                "total": 4,
+                "won": 0
+              },
+              "semiEco": {
+                "total": 2,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 0,
+                "won": 0
+              },
+              "fullBuy": {
+                "total": 9,
+                "won": 2
+              }
+            }
+          ],
+          "rounds": [
+            {
+              "number": 1,
+              "teams": [
+                {
+                  "bank": 200,
+                  "loadout": 3500,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 100,
+                  "loadout": 4200,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "teams": [
+                {
+                  "bank": 600,
+                  "loadout": 16100,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 10200,
+                  "loadout": 300,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "teams": [
+                {
+                  "bank": 13800,
+                  "loadout": 14750,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 600,
+                  "loadout": 21900,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "teams": [
+                {
+                  "bank": 2400,
+                  "loadout": 21600,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 13600,
+                  "loadout": 23050,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "teams": [
+                {
+                  "bank": 14600,
+                  "loadout": 23100,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 2800,
+                  "loadout": 22000,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 6,
+              "teams": [
+                {
+                  "bank": 12800,
+                  "loadout": 21800,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 10300,
+                  "loadout": 9800,
+                  "buy": "semi-eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 7,
+              "teams": [
+                {
+                  "bank": 21700,
+                  "loadout": 23150,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 3100,
+                  "loadout": 22900,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 8,
+              "teams": [
+                {
+                  "bank": 13200,
+                  "loadout": 22650,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 16800,
+                  "loadout": 23200,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 9,
+              "teams": [
+                {
+                  "bank": 18400,
+                  "loadout": 23550,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 4900,
+                  "loadout": 22350,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 10,
+              "teams": [
+                {
+                  "bank": 24800,
+                  "loadout": 22650,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 11700,
+                  "loadout": 6150,
+                  "buy": "semi-eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 11,
+              "teams": [
+                {
+                  "bank": 33100,
+                  "loadout": 23850,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 4400,
+                  "loadout": 23500,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 12,
+              "teams": [
+                {
+                  "bank": 32700,
+                  "loadout": 23250,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 400,
+                  "loadout": 20400,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 13,
+              "teams": [
+                {
+                  "bank": 200,
+                  "loadout": 3750,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 200,
+                  "loadout": 3950,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 14,
+              "teams": [
+                {
+                  "bank": 2400,
+                  "loadout": 17900,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 9300,
+                  "loadout": 1000,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 15,
+              "teams": [
+                {
+                  "bank": 9800,
+                  "loadout": 18200,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 300,
+                  "loadout": 22350,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "216646",
+        "name": "Haven",
+        "status": "played",
+        "pickedBy": "BBL Esports",
+        "duration": "1:11:31",
+        "teams": [
+          {
+            "name": "BBL Esports",
+            "score": 12,
+            "roundsCt": 4,
+            "roundsT": 8
+          },
+          {
+            "name": "FUT Esports",
+            "score": 14,
+            "roundsCt": 4,
+            "roundsT": 8
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "1-0",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 2,
+            "score": "2-0",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "2-1",
+            "winner": "FUT",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 4,
+            "score": "3-1",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 5,
+            "score": "3-2",
+            "winner": "FUT",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "3-3",
+            "winner": "FUT",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 7,
+            "score": "3-4",
+            "winner": "FUT",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 8,
+            "score": "3-5",
+            "winner": "FUT",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "3-6",
+            "winner": "FUT",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "3-7",
+            "winner": "FUT",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "3-8",
+            "winner": "FUT",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "4-8",
+            "winner": "BBL",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 13,
+            "score": "4-9",
+            "winner": "FUT",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 14,
+            "score": "5-9",
+            "winner": "BBL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "6-9",
+            "winner": "BBL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "6-10",
+            "winner": "FUT",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 17,
+            "score": "7-10",
+            "winner": "BBL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "8-10",
+            "winner": "BBL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 19,
+            "score": "9-10",
+            "winner": "BBL",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 20,
+            "score": "9-11",
+            "winner": "FUT",
+            "side": "ct",
+            "method": "time",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/time.webp"
+          },
+          {
+            "number": 21,
+            "score": "10-11",
+            "winner": "BBL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 22,
+            "score": "10-12",
+            "winner": "FUT",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 23,
+            "score": "11-12",
+            "winner": "BBL",
+            "side": "t",
+            "method": "time",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/time.webp"
+          },
+          {
+            "number": 24,
+            "score": "12-12",
+            "winner": "BBL",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 25,
+            "score": "12-13",
+            "winner": "FUT",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 26,
+            "score": "12-14",
+            "winner": "FUT",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "2173",
+            "url": "https://www.vlr.gg/player/2173/magnum",
+            "name": "MAGNUM",
+            "teamTag": "BBL",
+            "country": "Czech Republic",
+            "flag": "cz",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 28,
+              "deaths": 16,
+              "assists": 3,
+              "kast": 78,
+              "adr": null,
+              "hs": 31,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "9780",
+            "url": "https://www.vlr.gg/player/9780/jamppi",
+            "name": "Jamppi",
+            "teamTag": "BBL",
+            "country": "Finland",
+            "flag": "fi",
+            "agents": [
+              {
+                "name": "Breach",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 20,
+              "deaths": 19,
+              "assists": 17,
+              "kast": 91,
+              "adr": null,
+              "hs": 17,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "5568",
+            "url": "https://www.vlr.gg/player/5568/sociablee",
+            "name": "sociablEE",
+            "teamTag": "BBL",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 19,
+              "deaths": 17,
+              "assists": 4,
+              "kast": 87,
+              "adr": null,
+              "hs": 18,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "5554",
+            "url": "https://www.vlr.gg/player/5554/profek",
+            "name": "PROFEK",
+            "teamTag": "BBL",
+            "country": "Poland",
+            "flag": "pl",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 16,
+              "deaths": 21,
+              "assists": 19,
+              "kast": 74,
+              "adr": null,
+              "hs": 29,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "20144",
+            "url": "https://www.vlr.gg/player/20144/lewn",
+            "name": "LewN",
+            "teamTag": "BBL",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 15,
+              "deaths": 21,
+              "assists": 1,
+              "kast": 78,
+              "adr": null,
+              "hs": 36,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "8369",
+            "url": "https://www.vlr.gg/player/8369/yetujey",
+            "name": "yetujey",
+            "teamTag": "FUT",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 30,
+              "deaths": 16,
+              "assists": 6,
+              "kast": 78,
+              "adr": null,
+              "hs": 36,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "12793",
+            "url": "https://www.vlr.gg/player/12793/xeus",
+            "name": "xeus",
+            "teamTag": "FUT",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Chamber",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 24,
+              "deaths": 21,
+              "assists": 4,
+              "kast": 78,
+              "adr": null,
+              "hs": 34,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "1139",
+            "url": "https://www.vlr.gg/player/1139/qraxs",
+            "name": "qRaxs",
+            "teamTag": "FUT",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 18,
+              "deaths": 21,
+              "assists": 2,
+              "kast": 70,
+              "adr": null,
+              "hs": 41,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "8044",
+            "url": "https://www.vlr.gg/player/8044/mrfalin",
+            "name": "MrFaliN",
+            "teamTag": "FUT",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 12,
+              "deaths": 17,
+              "assists": 10,
+              "kast": 83,
+              "adr": null,
+              "hs": 23,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          },
+          {
+            "id": "6510",
+            "url": "https://www.vlr.gg/player/6510/atakaptan",
+            "name": "AtaKaptan",
+            "teamTag": "FUT",
+            "country": "Türkiye",
+            "flag": "tr",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": null,
+              "acs": null,
+              "kills": 10,
+              "deaths": 23,
+              "assists": 16,
+              "kast": 52,
+              "adr": null,
+              "hs": 27,
+              "firstBloods": null,
+              "firstDeaths": null
+            }
+          }
+        ],
+        "performance": {
+          "players": [],
+          "killMatrix": [],
+          "opKillMatrix": [],
+          "firstKillMatrix": []
+        },
+        "economy": {
+          "teams": [],
+          "rounds": []
+        }
+      }
+    ],
+    "players": [
+      {
+        "id": "5554",
+        "url": "https://www.vlr.gg/player/5554/profek",
+        "name": "PROFEK",
+        "teamTag": "BBL",
+        "country": "Poland",
+        "flag": "pl",
+        "agents": [
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.56,
+          "acs": 279,
+          "kills": 53,
+          "deaths": 43,
+          "assists": 38,
+          "kast": 79,
+          "adr": 178,
+          "hs": 31,
+          "firstBloods": 6,
+          "firstDeaths": 2
+        }
+      },
+      {
+        "id": "20144",
+        "url": "https://www.vlr.gg/player/20144/lewn",
+        "name": "LewN",
+        "teamTag": "BBL",
+        "country": "Türkiye",
+        "flag": "tr",
+        "agents": [
+          {
+            "name": "Jett",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+          },
+          {
+            "name": "Raze",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/raze.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.26,
+          "acs": 205,
+          "kills": 43,
+          "deaths": 40,
+          "assists": 9,
+          "kast": 72,
+          "adr": 136,
+          "hs": 34,
+          "firstBloods": 8,
+          "firstDeaths": 4
+        }
+      },
+      {
+        "id": "5568",
+        "url": "https://www.vlr.gg/player/5568/sociablee",
+        "name": "sociablEE",
+        "teamTag": "BBL",
+        "country": "Türkiye",
+        "flag": "tr",
+        "agents": [
+          {
+            "name": "Tejo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+          },
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.19,
+          "acs": 215,
+          "kills": 51,
+          "deaths": 37,
+          "assists": 13,
+          "kast": 84,
+          "adr": 149,
+          "hs": 20,
+          "firstBloods": 1,
+          "firstDeaths": 4
+        }
+      },
+      {
+        "id": "9780",
+        "url": "https://www.vlr.gg/player/9780/jamppi",
+        "name": "Jamppi",
+        "teamTag": "BBL",
+        "country": "Finland",
+        "flag": "fi",
+        "agents": [
+          {
+            "name": "Kayo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+          },
+          {
+            "name": "Breach",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.07,
+          "acs": 169,
+          "kills": 42,
+          "deaths": 41,
+          "assists": 38,
+          "kast": 85,
+          "adr": 101,
+          "hs": 19,
+          "firstBloods": 1,
+          "firstDeaths": 5
+        }
+      },
+      {
+        "id": "2173",
+        "url": "https://www.vlr.gg/player/2173/magnum",
+        "name": "MAGNUM",
+        "teamTag": "BBL",
+        "country": "Czech Republic",
+        "flag": "cz",
+        "agents": [
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          },
+          {
+            "name": "Cypher",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.02,
+          "acs": 191,
+          "kills": 54,
+          "deaths": 40,
+          "assists": 15,
+          "kast": 80,
+          "adr": 119,
+          "hs": 27,
+          "firstBloods": 6,
+          "firstDeaths": 1
+        }
+      },
+      {
+        "id": "8044",
+        "url": "https://www.vlr.gg/player/8044/mrfalin",
+        "name": "MrFaliN",
+        "teamTag": "FUT",
+        "country": "Türkiye",
+        "flag": "tr",
+        "agents": [
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          },
+          {
+            "name": "Tejo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.92,
+          "acs": 180,
+          "kills": 38,
+          "deaths": 42,
+          "assists": 15,
+          "kast": 74,
+          "adr": 114,
+          "hs": 26,
+          "firstBloods": 3,
+          "firstDeaths": 4
+        }
+      },
+      {
+        "id": "12793",
+        "url": "https://www.vlr.gg/player/12793/xeus",
+        "name": "xeus",
+        "teamTag": "FUT",
+        "country": "Türkiye",
+        "flag": "tr",
+        "agents": [
+          {
+            "name": "Yoru",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+          },
+          {
+            "name": "Chamber",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.89,
+          "acs": 192,
+          "kills": 50,
+          "deaths": 53,
+          "assists": 10,
+          "kast": 69,
+          "adr": 118,
+          "hs": 41,
+          "firstBloods": 6,
+          "firstDeaths": 4
+        }
+      },
+      {
+        "id": "8369",
+        "url": "https://www.vlr.gg/player/8369/yetujey",
+        "name": "yetujey",
+        "teamTag": "FUT",
+        "country": "Türkiye",
+        "flag": "tr",
+        "agents": [
+          {
+            "name": "Killjoy",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+          },
+          {
+            "name": "Viper",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/viper.png"
+          },
+          {
+            "name": "Cypher",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.83,
+          "acs": 183,
+          "kills": 50,
+          "deaths": 45,
+          "assists": 14,
+          "kast": 70,
+          "adr": 134,
+          "hs": 25,
+          "firstBloods": 4,
+          "firstDeaths": 4
+        }
+      },
+      {
+        "id": "6510",
+        "url": "https://www.vlr.gg/player/6510/atakaptan",
+        "name": "AtaKaptan",
+        "teamTag": "FUT",
+        "country": "Türkiye",
+        "flag": "tr",
+        "agents": [
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.73,
+          "acs": 142,
+          "kills": 28,
+          "deaths": 50,
+          "assists": 27,
+          "kast": 56,
+          "adr": 98,
+          "hs": 24,
+          "firstBloods": 2,
+          "firstDeaths": 5
+        }
+      },
+      {
+        "id": "1139",
+        "url": "https://www.vlr.gg/player/1139/qraxs",
+        "name": "qRaxs",
+        "teamTag": "FUT",
+        "country": "Türkiye",
+        "flag": "tr",
+        "agents": [
+          {
+            "name": "Kayo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+          },
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          },
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.59,
+          "acs": 145,
+          "kills": 35,
+          "deaths": 53,
+          "assists": 13,
+          "kast": 57,
+          "adr": 103,
+          "hs": 33,
+          "firstBloods": 1,
+          "firstDeaths": 5
+        }
+      }
+    ],
+    "performance": {
+      "players": [
+        {
+          "name": "MAGNUM",
+          "teamTag": "BBL",
+          "agents": [
+            {
+              "name": "fade",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+            }
+          ],
+          "multikills": {
+            "2k": 3,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 51,
+          "plants": 2,
+          "defuses": 3
+        },
+        {
+          "name": "PROFEK",
+          "teamTag": "BBL",
+          "agents": [
+            {
+              "name": "omen",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+            }
+          ],
+          "multikills": {
+            "2k": 6,
+            "3k": 3,
+            "4k": 0,
+            "5k": 1
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 69,
+          "plants": 1,
+          "defuses": 1
+        },
+        {
+          "name": "sociablEE",
+          "teamTag": "BBL",
+          "agents": [
+            {
+              "name": "tejo",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+            }
+          ],
+          "multikills": {
+            "2k": 5,
+            "3k": 2,
+            "4k": 0,
+            "5k": 1
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 80,
+          "plants": 0,
+          "defuses": 5
+        },
+        {
+          "name": "Jamppi",
+          "teamTag": "BBL",
+          "agents": [
+            {
+              "name": "kayo",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+            }
+          ],
+          "multikills": {
+            "2k": 7,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 57,
+          "plants": 20,
+          "defuses": 1
+        },
+        {
+          "name": "LewN",
+          "teamTag": "BBL",
+          "agents": [
+            {
+              "name": "jett",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+            }
+          ],
+          "multikills": {
+            "2k": 5,
+            "3k": 1,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 60,
+          "plants": 1,
+          "defuses": 0
+        },
+        {
+          "name": "qRaxs",
+          "teamTag": "FUT",
+          "agents": [
+            {
+              "name": "kayo",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/kayo.png"
+            }
+          ],
+          "multikills": {
+            "2k": 4,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 35,
+          "plants": 2,
+          "defuses": 0
+        },
+        {
+          "name": "AtaKaptan",
+          "teamTag": "FUT",
+          "agents": [
+            {
+              "name": "omen",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+            }
+          ],
+          "multikills": {
+            "2k": 3,
+            "3k": 1,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 46,
+          "plants": 3,
+          "defuses": 0
+        },
+        {
+          "name": "MrFaliN",
+          "teamTag": "FUT",
+          "agents": [
+            {
+              "name": "sova",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+            }
+          ],
+          "multikills": {
+            "2k": 7,
+            "3k": 1,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 49,
+          "plants": 21,
+          "defuses": 1
+        },
+        {
+          "name": "yetujey",
+          "teamTag": "FUT",
+          "agents": [
+            {
+              "name": "killjoy",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+            }
+          ],
+          "multikills": {
+            "2k": 5,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 51,
+          "plants": 4,
+          "defuses": 2
+        },
+        {
+          "name": "xeus",
+          "teamTag": "FUT",
+          "agents": [
+            {
+              "name": "yoru",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/yoru.png"
+            }
+          ],
+          "multikills": {
+            "2k": 3,
+            "3k": 3,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 42,
+          "plants": 3,
+          "defuses": 2
+        }
+      ],
+      "killMatrix": [
+        {
+          "name": "MAGNUM",
+          "teamTag": "BBL",
+          "records": [
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "kills": 6,
+              "deaths": 3,
+              "diff": 3
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "kills": 8,
+              "deaths": 3,
+              "diff": 5
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "kills": 7,
+              "deaths": 7,
+              "diff": 0
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "kills": 3,
+              "deaths": 7,
+              "diff": -4
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "kills": 2,
+              "deaths": 4,
+              "diff": -2
+            }
+          ]
+        },
+        {
+          "name": "PROFEK",
+          "teamTag": "BBL",
+          "records": [
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "kills": 5,
+              "deaths": 2,
+              "diff": 3
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "kills": 8,
+              "deaths": 3,
+              "diff": 5
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "kills": 8,
+              "deaths": 7,
+              "diff": 1
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "kills": 7,
+              "deaths": 5,
+              "diff": 2
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "kills": 9,
+              "deaths": 5,
+              "diff": 4
+            }
+          ]
+        },
+        {
+          "name": "Jamppi",
+          "teamTag": "BBL",
+          "records": [
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "kills": 3,
+              "deaths": 6,
+              "diff": -3
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "kills": 4,
+              "deaths": 6,
+              "diff": -2
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "kills": 7,
+              "deaths": 6,
+              "diff": 1
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "kills": 4,
+              "deaths": 3,
+              "diff": 1
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "kills": 4,
+              "deaths": 1,
+              "diff": 3
+            }
+          ]
+        },
+        {
+          "name": "LewN",
+          "teamTag": "BBL",
+          "records": [
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "kills": 10,
+              "deaths": 3,
+              "diff": 7
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "kills": 3,
+              "deaths": 4,
+              "diff": -1
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "kills": 5,
+              "deaths": 2,
+              "diff": 3
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "kills": 4,
+              "deaths": 5,
+              "diff": -1
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "kills": 6,
+              "deaths": 5,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "sociablEE",
+          "teamTag": "BBL",
+          "records": [
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "kills": 8,
+              "deaths": 3,
+              "diff": 5
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "kills": 6,
+              "deaths": 4,
+              "diff": 2
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "kills": 5,
+              "deaths": 4,
+              "diff": 1
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "kills": 7,
+              "deaths": 6,
+              "diff": 1
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "kills": 6,
+              "deaths": 3,
+              "diff": 3
+            }
+          ]
+        }
+      ],
+      "opKillMatrix": [
+        {
+          "name": "MAGNUM",
+          "teamTag": "BBL",
+          "records": [
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "PROFEK",
+          "teamTag": "BBL",
+          "records": [
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "Jamppi",
+          "teamTag": "BBL",
+          "records": [
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "LewN",
+          "teamTag": "BBL",
+          "records": [
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "sociablEE",
+          "teamTag": "BBL",
+          "records": [
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        }
+      ],
+      "firstKillMatrix": [
+        {
+          "name": "MAGNUM",
+          "teamTag": "BBL",
+          "records": [
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "kills": 2,
+              "deaths": 0,
+              "diff": 2
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "kills": 1,
+              "deaths": 1,
+              "diff": 0
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "PROFEK",
+          "teamTag": "BBL",
+          "records": [
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "kills": 2,
+              "deaths": 1,
+              "diff": 1
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "kills": 1,
+              "deaths": 1,
+              "diff": 0
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "Jamppi",
+          "teamTag": "BBL",
+          "records": [
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 2,
+              "diff": -2
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 2,
+              "diff": -2
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "LewN",
+          "teamTag": "BBL",
+          "records": [
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "kills": 2,
+              "deaths": 1,
+              "diff": 1
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "kills": 2,
+              "deaths": 1,
+              "diff": 1
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "kills": 2,
+              "deaths": 0,
+              "diff": 2
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "kills": 2,
+              "deaths": 2,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "sociablEE",
+          "teamTag": "BBL",
+          "records": [
+            {
+              "name": "qRaxs",
+              "teamTag": "FUT",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "yetujey",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "xeus",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "MrFaliN",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 2,
+              "diff": -2
+            },
+            {
+              "name": "AtaKaptan",
+              "teamTag": "FUT",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        }
+      ]
+    },
+    "economy": {
+      "teams": [
+        {
+          "name": "BBL",
+          "pistolWon": 4,
+          "eco": {
+            "total": 9,
+            "won": 4
+          },
+          "semiEco": {
+            "total": 2,
+            "won": 0
+          },
+          "semiBuy": {
+            "total": 14,
+            "won": 7
+          },
+          "fullBuy": {
+            "total": 39,
+            "won": 27
+          }
+        },
+        {
+          "name": "FUT",
+          "pistolWon": 2,
+          "eco": {
+            "total": 13,
+            "won": 4
+          },
+          "semiEco": {
+            "total": 5,
+            "won": 1
+          },
+          "semiBuy": {
+            "total": 6,
+            "won": 3
+          },
+          "fullBuy": {
+            "total": 40,
+            "won": 18
+          }
+        }
+      ],
+      "rounds": []
+    }
+  }
+}

@@ -1,0 +1,4799 @@
+{
+  "status": "OK",
+  "data": {
+    "id": "678049",
+    "url": "https://www.vlr.gg/678049",
+    "event": {
+      "id": "2779",
+      "url": "https://www.vlr.gg/event/2779/challengers-2026-latam-north-ace-stage-2/group-stage",
+      "name": "Challengers 2026: LATAM North ACE Stage 2",
+      "series": "Group Stage: Week 3",
+      "img": "https://owcdn.net/img/63cbac52cf906.png"
+    },
+    "status": "final",
+    "in": null,
+    "format": "Bo3",
+    "date": "Tuesday, June 2",
+    "time": "9:00 PM EDT",
+    "timestamp": 1780448400,
+    "utcDate": "Wed, 03 Jun 2026 01:00:00 GMT",
+    "teams": [
+      {
+        "id": "17252",
+        "url": "https://www.vlr.gg/team/17252/fuego",
+        "name": "FUEGO",
+        "img": "https://owcdn.net/img/678f90b7b65e5.png",
+        "score": 2
+      },
+      {
+        "id": "7269",
+        "url": "https://www.vlr.gg/team/7269/fusion",
+        "name": "FUSION",
+        "img": "https://owcdn.net/img/63bde15e27452.png",
+        "score": 0
+      }
+    ],
+    "streams": [],
+    "vods": [],
+    "picksBans": {
+      "note": "Map 1 stats are incomplete due to lobby remake.",
+      "list": [
+        {
+          "team": null,
+          "action": "note",
+          "map": "Map 1 stats are incomplete due to lobby remake."
+        }
+      ]
+    },
+    "maps": [
+      {
+        "id": "271720",
+        "name": "Haven",
+        "status": "played",
+        "pickedBy": null,
+        "duration": "25:42",
+        "teams": [
+          {
+            "name": "FUEGO",
+            "score": 13,
+            "roundsCt": 9,
+            "roundsT": 4
+          },
+          {
+            "name": "FUSION",
+            "score": 11,
+            "roundsCt": 8,
+            "roundsT": 3
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "1-0",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 2,
+            "score": "1-1",
+            "winner": "FSN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "2-1",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 4,
+            "score": "3-1",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 5,
+            "score": "4-1",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "5-1",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 7,
+            "score": "6-1",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 8,
+            "score": "7-1",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "7-2",
+            "winner": "FSN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "8-2",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "time",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/time.webp"
+          },
+          {
+            "number": 11,
+            "score": "8-3",
+            "winner": "FSN",
+            "side": "t",
+            "method": "boom",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/boom.webp"
+          },
+          {
+            "number": 12,
+            "score": "9-3",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 13,
+            "score": "9-4",
+            "winner": "FSN",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 14,
+            "score": "9-5",
+            "winner": "FSN",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 15,
+            "score": "10-5",
+            "winner": "FUE",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "10-6",
+            "winner": "FSN",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 17,
+            "score": "10-7",
+            "winner": "FSN",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "10-8",
+            "winner": "FSN",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 19,
+            "score": "10-9",
+            "winner": "FSN",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 20,
+            "score": "10-10",
+            "winner": "FSN",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 21,
+            "score": "10-11",
+            "winner": "FSN",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 22,
+            "score": "11-11",
+            "winner": "FUE",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 23,
+            "score": "12-11",
+            "winner": "FUE",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 24,
+            "score": "13-11",
+            "winner": "FUE",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "7639",
+            "url": "https://www.vlr.gg/player/7639/ezznap",
+            "name": "ezznap",
+            "teamTag": "FUE",
+            "country": "Colombia",
+            "flag": "co",
+            "agents": [
+              {
+                "name": "Omen",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.03,
+              "acs": 90,
+              "kills": 16,
+              "deaths": 16,
+              "assists": 11,
+              "kast": 79,
+              "adr": 56,
+              "hs": 9,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "42199",
+            "url": "https://www.vlr.gg/player/42199/rei",
+            "name": "Rei",
+            "teamTag": "FUE",
+            "country": "Colombia",
+            "flag": "co",
+            "agents": [
+              {
+                "name": "Phoenix",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.94,
+              "acs": 133,
+              "kills": 28,
+              "deaths": 14,
+              "assists": 8,
+              "kast": 88,
+              "adr": 90,
+              "hs": 50,
+              "firstBloods": 3,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "24026",
+            "url": "https://www.vlr.gg/player/24026/generalsteak",
+            "name": "GeneralSteak",
+            "teamTag": "FUE",
+            "country": "Guatemala",
+            "flag": "gt",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.89,
+              "acs": 89,
+              "kills": 18,
+              "deaths": 17,
+              "assists": 15,
+              "kast": 92,
+              "adr": 69,
+              "hs": 50,
+              "firstBloods": 0,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "48012",
+            "url": "https://www.vlr.gg/player/48012/hada",
+            "name": "Hada",
+            "teamTag": "FUE",
+            "country": "Mexico",
+            "flag": "mx",
+            "agents": [
+              {
+                "name": "Chamber",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.75,
+              "acs": 55,
+              "kills": 11,
+              "deaths": 17,
+              "assists": 4,
+              "kast": 79,
+              "adr": 36,
+              "hs": 33,
+              "firstBloods": 0,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "53131",
+            "url": "https://www.vlr.gg/player/53131/sabortzz",
+            "name": "Sabortzz",
+            "teamTag": "FUE",
+            "country": "Mexico",
+            "flag": "mx",
+            "agents": [
+              {
+                "name": "Jett",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.36,
+              "acs": 20,
+              "kills": 18,
+              "deaths": 16,
+              "assists": 3,
+              "kast": 75,
+              "adr": 14,
+              "hs": 0,
+              "firstBloods": 0,
+              "firstDeaths": 4
+            }
+          },
+          {
+            "id": "3227",
+            "url": "https://www.vlr.gg/player/3227/screwface",
+            "name": "ScrewFace",
+            "teamTag": "FSN",
+            "country": "Peru",
+            "flag": "pe",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.26,
+              "acs": 132,
+              "kills": 17,
+              "deaths": 16,
+              "assists": 6,
+              "kast": 88,
+              "adr": 89,
+              "hs": 17,
+              "firstBloods": 2,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "54082",
+            "url": "https://www.vlr.gg/player/54082/weegle",
+            "name": "Weegle",
+            "teamTag": "FSN",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Phoenix",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.97,
+              "acs": 140,
+              "kills": 20,
+              "deaths": 18,
+              "assists": 7,
+              "kast": 92,
+              "adr": 94,
+              "hs": 30,
+              "firstBloods": 2,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "8790",
+            "url": "https://www.vlr.gg/player/8790/mininiwde",
+            "name": "MiniNiwde",
+            "teamTag": "FSN",
+            "country": "Dominican Republic",
+            "flag": "do",
+            "agents": [
+              {
+                "name": "Sova",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.89,
+              "acs": 82,
+              "kills": 14,
+              "deaths": 18,
+              "assists": 3,
+              "kast": 88,
+              "adr": 54,
+              "hs": 8,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "740",
+            "url": "https://www.vlr.gg/player/740/aproto",
+            "name": "aproto",
+            "teamTag": "FSN",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Astra",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.78,
+              "acs": 65,
+              "kills": 12,
+              "deaths": 20,
+              "assists": 7,
+              "kast": 92,
+              "adr": 45,
+              "hs": 46,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "17694",
+            "url": "https://www.vlr.gg/player/17694/prask",
+            "name": "prask",
+            "teamTag": "FSN",
+            "country": "Venezuela",
+            "flag": "ve",
+            "agents": [
+              {
+                "name": "Killjoy",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.66,
+              "acs": 55,
+              "kills": 17,
+              "deaths": 19,
+              "assists": 2,
+              "kast": 83,
+              "adr": 46,
+              "hs": 18,
+              "firstBloods": 0,
+              "firstDeaths": 0
+            }
+          }
+        ],
+        "performance": {
+          "players": [
+            {
+              "name": "ezznap",
+              "teamTag": "FUE",
+              "agents": [
+                {
+                  "name": "omen",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 53,
+              "plants": 3,
+              "defuses": 0
+            },
+            {
+              "name": "GeneralSteak",
+              "teamTag": "FUE",
+              "agents": [
+                {
+                  "name": "fade",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 52,
+              "plants": 3,
+              "defuses": 0
+            },
+            {
+              "name": "Rei",
+              "teamTag": "FUE",
+              "agents": [
+                {
+                  "name": "phoenix",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 93,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "Hada",
+              "teamTag": "FUE",
+              "agents": [
+                {
+                  "name": "chamber",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 41,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "Sabortzz",
+              "teamTag": "FUE",
+              "agents": [
+                {
+                  "name": "jett",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 12,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "agents": [
+                {
+                  "name": "astra",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 41,
+              "plants": 0,
+              "defuses": 1
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "agents": [
+                {
+                  "name": "neon",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 106,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "agents": [
+                {
+                  "name": "sova",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 76,
+              "plants": 0,
+              "defuses": 1
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "agents": [
+                {
+                  "name": "killjoy",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 42,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "agents": [
+                {
+                  "name": "phoenix",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 119,
+              "plants": 0,
+              "defuses": 1
+            }
+          ],
+          "killMatrix": [
+            {
+              "name": "Rei",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 3,
+                  "deaths": 1,
+                  "diff": 2
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 2,
+                  "deaths": 4,
+                  "diff": -2
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                }
+              ]
+            },
+            {
+              "name": "Hada",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 3,
+                  "deaths": 3,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "ezznap",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 4,
+                  "diff": -3
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "GeneralSteak",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 2,
+                  "deaths": 2,
+                  "diff": 0
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 3,
+                  "diff": -3
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 3,
+                  "deaths": 1,
+                  "diff": 2
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                }
+              ]
+            },
+            {
+              "name": "Sabortzz",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 4,
+                  "diff": -4
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            }
+          ],
+          "opKillMatrix": [
+            {
+              "name": "Rei",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 4,
+                  "diff": -4
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Hada",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "ezznap",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "GeneralSteak",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Sabortzz",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ],
+          "firstKillMatrix": [
+            {
+              "name": "Rei",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Hada",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "ezznap",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                }
+              ]
+            },
+            {
+              "name": "GeneralSteak",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Sabortzz",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ]
+        },
+        "economy": {
+          "teams": [
+            {
+              "name": "FUE",
+              "pistolWon": 1,
+              "eco": {
+                "total": 14,
+                "won": 9
+              },
+              "semiEco": {
+                "total": 1,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 3,
+                "won": 1
+              },
+              "fullBuy": {
+                "total": 6,
+                "won": 3
+              }
+            },
+            {
+              "name": "FSN",
+              "pistolWon": 1,
+              "eco": {
+                "total": 14,
+                "won": 5
+              },
+              "semiEco": {
+                "total": 0,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 1,
+                "won": 0
+              },
+              "fullBuy": {
+                "total": 9,
+                "won": 6
+              }
+            }
+          ],
+          "rounds": [
+            {
+              "number": 1,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 6,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 7,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 8,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 9,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 10,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 11,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 12,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 13,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 14,
+              "teams": [
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 0,
+                  "loadout": null,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 15,
+              "teams": [
+                {
+                  "bank": 5000,
+                  "loadout": 22750,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 25600,
+                  "loadout": 15300,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 16,
+              "teams": [
+                {
+                  "bank": 5700,
+                  "loadout": 23350,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 11800,
+                  "loadout": 24600,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 17,
+              "teams": [
+                {
+                  "bank": 9800,
+                  "loadout": 8150,
+                  "buy": "semi-eco",
+                  "winner": false
+                },
+                {
+                  "bank": 16900,
+                  "loadout": 24700,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 18,
+              "teams": [
+                {
+                  "bank": 1200,
+                  "loadout": 21750,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 24500,
+                  "loadout": 25050,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 19,
+              "teams": [
+                {
+                  "bank": 10600,
+                  "loadout": 12050,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 22700,
+                  "loadout": 24850,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 20,
+              "teams": [
+                {
+                  "bank": 7000,
+                  "loadout": 19850,
+                  "buy": "semi-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 26700,
+                  "loadout": 24900,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 21,
+              "teams": [
+                {
+                  "bank": 3900,
+                  "loadout": 20550,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 31200,
+                  "loadout": 25450,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 22,
+              "teams": [
+                {
+                  "bank": 9300,
+                  "loadout": 11150,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 38700,
+                  "loadout": 25150,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 23,
+              "teams": [
+                {
+                  "bank": 11400,
+                  "loadout": 26650,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 20100,
+                  "loadout": 25000,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 24,
+              "teams": [
+                {
+                  "bank": 9900,
+                  "loadout": 26150,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 8000,
+                  "loadout": 25300,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "271721",
+        "name": "Fracture",
+        "status": "played",
+        "pickedBy": null,
+        "duration": "35:21",
+        "teams": [
+          {
+            "name": "FUEGO",
+            "score": 13,
+            "roundsCt": 9,
+            "roundsT": 4
+          },
+          {
+            "name": "FUSION",
+            "score": 7,
+            "roundsCt": 4,
+            "roundsT": 3
+          }
+        ],
+        "rounds": [
+          {
+            "number": 1,
+            "score": "1-0",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 2,
+            "score": "2-0",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 3,
+            "score": "3-0",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 4,
+            "score": "4-0",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 5,
+            "score": "5-0",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 6,
+            "score": "6-0",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 7,
+            "score": "7-0",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 8,
+            "score": "8-0",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 9,
+            "score": "9-0",
+            "winner": "FUE",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 10,
+            "score": "9-1",
+            "winner": "FSN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 11,
+            "score": "9-2",
+            "winner": "FSN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 12,
+            "score": "9-3",
+            "winner": "FSN",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 13,
+            "score": "9-4",
+            "winner": "FSN",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 14,
+            "score": "9-5",
+            "winner": "FSN",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 15,
+            "score": "10-5",
+            "winner": "FUE",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 16,
+            "score": "10-6",
+            "winner": "FSN",
+            "side": "ct",
+            "method": "defuse",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/defuse.webp"
+          },
+          {
+            "number": 17,
+            "score": "10-7",
+            "winner": "FSN",
+            "side": "ct",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 18,
+            "score": "11-7",
+            "winner": "FUE",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 19,
+            "score": "12-7",
+            "winner": "FUE",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          },
+          {
+            "number": 20,
+            "score": "13-7",
+            "winner": "FUE",
+            "side": "t",
+            "method": "elim",
+            "methodIcon": "https://www.vlr.gg/img/vlr/game/round/elim.webp"
+          }
+        ],
+        "players": [
+          {
+            "id": "7639",
+            "url": "https://www.vlr.gg/player/7639/ezznap",
+            "name": "ezznap",
+            "teamTag": "FUE",
+            "country": "Colombia",
+            "flag": "co",
+            "agents": [
+              {
+                "name": "Brimstone",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.5,
+              "acs": 320,
+              "kills": 22,
+              "deaths": 14,
+              "assists": 12,
+              "kast": 80,
+              "adr": 196,
+              "hs": 24,
+              "firstBloods": 1,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "42199",
+            "url": "https://www.vlr.gg/player/42199/rei",
+            "name": "Rei",
+            "teamTag": "FUE",
+            "country": "Colombia",
+            "flag": "co",
+            "agents": [
+              {
+                "name": "Phoenix",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.43,
+              "acs": 268,
+              "kills": 19,
+              "deaths": 12,
+              "assists": 8,
+              "kast": 95,
+              "adr": 182,
+              "hs": 36,
+              "firstBloods": 5,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "48012",
+            "url": "https://www.vlr.gg/player/48012/hada",
+            "name": "Hada",
+            "teamTag": "FUE",
+            "country": "Mexico",
+            "flag": "mx",
+            "agents": [
+              {
+                "name": "Chamber",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.32,
+              "acs": 216,
+              "kills": 17,
+              "deaths": 10,
+              "assists": 2,
+              "kast": 70,
+              "adr": 147,
+              "hs": 28,
+              "firstBloods": 3,
+              "firstDeaths": 3
+            }
+          },
+          {
+            "id": "53131",
+            "url": "https://www.vlr.gg/player/53131/sabortzz",
+            "name": "Sabortzz",
+            "teamTag": "FUE",
+            "country": "Mexico",
+            "flag": "mx",
+            "agents": [
+              {
+                "name": "Waylay",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.99,
+              "acs": 183,
+              "kills": 13,
+              "deaths": 12,
+              "assists": 4,
+              "kast": 65,
+              "adr": 131,
+              "hs": 46,
+              "firstBloods": 2,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "24026",
+            "url": "https://www.vlr.gg/player/24026/generalsteak",
+            "name": "GeneralSteak",
+            "teamTag": "FUE",
+            "country": "Guatemala",
+            "flag": "gt",
+            "agents": [
+              {
+                "name": "Fade",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.92,
+              "acs": 174,
+              "kills": 13,
+              "deaths": 13,
+              "assists": 12,
+              "kast": 85,
+              "adr": 115,
+              "hs": 30,
+              "firstBloods": 0,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "54082",
+            "url": "https://www.vlr.gg/player/54082/weegle",
+            "name": "Weegle",
+            "teamTag": "FSN",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Breach",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+              }
+            ],
+            "stats": {
+              "rating": 1.38,
+              "acs": 288,
+              "kills": 20,
+              "deaths": 15,
+              "assists": 6,
+              "kast": 75,
+              "adr": 184,
+              "hs": 32,
+              "firstBloods": 0,
+              "firstDeaths": 2
+            }
+          },
+          {
+            "id": "3227",
+            "url": "https://www.vlr.gg/player/3227/screwface",
+            "name": "ScrewFace",
+            "teamTag": "FSN",
+            "country": "Peru",
+            "flag": "pe",
+            "agents": [
+              {
+                "name": "Neon",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+              }
+            ],
+            "stats": {
+              "rating": 1,
+              "acs": 246,
+              "kills": 15,
+              "deaths": 17,
+              "assists": 6,
+              "kast": 70,
+              "adr": 167,
+              "hs": 24,
+              "firstBloods": 4,
+              "firstDeaths": 5
+            }
+          },
+          {
+            "id": "740",
+            "url": "https://www.vlr.gg/player/740/aproto",
+            "name": "aproto",
+            "teamTag": "FSN",
+            "country": "United States",
+            "flag": "us",
+            "agents": [
+              {
+                "name": "Brimstone",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.96,
+              "acs": 173,
+              "kills": 11,
+              "deaths": 16,
+              "assists": 11,
+              "kast": 75,
+              "adr": 107,
+              "hs": 42,
+              "firstBloods": 4,
+              "firstDeaths": 1
+            }
+          },
+          {
+            "id": "8790",
+            "url": "https://www.vlr.gg/player/8790/mininiwde",
+            "name": "MiniNiwde",
+            "teamTag": "FSN",
+            "country": "Dominican Republic",
+            "flag": "do",
+            "agents": [
+              {
+                "name": "Tejo",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.44,
+              "acs": 127,
+              "kills": 9,
+              "deaths": 18,
+              "assists": 4,
+              "kast": 65,
+              "adr": 83,
+              "hs": 20,
+              "firstBloods": 0,
+              "firstDeaths": 0
+            }
+          },
+          {
+            "id": "17694",
+            "url": "https://www.vlr.gg/player/17694/prask",
+            "name": "prask",
+            "teamTag": "FSN",
+            "country": "Venezuela",
+            "flag": "ve",
+            "agents": [
+              {
+                "name": "Cypher",
+                "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+              }
+            ],
+            "stats": {
+              "rating": 0.35,
+              "acs": 101,
+              "kills": 6,
+              "deaths": 18,
+              "assists": 1,
+              "kast": 35,
+              "adr": 86,
+              "hs": 29,
+              "firstBloods": 1,
+              "firstDeaths": 3
+            }
+          }
+        ],
+        "performance": {
+          "players": [
+            {
+              "name": "ezznap",
+              "teamTag": "FUE",
+              "agents": [
+                {
+                  "name": "brimstone",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 78,
+              "plants": 2,
+              "defuses": 0
+            },
+            {
+              "name": "GeneralSteak",
+              "teamTag": "FUE",
+              "agents": [
+                {
+                  "name": "fade",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 48,
+              "plants": 1,
+              "defuses": 1
+            },
+            {
+              "name": "Rei",
+              "teamTag": "FUE",
+              "agents": [
+                {
+                  "name": "phoenix",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 69,
+              "plants": 0,
+              "defuses": 2
+            },
+            {
+              "name": "Hada",
+              "teamTag": "FUE",
+              "agents": [
+                {
+                  "name": "chamber",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 64,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "Sabortzz",
+              "teamTag": "FUE",
+              "agents": [
+                {
+                  "name": "waylay",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 56,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "agents": [
+                {
+                  "name": "brimstone",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 42,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "agents": [
+                {
+                  "name": "neon",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 66,
+              "plants": 1,
+              "defuses": 0
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "agents": [
+                {
+                  "name": "tejo",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 30,
+              "plants": 2,
+              "defuses": 1
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "agents": [
+                {
+                  "name": "cypher",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 32,
+              "plants": 0,
+              "defuses": 0
+            },
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "agents": [
+                {
+                  "name": "breach",
+                  "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+                }
+              ],
+              "multikills": {
+                "2k": 0,
+                "3k": 0,
+                "4k": 0,
+                "5k": 0
+              },
+              "clutches": {
+                "1v1": 0,
+                "1v2": 0,
+                "1v3": 0,
+                "1v4": 0,
+                "1v5": 0
+              },
+              "econ": 66,
+              "plants": 2,
+              "defuses": 1
+            }
+          ],
+          "killMatrix": [
+            {
+              "name": "Rei",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 3,
+                  "deaths": 4,
+                  "diff": -1
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 5,
+                  "deaths": 2,
+                  "diff": 3
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 3,
+                  "deaths": 3,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 4,
+                  "deaths": 2,
+                  "diff": 2
+                }
+              ]
+            },
+            {
+              "name": "Hada",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 7,
+                  "deaths": 3,
+                  "diff": 4
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 4,
+                  "deaths": 1,
+                  "diff": 3
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 3,
+                  "deaths": 3,
+                  "diff": 0
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "ezznap",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 2,
+                  "deaths": 8,
+                  "diff": -6
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 4,
+                  "deaths": 0,
+                  "diff": 4
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 3,
+                  "deaths": 3,
+                  "diff": 0
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 8,
+                  "deaths": 1,
+                  "diff": 7
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 5,
+                  "deaths": 2,
+                  "diff": 3
+                }
+              ]
+            },
+            {
+              "name": "GeneralSteak",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 4,
+                  "diff": -3
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 3,
+                  "diff": -2
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 4,
+                  "deaths": 3,
+                  "diff": 1
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 3,
+                  "deaths": 1,
+                  "diff": 2
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 4,
+                  "deaths": 2,
+                  "diff": 2
+                }
+              ]
+            },
+            {
+              "name": "Sabortzz",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 2,
+                  "deaths": 1,
+                  "diff": 1
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 5,
+                  "deaths": 1,
+                  "diff": 4
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 2,
+                  "deaths": 4,
+                  "diff": -2
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 2,
+                  "deaths": 3,
+                  "diff": -1
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 2,
+                  "deaths": 3,
+                  "diff": -1
+                }
+              ]
+            }
+          ],
+          "opKillMatrix": [
+            {
+              "name": "Rei",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Hada",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 2,
+                  "deaths": 0,
+                  "diff": 2
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "ezznap",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "GeneralSteak",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Sabortzz",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            }
+          ],
+          "firstKillMatrix": [
+            {
+              "name": "Rei",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 4,
+                  "deaths": 0,
+                  "diff": 4
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "Hada",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 1,
+                  "diff": 0
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                }
+              ]
+            },
+            {
+              "name": "ezznap",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 1,
+                  "diff": -1
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "GeneralSteak",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 2,
+                  "diff": -2
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                }
+              ]
+            },
+            {
+              "name": "Sabortzz",
+              "teamTag": "FUE",
+              "records": [
+                {
+                  "name": "Weegle",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "prask",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 0,
+                  "diff": 1
+                },
+                {
+                  "name": "ScrewFace",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "MiniNiwde",
+                  "teamTag": "FSN",
+                  "kills": 0,
+                  "deaths": 0,
+                  "diff": 0
+                },
+                {
+                  "name": "aproto",
+                  "teamTag": "FSN",
+                  "kills": 1,
+                  "deaths": 2,
+                  "diff": -1
+                }
+              ]
+            }
+          ]
+        },
+        "economy": {
+          "teams": [
+            {
+              "name": "FUE",
+              "pistolWon": 1,
+              "eco": {
+                "total": 3,
+                "won": 1
+              },
+              "semiEco": {
+                "total": 1,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 2,
+                "won": 2
+              },
+              "fullBuy": {
+                "total": 14,
+                "won": 10
+              }
+            },
+            {
+              "name": "FSN",
+              "pistolWon": 1,
+              "eco": {
+                "total": 3,
+                "won": 1
+              },
+              "semiEco": {
+                "total": 1,
+                "won": 0
+              },
+              "semiBuy": {
+                "total": 7,
+                "won": 2
+              },
+              "fullBuy": {
+                "total": 9,
+                "won": 4
+              }
+            }
+          ],
+          "rounds": [
+            {
+              "number": 1,
+              "teams": [
+                {
+                  "bank": 200,
+                  "loadout": 3950,
+                  "buy": "eco",
+                  "winner": true
+                },
+                {
+                  "bank": 400,
+                  "loadout": 3700,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "teams": [
+                {
+                  "bank": 3200,
+                  "loadout": 14450,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 7200,
+                  "loadout": 4300,
+                  "buy": "eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "teams": [
+                {
+                  "bank": 13500,
+                  "loadout": 17600,
+                  "buy": "semi-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 500,
+                  "loadout": 20150,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "teams": [
+                {
+                  "bank": 17400,
+                  "loadout": 22800,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 7100,
+                  "loadout": 11200,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "teams": [
+                {
+                  "bank": 19100,
+                  "loadout": 25600,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 2600,
+                  "loadout": 21800,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 6,
+              "teams": [
+                {
+                  "bank": 27400,
+                  "loadout": 26100,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 7900,
+                  "loadout": 11300,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 7,
+              "teams": [
+                {
+                  "bank": 30800,
+                  "loadout": 25600,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 1800,
+                  "loadout": 22400,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 8,
+              "teams": [
+                {
+                  "bank": 24800,
+                  "loadout": 25900,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 9500,
+                  "loadout": 9650,
+                  "buy": "semi-eco",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 9,
+              "teams": [
+                {
+                  "bank": 30800,
+                  "loadout": 26700,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 1800,
+                  "loadout": 24050,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 10,
+              "teams": [
+                {
+                  "bank": 33200,
+                  "loadout": 25700,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 3300,
+                  "loadout": 15850,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 11,
+              "teams": [
+                {
+                  "bank": 17000,
+                  "loadout": 25600,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 3300,
+                  "loadout": 21350,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 12,
+              "teams": [
+                {
+                  "bank": 6800,
+                  "loadout": 24600,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 4800,
+                  "loadout": 24700,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 13,
+              "teams": [
+                {
+                  "bank": 200,
+                  "loadout": 3950,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 300,
+                  "loadout": 3650,
+                  "buy": "eco",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 14,
+              "teams": [
+                {
+                  "bank": 9000,
+                  "loadout": 3350,
+                  "buy": "eco",
+                  "winner": false
+                },
+                {
+                  "bank": 300,
+                  "loadout": 17900,
+                  "buy": "semi-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 15,
+              "teams": [
+                {
+                  "bank": 700,
+                  "loadout": 22500,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 12800,
+                  "loadout": 19100,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 16,
+              "teams": [
+                {
+                  "bank": 4200,
+                  "loadout": 20900,
+                  "buy": "full-buy",
+                  "winner": false
+                },
+                {
+                  "bank": 1700,
+                  "loadout": 22050,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 17,
+              "teams": [
+                {
+                  "bank": 9500,
+                  "loadout": 7350,
+                  "buy": "semi-eco",
+                  "winner": false
+                },
+                {
+                  "bank": 2400,
+                  "loadout": 20100,
+                  "buy": "full-buy",
+                  "winner": true
+                }
+              ]
+            },
+            {
+              "number": 18,
+              "teams": [
+                {
+                  "bank": 1700,
+                  "loadout": 21850,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 3800,
+                  "loadout": 23150,
+                  "buy": "full-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 19,
+              "teams": [
+                {
+                  "bank": 7900,
+                  "loadout": 23800,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 4400,
+                  "loadout": 10250,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            },
+            {
+              "number": 20,
+              "teams": [
+                {
+                  "bank": 9700,
+                  "loadout": 24400,
+                  "buy": "full-buy",
+                  "winner": true
+                },
+                {
+                  "bank": 500,
+                  "loadout": 17100,
+                  "buy": "semi-buy",
+                  "winner": false
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "players": [
+      {
+        "id": "7639",
+        "url": "https://www.vlr.gg/player/7639/ezznap",
+        "name": "ezznap",
+        "teamTag": "FUE",
+        "country": "Colombia",
+        "flag": "co",
+        "agents": [
+          {
+            "name": "Omen",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+          },
+          {
+            "name": "Brimstone",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.24,
+          "acs": 195,
+          "kills": 38,
+          "deaths": 30,
+          "assists": 23,
+          "kast": 80,
+          "adr": 120,
+          "hs": 19,
+          "firstBloods": 2,
+          "firstDeaths": 2
+        }
+      },
+      {
+        "id": "42199",
+        "url": "https://www.vlr.gg/player/42199/rei",
+        "name": "Rei",
+        "teamTag": "FUE",
+        "country": "Colombia",
+        "flag": "co",
+        "agents": [
+          {
+            "name": "Phoenix",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.16,
+          "acs": 194,
+          "kills": 47,
+          "deaths": 26,
+          "assists": 16,
+          "kast": 91,
+          "adr": 132,
+          "hs": 40,
+          "firstBloods": 8,
+          "firstDeaths": 1
+        }
+      },
+      {
+        "id": "48012",
+        "url": "https://www.vlr.gg/player/48012/hada",
+        "name": "Hada",
+        "teamTag": "FUE",
+        "country": "Mexico",
+        "flag": "mx",
+        "agents": [
+          {
+            "name": "Chamber",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.01,
+          "acs": 128,
+          "kills": 28,
+          "deaths": 27,
+          "assists": 6,
+          "kast": 75,
+          "adr": 87,
+          "hs": 29,
+          "firstBloods": 3,
+          "firstDeaths": 4
+        }
+      },
+      {
+        "id": "24026",
+        "url": "https://www.vlr.gg/player/24026/generalsteak",
+        "name": "GeneralSteak",
+        "teamTag": "FUE",
+        "country": "Guatemala",
+        "flag": "gt",
+        "agents": [
+          {
+            "name": "Fade",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.9,
+          "acs": 128,
+          "kills": 31,
+          "deaths": 30,
+          "assists": 27,
+          "kast": 89,
+          "adr": 90,
+          "hs": 37,
+          "firstBloods": 0,
+          "firstDeaths": 2
+        }
+      },
+      {
+        "id": "53131",
+        "url": "https://www.vlr.gg/player/53131/sabortzz",
+        "name": "Sabortzz",
+        "teamTag": "FUE",
+        "country": "Mexico",
+        "flag": "mx",
+        "agents": [
+          {
+            "name": "Jett",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+          },
+          {
+            "name": "Waylay",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/waylay.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.65,
+          "acs": 94,
+          "kills": 31,
+          "deaths": 28,
+          "assists": 7,
+          "kast": 70,
+          "adr": 67,
+          "hs": 35,
+          "firstBloods": 2,
+          "firstDeaths": 6
+        }
+      },
+      {
+        "id": "54082",
+        "url": "https://www.vlr.gg/player/54082/weegle",
+        "name": "Weegle",
+        "teamTag": "FSN",
+        "country": "United States",
+        "flag": "us",
+        "agents": [
+          {
+            "name": "Phoenix",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+          },
+          {
+            "name": "Breach",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/breach.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.16,
+          "acs": 207,
+          "kills": 40,
+          "deaths": 33,
+          "assists": 13,
+          "kast": 84,
+          "adr": 135,
+          "hs": 31,
+          "firstBloods": 2,
+          "firstDeaths": 3
+        }
+      },
+      {
+        "id": "3227",
+        "url": "https://www.vlr.gg/player/3227/screwface",
+        "name": "ScrewFace",
+        "teamTag": "FSN",
+        "country": "Peru",
+        "flag": "pe",
+        "agents": [
+          {
+            "name": "Neon",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+          }
+        ],
+        "stats": {
+          "rating": 1.14,
+          "acs": 184,
+          "kills": 32,
+          "deaths": 33,
+          "assists": 12,
+          "kast": 80,
+          "adr": 124,
+          "hs": 22,
+          "firstBloods": 6,
+          "firstDeaths": 6
+        }
+      },
+      {
+        "id": "740",
+        "url": "https://www.vlr.gg/player/740/aproto",
+        "name": "aproto",
+        "teamTag": "FSN",
+        "country": "United States",
+        "flag": "us",
+        "agents": [
+          {
+            "name": "Astra",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+          },
+          {
+            "name": "Brimstone",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/brimstone.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.86,
+          "acs": 114,
+          "kills": 23,
+          "deaths": 36,
+          "assists": 18,
+          "kast": 84,
+          "adr": 73,
+          "hs": 44,
+          "firstBloods": 5,
+          "firstDeaths": 2
+        }
+      },
+      {
+        "id": "8790",
+        "url": "https://www.vlr.gg/player/8790/mininiwde",
+        "name": "MiniNiwde",
+        "teamTag": "FSN",
+        "country": "Dominican Republic",
+        "flag": "do",
+        "agents": [
+          {
+            "name": "Sova",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+          },
+          {
+            "name": "Tejo",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/tejo.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.69,
+          "acs": 102,
+          "kills": 23,
+          "deaths": 36,
+          "assists": 7,
+          "kast": 77,
+          "adr": 67,
+          "hs": 13,
+          "firstBloods": 1,
+          "firstDeaths": 1
+        }
+      },
+      {
+        "id": "17694",
+        "url": "https://www.vlr.gg/player/17694/prask",
+        "name": "prask",
+        "teamTag": "FSN",
+        "country": "Venezuela",
+        "flag": "ve",
+        "agents": [
+          {
+            "name": "Killjoy",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+          },
+          {
+            "name": "Cypher",
+            "img": "https://www.vlr.gg/img/vlr/game/agents/cypher.png"
+          }
+        ],
+        "stats": {
+          "rating": 0.52,
+          "acs": 76,
+          "kills": 23,
+          "deaths": 37,
+          "assists": 3,
+          "kast": 61,
+          "adr": 65,
+          "hs": 24,
+          "firstBloods": 1,
+          "firstDeaths": 3
+        }
+      }
+    ],
+    "performance": {
+      "players": [
+        {
+          "name": "ezznap",
+          "teamTag": "FUE",
+          "agents": [
+            {
+              "name": "omen",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/omen.png"
+            }
+          ],
+          "multikills": {
+            "2k": 5,
+            "3k": 3,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 66,
+          "plants": 5,
+          "defuses": 0
+        },
+        {
+          "name": "GeneralSteak",
+          "teamTag": "FUE",
+          "agents": [
+            {
+              "name": "fade",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/fade.png"
+            }
+          ],
+          "multikills": {
+            "2k": 5,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 50,
+          "plants": 4,
+          "defuses": 1
+        },
+        {
+          "name": "Rei",
+          "teamTag": "FUE",
+          "agents": [
+            {
+              "name": "phoenix",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+            }
+          ],
+          "multikills": {
+            "2k": 6,
+            "3k": 2,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 81,
+          "plants": 0,
+          "defuses": 2
+        },
+        {
+          "name": "Hada",
+          "teamTag": "FUE",
+          "agents": [
+            {
+              "name": "chamber",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/chamber.png"
+            }
+          ],
+          "multikills": {
+            "2k": 5,
+            "3k": 1,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 53,
+          "plants": 1,
+          "defuses": 0
+        },
+        {
+          "name": "Sabortzz",
+          "teamTag": "FUE",
+          "agents": [
+            {
+              "name": "jett",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/jett.png"
+            }
+          ],
+          "multikills": {
+            "2k": 1,
+            "3k": 1,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 34,
+          "plants": 1,
+          "defuses": 0
+        },
+        {
+          "name": "aproto",
+          "teamTag": "FSN",
+          "agents": [
+            {
+              "name": "astra",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/astra.png"
+            }
+          ],
+          "multikills": {
+            "2k": 2,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 1,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 42,
+          "plants": 0,
+          "defuses": 1
+        },
+        {
+          "name": "ScrewFace",
+          "teamTag": "FSN",
+          "agents": [
+            {
+              "name": "neon",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/neon.png"
+            }
+          ],
+          "multikills": {
+            "2k": 5,
+            "3k": 3,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 86,
+          "plants": 1,
+          "defuses": 0
+        },
+        {
+          "name": "MiniNiwde",
+          "teamTag": "FSN",
+          "agents": [
+            {
+              "name": "sova",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/sova.png"
+            }
+          ],
+          "multikills": {
+            "2k": 3,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 53,
+          "plants": 2,
+          "defuses": 2
+        },
+        {
+          "name": "prask",
+          "teamTag": "FSN",
+          "agents": [
+            {
+              "name": "killjoy",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/killjoy.png"
+            }
+          ],
+          "multikills": {
+            "2k": 1,
+            "3k": 0,
+            "4k": 0,
+            "5k": 0
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 0,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 37,
+          "plants": 0,
+          "defuses": 0
+        },
+        {
+          "name": "Weegle",
+          "teamTag": "FSN",
+          "agents": [
+            {
+              "name": "phoenix",
+              "img": "https://www.vlr.gg/img/vlr/game/agents/phoenix.png"
+            }
+          ],
+          "multikills": {
+            "2k": 2,
+            "3k": 4,
+            "4k": 0,
+            "5k": 1
+          },
+          "clutches": {
+            "1v1": 0,
+            "1v2": 1,
+            "1v3": 0,
+            "1v4": 0,
+            "1v5": 0
+          },
+          "econ": 93,
+          "plants": 2,
+          "defuses": 2
+        }
+      ],
+      "killMatrix": [
+        {
+          "name": "Rei",
+          "teamTag": "FUE",
+          "records": [
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "kills": 6,
+              "deaths": 5,
+              "diff": 1
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "kills": 6,
+              "deaths": 2,
+              "diff": 4
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "kills": 7,
+              "deaths": 6,
+              "diff": 1
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "kills": 4,
+              "deaths": 4,
+              "diff": 0
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "kills": 6,
+              "deaths": 2,
+              "diff": 4
+            }
+          ]
+        },
+        {
+          "name": "Hada",
+          "teamTag": "FUE",
+          "records": [
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "kills": 7,
+              "deaths": 4,
+              "diff": 3
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "kills": 6,
+              "deaths": 3,
+              "diff": 3
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "kills": 3,
+              "deaths": 5,
+              "diff": -2
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "kills": 2,
+              "deaths": 1,
+              "diff": 1
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "kills": 4,
+              "deaths": 5,
+              "diff": -1
+            }
+          ]
+        },
+        {
+          "name": "ezznap",
+          "teamTag": "FUE",
+          "records": [
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "kills": 3,
+              "deaths": 12,
+              "diff": -9
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "kills": 6,
+              "deaths": 1,
+              "diff": 5
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "kills": 5,
+              "deaths": 4,
+              "diff": 1
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "kills": 9,
+              "deaths": 1,
+              "diff": 8
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "kills": 6,
+              "deaths": 2,
+              "diff": 4
+            }
+          ]
+        },
+        {
+          "name": "GeneralSteak",
+          "teamTag": "FUE",
+          "records": [
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "kills": 3,
+              "deaths": 6,
+              "diff": -3
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "kills": 2,
+              "deaths": 4,
+              "diff": -2
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "kills": 4,
+              "deaths": 6,
+              "diff": -2
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "kills": 6,
+              "deaths": 2,
+              "diff": 4
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "kills": 4,
+              "deaths": 4,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "Sabortzz",
+          "teamTag": "FUE",
+          "records": [
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "kills": 2,
+              "deaths": 3,
+              "diff": -1
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "kills": 5,
+              "deaths": 2,
+              "diff": 3
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "kills": 2,
+              "deaths": 6,
+              "diff": -4
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "kills": 2,
+              "deaths": 7,
+              "diff": -5
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "kills": 3,
+              "deaths": 3,
+              "diff": 0
+            }
+          ]
+        }
+      ],
+      "opKillMatrix": [
+        {
+          "name": "Rei",
+          "teamTag": "FUE",
+          "records": [
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 4,
+              "diff": -4
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "Hada",
+          "teamTag": "FUE",
+          "records": [
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "kills": 2,
+              "deaths": 0,
+              "diff": 2
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 3,
+              "diff": -3
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "ezznap",
+          "teamTag": "FUE",
+          "records": [
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "GeneralSteak",
+          "teamTag": "FUE",
+          "records": [
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 3,
+              "diff": -3
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "Sabortzz",
+          "teamTag": "FUE",
+          "records": [
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 3,
+              "diff": -3
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        }
+      ],
+      "firstKillMatrix": [
+        {
+          "name": "Rei",
+          "teamTag": "FUE",
+          "records": [
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "kills": 5,
+              "deaths": 0,
+              "diff": 5
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            }
+          ]
+        },
+        {
+          "name": "Hada",
+          "teamTag": "FUE",
+          "records": [
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "kills": 1,
+              "deaths": 1,
+              "diff": 0
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "kills": 1,
+              "deaths": 1,
+              "diff": 0
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 2,
+              "diff": -2
+            }
+          ]
+        },
+        {
+          "name": "ezznap",
+          "teamTag": "FUE",
+          "records": [
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "kills": 1,
+              "deaths": 1,
+              "diff": 0
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            }
+          ]
+        },
+        {
+          "name": "GeneralSteak",
+          "teamTag": "FUE",
+          "records": [
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 2,
+              "diff": -2
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 0,
+              "diff": 0
+            }
+          ]
+        },
+        {
+          "name": "Sabortzz",
+          "teamTag": "FUE",
+          "records": [
+            {
+              "name": "Weegle",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "prask",
+              "teamTag": "FSN",
+              "kills": 1,
+              "deaths": 0,
+              "diff": 1
+            },
+            {
+              "name": "ScrewFace",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 2,
+              "diff": -2
+            },
+            {
+              "name": "MiniNiwde",
+              "teamTag": "FSN",
+              "kills": 0,
+              "deaths": 1,
+              "diff": -1
+            },
+            {
+              "name": "aproto",
+              "teamTag": "FSN",
+              "kills": 1,
+              "deaths": 2,
+              "diff": -1
+            }
+          ]
+        }
+      ]
+    },
+    "economy": {
+      "teams": [
+        {
+          "name": "FUE",
+          "pistolWon": 2,
+          "eco": {
+            "total": 17,
+            "won": 10
+          },
+          "semiEco": {
+            "total": 2,
+            "won": 0
+          },
+          "semiBuy": {
+            "total": 5,
+            "won": 3
+          },
+          "fullBuy": {
+            "total": 20,
+            "won": 13
+          }
+        },
+        {
+          "name": "FSN",
+          "pistolWon": 2,
+          "eco": {
+            "total": 17,
+            "won": 6
+          },
+          "semiEco": {
+            "total": 1,
+            "won": 0
+          },
+          "semiBuy": {
+            "total": 8,
+            "won": 2
+          },
+          "fullBuy": {
+            "total": 18,
+            "won": 10
+          }
+        }
+      ],
+      "rounds": []
+    }
+  }
+}

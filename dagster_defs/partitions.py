@@ -8,5 +8,12 @@ padrão.
 
 from __future__ import annotations
 
-# TODO(D12): StaticPartitionsDefinition por temporada.
-SEASONS = ["2023", "2024", "2025", "2026"]
+from datetime import UTC, datetime
+
+from dagster import StaticPartitionsDefinition
+
+from ingestion.config import HISTORY_SINCE
+
+# Da primeira temporada coletada até a corrente: a partição do ano novo aparece sozinha.
+SEASONS = [str(year) for year in range(HISTORY_SINCE, datetime.now(UTC).year + 1)]
+season_partitions = StaticPartitionsDefinition(SEASONS)

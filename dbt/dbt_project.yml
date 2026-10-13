@@ -17,12 +17,20 @@ clean-targets: ["target", "dbt_packages"]
 vars:
   analysis_window_months: 12  # regra inviolável: nunca hardcode a janela
   elo_warmup_months: 6        # aquecimento do Elo antes da janela; também o corte de `tabs=all`
+  # Data de referência da janela. Nula: hoje. O CI de fixtures fixa (AS_OF_DATE) para o resultado
+  # não mudar com o relógio. Ver macros/window.sql.
+  as_of_date: null
+  # D13: diferença aceita, em pontos percentuais, contra o agregado arredondado do vlr.gg.
+  validation_tolerance_pp: 1
 
 models:
   metascope_val:
     staging:
       +materialized: view
       +schema: staging
+    intermediate:
+      +materialized: view
+      +schema: intermediate
     marts:
       +materialized: table
       +schema: marts

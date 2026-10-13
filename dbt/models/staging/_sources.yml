@@ -2,12 +2,15 @@ version: 2
 
 # Os sources apontam direto para os Parquet do lake — sem etapa de carga.
 # Layout e schema de cada tabela: ingestion/lake.py. `season` vem do caminho (chave Hive).
-# `lake_path` vem de uma var do dbt_project/CLI: local no dev; no CI, o lake baixado do HF.
+# LAKE_DIR: raiz do lake (absoluta, ou relativa a `dbt/`). Padrão: o lake real em data/lake;
+# o trilho de fixtures do CI aponta para data/fixture_lake.
 sources:
   - name: lake
     description: "Parquet gerado por ingestion/, partição Hive por temporada, um arquivo por evento."
     meta:
-      external_location: "read_parquet('{{ var('lake_path', '../data/lake') }}/{name}/**/*.parquet', hive_partitioning=true)"
+      external_location: >-
+        read_parquet('{{ env_var('LAKE_DIR', '../data/lake') }}/{name}/**/*.parquet',
+        hive_partitioning = true, union_by_name = true)
     tables:
       - name: raw_event
         description: "Eventos VCT e VCL, com tier, região derivada do filtro da API e temporada."
@@ -26,4 +29,4 @@ sources:
       - name: raw_player_map
         description: "Uma linha por jogador-mapa, com o agente."
       - name: raw_reject
-        description: "Partidas que falharam no contrato ou na API. Contadas no D13."
+        description: "Partidas que falharam no contrato, na API ou não estavam finalizadas."

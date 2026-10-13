@@ -11,7 +11,7 @@ from collections.abc import Callable
 import httpx
 import pytest
 
-from ingestion.client import USER_AGENT, ApiClient, ApiError, TransientError
+from ingestion.client import USER_AGENT, ApiClient, ApiError, NotFound, TransientError
 from ingestion.schemas import MatchDetail, Response
 
 MATCH_PATH = "/matches/734308"
@@ -186,6 +186,14 @@ def test_erro_definitivo_nao_repete(make_client):
     with pytest.raises(ApiError):
         make_client(api).fetch(MATCH_PATH)
     assert len(api.requests) == 1
+
+
+def test_404_e_not_found_e_os_demais_erros_nao(make_client):
+    with pytest.raises(NotFound):
+        make_client(FakeApi(httpx.Response(404))).fetch(MATCH_PATH)
+    with pytest.raises(ApiError) as exc:
+        make_client(FakeApi(httpx.Response(400))).fetch(MATCH_PATH)
+    assert not isinstance(exc.value, NotFound)
 
 
 def test_backoff_cresce_entre_tentativas(make_client, clock):
