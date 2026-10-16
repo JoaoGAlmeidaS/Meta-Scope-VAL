@@ -2,7 +2,7 @@
 
 > Este arquivo é a fonte de contexto do projeto. No repositório: `docs/projeto-valorant-data.md`.
 > A auditoria detalhada da API fica em `docs/fontes.md`.
-> Última atualização: 07/10/2026 · Status: **Blocos 0 a 2 concluídos e fechados (D1–D14)**: coleta 2025+ completa (7.019 partidas no lake e no HF), `make build` verde sobre o lake real · **Bloco 3 liberado** · decisões pendentes no fim de `docs/fontes.md`
+> Última atualização: 16/10/2026 · Status: **D1–D30 concluídos**: warehouse, Elo, análises com IC, notebooks, JSONs e site gerados pelo `make build` · **v1 pronta para publicar**, sem a página de previsões (`PREDICTIONS_ENABLED = False`; passo a passo no D29) · fora do código: telas do Figma (D23) e GIF (D30)
 > Repositório: github.com/JoaoGAlmeidaS/Meta-Scope-VAL
 
 ---
@@ -29,6 +29,10 @@ Estas decisões já foram debatidas e fechadas. Não reabrir sem motivo novo.
 *Por quê:* nerfs, reworks e agentes novos mudam o ritmo de jogo e a vantagem de cada lado mesmo em mapas que não mudaram (a Ascent é o exemplo); somam-se rotação de pool e reworks de mapa. Dado mais antigo distorce o resultado atual. 12 meses já é uma estimativa generosa.
 *Implementação:* variável dbt `analysis_window_months: 12`, lida por todos os models de análise. Nunca hardcoded.
 *Exceções:* (1) o rating de times usa alguns meses anteriores à janela só como aquecimento, sem aparecerem nos resultados; (2) a análise de drift usa o histórico completo — o coletado desde 2025 mais o anterior importado de um dataset pronto —, justamente para demonstrar a tese da janela.
+
+**Recortes no site: visão recente de 3 meses e tier (decidido em 16/10).** Nas Análises e no Meta, dois seletores: a janela (12 meses, o padrão, ou os **últimos 3 meses**) e o tier (**VCT**, **VCL** ou todos, como no Ranking). A tese da janela só troca o tier: o drift é o histórico inteiro.
+*Por quê:* a visão recente mostra o momento atual de cada mapa e meta, e o VCT isola o alto nível, onde detalhes que se diluem na média podem aparecer (no primeiro build, a vantagem de quem escolhe o mapa é inconclusiva em todos os tiers e aparece só no VCT: 52,8%, IC 50,2–55,4%). O custo é amostra menor: mais inconclusivos, e recortes vazios (a VCL fica fora de temporada no fim do ano), que o site mostra como amostra insuficiente.
+*Implementação:* variável dbt `recent_window_months: 3`, um recorte **dentro** da janela de análise (nunca no lugar dela; teste no `fct_match`). Os marts de análise levam `tier` e `is_in_recent_window`; `analyses.Scope` escolhe o recorte e `analyses.table` é o único ponto que filtra. O site pré-computa os seis recortes (janela × tier) em pastas próprias de `dist/data`. Notebooks, home e números de cabeçalho seguem na janela inteira com todos os tiers.
 
 **Coleta própria desde 2025, análise restrita.** O backfill cobre 2025→hoje, mesmo que a análise use 12 meses.
 *Por quê (revisto em 05/10):* janela de análise e aquecimento do Elo cabem em 2025+, e a instância pública rende ~13 requisições/min — 2023–2024 seriam mais ~9.300 partidas (~12 h) só para o drift. A coleta própria existe pela experiência de engenharia, não pelo volume: o histórico anterior a 2025, que só o drift (D17) usa, vem de um dataset pronto importado à parte.
@@ -78,14 +82,25 @@ Estas decisões já foram debatidas e fechadas. Não reabrir sem motivo novo.
 
 **Previsões pré-computadas em lote.** Todos os confrontos par a par, particionados em um JSON por time. O front faz lookup, não cálculo.
 
+**Elo em Python, dentro do dbt (decidido no D15).** `fct_team_elo` é um Python model do dbt-duckdb que chama `pipeline/elo.py`: a única exceção à regra "transformação em SQL", porque o Elo é iterativo (cada partida depende do rating que a anterior deixou). Função pura, testada no pytest; o anti-vazamento é testado no dbt.
+
+**Promoção da VCL ao VCT reancora o Elo (decidido em 16/10).** No primeiro jogo de VCT de um time que começou na VCL, o rating vira `inicial_VCT + c·(rating − inicial_VCL)`: só a fração `c` do desvio conquistado na VCL entra no VCT. Uma vez por time, antes da partida e só com o passado, como a regressão de temporada (`is_promotion` no `fct_team_elo`; o anti-vazamento sabe dela).
+*Por quê:* em 2026 os melhores da VCL de cada região jogaram o Stage 2. A VCL é um pool quase fechado, e dominá-la infla o rating sem referência ao VCT: a Enterprise entrou com 1876 depois de 39–4 na VCL, acima de todo time do VCT, e o ranking a punha em 2º com 6 séries de VCT. Na busca em grade (notebook 06), `c = 0,1` com o gap VCT − VCL de 300 dá log loss 0,6630, contra 0,6635 dos parâmetros anteriores; nas séries entre quem veio da VCL e times do VCT a melhora é maior, mas com amostra ainda pequena (IC inclui zero). Descartados: K menor na VCL (piora a previsão dentro da VCL), VCL começando mais abaixo e K provisório maior (pioram as duas).
+*Junto:* o ranking marca como **provisório** o time com menos de 10 séries do próprio tier na janela (`rating_provisional_series`): o número é o mesmo, mas ainda está assentando. Rebaixamento (VCT → VCL) não tem regra: ainda sem caso nos dados.
+
+**Estatística em Python, sobre os marts (decidido no D16).** Os marts de análise (`dbt/models/analysis/`) entregam contagens no grão fino, já na janela; IC, bootstrap, Holm, logística e shrinkage ficam em `pipeline/stats.py` e `pipeline/analyses.py`, chamados pelos notebooks **e** pelo site. Um número, uma fonte.
+
 **DuckDB como engine, não como banco.** Arquivo descartável, gerado e destruído a cada build. O `dbt-duckdb` lê os Parquet do lake direto como `sources`.
 *Por quê:* o warehouse é artefato de build, não serviço. O DuckDB existe para viabilizar o dbt. O dialeto SQL é baseado no do Postgres.
 
 **Dagster define o pipeline, GitHub Actions dispara.** Não são concorrentes. O `make` e o Actions executam os jobs do Dagster (`ingest` por temporada, `build` para o warehouse); não existe segunda descrição do pipeline em script (confirmado no D12).
 *Por quê:* assets particionados por temporada dão backfill, retomada e reprocessamento cirúrgico prontos. A UI do Dagster não vai ao ar; a linhagem pública é o `dbt docs`.
 
-**CI em dois trilhos (decidido no D14).** Todo push roda lint, pytest e o build inteiro (Dagster → dbt → testes) sobre um lake gerado dos fixtures do repositório, sem segredo. O trilho real (lake-pull → coleta incremental → lake-push → build) é manual até o D29 e exige `HF_TOKEN`.
+**CI em dois trilhos (decidido no D14).** Todo push roda lint, pytest e o build inteiro (Dagster → dbt → testes → site) sobre um lake gerado dos fixtures do repositório, sem segredo. O trilho real (lake-pull → coleta incremental → lake-push → build → Pages) é manual ou semanal e exige `HF_TOKEN`.
 *Por quê:* o dbt fica testado em todo push mesmo sem acesso ao lake, e o resultado do trilho de fixtures não muda com o relógio (`AS_OF_DATE` fixa a janela).
+
+**O que vai para o repositório (16/10, v1).** Entra: o código (`ingestion/`, `dbt/`, `pipeline/`, `dagster_defs/`, `web/`), seeds, fixtures JSON da API, `uv.lock`, as imagens do site (`web/assets/imgs/`: logos, mapas e ícones de agente, porque o CI monta o site a partir do repositório), as figuras do README (`docs/img/`), os notebooks com outputs e a licença MIT do código. Fica fora (`.gitignore`): `data/` (o lake vai para o dataset privado do Hugging Face), `dist/` (o CI gera e publica), o warehouse `*.duckdb`, caches e logs, o protótipo `design-reference/` (conteúdo fictício) e docs pessoais (`docs/estrutura.md`, `docs/post-linkedin.md`).
+*Por quê:* dado não entra no Git, e o site precisa ser reprodutível só com o repositório e o lake. Mapas e ícones são da Riot: uso de fã, sem fins comerciais, com o aviso da política "Legal Jibber Jabber" no README e no rodapé.
 
 **Dimensões como retrato, época nos fatos (decidido no D10).** `dim_team` e `dim_player` têm uma linha por id, com nome, tag e região mais recentes; o nome e a tag da época da partida ficam nos fatos. Sem SCD tipo 2.
 *Por quê:* o site e os joins querem o nome atual; a análise histórica já tem o nome da época na própria linha do fato.
@@ -95,7 +110,7 @@ Estas decisões já foram debatidas e fechadas. Não reabrir sem motivo novo.
 **Notebooks em matplotlib, ficam no repositório, linkados do site.**
 *Por quê:* o visualizador do GitHub não executa JS. Interativo existe só no site.
 
-**`schedule` desligado até a publicação (D29), ligado semanalmente depois.** `workflow_dispatch` ativo desde o início.
+**`schedule` semanal ligado no D29, guardado pela variável `PAGES_ENABLED`.** Sem a variável, o cron não dispara o build real e nada publica. `workflow_dispatch` ativo desde o início.
 
 **Particionamento por temporada.** Unidade natural do domínio, do lake e dos assets do Dagster.
 
@@ -142,18 +157,23 @@ Estas decisões já foram debatidas e fechadas. Não reabrir sem motivo novo.
 │   ├── macros/window.sql        janela de análise e aquecimento (nunca hardcoded)
 │   ├── models/staging/          stg_*
 │   ├── models/intermediate/     int_*: visão por time, região na época, completude, validação
-│   ├── models/marts/            dim_*, fct_*, mart_*
+│   ├── models/marts/            dim_*, fct_* (inclui fct_team_elo, Python model)
+│   ├── models/analysis/         mart_*: marts de análise na janela (e os de drift, fora dela)
 │   ├── seeds/patches.csv        datas de cada patch, mantido à mão
 │   ├── seeds/event_overrides.csv eventos a excluir ou reclassificar, mantido à mão
 │   ├── seeds/validation_exceptions.csv divergências aceitas do D13, com motivo
 │   └── tests/                   testes singulares de qualidade (D13)
 ├── pipeline/
-│   ├── elo.py                   rating com aquecimento pré-janela
-│   ├── predictions.py           probabilidades par a par + calibração
-│   └── build_site.py            Jinja2 → dist/
+│   ├── elo.py                   Elo pré-partida (chamado pelo Python model fct_team_elo)
+│   ├── stats.py                 Wilson, bootstrap por cluster, Holm, logística, shrinkage, calibração
+│   ├── analyses.py              uma função por pergunta, sobre os marts (notebooks e site)
+│   ├── plots.py                 estilo matplotlib dos notebooks, mesma paleta do site
+│   ├── site_artifacts.py        JSONs de dist/data (D22)
+│   ├── build_site.py            Jinja2 → dist/ (D24)
+│   └── train.py                 placeholder do modelo pós-D30
 ├── dagster_defs/                assets (coleta + dbt), partições por temporada, checks do lake
 ├── notebooks/                   matplotlib, com outputs commitados
-├── web/                         templates Jinja2, CSS, JS
+├── web/                         templates Jinja2, CSS (tokens), tema do ECharts, JS
 ├── dist/                        gerado, publicado no Pages
 ├── .github/workflows/build.workflow.yml
 ├── Makefile                     make build / make serve / make test
@@ -165,19 +185,24 @@ Estas decisões já foram debatidas e fechadas. Não reabrir sem motivo novo.
 
 ```
 dist/
-├── index.html
+├── index.html, rankings.html, team.html, meta.html, previsoes.html, analises.html
+├── analise-{nome}.html          uma página por pergunta
 ├── assets/                      style.css, app.js, echarts-theme.js
 ├── lineage/                     dbt docs
 └── data/
-    ├── meta.json                versão do build, data, janela, patches
-    ├── teams/index.json         alimenta a busca
+    ├── meta.json                versão do build, data, janelas, recortes, patches
+    ├── teams/index.json         alimenta rankings e busca
     ├── teams/{id}.json          perfil do time
+    ├── agents.json              ícone de cada agente
     ├── predictions/{id}.json    todos os confrontos daquele time
-    ├── meta/{mapa}-{patch}.json composições do recorte
-    └── analyses/{nome}.json     séries das análises
+    ├── meta/{recorte}/index.json          fatias mapa × patch disponíveis no recorte
+    ├── meta/{recorte}/{mapa}-{patch}.json composições da fatia
+    └── analyses/{recorte}/{nome}.json     séries das análises
 ```
 
-Use `?v=` do `meta.json` nas requisições para invalidar cache do navegador.
+`{recorte}` = janela × tier: `full-all` (o padrão: 12 meses, todos os tiers), `full-vct`, `full-vcl`, `recent-all`, `recent-vct`, `recent-vcl`. Times e previsões não têm recorte.
+
+Use `?v=` do `meta.json` nas requisições de dados para invalidar cache do navegador; CSS e JS levam o hash do próprio conteúdo.
 
 ---
 
@@ -263,60 +288,86 @@ Testes dbt + asset checks: rounds batem com o placar, lado reconstruído bate co
 **D15 · Rating de times**
 Elo com aquecimento pré-janela, ajuste por tier de evento. Rating calculado sempre com dado anterior à partida.
 → *Pronto quando:* o ranking dentro da janela bate com a percepção do cenário.
+*Feito:* `pipeline/elo.py` (Elo sobre a série, empate 0,5, rating inicial por tier, regressão de temporada) materializado pelo Python model `fct_team_elo`; `assert_no_future_leakage` religado sobre o encadeamento antes/depois. Busca em grade pela log loss pré-partida: K = 48, VCT 200 acima da VCL, carry 0,75; log loss 0,663 contra 0,693 da moeda em 5.772 partidas, superfície plana perto do ótimo. Topo da VCT: Enterprise, 100 Thieves, NRG, Paper Rex, LEVIATÁN (`notebooks/06_rating.ipynb`).
 
 **D16 · Marts de análise com janela**
 `mart_*` filtrados por `analysis_window_months`. Teste que falha se algum mart de análise ler partida fora da janela (exceto o de drift).
+*Feito:* 15 marts em `dbt/models/analysis/`, todos com `not is_excluded` e janela pelas macros; teste genérico `inside_analysis_window` em todos menos os `mart_drift_*`. Estatística em `pipeline/stats.py` (testada no pytest), análises em `pipeline/analyses.py`, com ordem fixa por mart para o bootstrap ser reprodutível.
 
 **D17 · Drift — a tese da janela**
 Série trimestral da vantagem de lado por mapa sobre o histórico completo, com patches marcados. Mostra o jogo mudando mesmo em mapas intocados. Desde 2025 o histórico vem do lake; antes disso, de um dataset pronto importado à parte (fonte e formato a definir).
 → *Pronto quando:* o gráfico justifica sozinho a escolha de 12 meses.
+*Feito:* a vantagem de lado por trimestre (n efetivo pelo efeito de desenho, homogeneidade com Holm) é **inconclusiva** nos 13 mapas com o histórico desde 2025: o efeito é pequeno demais para a amostra trimestral. A tese se sustenta pela segunda lente, acrescentada aqui: o meta de agentes de cada mapa (`mart_drift_agents_by_quarter`) se afasta do atual trimestre a trimestre — 0,14 de variação total a 3 meses, 0,33 a 12 ou mais, piso de ruído 0,06. Gráfico em `docs/img/drift-meta.png`. O drift de lado volta a ser testado com o dataset pré-2025.
 
 **D18 · Lado e pistol**
 Vantagem atacante/defensor por mapa e pistol → vitória no mapa, dentro da janela. IC por bootstrap, correção para múltiplas comparações.
+*Feito:* ataque vence 51,2% (50,8–51,5%) dos rounds 1–24; Abyss, Breeze, Haven e Lotus favorecem o ataque, Ascent a defesa, sete inconclusivos (bootstrap por mapa, 1,36× mais largo que o Wilson ingênuo; Holm). Pistol: com Elo igual, 73,6% de vitória no mapa com dois pistols contra 28,0% com nenhum (logística).
 
 **D19 · Veto e regiões**
 Vantagem de quem escolhe o mapa; força relativa entre regiões em confrontos internacionais.
+*Feito:* veto por desenho pareado (força dos times se cancela) — 51,5% (49,8–53,2%), inconclusivo; por mapa, contra a probabilidade de mapa derivada do Elo da série (inversão de P(BO3) = p²(3 − 2p)), nenhum mapa sobrevive a Holm. Regiões: China −0,29 (−0,41 a −0,14) abaixo do Elo em 23 séries; as outras inconclusivas (61 séries entre regiões).
 
 **D20 · Meta de composição**
 Win rate por comp com shrinkage bayesiano, por mapa e patch. Popularidade de agentes ao longo da janela.
+*Feito:* desempenho acima do esperado pelo Elo, com shrinkage empírico normal–normal por mapa × versão do patch (12.x, 13.x): por patch exato a amostra não sustenta (contingência 4, meio-termo). 0 de 536 combinações se distinguem do Elo. Velocidade do meta: variação total mês a mês com piso de ruído; 11 de 12 meses acima do ruído, pico em abril/2026.
 
 ### Bloco 4 — Previsão e artefatos · D21–D22
 
 **D21 · Previsões via Elo**
 Probabilidade par a par pela fórmula do Elo. Validar calibração dentro da janela: log loss, Brier e curva de calibração.
 → *Pronto quando:* a curva de calibração está num notebook e a matriz de confrontos está em Parquet.
+*Feito:* `mart_matchups` (materialização `external`, `data/derived/matchups.parquet`, 196.692 pares) e `notebooks/07_previsao_calibracao.ipynb`: log loss 0,662 (0,651–0,672), Brier 0,233; na VCT, 0,685 (0,658–0,712), indistinguível da moeda.
 
 **D22 · Asset `site_artifacts`**
 JSONs particionados conforme a seção 4, com `meta.json` informando versão, data e janela usada.
 → *Pronto quando:* `dist/data/` está completo e o maior arquivo cabe em poucas centenas de KB.
+*Feito:* asset `site/site_artifacts` no job `build` (`pipeline/site_artifacts.py`): 929 arquivos, ~5 MB; o maior (`teams/index.json`) tem 86 KB, e o asset check `largest_file_under_limit` (300 KB) roda em todo build.
 
 ### Bloco 5 — Produto · D23–D28
 
 **D23 · Design system**
 Tokens do CSS existente num arquivo único. Duas telas no Figma (rankings e uma de análise). Densidade compacta.
+*Feito:* `web/assets/style.css` com tokens (cor, tipo, espaço, densidade), tema escuro e claro, a mesma paleta dos notebooks (`pipeline/plots.py`). As telas vieram depois, num protótipo do Figma Make (`design-reference/`, local): o site adotou a linguagem visual dele (sidebar, Barlow Condensed + Inter, painéis com fio, KPIs, versus, lista numerada de análises) sem os padrões vetados no CLAUDE.md e sem o conteúdo fictício — cada slot sem dado real recebeu dado real (o radar virou o gráfico do drift; os KPIs, números da janela; o FAQ, a metodologia).
 
 **D24 · Tema de gráfico e gerador**
 Tema próprio do ECharts derivado dos tokens. `build_site.py` com Jinja2 gerando `dist/`.
+*Feito:* `echarts-theme.js` lê os tokens do CSS em tempo de execução; `pipeline/build_site.py` (asset `site/site_pages`, `make site`) escreve o HTML com as respostas já no texto, a partir dos mesmos JSONs.
 
 **D25 · Telas base**
 Home, rankings, busca de times.
+*Feito:* home com a tese e as respostas (pergunta, número com IC, veredito), rankings com filtro por tier, região e séries mínimas, busca de times sem acento e por tag.
 
 **D26 · Perfil de time**
 Histórico, win rate por mapa, forma, roster.
+*Feito:* `team.html?id=`: Elo na janela, mapas com IC de Wilson, forma das 10 últimas, elenco e partidas com o que o Elo dava.
 
 **D27 · Meta + elemento assinatura**
 Tela de meta com filtros por mapa e patch. A visualização de veto é o elemento de ousadia visual; resto do site disciplinado.
+*Feito:* matriz do veto mapa × passo (cada linha soma 100%: em que passo e por qual ação o mapa sai), clicável; pick rate e composições com shrinkage do recorte.
 
 **D28 · Previsões**
 Seleção de dois times, lookup client-side, probabilidade do Elo com aviso de que é estatística, não conselho de aposta. Estados vazios e de erro.
+*Feito:* `previsoes.html?a=&b=`, lookup em `predictions/{id}.json`, aviso com a log loss da janela, alerta de circuitos diferentes, estados vazio e de erro.
 
 ### Bloco 6 — Entrega · D29–D30
 
 **D29 · Publicação**
 Deploy no Pages, `dbt docs` em `/lineage`, links para os notebooks, CI verde. **Ligar o `schedule` semanal.**
+*Feito (preparado):* jobs `deploy` (upload-pages-artifact@v5 + deploy-pages@v5) e `schedule` semanal (segunda, 06:00 UTC) no workflow, guardados por `vars.PAGES_ENABLED`. A v1 sai sem a página de previsões (`PREDICTIONS_ENABLED = False`). Para ativar:
+1. **Lake atualizado no Hugging Face:** `hf auth login` e `make lake-push`. O CI baixa o lake de lá (`make lake-pull`); o do HF anterior a 15/10 não tem as colunas de logo e ícone, e o build quebraria.
+2. **`notebooks/` versionado**, com outputs: o site e o README linkam para eles no GitHub.
+3. **Repositório público** (o Pages grátis exige).
+4. Settings → Pages → Build and deployment → Source: **GitHub Actions**.
+5. Settings → Secrets and variables → Actions:
+   - **Secrets** → `HF_TOKEN`, com permissão de escrita (o CI faz `lake-push` depois da coleta);
+   - **Variables** → `PAGES_ENABLED` = `true`;
+   - `HF_LAKE_REPO`, só se o dataset não for `<usuário>/meta-scope-val-lake`.
+6. Actions → build → **Run workflow** em `main`: test → build (lake-pull, coleta, `make build`) → deploy.
+7. O site sai em `https://joaogalmeidas.github.io/Meta-Scope-VAL/`, com a linhagem em `/lineage`. Dali em diante, o `schedule` de segunda republica sozinho; se o vlr.gg bloquear o IP do Actions, o build segue com o lake baixado, e a coleta local (`make ingest` + `make lake-push`) põe o dado em dia.
 
 **D30 · Narrativa** 🏁
 README definitivo: problema, arquitetura, decisões (seção 2), a tese da janela com o gráfico de drift, resultados com números honestos — inclusive os inconclusivos. GIF de 30s, post no LinkedIn.
+*Feito:* README definitivo com a tese, os resultados com IC e as limitações; rascunho do post em `docs/post-linkedin.md`. O GIF fica para depois da publicação.
 
 ---
 

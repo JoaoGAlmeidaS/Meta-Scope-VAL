@@ -1,0 +1,254 @@
+version: 2
+
+# Marts de análise (D16): só a janela de análise (`analysis_window_months`, pelas macros de
+# macros/window.sql) e só o que está em escopo (`not is_excluded`: sem evento excluído e sem
+# showmatch). Todo mart leva o teste `inside_analysis_window` na coluna de data, menos os de drift
+# (`mart_drift_*`), que lêem o histórico inteiro de propósito (D17). Intervalos de confiança,
+# bootstrap e shrinkage ficam em pipeline/stats.py e pipeline/analyses.py, sobre estes marts.
+#
+# Recortes do site (Análises e Meta): os marts de análise levam `tier` e `is_in_recent_window`
+# (a visão recente, `recent_window_months`), e `analyses.table(…, scope)` é o único ponto que
+# filtra por eles. Os agregados têm os dois no grão e são somados em Python; os de drift, só o tier.
+
+models:
+  - name: mart_team_ratings
+    description: >
+      Ranking Elo dos times ativos na janela (D15): rating atual, pico, ranks e o selo provisório
+      (poucas séries do próprio tier na janela, `rating_provisional_series`).
+    data_tests:
+      - dbt_utils.expression_is_true:
+          arguments:
+            expression: "tier_matches_in_window <= matches_in_window"
+    columns:
+      - name: team_id
+        data_tests: [unique, not_null]
+      - name: rating
+        data_tests: [not_null]
+      - name: last_match_at
+        data_tests: [inside_analysis_window]
+      - name: is_provisional
+        data_tests: [not_null]
+
+  - name: mart_side_by_map
+    description: "D18: rounds regulamentares vencidos no ataque e na defesa, por mapa jogado com lado."
+    columns:
+      - name: map_id
+        data_tests: [unique, not_null]
+      - name: match_date
+        data_tests: [inside_analysis_window]
+      - name: regulation_rounds
+        data_tests:
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 1
+                max_value: 24
+
+  - name: mart_pistol
+    description: "D18: time × mapa, pistols vencidos (0–2), vitória no mapa e Elo pré-partida."
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [map_id, team_id]
+    columns:
+      - name: match_date
+        data_tests: [inside_analysis_window]
+      - name: pistols_won
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [0, 1, 2]
+                quote: false
+
+  - name: mart_veto_picks
+    description: "D19: mapa escolhido e jogado, se quem escolheu venceu, e a expectativa pelo Elo."
+    columns:
+      - name: map_id
+        data_tests: [unique, not_null]
+      - name: match_date
+        data_tests: [inside_analysis_window]
+      - name: picker_won
+        data_tests: [not_null]
+
+  - name: mart_veto_actions
+    description: "D19/D27: veto por mapa × ação × passo × tier × visão recente, base do veto do site."
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [map_name, veto_action, veto_step, tier, is_in_recent_window]
+    columns:
+      - name: veto_action
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["ban", "pick", "decider"]
+      - name: last_match_date
+        data_tests: [inside_analysis_window]
+
+  - name: mart_international_matches
+    description: "D19: partidas internacionais entre regiões diferentes, contra o esperado pelo Elo."
+    columns:
+      - name: match_id
+        data_tests: [unique, not_null]
+      - name: match_date
+        data_tests: [inside_analysis_window]
+      - name: team1_region
+        data_tests: [not_null]
+
+  - name: mart_compositions
+    description: "D20: composição de cada time × mapa, com patch, resultado e Elo pré-partida."
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [map_id, team_id]
+    columns:
+      - name: match_date
+        data_tests: [inside_analysis_window]
+      - name: composition_key
+        data_tests: [not_null]
+
+  - name: mart_agent_popularity
+    description: >
+      D20: pick rate de cada agente por mês, tier e visão recente (composições com o agente ÷
+      composições). O site soma as contagens do recorte antes de tirar a taxa.
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [month, tier, is_in_recent_window, agent]
+    columns:
+      - name: month
+        description: "Primeiro dia do mês; o mês da data de início da janela pode começar antes dela."
+      - name: pick_rate
+        data_tests:
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 1
+
+  - name: mart_drift_side_by_quarter
+    description: >
+      D17: vantagem de lado por mapa e trimestre sobre o histórico INTEIRO, com os patches de cada
+      trimestre. Única exceção à janela: sem o teste `inside_analysis_window`, de propósito.
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [map_name, quarter_start, tier]
+
+  - name: mart_drift_agents_by_quarter
+    description: >
+      D17: pick rate de cada agente por mapa e trimestre sobre o histórico INTEIRO: a distância do
+      meta de cada trimestre ao atual. Mesma exceção à janela do drift de lado.
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [map_name, quarter_start, tier, agent]
+    columns:
+      - name: pick_rate
+        data_tests:
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 1
+
+  - name: mart_elo_calibration
+    description: "D21: probabilidade pré-partida pelo Elo × resultado, uma linha por partida."
+    columns:
+      - name: match_id
+        data_tests: [unique, not_null]
+      - name: match_date
+        data_tests: [inside_analysis_window]
+      - name: team1_win_probability
+        data_tests:
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 1
+
+  - name: mart_matchups
+    description: >
+      D21: matriz de confrontos dos times ativos na janela, pela fórmula do Elo. Materializada em
+      Parquet (`DERIVED_DIR/matchups.parquet`).
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [team_id, opponent_id]
+    columns:
+      - name: win_probability
+        data_tests:
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 1
+
+  - name: mart_team_matches
+    description: "D26: partidas de cada time na janela, com resultado e Elo antes e depois."
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [team_id, match_id]
+    columns:
+      - name: match_date
+        data_tests: [inside_analysis_window]
+
+  - name: mart_team_maps
+    description: "D26: mapas jogados e vencidos por time na janela."
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [team_id, map_name]
+    columns:
+      - name: last_played_on
+        data_tests: [inside_analysis_window]
+
+  - name: mart_team_roster
+    description: "D26: jogadores de cada time na janela, com mapas, agente principal e última aparição."
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [team_id, player_id]
+    columns:
+      - name: last_played_on
+        data_tests: [inside_analysis_window]
+
+unit_tests:
+  - name: popularidade_conta_composicoes_por_mes
+    description: >
+      Duas composições VCT em janeiro (uma com jett, as duas com omen), uma VCL em janeiro e uma VCT
+      em fevereiro: o pick rate é composições com o agente ÷ composições do mês no mesmo tier e na
+      mesma visão; o tier não mistura os totais.
+    model: mart_agent_popularity
+    given:
+      - input: ref('mart_compositions')
+        rows:
+          - {match_date: "2026-01-05", tier: "vct", is_in_recent_window: false, agents: "['jett', 'omen']"}
+          - {match_date: "2026-01-20", tier: "vct", is_in_recent_window: false, agents: "['omen', 'sova']"}
+          - {match_date: "2026-01-21", tier: "vcl", is_in_recent_window: false, agents: "['omen']"}
+          - {match_date: "2026-02-02", tier: "vct", is_in_recent_window: true, agents: "['omen']"}
+    expect:
+      rows:
+        - {month: "2026-01-01", tier: "vct", is_in_recent_window: false, agent: "jett", compositions_with_agent: 1, compositions: 2, pick_rate: 0.5}
+        - {month: "2026-01-01", tier: "vct", is_in_recent_window: false, agent: "omen", compositions_with_agent: 2, compositions: 2, pick_rate: 1.0}
+        - {month: "2026-01-01", tier: "vct", is_in_recent_window: false, agent: "sova", compositions_with_agent: 1, compositions: 2, pick_rate: 0.5}
+        - {month: "2026-01-01", tier: "vcl", is_in_recent_window: false, agent: "omen", compositions_with_agent: 1, compositions: 1, pick_rate: 1.0}
+        - {month: "2026-02-01", tier: "vct", is_in_recent_window: true, agent: "omen", compositions_with_agent: 1, compositions: 1, pick_rate: 1.0}
+
+  - name: internacional_so_entre_regioes_diferentes_e_conhecidas
+    description: >
+      Fica a partida internacional entre regiões diferentes; sai a doméstica, a de mesma região e a
+      de região desconhecida. O resultado do time 1 vale 0,5 no empate.
+    model: mart_international_matches
+    given:
+      - input: ref('fct_match')
+        rows:
+          - {match_id: "i1", match_date: "2026-05-01", is_in_analysis_window: true, is_excluded: false, is_international: true, team1_id: "a", team2_id: "b", team1_region: "emea", team2_region: "pacific", winner_team_id: "a", is_draw: false}
+          - {match_id: "i2", match_date: "2026-05-02", is_in_analysis_window: true, is_excluded: false, is_international: true, team1_id: "a", team2_id: "c", team1_region: "emea", team2_region: "emea", winner_team_id: "a", is_draw: false}
+          - {match_id: "i3", match_date: "2026-05-03", is_in_analysis_window: true, is_excluded: false, is_international: true, team1_id: "a", team2_id: "d", team1_region: "emea", team2_region: null, winner_team_id: "d", is_draw: false}
+          - {match_id: "d1", match_date: "2026-05-04", is_in_analysis_window: true, is_excluded: false, is_international: false, team1_id: "a", team2_id: "b", team1_region: "emea", team2_region: "pacific", winner_team_id: "b", is_draw: false}
+      - input: ref('fct_team_elo')
+        rows:
+          - {match_id: "i1", team_id: "a", expected_result: 0.6, rating_before: 1600, opponent_rating_before: 1530}
+          - {match_id: "i2", team_id: "a", expected_result: 0.5, rating_before: 1600, opponent_rating_before: 1600}
+          - {match_id: "i3", team_id: "a", expected_result: 0.5, rating_before: 1600, opponent_rating_before: 1600}
+          - {match_id: "d1", team_id: "a", expected_result: 0.6, rating_before: 1600, opponent_rating_before: 1530}
+    expect:
+      rows:
+        - {match_id: "i1", team1_region: "emea", team2_region: "pacific", team1_result: 1.0, team1_expected_result: 0.6}

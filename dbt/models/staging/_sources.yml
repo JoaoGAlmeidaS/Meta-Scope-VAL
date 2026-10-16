@@ -19,7 +19,7 @@ sources:
       - name: raw_event_agents
         description: "Agregado do vlr.gg por evento × mapa × agente. Gabarito do D13, nunca fonte."
       - name: raw_match
-        description: "Uma linha por partida (série)."
+        description: "Uma linha por partida (série), com o logo de cada time (`team*_img`, pegadinha 42)."
       - name: raw_map
         description: "Uma linha por mapa jogado."
       - name: raw_veto
@@ -27,6 +27,6 @@ sources:
       - name: raw_round
         description: "Uma linha por round, com lado do vencedor e economia quando houver."
       - name: raw_player_map
-        description: "Uma linha por jogador-mapa, com o agente."
+        description: "Uma linha por jogador-mapa, com o agente e o ícone dele (`agent_img`)."
       - name: raw_reject
         description: "Partidas que falharam no contrato, na API ou não estavam finalizadas."

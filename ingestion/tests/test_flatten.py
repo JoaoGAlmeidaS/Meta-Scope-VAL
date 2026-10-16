@@ -166,3 +166,14 @@ def test_mapa_sem_dado_fica_contado_na_partida(load_match):
     (match,) = flat["raw_match"]
     assert (match["n_maps"], match["n_maps_without_data"]) == (2, 1)
     assert all(m["n_maps_without_data"] == 0 for m in _flat(load_match, BO5)["raw_match"])
+
+
+def test_logo_do_time_vai_para_a_partida(load_match):
+    (row,) = _flat(load_match, "match_bo3_2x0_basic.json")["raw_match"]
+    assert row["team1_img"] == "https://owcdn.net/img/633822848a741.png"  # G2 Esports
+    assert row["team2_img"] == "https://owcdn.net/img/62bbec8dc1b9f.png"  # LOUD
+
+
+def test_icone_do_agente_vai_para_o_jogador(load_match):
+    rows = _flat(load_match, "match_bo3_2x0_basic.json")["raw_player_map"]
+    assert all(r["agent_img"].endswith(f"/agents/{r['agent']}.png") for r in rows)

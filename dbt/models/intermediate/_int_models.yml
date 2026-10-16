@@ -54,6 +54,19 @@ models:
               arguments:
                 values: ["maps_played", "attack_win_rate", "pick_rate"]
 
+  - name: int_elo_matches
+    description: "Partidas competitivas que entram no Elo, com o resultado da série do time 1 (D15)."
+    columns:
+      - name: match_id
+        data_tests: [unique, not_null]
+      - name: team1_result
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [0.0, 0.5, 1.0]
+                quote: false
+
 unit_tests:
   - name: validacao_arredonda_antes_de_comparar_com_o_gabarito
     description: >

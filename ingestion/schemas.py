@@ -63,14 +63,26 @@ class Response[T](_Contract):
 
 
 class Agent(_Contract):
-    """Agente. O nome vem capitalizado em `players` e minúsculo nos demais lugares."""
+    """Agente. O nome vem capitalizado em `players` e minúsculo nos demais lugares.
+
+    `img` é o ícone do agente no vlr.gg (`/img/vlr/game/agents/{nome}.png`); opcional, porque nem
+    todo endpoint o traz.
+    """
 
     name: str = Field(min_length=1)
+    img: str | None = None
 
     @field_validator("name")
     @classmethod
     def _lower(cls, v: str) -> str:
         return v.strip().lower()
+
+    @field_validator("img", mode="before")
+    @classmethod
+    def _icon(cls, v: Any) -> str | None:
+        if not v:
+            return None
+        return f"https:{v}" if v.startswith("//") else v
 
 
 # --- detalhe de partida: /matches/{id} -------------------------------------------------------
@@ -82,12 +94,28 @@ class EventRef(_Contract):
     series: str
 
 
+# Time sem logo no vlr.gg vem com a imagem genérica do site (pegadinha 42): vira "sem logo".
+_PLACEHOLDER_LOGO = "/img/vlr/tmp/"
+
+
 class MatchTeam(_Contract):
-    """Time no topo da partida: a única fonte de `id` de time."""
+    """Time no topo da partida: a única fonte de `id` de time.
+
+    `img` é o logo (CDN do vlr.gg). Opcional: o placeholder genérico do vlr.gg vira `None`, e URL
+    sem protocolo (`//owcdn.net/...`) ganha `https:`.
+    """
 
     id: str
     name: str
     score: int
+    img: str | None = None
+
+    @field_validator("img", mode="before")
+    @classmethod
+    def _logo(cls, v: Any) -> str | None:
+        if not v or _PLACEHOLDER_LOGO in v:
+            return None
+        return f"https:{v}" if v.startswith("//") else v
 
 
 _VETO_STEP = re.compile(r"^(?P<team>\S+)\s+(?P<action>ban|pick)\s+(?P<map>.+)$")

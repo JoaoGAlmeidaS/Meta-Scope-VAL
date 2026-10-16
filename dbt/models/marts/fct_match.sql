@@ -72,6 +72,8 @@ select
     m.has_tabs,
     m.match_date between {{ analysis_window_start() }} and {{ as_of_date() }}
                                                         as is_in_analysis_window,
+    m.match_date between {{ recent_window_start() }} and {{ as_of_date() }}
+                                                        as is_in_recent_window,
     m.match_date between {{ elo_warmup_start() }} and {{ as_of_date() }}
                                                         as is_in_elo_range
 from with_patch m

@@ -1,27 +1,26 @@
-"""Treino e calibração — D19/D20/D21.
+"""Modelo treinado — depois do D30 (seção 9 do documento mestre). Nada aqui roda no build.
 
-Protocolo (D19):
-    * split **temporal**: treino ≤ 2024, validação 2025, teste 2026 — nunca aleatório
-    * baseline: Elo puro
-    * métricas: log loss, Brier score, curva de calibração (acurácia não conta sozinha)
+Nos 30 dias a previsão é a fórmula do Elo (`pipeline/elo.py`, calibração em
+`notebooks/07_previsao_calibracao.ipynb`). O modelo treinado entra só se bater esse baseline.
 
-Modelo (D20): regressão logística e LightGBM, calibrados com isotonic/Platt.
-Se não bater o baseline, isso vira uma seção honesta do README — não um problema a esconder.
-
-Predições (D21): todos os confrontos par a par (~150 times → ~11 mil), gravados
-particionados por time para o front fazer lookup.
+Protocolo combinado para quando entrar:
+    * split temporal dentro do histórico coletado (2025+): treino, validação e teste em blocos
+      consecutivos, nunca aleatório; o teste é o fim da janela de análise;
+    * features estritamente pré-partida, do warehouse: Elo antes da partida (`fct_team_elo`),
+      forma recente, mapa e lado (`mart_side_by_map`), pistol, região do time na época;
+    * baseline: a probabilidade do Elo de `mart_elo_calibration` (log loss 0,661 na janela de
+      out/2025 a out/2026, contra 0,693 da moeda);
+    * modelos: regressão logística e LightGBM (já nas dependências), calibrados (isotônica
+      ou Platt);
+    * métrica: log loss, Brier e curva de calibração; acurácia não conta sozinha;
+    * se não bater o baseline, vira uma seção honesta do README, não um problema a esconder.
 """
 
 from __future__ import annotations
 
-TRAIN_END = "2024-12-31"
-VALID_END = "2025-12-31"
-
-# TODO(D19): carregar mart_match_features, montar o split temporal, rodar o baseline.
-
 
 def main() -> None:
-    raise NotImplementedError("D19")
+    raise NotImplementedError("pós-D30: a previsão nos 30 dias é o Elo (pipeline/elo.py)")
 
 
 if __name__ == "__main__":

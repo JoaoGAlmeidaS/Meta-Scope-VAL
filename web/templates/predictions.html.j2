@@ -1,7 +1,45 @@
 {% extends "base.html.j2" %}
 {% block title %}Previsões — MetaScope VAL{% endblock %}
+{% block page_title %}Previsões{% endblock %}
 
 {% block content %}
-{# D28: selecao de dois times, lookup client-side, probabilidade calibrada,
-   aviso de modelo estatistico, estados vazio e de erro #}
+<div class="stack">
+  <section class="rank-intro">
+    <h2>Dois times.<br><em>Uma probabilidade.</em></h2>
+    <p>Probabilidade de cada time vencer a série, pela fórmula do Elo com o rating atual dos dois.</p>
+  </section>
+
+  <div class="notice"><b>Estatística, não conselho de aposta.</b> O Elo só conhece resultados de séries: não sabe de elenco novo, mapa, formato ou lesão. Na janela, a log loss das previsões é {{ calibration.all }} contra 0,693 da moeda{% if calibration.vct %}; entre times de VCT, {{ calibration.vct }}{% endif %} (<a href="analise-calibracao.html">calibração</a>).</div>
+
+  <form class="versus-card" onsubmit="return false">
+    <div class="team-select">
+      <div class="field search">
+        <label for="team-a">Time A</label>
+        <input id="team-a" type="search" placeholder="nome ou tag" autocomplete="off">
+        <ul id="team-a-list" hidden></ul>
+      </div>
+      <div id="pick-a"></div>
+    </div>
+    <div class="versus-center">
+      <div class="vs" aria-hidden="true"><span>VS</span></div>
+      <button id="swap" class="ghost-button" type="button" aria-label="trocar os times">Trocar</button>
+    </div>
+    <div class="team-select">
+      <div class="field search">
+        <label for="team-b">Time B</label>
+        <input id="team-b" type="search" placeholder="nome ou tag" autocomplete="off">
+        <ul id="team-b-list" hidden></ul>
+      </div>
+      <div id="pick-b"></div>
+    </div>
+    <div class="probability" id="probability"></div>
+  </form>
+
+  <section class="panel">
+    <div class="panel-head"><h2>Comparativo</h2><small>números da janela</small></div>
+    <div id="prediction"><div class="state">Carregando…</div></div>
+  </section>
+
+  <div id="cross"></div>
+</div>
 {% endblock %}

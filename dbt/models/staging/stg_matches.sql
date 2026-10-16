@@ -39,6 +39,9 @@ select
     cast(team2_id as varchar)                                   as team2_id,
     cast(team2_name as varchar)                                 as team2_name,
     cast(team2_score as integer)                                as team2_score,
+    -- Logo de cada time (CDN do vlr.gg); o contrato já anulou o placeholder (pegadinha 42).
+    nullif(cast(team1_img as varchar), '')                      as team1_img,
+    nullif(cast(team2_img as varchar), '')                      as team2_img,
     cast(n_maps as integer)                                     as maps_played,
     -- Mapas descartados pelo contrato por não ter dado nenhum, quase sempre W.O. de um mapa no
     -- meio da série (pegadinha 33). Arquivo gravado antes da coluna vale 0.

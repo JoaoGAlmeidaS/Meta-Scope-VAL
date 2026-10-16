@@ -23,6 +23,7 @@ select
     nullif(cast(team_tag as varchar), '')   as team_tag,  -- time sem tag (pegadinha 40)
     cast(team_id as varchar)            as team_id,
     cast(agent as varchar)              as agent,
+    nullif(cast(agent_img as varchar), '')  as agent_img,  -- ícone do vlr.gg
     cast(rating as double)              as rating,
     cast(acs as integer)                as acs,
     cast(kills as integer)              as kills,

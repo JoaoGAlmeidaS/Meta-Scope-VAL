@@ -1,0 +1,10 @@
+<div class="findings">
+  {% for a in analyses %}
+  <a class="finding" href="analise-{{ a.slug }}.html">
+    <span class="n">{{ "%02d" % a.number }}</span>
+    <span class="q">{{ a.title }}<small class="muted">{{ a.question }}</small></span>
+    <span class="a">{{ a.answer }}</span>
+    <span><span class="tag {{ a.verdict[1] }}">{{ a.verdict[0] }}</span></span>
+  </a>
+  {% endfor %}
+</div>

@@ -3,8 +3,8 @@
 from __future__ import annotations
 
 import pytest
-
 from dbt.cli.main import dbtRunner
+
 from ingestion.config import ROOT
 
 DBT_DIR = ROOT / "dbt"

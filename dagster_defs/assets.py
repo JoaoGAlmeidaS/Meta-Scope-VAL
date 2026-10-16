@@ -1,7 +1,9 @@
 """Assets — D12. O Dagster define o pipeline; o `make` e o GitHub Actions disparam.
 
-    lake/raw_*  (partição: temporada)  →  dbt: staging → intermediate → marts
+    lake/raw_*  (partição: temporada)  →  dbt: staging → intermediate → marts → analysis
                                           (testes do dbt viram asset checks)
+                                       →  site/site_artifacts (JSONs de dist/data, D22)
+                                       →  site/site_pages (HTML de dist/, D24)
 
 A coleta é um multi-asset: materializar uma temporada roda a coleta daquela temporada, que grava
 as nove tabelas raw juntas, evento a evento (`ingestion/collectors.py`). O dbt não é
@@ -17,11 +19,14 @@ tempo de definição, e anotação em string não passa.
 from contextlib import AbstractContextManager
 
 from dagster import (
+    AssetCheckResult,
+    AssetCheckSpec,
     AssetExecutionContext,
     AssetKey,
     AssetSpec,
     ConfigurableResource,
     MaterializeResult,
+    asset,
     multi_asset,
 )
 from dagster_dbt import DbtCliResource, DbtProject, dbt_assets
@@ -88,3 +93,75 @@ def lake_tables(context: AssetExecutionContext, vlr: VlrApi):
 def warehouse(context: AssetExecutionContext, dbt: DbtCliResource):
     """`dbt build`: seeds, models e testes (cada teste vira um asset check no Dagster)."""
     yield from dbt.cli(["build"], context=context).stream()
+
+
+# Marts que o site lê (pipeline/site_artifacts.py): a ordem no job vem destas dependências.
+SITE_SOURCES = [
+    AssetKey(["analysis", name])
+    for name in (
+        "mart_team_ratings",
+        "mart_team_matches",
+        "mart_team_maps",
+        "mart_team_roster",
+        "mart_matchups",
+        "mart_side_by_map",
+        "mart_pistol",
+        "mart_veto_picks",
+        "mart_veto_actions",
+        "mart_international_matches",
+        "mart_compositions",
+        "mart_agent_popularity",
+        "mart_drift_side_by_quarter",
+        "mart_drift_agents_by_quarter",
+        "mart_elo_calibration",
+    )
+] + [AssetKey(["marts", "fct_team_elo"]), AssetKey(["marts", "dim_patch"])]
+
+MAX_FILE_KB = 300  # critério de pronto do D22: o maior JSON cabe em poucas centenas de KB
+
+
+@asset(
+    key=AssetKey(["site", "site_artifacts"]),
+    group_name="site",
+    kinds={"json"},
+    deps=SITE_SOURCES,
+    check_specs=[
+        AssetCheckSpec("largest_file_under_limit", asset=AssetKey(["site", "site_artifacts"]))
+    ],
+)
+def site_artifacts(context: AssetExecutionContext):
+    """JSONs pré-computados do site em dist/data: meta, times, previsões, meta e análises."""
+    from pipeline.site_artifacts import build, dist_dir
+
+    sizes = build()
+    largest, size = max(sizes.items(), key=lambda kv: kv[1])
+    return MaterializeResult(
+        metadata={
+            "files": len(sizes),
+            "total_kb": round(sum(sizes.values()) / 1024, 1),
+            "largest": largest,
+            "largest_kb": round(size / 1024, 1),
+            "dir": str(dist_dir() / "data"),
+        },
+        check_results=[
+            AssetCheckResult(
+                check_name="largest_file_under_limit",
+                passed=size <= MAX_FILE_KB * 1024,
+                metadata={"largest": largest, "kb": round(size / 1024, 1), "limit_kb": MAX_FILE_KB},
+            )
+        ],
+    )
+
+
+@asset(
+    key=AssetKey(["site", "site_pages"]),
+    group_name="site",
+    kinds={"html"},
+    deps=[site_artifacts],
+)
+def site_pages(context: AssetExecutionContext):
+    """Páginas do site (Jinja2 sobre web/templates) e os assets de web/assets, em dist/."""
+    from pipeline.build_site import build
+
+    pages = build()
+    return MaterializeResult(metadata={"pages": len(pages), "files": ", ".join(sorted(pages))})

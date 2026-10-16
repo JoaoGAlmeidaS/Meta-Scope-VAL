@@ -57,9 +57,11 @@ def flatten_match(
                 "team1_id": team1.id,
                 "team1_name": team1.name,
                 "team1_score": team1.score,
+                "team1_img": team1.img,
                 "team2_id": team2.id,
                 "team2_name": team2.name,
                 "team2_score": team2.score,
+                "team2_img": team2.img,
                 "n_maps": len(detail.maps),
                 "n_maps_without_data": detail.maps_without_data,
                 "has_tabs": has_tabs,
@@ -134,6 +136,7 @@ def flatten_match(
                     "team_tag": player.team_tag,
                     "team_id": bridge.get(player.team_tag),
                     "agent": player.agents[0].name,
+                    "agent_img": player.agents[0].img,
                     **{name: getattr(stats, name) for name in STATS},
                 }
             )

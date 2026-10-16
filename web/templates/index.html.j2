@@ -1,10 +1,92 @@
 {% extends "base.html.j2" %}
-{% block title %}MetaScope VAL — análise do competitivo de VALORANT{% endblock %}
+{% import "_macros.html.j2" as ui %}
+{% block title %}MetaScope VAL — o competitivo de VALORANT, medido{% endblock %}
+{% block page_title %}Visão geral{% endblock %}
 
 {% block content %}
-{# D25: home, rankings e busca de times #}
-<section class="hero">
-  <h1>O competitivo de VALORANT, medido.</h1>
-  <p>Pipeline próprio, warehouse versionado e um modelo calibrado — não palpite.</p>
-</section>
+<div class="stack">
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="status-tag">Janela de {{ meta.window.months }} meses · {{ meta.window.first_match | date_br }} a {{ meta.window.last_match | date_br }}</span>
+      <h1>O competitivo de VALORANT, <em>com intervalo de confiança.</em></h1>
+      <p>VCT e VCL nos últimos {{ meta.window.months }} meses: rating Elo, lados, pistol, veto, regiões e meta. Todo número com IC; quando os dados não decidem, o site diz “inconclusivo”.</p>
+      <div class="hero-actions">
+        <a class="primary-button" href="rankings.html">Ver rankings</a>
+        <a class="text-button" href="#faq">Como ler os números</a>
+      </div>
+      <div class="field search">
+        <label for="team-search">Buscar time</label>
+        <input id="team-search" type="search" placeholder="nome ou tag, ex.: Paper Rex, PRX" autocomplete="off" role="combobox" aria-controls="team-search-list" aria-expanded="false">
+        <ul id="team-search-list" hidden></ul>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <span class="caption">Distância do meta de agentes ao atual, por mapa</span>
+      <div id="hero-chart" class="chart" role="img" aria-label="Quanto mais antigo o trimestre, mais longe o meta de agentes está do atual"></div>
+      {% if hero %}
+      <div class="score-float"><b>{{ hero.far | num(2) }}</b><span>meta a 12+ meses do atual · ruído {{ hero.floor | num(2) }}</span></div>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="grid-hair metric-grid">
+    <article><span>Séries na janela</span><b>{{ meta.counts.matches | thousands }}</b><small>VCT e VCL, sem showmatch</small></article>
+    <article><span>Mapas</span><b>{{ meta.counts.maps | thousands }}</b><small>{{ meta.counts.maps_with_sides | thousands }} com lado por round</small></article>
+    <article><span>Times com Elo</span><b>{{ meta.counts.teams }}</b><small>com partida na janela</small></article>
+    <article><span>Patch atual</span><b>{{ meta.current_patch or "—" }}</b><small>{{ meta.patches | length }} patches na janela</small></article>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>O que os dados respondem</h2><a class="text-button" href="analises.html">Todas as análises</a></div>
+    {% include "_findings.html.j2" %}
+  </section>
+
+  <section class="grid-hair split-panel">
+    <div>
+      <div class="section-head"><h2>Topo da VCT</h2><a class="text-button" href="rankings.html">Ranking completo</a></div>
+      <div class="table-wrap">
+        <table class="dense">
+          <thead><tr><th class="num">#</th><th>Time</th><th>Região</th><th class="num">Elo</th><th class="num">Séries</th></tr></thead>
+          <tbody>
+            {% for t in top %}
+            <tr{% if loop.first %} class="top"{% endif %}>
+              <td class="rank num">{{ "%02d" % loop.index }}</td>
+              <td><a class="team-cell" href="team.html?id={{ t.id | urlencode }}">{{ ui.badge(t) }}<b>{{ t.name }}</b></a></td>
+              <td><span class="region-dot {{ t.region }}">{{ t.region }}</span></td>
+              <td class="num">{{ t.rating | num }}</td>
+              <td class="num">{{ t.matches }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <p class="faint" style="margin-top:.5rem"><small>Times com 10 séries ou mais na janela.</small></p>
+    </div>
+    <div id="faq">
+      <div class="section-head"><h2>Como ler os números</h2></div>
+      <div class="faq">
+        <details open>
+          <summary><span class="n">01</span><h3>Por que só os últimos {{ meta.window.months }} meses?</h3></summary>
+          <p>O jogo muda: agentes novos, ajustes de balanceamento e rotação de mapas.{% if hero %} Mapa por mapa, o meta de agentes de 12 meses atrás ou mais está a {{ hero.far | num(2) }} do atual (variação total; o ruído de amostragem dá {{ hero.floor | num(2) }}).{% endif %} Dado mais antigo descreve outro jogo. A <a href="analise-janela.html">tese da janela</a> mede isso no histórico inteiro.</p>
+        </details>
+        <details>
+          <summary><span class="n">02</span><h3>O que é o intervalo de confiança?</h3></summary>
+          <p>A faixa de valores compatíveis com a amostra, com 95% de confiança. Menos partidas, faixa mais larga. Rounds do mesmo mapa não são independentes, então o IC dos lados sai de um bootstrap que reamostra mapas, não rounds.</p>
+        </details>
+        <details>
+          <summary><span class="n">03</span><h3>Por que tanto “inconclusivo”?</h3></summary>
+          <p>Quando o IC inclui o valor de “nenhum efeito” (50% de vitória, zero acima do Elo), os dados não decidem. Com várias comparações ao mesmo tempo (12 mapas, 4 regiões), os p-valores passam pela correção de Holm, que evita achar efeito por sorte. Inconclusivo é resultado.</p>
+        </details>
+        <details>
+          <summary><span class="n">04</span><h3>Como o rating funciona?</h3></summary>
+          <p>É um Elo sobre o resultado da série, sem modelo treinado: cada série move o rating dos dois times conforme o resultado e o que o Elo esperava, sempre com o rating de antes da partida. Os parâmetros saíram de uma busca pela log loss nas partidas passadas. {% if calibration.all %}A probabilidade que ele dá a cada série é calibrada: na janela, log loss de {{ calibration.all }} contra 0,693 da moeda (<a href="analise-calibracao.html">calibração</a>).{% endif %} As previsões de confronto estão em desenvolvimento.</p>
+        </details>
+        <details>
+          <summary><span class="n">05</span><h3>De onde vêm os dados?</h3></summary>
+          <p>Partidas oficiais de VCT e VCL do vlr.gg, coletadas pela API vlresports e validadas contra os agregados do próprio vlr.gg. Showmatches e o tier 2 chinês (plataformas de terceiros, dados incompletos) ficam de fora. O site inteiro é reconstruído a cada build do pipeline; a <a href="lineage/">linhagem</a> mostra o caminho de cada tabela.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</div>
 {% endblock %}

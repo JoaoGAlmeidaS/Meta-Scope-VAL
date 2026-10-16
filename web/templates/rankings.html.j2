@@ -1,0 +1,48 @@
+{% extends "base.html.j2" %}
+{% block title %}Rankings — MetaScope VAL{% endblock %}
+{% block page_title %}Rankings{% endblock %}
+
+{% block content %}
+<div class="stack">
+  <section class="rank-intro">
+    <h2>Quem está no topo<br><em>agora.</em></h2>
+    <p>Elo atual dos times com partida na janela. Compare dentro do mesmo circuito: as ligas quase não se cruzam, e só os confrontos internacionais ligam as escalas.</p>
+  </section>
+
+  <section class="grid-hair filter-panel">
+    <div class="field">
+      <label for="f-q">Buscar time</label>
+      <input id="f-q" type="search" placeholder="nome ou tag" autocomplete="off">
+    </div>
+    <div class="field">
+      <span class="field-label">Tier</span>
+      <div class="segmented" id="f-tier" role="group" aria-label="tier">
+        <button type="button" data-value="vct">VCT</button>
+        <button type="button" data-value="vcl">VCL</button>
+        <button type="button" data-value="">Todos</button>
+      </div>
+    </div>
+    <div class="field">
+      <label for="f-region">Região</label>
+      <select id="f-region">
+        <option value="">todas</option>
+        <option value="americas">americas</option>
+        <option value="emea">emea</option>
+        <option value="pacific">pacific</option>
+        <option value="china">china</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="f-min">Séries mínimas</label>
+      <input id="f-min" type="number" min="0" step="1" value="10">
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head"><h2 id="ranking-count">Times</h2><small>tendência: Elo nas 10 últimas séries · dados até {{ meta.window.last_match | date_br }}</small></div>
+    <div id="ranking"><div class="state">Carregando…</div></div>
+  </section>
+
+  <p class="faint"><small>Elo sobre o resultado da série, com rating inicial por tier e regressão na virada de temporada. Busca dos parâmetros em <a href="{{ notebook_url }}06_rating.ipynb">06_rating.ipynb</a>; calibração na <a href="analise-calibracao.html">análise de calibração</a>.</small></p>
+</div>
+{% endblock %}

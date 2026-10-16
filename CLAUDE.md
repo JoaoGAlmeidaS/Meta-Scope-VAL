@@ -9,7 +9,7 @@ Projeto de portfólio. Prioridades: **engenharia de dados → produto → análi
 ## Comandos
 
 ```bash
-make build           # warehouse do zero pelo Dagster (dbt + checks) + dbt docs em dist/lineage
+make build           # warehouse do zero pelo Dagster (dbt + checks) + site em dist/ + dbt docs em dist/lineage
 make build-fixtures  # o mesmo sobre o lake de fixtures (trilho de CI sem segredo)
 make test            # pytest; os testes do Dagster pedem `make dbt-deps` antes
 make lint            # ruff + black
@@ -21,7 +21,9 @@ make lake-pull       # dataset do Hugging Face → data/lake
 make seed            # dbt deps + seeds com testes
 make dbt-build       # dbt build direto, sem Dagster (depuração)
 make dagster-dev     # UI local do Dagster, histórico em .dagster/
-make serve           # python -m http.server -d dist
+make site            # só o HTML de dist/ sobre os JSONs já gerados (iterar no front)
+make notebooks       # reexecuta os notebooks sobre o warehouse (outputs gravados no arquivo)
+make serve           # dist/ em localhost:8000, com no-cache (pipeline/serve.py)
 uv sync              # dependências
 ```
 
@@ -29,7 +31,9 @@ Nunca `pip install`. Dependência nova entra por `uv add`. Rode ferramentas com 
 
 O dbt roda **de dentro de `dbt/`** (`cd dbt && uv run dbt ...`): o perfil e o caminho padrão do
 lake são relativos a essa pasta. `LAKE_DIR` (absoluto) aponta o lake para o Python e para o dbt;
-`AS_OF_DATE` fixa a data de referência da janela (vazio = hoje). O Makefile exporta os dois.
+`AS_OF_DATE` fixa a data de referência da janela (vazio = hoje); `DERIVED_DIR` recebe as saídas do
+warehouse em arquivo (`matchups.parquet`); `PYTHONPATH` leva a raiz, porque o Python model do Elo
+importa `pipeline` de dentro de `dbt/`. O Makefile exporta os quatro.
 
 ## Arquitetura em uma frase
 
@@ -41,12 +45,14 @@ evento), JSON bruto em `data/lake/_json/`, espelhado num dataset **privado** do 
 
 Dagster (`dagster_defs/`): multi-asset `lake/raw_*` particionado por temporada (a coleta) →
 assets do dbt via dagster-dbt (os sources `lake.raw_*` são os mesmos assets; testes do dbt viram
-asset checks). Jobs `ingest` e `build`; o `make` e o Actions chamam esses jobs, nunca scripts
-paralelos. A API entra como resource (`VlrApi`), trocada pelo cliente offline nos testes.
+asset checks) → `site/site_artifacts` (JSONs de `dist/data`, check de tamanho) → `site/site_pages`
+(HTML). Jobs `ingest` e `build`; o `make` e o Actions chamam esses jobs, nunca scripts paralelos.
+A API entra como resource (`VlrApi`), trocada pelo cliente offline nos testes.
 
 CI em dois trilhos: todo push roda lint, pytest e `make build-fixtures` sobre o lake de fixtures
 (`ingestion/fixture_lake.py`, gerado dos JSONs do repo pelo backfill de verdade); o trilho real
-(lake-pull → ingest → lake-push → build) é manual e exige `HF_TOKEN`.
+(lake-pull → ingest → lake-push → build → deploy no Pages) é manual ou semanal, exige `HF_TOKEN`, e
+o schedule e o deploy só agem com a variável do repositório `PAGES_ENABLED = true`.
 
 ## Regras invioláveis
 
@@ -54,6 +60,8 @@ Decisões fechadas e documentadas em `docs/projeto-valorant-data.md`. Não sugir
 
 - **Janela de análise: 12 meses.** Todo mart de análise filtra pela variável dbt
   `analysis_window_months`. Nunca hardcode a janela. Exceções: aquecimento do Elo e o mart de drift.
+  A **visão recente** (`recent_window_months`, 3) é um recorte dentro dela, alternativa no site
+  (Análises e Meta), nunca no lugar dela: os notebooks e a home usam a janela inteira.
 - **Coleta própria desde 2025, análise restrita.** O backfill vai de 2025 até hoje, do mais
   recente para o mais antigo (`HISTORY_SINCE` em `ingestion/config.py`); o filtro acontece no dbt.
   Janela e aquecimento do Elo cabem em 2025+. O histórico anterior, que só o drift (D17) usa, vem
@@ -66,21 +74,25 @@ Decisões fechadas e documentadas em `docs/projeto-valorant-data.md`. Não sugir
 - **Sem modelo treinado nos 30 dias.** Previsões usam a probabilidade do Elo. Não proponha
   LightGBM, scikit-learn ou treino antes do D30.
 - **DuckDB é engine, não banco.** Não sugira Postgres.
-- **Transformação é em SQL no dbt**, não em pandas.
+- **Transformação é em SQL no dbt**, não em pandas. Exceção única: o Elo (`fct_team_elo`, Python
+  model sobre `pipeline/elo.py`), porque é iterativo. Estatística (IC, bootstrap, Holm, shrinkage)
+  fica em `pipeline/stats.py` e `pipeline/analyses.py`, sobre os marts de análise.
 - **Notebooks usam matplotlib.** Interativo existe só no site.
 - **Dados não entram no Git.** Parquet vai para o lake; só fixtures JSON ficam no repo.
 
 ## Regras de dados
 
 - **Elo sempre pré-partida:** o rating usado para prever ou avaliar uma partida é o de antes dela.
+  Os ajustes entre partidas (regressão de temporada, reancoragem na promoção VCL → VCT) só usam o
+  passado; parâmetro novo do Elo entra na busca em grade do notebook 06.
 - **Calibração** se mede com log loss, Brier e curva. Acurácia é secundária.
 - **Todo número publicado leva intervalo de confiança.** Inconclusivo é resultado válido.
 - **Composição sempre com shrinkage**, por mapa e patch, controlando força do time.
 - **Idempotência:** rodar duas vezes não duplica linha. Upsert por id; no lake, reescrever o
   arquivo do evento é o upsert.
 - **Particionamento por temporada** (`season`) no lake e nos assets do Dagster.
-- **Janela e aquecimento** (`analysis_window_months`, `elo_warmup_months`) ficam só em
-  `dbt/dbt_project.yml`; o Python lê por `ingestion/config.py`. Elas também decidem o `tabs=all`.
+- **Janela e aquecimento** (`analysis_window_months`, `recent_window_months`, `elo_warmup_months`)
+  ficam só em `dbt/dbt_project.yml`; o Python lê por `ingestion/config.py`. Elas também decidem o `tabs=all`.
 - **Patch sai do seed `patches.csv` pela data da partida.** A API não expõe o patch; torneio que
   trava patch anterior fica mal atribuído (limitação documentada).
 - **Região do time** = região do evento doméstico mais recente que ele disputou antes da partida
@@ -90,7 +102,18 @@ Decisões fechadas e documentadas em `docs/projeto-valorant-data.md`. Não sugir
 - **Dimensão é retrato; a época fica no fato.** `dim_*` tem nome, tag e região mais recentes; o
   nome e a tag da época estão nos `fct_*`. Sem SCD.
 - **Fatos cobrem todo o histórico** e carregam `is_excluded` e `is_in_analysis_window`; quem filtra
-  são os marts de análise (`mart_*`). A janela vem das macros de `dbt/macros/window.sql`.
+  são os marts de análise (`dbt/models/analysis/mart_*`, com o teste `inside_analysis_window`; os
+  `mart_drift_*` são a exceção). A janela vem das macros de `dbt/macros/window.sql`.
+- **Um número, uma fonte.** Notebooks e site chamam as mesmas funções de `pipeline/analyses.py`.
+  Mart se lê por `analyses.table`, que impõe a ordem de `ORDER`: o bootstrap com semente reamostra
+  posições, e sem ordem fixa o IC mudaria a cada leitura. Mart novo entra em `ORDER` (há teste).
+- **Recorte do site = `analyses.Scope`** (janela `full`/`recent` × tier `all`/`vct`/`vcl`). Os
+  marts de análise levam `tier` e `is_in_recent_window`, e `analyses.table(con, nome, scope)` é o
+  único ponto que filtra (recorte que o mart não tem é erro). Mart agregado tem as duas colunas no
+  grão e a função soma as contagens antes da taxa; o drift tem só o tier (é o histórico inteiro).
+  Mart novo de análise entra em `TIERED`/`WINDOWED` (há teste).
+- **Elo prevê a série.** Análise por mapa (pistol, veto, composição) converte com
+  `analyses.map_probability` (inverte P(BO3) = p²(3 − 2p) e a da BO5), pelo `best_of` do mart.
 - **Lado só onde existe.** Mapa sem histórico de lado (`has_round_sides = false`) entra no placar,
   na composição e no Elo, e fica fora de qualquer análise de lado.
 - **Exceção de qualidade é escrita.** Divergência aceita nos testes do D13 vai para o seed
@@ -130,6 +153,8 @@ Decisões fechadas e documentadas em `docs/projeto-valorant-data.md`. Não sugir
   por mapa antes de juntar.
 - Showmatch vem junto das partidas do evento (`series` "Showmatch: …"): `fct_match.is_showmatch`
   liga `is_excluded`, e os fatos herdam. Nunca analise showmatch.
+- Torneio aberto pode vir com tier VCT (Project Blender 2026): o seed exclui, e o teste
+  `assert_vct_events_have_vct_teams` avisa quando a maioria dos times nunca jogou outro VCT.
 - Time sem tag (Korea WDG): jogadores com `teamTag` vazio e rounds com `winner` nulo; o contrato
   usa a tag vazia, e o staging a anula. O método de vitória pode faltar em rounds soltos.
 - Nome de time chinês vem com razão social na partida e nome curto no mapa: resolva nome → id só
@@ -139,6 +164,8 @@ Decisões fechadas e documentadas em `docs/projeto-valorant-data.md`. Não sugir
   duração e sem rating) ficam com `has_complete_stats = false`: o gabarito do vlr.gg os exclui, e
   a validação cruzada também.
 - `loadout` da economia pode vir nulo em rounds soltos.
+- `teams[].img` é o logo do time (CDN do vlr.gg); sem logo, vem o placeholder `/img/vlr/tmp/vlr.png`,
+  que o contrato anula (`dim_team.logo_url` fica nulo e o site mostra as iniciais).
 - Time sem página no vlr.gg ("TBD", id nulo) derruba a partida no contrato, de propósito. O mesmo
   vale para evento órfão, substituição no mapa (slot "A/B" sem id) e jogador fundido (dois agentes
   numa linha): o coletor rejeita como `source` (`schemas.known_source_defect`), que não conta para
@@ -160,9 +187,10 @@ Decisões fechadas e documentadas em `docs/projeto-valorant-data.md`. Não sugir
 
 - Python 3.12, `uv`, ruff + black via pre-commit. Ambiente em WSL Ubuntu.
 - dbt: `stg_*`, `int_*`, `dim_*` / `fct_*`, `mart_*`. Todo model novo com teste no
-  `_*_models.yml` da pasta (`_stg_models.yml`, `_int_models.yml`, `_marts_models.yml`); regra com
-  lógica não trivial ganha teste unitário do dbt (`unit_tests:`) no mesmo arquivo. Testes de
-  qualidade entre tabelas ficam em `dbt/tests/assert_*.sql`.
+  `_*_models.yml` da pasta (`_stg_models.yml`, `_int_models.yml`, `_marts_models.yml`,
+  `_analysis_models.yml`); regra com lógica não trivial ganha teste unitário do dbt
+  (`unit_tests:`) no mesmo arquivo. Testes de qualidade entre tabelas ficam em
+  `dbt/tests/assert_*.sql`.
 - O lake de fixtures é o caminho para testar o dbt: caso novo da API vira fixture em
   `ingestion/tests/fixtures/` e entra em `ingestion/fixture_lake.py`.
 - Em `dagster_defs/assets.py`, sem `from __future__ import annotations`: o Dagster inspeciona a
@@ -177,11 +205,39 @@ Decisões fechadas e documentadas em `docs/projeto-valorant-data.md`. Não sugir
 
 ## Front-end
 
-- CSS próprio com custom properties.
-- Tema customizado do ECharts derivado dos tokens. Nunca o tema padrão.
+- Referência visual: o protótipo do Figma Make em `design-reference/` (React + Tailwind, local e
+  fora do Git). É só referência: o site continua Jinja2 + CSS próprio, sem React nem Tailwind, e
+  o conteúdo fictício do protótipo nunca entra (cada slot sem dado real recebe dado real ou sai).
+- CSS próprio com custom properties. Barlow Condensed (títulos, números de destaque, marca) e Inter
+  (corpo, tabelas com `tabular-nums`), pelo Google Fonts. Cantos retos, painéis com fio de 1 px.
+- `--accent` é a marca (vermelho no escuro, dourado no claro, como no protótipo); os tokens de dado
+  (`--attack`, `--defense`, `--gold`, `--win`, `--loss`, regiões) são outra coisa e não mudam junto.
+- Tema customizado do ECharts derivado dos tokens (`echarts-theme.js` lê as custom properties).
+  Nunca o tema padrão: todo gráfico nasce de `chart(el)` em `app.js`.
+- Paleta única: os tokens de dado de `web/assets/style.css` (tema claro) e as constantes de
+  `pipeline/plots.py` (notebooks) mudam juntos.
+- Cache: CSS e JS levam `?v=` do hash do conteúdo (`build_site.py`); JSON leva `?v=` do `meta.json`.
+- O texto de cada resposta sai em `build_site.py` (a partir dos JSONs), não no JS: a página diz o
+  resultado mesmo sem gráfico.
+- Imagens do site em `web/assets/imgs/` (saem em `dist/assets/imgs/`, referência relativa
+  `assets/imgs/…`). Logo do site por tema: `logoE` (escuro) e `logoC` (claro), também usados como
+  favicon; sem eles, fica o selo "M". A Linhagem (dbt docs) fica só no rodapé. Banner do Meta:
+  `imgs/maps/{Mapa}.webp|jpg|png` (o nome casa sem diferenciar maiúsculas; a API não tem imagem
+  de mapa); sem arquivo, o banner fica só com o nome.
+- Logo dos times: o da API (`dim_team.logo_url`, carregado direto do CDN do vlr.gg); um arquivo em
+  `web/assets/imgs/teams/{team_id}.svg|png|webp` vence o da API. Sem logo, ou se ele falhar ao
+  carregar, o badge mostra as iniciais na cor da região.
+- Ícone dos agentes: o vlr.gg bloqueia exibir as imagens dele em outro site (403 pelo Referer), então
+  o site serve cópias locais em `web/assets/imgs/agentsV/{agente}.png`: `make agent-icons` baixa as
+  que faltam a partir de `dim_agent.image_url` e nunca sobrescreve arquivo existente. Sem arquivo,
+  iniciais. Nunca contorne o bloqueio (ex.: `referrerpolicy`).
+- Previsões de confronto em desenvolvimento: `PREDICTIONS_ENABLED = False` em `build_site.py`
+  renderiza `soon.html.j2`; o template do versus, o `pages.predictions` e os
+  `predictions/{id}.json` continuam prontos para religar.
 - Densidade compacta: tabela densa, não cartão espaçado.
 - Evite padrões genéricos: rótulo em caixa alta acima de cada título, cartões idênticos com a
-  mesma sombra, seta `→` em botão, fade-and-slide em cada seção.
+  mesma sombra, seta `→` em botão, fade-and-slide em cada seção. A única animação é a entrada
+  sutil do conteúdo da página inteira (0,3 s), desligada com `prefers-reduced-motion`.
 
 ## Ao fim de cada sessão
 

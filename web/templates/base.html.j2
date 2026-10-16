@@ -4,27 +4,72 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}MetaScope VAL{% endblock %}</title>
-  <link rel="stylesheet" href="{{ base_url }}assets/style.css?v={{ build_version }}">
+  <meta name="description" content="{% block description %}Análise estatística do competitivo de VALORANT: rating Elo, lados, pistol, veto, regiões e meta de composição, com intervalo de confiança em todo número.{% endblock %}">
+  <script>try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;1,700&family=Inter:wght@400;500;600;700&display=swap">
+  {% if favicon %}
+  <link rel="icon" href="assets/{{ favicon }}?v={{ asset_v[favicon] }}">
+  {% elif logo_dark %}
+  <link rel="icon" href="assets/{{ logo_dark }}?v={{ asset_v[logo_dark] }}" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/{{ logo_light }}?v={{ asset_v[logo_light] }}" media="(prefers-color-scheme: light)">
+  {% endif %}
+  <link rel="stylesheet" href="assets/style.css?v={{ asset_v["style.css"] }}">
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="{{ base_url }}">MetaScope<span>VAL</span></a>
-    <nav>
-      <a href="{{ base_url }}rankings.html">Rankings</a>
-      <a href="{{ base_url }}meta.html">Meta</a>
-      <a href="{{ base_url }}previsoes.html">Previsões</a>
-      <a href="{{ base_url }}lineage/">Linhagem</a>
+<body data-page="{{ page }}"{% if not predictions_enabled %} data-predictions="off"{% endif %}{% block body_attrs %}{% endblock %}>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="index.html">
+      {% if logo_dark %}
+      <img class="logo logo-dark" src="assets/{{ logo_dark }}?v={{ asset_v[logo_dark] }}" alt="">
+      <img class="logo logo-light" src="assets/{{ logo_light }}?v={{ asset_v[logo_light] }}" alt="">
+      {% else %}<span class="mark">M</span>{% endif %}
+      <b>MetaScope<br><span>VAL</span></b>
+    </a>
+    <nav aria-label="principal">
+      {# a Linhagem (dbt docs) fica só no rodapé #}
+      {% for href, label, key, mark in [
+        ("index.html", "Visão geral", "home", "⌂"),
+        ("rankings.html", "Rankings", "rankings", "≡"),
+        ("meta.html", "Meta", "meta", "◫"),
+        ("analises.html", "Análises", "analyses", "⌁"),
+        ("previsoes.html", "Previsões", "predictions", "⇄"),
+      ] %}
+      <a href="{{ href }}"{% if page == key or page == key ~ "-soon" or (key == "analyses" and page == "analysis") or (key == "rankings" and page == "team") %} aria-current="page"{% endif %}><i aria-hidden="true">{{ mark }}</i><span>{{ label }}</span>{% if key == "predictions" and not predictions_enabled %}<small class="soon-tag">em breve</small>{% endif %}</a>
+      {% endfor %}
     </nav>
-  </header>
+    <dl class="side-bottom">
+      <dt>Dados até</dt><dd>{{ meta.window.last_match | date_br }}</dd>
+      <dt>Patch</dt><dd>{{ meta.current_patch or "—" }}</dd>
+      <dt>Build</dt><dd>{{ version }}</dd>
+    </dl>
+  </aside>
+  <button class="mobile-menu" id="mobile-menu" type="button" aria-label="abrir o menu" aria-controls="sidebar" aria-expanded="false">≡</button>
 
-  <main>{% block content %}{% endblock %}</main>
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <span class="context">{% block context %}VCT + VCL · janela de {{ meta.window.months }} meses{% endblock %}</span>
+        <h1>{% block page_title %}MetaScope VAL{% endblock %}</h1>
+      </div>
+      <div class="top-actions">
+        <span class="pill" title="partidas da janela de análise"><i></i>{{ meta.window.first_match | date_br }} – {{ meta.window.last_match | date_br }}</span>
+        <button id="theme-toggle" class="icon-button" type="button" aria-label="alternar tema">◐</button>
+      </div>
+    </header>
 
-  <footer class="site-footer">
-    <p>Build {{ build_version }} · dados via vlr.gg · modelo estatístico, não é conselho de aposta.</p>
-  </footer>
+    <main class="content">{% block content %}{% endblock %}</main>
 
-  <script src="{{ base_url }}assets/echarts-theme.js?v={{ build_version }}"></script>
-  <script src="{{ base_url }}assets/app.js?v={{ build_version }}"></script>
-  {% block scripts %}{% endblock %}
+    <footer class="site-footer">
+      <b>MetaScope VAL</b>
+      <span>Dados do vlr.gg via vlresports · build {{ version }}</span>
+      <span><a href="{{ repo_url }}">Código</a> · <a href="lineage/">Linhagem dbt</a></span>
+      <small class="legal" title="MetaScope VAL isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties.">Estatística, não conselho de aposta · não afiliado à Riot Games · VALORANT e Riot Games são marcas da Riot Games, Inc.</small>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js" integrity="sha256-6EJwvQzVvfYP78JtAMKjkcsugfTSanqe4WGFpUdzo88=" crossorigin="anonymous"></script>
+  <script src="assets/echarts-theme.js?v={{ asset_v["echarts-theme.js"] }}"></script>
+  <script src="assets/app.js?v={{ asset_v["app.js"] }}"></script>
 </body>
 </html>

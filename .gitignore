@@ -10,18 +10,21 @@ htmlcov/
 # uv
 uv.lock.bak
 
-# dados e artefatos de build
+# dados e artefatos de build: o lake mora no dataset privado do Hugging Face (make lake-push/pull),
+# o warehouse é descartável e o site (dist/) é gerado pelo CI a cada build
 data/
 *.duckdb
 *.duckdb.wal
+*.parquet
 .cache/
+dist/
+logs/
+
+# dbt: pacotes, compilados e o id anônimo local
 dbt/target/
 dbt/dbt_packages/
 dbt/logs/
-logs/
-dist/
-!dist/.gitkeep
-*.parquet
+dbt/.user.yml
 
 # dagster
 .dagster/
@@ -31,10 +34,15 @@ tmp*/
 # notebooks: outputs SAO commitados (decisao de projeto), checkpoints nao
 .ipynb_checkpoints/
 
-# ambiente
+# ambiente e ferramentas locais
 .env
 .DS_Store
+*:Zone.Identifier
+.claude/
+*.rar
 
-#Docs fora do projeto
+# fora do repositório: o protótipo do Figma Make (referência, com conteúdo fictício) e docs
+# pessoais (guia e rascunho do post)
+design-reference/
 docs/estrutura.md
-dbt.rar
+docs/post-linkedin.md

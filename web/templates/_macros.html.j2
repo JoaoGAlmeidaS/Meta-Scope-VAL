@@ -1,0 +1,39 @@
+{# Badge do time: o logo (API do vlr.gg ou arquivo em imgs/teams/{id}) sobre as iniciais da tag
+   na cor da região; se o logo faltar ou falhar ao carregar (onerror remove a imagem), ficam as
+   iniciais. O app.js tem o equivalente `teamBadge` para as tabelas montadas no navegador. #}
+{% macro badge(t, size="") -%}
+<span class="team-badge {{ t.region or "" }} {{ size }}" aria-hidden="true"><span class="code">{{ ((t.tag or t.name) | upper)[:2] }}</span>{% if t.get("logo") %}<img src="{{ t.logo }}" alt="" loading="lazy" onerror="this.remove()">{% endif %}</span>
+{%- endmacro %}
+
+{# Recorte das Análises e do Meta: a janela (a de análise ou a visão recente) e o tier, campos de
+   um `.filter-panel`. O app.js liga os botões (`bindScope`) e troca os JSONs pelo recorte; sem JS,
+   vale o padrão (janela inteira, todos os tiers), que é o que o HTML já mostra. Sem a janela
+   (`with_window=False`, a tese da janela), o período é o histórico inteiro. #}
+{% macro scope_fields(meta, with_window=True) -%}
+{% if with_window %}
+<div class="field">
+  <span class="field-label">Janela</span>
+  <div class="segmented" data-scope="window" role="group" aria-label="janela">
+    <button type="button" data-value="full" aria-pressed="true">{{ meta.window.months }} meses</button>
+    <button type="button" data-value="recent" aria-pressed="false">{{ meta.window.recent_months }} meses</button>
+  </div>
+</div>
+{% endif %}
+<div class="field">
+  <span class="field-label">Tier</span>
+  <div class="segmented" data-scope="tier" role="group" aria-label="tier">
+    <button type="button" data-value="vct" aria-pressed="false">VCT</button>
+    <button type="button" data-value="vcl" aria-pressed="false">VCL</button>
+    <button type="button" data-value="all" aria-pressed="true">Todos</button>
+  </div>
+</div>
+<div class="field scope-period">
+  <span class="field-label">Período</span>
+  {% if with_window %}
+  {% set full = (meta.window.start | date_br) ~ " a " ~ (meta.window.end | date_br) %}
+  <span id="scope-period" data-full="{{ full }}" data-recent="{{ meta.window.recent_start | date_br }} a {{ meta.window.end | date_br }}">{{ full }}</span>
+  {% else %}
+  <span id="scope-period">histórico inteiro, até {{ meta.window.end | date_br }}</span>
+  {% endif %}
+</div>
+{%- endmacro %}

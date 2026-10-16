@@ -1,0 +1,22 @@
+{% extends "base.html.j2" %}
+{% block title %}Análises — MetaScope VAL{% endblock %}
+{% block page_title %}Análises{% endblock %}
+
+{% block content %}
+<div class="stack">
+  <section class="rank-intro">
+    <h2>{{ analyses | length }} perguntas.<br><em>Respostas com IC.</em></h2>
+    <p>Uma página por pergunta: o gráfico, o intervalo de confiança, o método e o notebook que reproduz o número. Partidas de {{ meta.window.first_match | date_br }} a {{ meta.window.last_match | date_br }}; correção de Holm sempre que há várias comparações.</p>
+  </section>
+  <section class="grid-hair analysis-list">
+    {% for a in analyses %}
+    <a href="analise-{{ a.slug }}.html">
+      <span class="n">{{ "%02d" % a.number }}<small>{{ a.title }} · {{ a.day }}</small></span>
+      <h3>{{ a.question }}</h3>
+      <p>{{ a.answer }}</p>
+      <span class="tag {{ a.verdict[1] }}">{{ a.verdict[0] }}</span>
+    </a>
+    {% endfor %}
+  </section>
+</div>
+{% endblock %}

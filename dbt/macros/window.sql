@@ -1,6 +1,7 @@
 {#
   Janela de análise (D10). Regra inviolável: nenhum model escreve a janela à mão; todos passam
-  por estas macros, que leem `analysis_window_months` e `elo_warmup_months` do dbt_project.yml.
+  por estas macros, que leem `analysis_window_months`, `recent_window_months` e
+  `elo_warmup_months` do dbt_project.yml.
 
   `as_of_date()`: var `as_of_date`, senão a env `AS_OF_DATE`, senão hoje (UTC, pelo perfil).
 #}
@@ -12,6 +13,11 @@
 
 {% macro analysis_window_start() -%}
   cast({{ as_of_date() }} - interval {{ var('analysis_window_months') }} month as date)
+{%- endmacro %}
+
+{# Visão recente (alternativa do site): o fim da janela de análise, com menos dado. #}
+{% macro recent_window_start() -%}
+  cast({{ as_of_date() }} - interval {{ var('recent_window_months') }} month as date)
 {%- endmacro %}
 
 {% macro elo_warmup_start() -%}

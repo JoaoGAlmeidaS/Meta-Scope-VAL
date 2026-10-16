@@ -43,6 +43,27 @@ latest_region as (
 
 ),
 
+-- Logo mais recente de cada time (CDN do vlr.gg); nulo se o vlr.gg nunca teve logo dele.
+logos as (
+
+    select team1_id as team_id, team1_img as logo_url, match_at, match_id
+    from {{ ref('stg_matches') }}
+    where team1_img is not null
+    union all
+    select team2_id, team2_img, match_at, match_id
+    from {{ ref('stg_matches') }}
+    where team2_img is not null
+
+),
+
+latest_logo as (
+
+    select team_id, logo_url
+    from logos
+    qualify row_number() over (partition by team_id order by match_at desc, match_id desc) = 1
+
+),
+
 stats as (
 
     select
@@ -61,6 +82,7 @@ select
     n.team_name,
     t.team_tag,
     r.team_region                                   as region,
+    l.logo_url,
     s.first_match_at,
     s.last_match_at,
     s.matches_played,
@@ -69,3 +91,4 @@ from stats s
 join latest_name n using (team_id)
 left join latest_tag t using (team_id)
 left join latest_region r using (team_id)
+left join latest_logo l using (team_id)

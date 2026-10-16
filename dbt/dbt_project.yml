@@ -17,6 +17,12 @@ clean-targets: ["target", "dbt_packages"]
 vars:
   analysis_window_months: 12  # regra inviolável: nunca hardcode a janela
   elo_warmup_months: 6        # aquecimento do Elo antes da janela; também o corte de `tabs=all`
+  # Visão recente, alternativa da janela no site (Análises e Meta): o momento atual, com menos
+  # dado. Recorte dentro da janela de análise, nunca no lugar dela.
+  recent_window_months: 3
+  # Ranking Elo: time com menos séries do próprio tier na janela fica "provisório" (rating
+  # ainda assentando, ex.: promovido da VCL ao VCT). Só sinaliza: o rating é o mesmo.
+  rating_provisional_series: 10
   # Data de referência da janela. Nula: hoje. O CI de fixtures fixa (AS_OF_DATE) para o resultado
   # não mudar com o relógio. Ver macros/window.sql.
   as_of_date: null
@@ -34,3 +40,7 @@ models:
     marts:
       +materialized: table
       +schema: marts
+    # D16: marts de análise (`mart_*`), filtrados pela janela; testes no _analysis_models.yml.
+    analysis:
+      +materialized: table
+      +schema: analysis

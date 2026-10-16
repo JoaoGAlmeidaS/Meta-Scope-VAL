@@ -10,15 +10,19 @@ repos:
         args: ["--maxkb=2048"]
       - id: check-merge-conflict
 
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.6.9
+  # ruff e black pelo `uv run`: as mesmas versões do uv.lock que o `make lint` e o CI usam (antes,
+  # o ruff do pre-commit era outra versão e ordenava imports de outro jeito: o 1º CI falhou nisso).
+  - repo: local
     hooks:
       - id: ruff
-        args: ["--fix"]
+        name: ruff
+        entry: uv run ruff check --fix
+        language: system
+        types: [python]
         exclude: "^notebooks/"
-
-  - repo: https://github.com/psf/black
-    rev: 24.8.0
-    hooks:
       - id: black
+        name: black
+        entry: uv run black
+        language: system
+        types: [python]
         exclude: "^notebooks/"

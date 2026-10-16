@@ -1,6 +1,55 @@
 {% extends "base.html.j2" %}
+{% import "_macros.html.j2" as ui %}
 {% block title %}Meta — MetaScope VAL{% endblock %}
+{% block page_title %}Meta{% endblock %}
+{% block context %}<span id="scope-context">VCT + VCL · janela de {{ meta.window.months }} meses</span>{% endblock %}
 
 {% block content %}
-{# D27: filtros por mapa e patch + a visualizacao de veto (elemento assinatura) #}
+<div id="meta" class="stack">
+  <section class="rank-intro">
+    <h2>O jogo por trás<br>do <em>jogo.</em></h2>
+    <p>Como cada mapa é vetado, quais agentes aparecem e quais composições vencem acima do esperado pela força de quem as joga.</p>
+  </section>
+
+  <section class="grid-hair filter-panel meta-filters" id="scope" aria-label="filtros">
+    <div class="field"><label for="f-map">Mapa</label><select id="f-map"></select></div>
+    <div class="field"><label for="f-patch">Patch</label><select id="f-patch"></select></div>
+    {{ ui.scope_fields(meta) }}
+  </section>
+
+  <div id="meta-empty" hidden></div>
+
+  <div id="meta-body" class="stack">
+  <section class="map-banner" id="map-banner" aria-live="polite"></section>
+
+  <section class="grid-hair metric-grid" id="map-kpis" aria-live="polite"></section>
+
+  <section class="panel">
+    <div class="panel-head"><h2>O veto, passo a passo</h2><small>janela inteira, todos os formatos</small></div>
+    <div class="panel-body">
+      <p class="muted">Cada mapa sofre uma ação por veto em que está no pool: a linha soma 100%. A barra mostra em que passo o mapa costuma sair, e por qual ação. Clique num mapa para filtrar o resto da página.</p>
+      <div class="veto-legend"><span><i class="ban"></i>ban</span><span><i class="pick"></i>pick</span><span><i class="decider"></i>decider</span><span class="faint">número = % dos vetos do mapa naquele passo</span></div>
+      <div id="veto-chart" class="chart tall"></div>
+    </div>
+  </section>
+
+  <section class="grid-hair split-panel">
+    <div>
+      <h2>Agentes no recorte</h2>
+      <div id="agents"></div>
+    </div>
+    <div>
+      <h2>O mapa na janela</h2>
+      <div id="map-facts"></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head"><h2>Composições</h2><small>3 mapas ou mais no recorte</small></div>
+    <div id="slice"><div id="comps"></div></div>
+  </section>
+  </div>
+
+  <p class="faint"><small>Acima do Elo = vitórias − probabilidade de vencer o mapa pelo Elo, com shrinkage por mapa e patch. IC que cruza zero = inconclusivo. Método em <a href="analise-composicoes.html">composições</a>.</small></p>
+</div>
 {% endblock %}

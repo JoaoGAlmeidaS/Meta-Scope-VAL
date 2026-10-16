@@ -66,6 +66,10 @@ exclude = ["notebooks"]
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM"]
 
+[tool.ruff.lint.isort]
+# A pasta `dbt/` na raiz faz o pacote `dbt` (dbt-core) parecer first-party.
+known-third-party = ["dbt"]
+
 [tool.black]
 line-length = 100
 target-version = ["py312"]

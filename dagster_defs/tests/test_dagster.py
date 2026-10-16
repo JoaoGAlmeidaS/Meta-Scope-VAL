@@ -23,6 +23,10 @@ def test_definicoes_carregam_com_a_linhagem_lake_dbt():
     parents = repo.asset_graph.get(AssetKey(["staging", "stg_rounds"])).parent_keys
     assert AssetKey(["lake", "raw_round"]) in parents
     assert {job.name for job in repo.get_all_jobs()} >= {"ingest", "build"}
+    # O site depende dos marts de análise: o job `build` gera os JSONs depois do dbt.
+    site = repo.asset_graph.get(AssetKey(["site", "site_artifacts"]))
+    assert AssetKey(["analysis", "mart_team_ratings"]) in site.parent_keys
+    assert AssetKey(["analysis", "mart_matchups"]) in site.parent_keys
 
 
 def test_ingest_materializa_uma_temporada_sem_rede(tmp_path, monkeypatch):

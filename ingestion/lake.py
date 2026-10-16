@@ -100,6 +100,10 @@ SCHEMAS: dict[str, pa.Schema] = {
         ("n_maps_without_data", pa.int16()),  # pegadinha 33: mapa de W.O. sem dado, descartado
         ("has_tabs", pa.bool_(), False),
         ("collected_at", TS, False),
+        # logo de cada time (CDN do vlr.gg); nulo sem logo (pegadinha 42). No fim da tabela: os
+        # arquivos antigos não têm a coluna, e o source lê com union_by_name.
+        ("team1_img", pa.string()),
+        ("team2_img", pa.string()),
     ),
     "raw_map": _schema(
         ("map_id", pa.string(), False),
@@ -155,6 +159,8 @@ SCHEMAS: dict[str, pa.Schema] = {
         ("hs", pa.int16()),
         ("first_bloods", pa.int16()),
         ("first_deaths", pa.int16()),
+        # ícone do agente (vlr.gg); no fim da tabela, porque os arquivos antigos não têm a coluna
+        ("agent_img", pa.string()),
     ),
     "raw_reject": _schema(
         ("event_id", pa.string(), False),

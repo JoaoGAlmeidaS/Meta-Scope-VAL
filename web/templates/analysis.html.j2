@@ -1,0 +1,55 @@
+{% extends "base.html.j2" %}
+{% import "_macros.html.j2" as ui %}
+{% block title %}{{ a.title }} — MetaScope VAL{% endblock %}
+{% block description %}{{ a.question }}{% endblock %}
+{% block body_attrs %} data-analysis="{{ a.slug }}" data-file="{{ a.file }}"{% endblock %}
+{% block page_title %}{{ a.title }}{% endblock %}
+{% block context %}Análise {{ "%02d" % a.number }} de {{ analyses | length }} · {{ a.day }}{% endblock %}
+
+{% block content %}
+<div class="stack">
+  <nav class="analysis-tabs" aria-label="análises">
+    {% for x in analyses %}<a href="analise-{{ x.slug }}.html"{% if x.slug == a.slug %} aria-current="page"{% endif %}><span>{{ "%02d" % x.number }}</span>{{ x.title }}</a>{% endfor %}
+  </nav>
+
+  <header class="analysis-head">
+    <span class="context">{{ a.title }} · notebook <a href="{{ notebook_url }}{{ a.notebook }}">{{ a.notebook }}</a></span>
+    <h1>{{ a.question }}</h1>
+  </header>
+
+  <section class="grid-hair filter-panel scope-bar{% if not a.has_window %} tier-only{% endif %}" id="scope" aria-label="recorte">
+    {{ ui.scope_fields(meta, a.has_window) }}
+  </section>
+
+  {# uma resposta por recorte; sem JS, fica visível só a do padrão #}
+  {% for key, (text, verdict) in a.answers.items() %}
+  <p class="answer" data-scope="{{ key }}"{% if key != default_scope %} hidden{% endif %}>{{ text }} <span class="tag {{ verdict[1] }}">{{ verdict[0] }}</span></p>
+  {% endfor %}
+
+  {% if a.has_chart %}
+  <section class="panel">
+    <div class="panel-body"><div id="chart-main" class="chart"></div></div>
+  </section>
+  {% endif %}
+
+  {% if a.second_chart %}
+  <section class="panel">
+    <div class="panel-head"><h2>{{ a.second_chart }}</h2></div>
+    <div class="panel-body"><div id="chart-second" class="chart tall"></div></div>
+  </section>
+  {% endif %}
+
+  <section class="panel">
+    <div class="panel-head"><h2>{{ a.table_title }}</h2></div>
+    <div id="table-main"></div>
+  </section>
+
+  <section class="panel method">
+    <div class="panel-head"><h2>Método</h2></div>
+    <div class="panel-body">
+      <ul>{% for m in a.method %}<li>{{ m }}</li>{% endfor %}</ul>
+      <p>Notebook com o código e os gráficos estáticos: <a href="{{ notebook_url }}{{ a.notebook }}">{{ a.notebook }}</a> ({{ a.day }}). Os números desta página e os do notebook saem das mesmas funções (<code>pipeline/analyses.py</code>).</p>
+    </div>
+  </section>
+</div>
+{% endblock %}

@@ -392,3 +392,38 @@ def test_duracao_em_segundos(load_match):
     maps = {m.name: m for m in load_match("match_bo5_2026_ot_basic.json").maps}
     assert maps["Split"].duration_seconds == 42 * 60 + 6
     assert maps["Haven"].duration_seconds == 3600 + 3
+
+
+@pytest.mark.parametrize(
+    "img,expected",
+    [
+        ("https://owcdn.net/img/633822848a741.png", "https://owcdn.net/img/633822848a741.png"),
+        ("//owcdn.net/img/633822848a741.png", "https://owcdn.net/img/633822848a741.png"),
+        ("https://www.vlr.gg/img/vlr/tmp/vlr.png", None),
+        ("", None),
+        (None, None),
+    ],
+    ids=["logo", "sem-protocolo", "placeholder-vlr", "vazio", "nulo"],
+)
+def test_logo_do_time(load_json, img, expected):
+    """Pegadinha 42: time sem logo vem com a imagem genérica do vlr.gg; logo é opcional."""
+    raw = _raw_match(load_json)
+    raw["data"]["teams"][0]["img"] = img
+    detail = Response[MatchDetail].model_validate(raw).data
+    assert detail.teams[0].img == expected
+
+
+def test_logo_ausente_nao_quebra(load_json):
+    raw = _raw_match(load_json)
+    del raw["data"]["teams"][0]["img"]
+    assert Response[MatchDetail].model_validate(raw).data.teams[0].img is None
+
+
+def test_icone_do_agente(load_json, load_match):
+    detail = load_match("match_bo3_2x0_basic.json")
+    agent = detail.maps[0].players[0].agents[0]
+    assert agent.img == f"https://www.vlr.gg/img/vlr/game/agents/{agent.name}.png"
+    raw = _raw_match(load_json)
+    del raw["data"]["maps"][0]["players"][0]["agents"][0]["img"]
+    parsed = Response[MatchDetail].model_validate(raw).data
+    assert parsed.maps[0].players[0].agents[0].img is None

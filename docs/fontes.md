@@ -258,6 +258,25 @@ matrices e `performance` existem só ali até haver uso.
     lá o gabarito o conta, e as divergências estão no seed de exceções. A 450589 (Masters Bangkok,
     Team International × Team Thailand, sem agentes) é showmatch rejeitado no contrato, de propósito.
 
+42. **Logo do time com placeholder.** `teams[].img` do detalhe da partida é o logo no CDN do
+    vlr.gg (`https://owcdn.net/img/...`); time sem logo vem com a imagem genérica do site,
+    `https://www.vlr.gg/img/vlr/tmp/vlr.png` (2.920 de 14.038 aparições no lake de 15/10, ~21%). O
+    contrato (`MatchTeam.img`, opcional) anula o placeholder e completa URL sem protocolo; o
+    `raw_match` guarda `team1_img`/`team2_img`, e o `dim_team.logo_url` é o logo mais recente. Sem
+    logo, o site mostra as iniciais do time. O ícone do agente (`players[].agents[].img`,
+    `https://www.vlr.gg/img/vlr/game/agents/{nome}.png`) não tem placeholder: um por agente, vira
+    `raw_player_map.agent_img` e `dim_agent.image_url`. Uma única aparição (15/10) traz agente com
+    nome de id (`b444168c-4e35-8076-d`, sem ícone válido): o site cai nas iniciais. O `www.vlr.gg`
+    responde 403 a imagem pedida com Referer de outro site (o owcdn.net dos logos não bloqueia):
+    os ícones são servidos de cópias locais (`make agent-icons`), nunca contornando o bloqueio.
+43. **Torneio aberto listado como VCT.** O Project Blender 2026 (evento 3122, out/2026) vem com
+    tier VCT no filtro de `/events`, mas é torneio aberto de terceiros: Round of 64 com mixes
+    ("cat meow cat", "BRATAN MIX") e nenhum dos 64 times em outro evento VCT. Sem correção, cada
+    time amador entra no Elo com o rating inicial do VCT e os times da VCL que o jogam passam a
+    ser rotulados de VCT no ranking (a CGN chegou a 11º com um 6–0 contra amadores). O seed
+    `event_overrides.csv` exclui; o teste `assert_vct_events_have_vct_teams` (aviso) acusa evento
+    VCT em que mais da metade dos times nunca jogou outro VCT.
+
 **Rejeições de contrato restantes (07/10): 4**, todas explicadas. A 450589 é o showmatch do Masters
 Bangkok (41). As outras 3 são de qualificatórias do SEA, que estão fora da análise: W.O. da série
 inteira com status `final` e mapas "TBD" (611307, 611460) e nota no fim da lista do veto (659576).

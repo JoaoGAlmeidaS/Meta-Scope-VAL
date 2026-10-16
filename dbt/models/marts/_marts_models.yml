@@ -39,10 +39,28 @@ models:
       - name: map_name
         data_tests: [unique, not_null]
 
+  - name: dim_agent
+    description: "Agentes que aparecem nas partidas, com o ícone mais recente do vlr.gg e o uso."
+    data_tests:
+      - dbt_utils.expression_is_true:
+          arguments:
+            expression: "image_url like 'https://%'"
+          config:
+            where: "image_url is not null"
+    columns:
+      - name: agent
+        data_tests: [unique, not_null]
+
   - name: dim_team
     description: >
-      Times, uma linha por id: nome, tag e região mais recentes (retrato). O nome da época fica
-      nos fatos. Nunca sai de `/teams`.
+      Times, uma linha por id: nome, tag, região e logo mais recentes (retrato). O nome da época
+      fica nos fatos. Nunca sai de `/teams`.
+    data_tests:
+      - dbt_utils.expression_is_true:
+          arguments:
+            expression: "logo_url like 'https://%'"
+          config:
+            where: "logo_url is not null"
     columns:
       - name: team_id
         data_tests: [unique, not_null]
@@ -74,6 +92,10 @@ models:
       - dbt_utils.expression_is_true:
           arguments:
             expression: "not is_draw or fixed_maps is not null"  # empate só em mapas fixos
+      - dbt_utils.expression_is_true:
+          arguments:
+            # a visão recente é um recorte da janela de análise, nunca fora dela
+            expression: "not is_in_recent_window or is_in_analysis_window"
     columns:
       - name: match_id
         data_tests: [unique, not_null]
@@ -200,6 +222,39 @@ models:
                 quote: false
               config:
                 where: "not is_excluded"
+
+  - name: fct_team_elo
+    description: >
+      Elo por time e partida (D15), duas linhas por partida. `rating_before` é o único que pode
+      prever ou avaliar aquela partida (assert_no_future_leakage). Python model sobre
+      `pipeline/elo.py`.
+    columns:
+      - name: match_id
+        data_tests: [not_null]
+      - name: team_id
+        data_tests:
+          - not_null
+          - unique:  # a promoção VCL → VCT reancora uma vez só por time
+              config:
+                where: "is_promotion"
+      - name: rating_before
+        data_tests: [not_null]
+      - name: is_promotion
+        description: >
+          Primeiro jogo de VCT de um time que começou na VCL: o `rating_before` já é o reancorado
+          (`EloParams.promotion_carry`), e o teste anti-vazamento sabe disso.
+        data_tests: [not_null]
+      - name: expected_result
+        data_tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 1
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [match_id, team_id]
 
 unit_tests:
   - name: lado_de_cada_time_sai_do_lado_do_vencedor
