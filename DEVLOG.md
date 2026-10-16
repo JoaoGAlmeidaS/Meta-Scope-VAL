@@ -340,3 +340,5 @@ Regra diária: **um commit e três linhas** — o que fiz / o que quebrou / deci
 - **Decisão:** imagens do site (`web/assets/imgs/`) e figuras do README (`docs/img/`) entram no
   repositório, porque o CI monta o site dele; `docs/estrutura.md` fica local; licença MIT só para o
   código (dados do vlr.gg e imagens da Riot fora).
+  Depois: o primeiro push quebrou o CI em 2 s (`astral-sh/setup-uv@v10` não existe: desde a v8
+  a action não publica tag de major, por segurança); fixada a versão inteira, `@v10.3.0`.
